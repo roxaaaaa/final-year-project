@@ -2,45 +2,22 @@ import pdfplumber
 import re
 import os
 
-project_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.dirname(os.path.dirname(script_dir))
 
-ordinary_pdf_path = os.path.join(project_dir, "ordinary")
+ordinary_pdf_path = os.path.join(project_dir, "data", "ordinary")
 
 # 2025
-#stucture of doc: Qestion number, then a sentance , then options (a)-(e)
+#stucture of doc: Question number, then a sentance , then options (a)-(e)
 # and each such option can have (i)-(v), then the next option or question. 
 # each page has the buttom line ORDINARY LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025 and page number 
 # skip question with ticking te box, identifying from imgae or diagram
 
 SKIP_WORDS = ["showed", "\uf0fc","image", "following", "from the list" , "picture", "shown", "diagram", "graph", "table", "figure", "illustration", "displayed", "depicted", "represented", "True", "False", "correct", "incorrect", "right", "wrong", "yes", "no"] 
 
-SOFT_SKIP= ["other valid responses", "Answer", "– **Accept other valid answers", "Any three valid points"]
-HARD_SKIP= ["ORDINARY LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "HIGHER LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "Page", "section","ordinary", "higher", "level"]
+SOFT_SKIP= ["other valid responses", "Answer", "**Accept other valid answers", "Any three valid points"]
+HARD_SKIP= ["BLANK PAGE", "Leaving Certificate Examination", "Agricultural Science – Ordinary Level", "Agricultural Science – Higher Level", "ORDINARY LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "HIGHER LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "Page", "section","ordinary", "higher", "level"]
 # add level of question (ordinary, higher), topic, solution.
-
-TOPIC_KEYWORDS = {
-    "Animal_Production": {
-        "primary": ["breed", "cattle", "sheep", "pig", "livestock", "dairy", "beef", 
-                   "calving", "mastitis", "BCS", "gestation", "oestrus"],
-        "secondary": ["animal welfare", "herd", "flock", "fertility"]
-    },
-    "Grassland_Management": {
-        "primary": ["grass", "pasture", "silage", "grazing", "ryegrass", "clover"],
-        "secondary": ["reseeding", "conservation", "harvest"]
-    },
-    "Soil_Science": {
-        "primary": ["soil", "pH", "texture", "sand", "silt", "clay", "fertility"],
-        "secondary": ["nutrients", "drainage", "erosion"]
-    },
-    "Crop_Science": {
-        "primary": ["seed", "germination", "photosynthesis", "crop", "weed"],
-        "secondary": ["plant growth", "harvest", "planting"]
-    },
-    "Plant_Biology": {
-        "primary": ["osmosis", "chloroplast", "photosynthesis", "chlorophyll", "cell"],
-        "secondary": ["organelle", "pigment", "membrane"]
-    }
-}
 
 # \n        → new line
 # \s*       → optional spaces
@@ -48,28 +25,42 @@ TOPIC_KEYWORDS = {
 # \s+       → at least one space
 # (\d+)     → capture the number (VERY important)
 # \s*\n     → optional spaces + newline
+def get_page_range(pdf_path):
+    with pdfplumber.open(pdf_path) as pdf:
+        """
+    Analyzes the PDF to find the page numbers where actual 
+    exam content begins and ends.
+    """
+    start_page = 0
+    end_page = -1 
+    # Default to last page
+
+    with pdfplumber.open(pdf_path) as pdf:
+        # Find Start
+        for i, page in enumerate(pdf.pages):
+            text = page.extract_text()
+            if text and re.search(r"question 1", text, re.IGNORECASE):
+                start_page = i
+                break
+        
+        # Find End (searching backwards from end for efficiency)
+        for i, page in enumerate(reversed(pdf.pages)):
+            text = page.extract_text()
+            if text and re.search(r"(blank page|acknowledgements)", text, re.IGNORECASE):
+                end_page = len(pdf.pages) - i
+                break
+    
+        print(start_page, ":", end_page)
+    return start_page, end_page
 
 def extract_text_from_pdf(pdf_path):
     
     cleaned_text = ""
     
     with pdfplumber.open(pdf_path) as pdf:
-        # Extract year from filename
-        filename = os.path.basename(pdf_path)
-        year = filename.split('.')[0]  # e.g., "2018" from "2018.pdf"
-        # Set page offset based on year
-        if year in ['2014', '2015', '2016', '2017', '2018', '2019']:
-            pages_to_process = pdf.pages[4:]
-        elif year == '2021':
-            pages_to_process = pdf.pages[10:]
-        elif year in ['2023', '2024']:
-            pages_to_process = pdf.pages[11:]
-        elif year == '2020':
-            pages_to_process = pdf.pages[2:]
-        else:
-            pages_to_process = pdf.pages
+        pages_to_process = pdf.pages      
         
-        for page in pages_to_process:
+        for page in pages_to_process[get_page_range(pdf_path)[0]:get_page_range(pdf_path)[1]]:
             text = page.extract_text()
             if text:
                 cleaned_lines = []
@@ -85,15 +76,15 @@ def extract_text_from_pdf(pdf_path):
                         cleaned_lines.append(line)
                 cleaned_lines = list(dict.fromkeys(cleaned_lines)) # remove duplicates while preserving order
                 cleaned_text += '\n'.join(cleaned_lines) + "\n"
-        return cleaned_text
+    return cleaned_text
     
 if __name__ == "__main__":
     # Using the defined paths
-    pdf_file = "2015.pdf"
+    pdf_file = "paper_2024.pdf"
     pdf_path = os.path.join(ordinary_pdf_path, pdf_file)
     text = extract_text_from_pdf(pdf_path)
     print("Extracted Text:")
-    print(text[:2000])  # Print first 2000 characters of extracted text
+    print(text[:2000]) 
     # questions = extract_question_from_text(text[:1000])
     # print(questions)   
  
@@ -170,5 +161,23 @@ if __name__ == "__main__":
 #     return questions
 
 
+TOPIC_KEYWORDS = {
+    "Animals": {
+        "primary": ["breed", "cattle", "sheep", "pig", "livestock", "dairy", "beef", 
+                   "calving", "mastitis", "BCS", "gestation", "oestrus"],
+        "secondary": ["animal welfare", "herd", "flock", "fertility"]
+    },
+    "Soil": {
+        "primary": ["soil", "pH", "texture", "sand", "silt", "clay", "fertility"],
+        "secondary": ["nutrients", "drainage", "erosion"]
+    },
+    "Crops": {
+        "primary": ["seed", "germination", "photosynthesis", "crop", "weed"],
+        "secondary": ["plant growth", "harvest", "planting"]
+    },
+    "Scientific Practices":{},
+    "Environment & Sustainability":{},
+    "Genetics":{}
     
+}    
 
