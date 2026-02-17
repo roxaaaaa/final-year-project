@@ -1,0 +1,248 @@
+[
+  {
+    "question_num": "Q1",
+    "context": "Identify farm machinery or equipment and describe their use.",
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify the items of farm machinery or equipment shown in A, B and C."
+      },
+      {
+        "id": "b",
+        "text": "Briefly describe how the piece of equipment B in part (i) above is used on a sheep farm.",
+        "skip": true
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "(a) or (b)",
+    "parts": [
+      {
+        "id": "(a)(i)",
+        "text": "Identify any two of the following breeds.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(a)(ii)",
+        "text": "The sheep in B in part (i) above is known for its prolificacy. Explain the underlined term.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(a)(iii)",
+        "text": "Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal sire.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(b)(i)",
+        "text": "Explain the underlined term.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(b)(ii)",
+        "text": "Identify one characteristic of this breed which makes it suitable as an artisan product.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(b)(iii)",
+        "text": "Describe one characteristic of the Irish Moiled which makes them a sustainable breed choice on Irish farms.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "Q4",
+    "context": "Describe the impact of soil compaction and organic matter loss has on the productivity of farm land in the table below.",
+    "parts": [
+      {
+        "id": "part1",
+        "text": "Impact of Effect on productivity Ways of reducing effect Soil compaction Organic matter loss",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "Cereal crops form the basis of many animal and human diets with an estimated 2.1 million tonnes being produced in 2023.",
+    "parts": [
+      {
+        "id": "a",
+        "text": "You have been asked to show a group of farmers barley, wheat and oats crops. At the time of visiting the farm, each crop was at the stage shown in row 1. Each crop at its ripening stage is shown for reference in row 2. Assist farmers by identifying A, B and C as barley, wheat or oats.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Farmers asked if the seed produced by the cereal crops above would be a suitable seed source for sowing the next year. Outline the advice you would give the farmers.",
+        "solution": []
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "parts": [
+      {
+        "id": "a",
+        "text": "(a) Many Irish sheep farmers now take part in the Sheep Improvement Scheme.\nSome of the target features / activities of this scheme are:\n• lameness control\n• mineral supplementation of ewe’s post mating\n• meal feeding of lamb’s post weaning\n• scanning of in-lamb ewes\nFor any two of the above listed target features / activities:\n(i) Describe how to action (carry out) these target features / activities.\n(ii) Describe the benefit of each target feature / activity to overall production of the flock.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(b) The Sheep Improvement Scheme provides financial support to farmers for taking extra steps\nto improve the welfare of their flock. Farmers get €12 per breeding ewe for completing\nflock welfare measures.\nRyan and Fiona have the following sheep on their farm.\nStock type Numbers on farm\nRams 4\nBreeding ewes 132\nHoggets 42\nLambs 200\n(i) Calculate the financial value of the scheme to Ryan and Fiona.\nCalculation:\n(ii) The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in\nthe sheep sector. Some of the target features of the scheme are:\n• mineral supplementation of lambs pre-weaning\n• flystrike control\n• genotyping of ram\nBriefly explain how the scheme enhances animal health and welfare using any two of the\ntarget features listed above.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Agroforestry is the integration of trees with either crops or livestock on the same land, aiming to achieve additional benefits compared to keeping agriculture and trees separate. It encompasses a wide variety of practices from shelterbelts to integrated food crops and trees.",
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain agroforestry.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Outline possible benefits of agroforestry for Irish agriculture.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "Irish Beetles Tackle Docks in New Trial",
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Briefly describe how the dock beetle is an environmentally friendly way of controlling dock leaves on a farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Dock beetles are an example of a biological control. Based on your own knowledge of agriculture, provide another example of a biological control and state its target.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "either (a) or (b)",
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare the different soil mineral particles and their properties under the headings that follow.\nThe first one has been done as an example.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b_i",
+        "text": "Soil structure describes the arrangement of soil particles within a soil. These particles form clusters known as aggregates or peds in the soil.\n(i) Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below.\nModerate quality Poor quality Good quality\nA B C",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b_ii",
+        "text": "(ii) Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "The table below shows fertility summary data over five lactations for two cows on the Irish Cattle Breeding Federation’s (ICBF) ‘Cows Own Worth’ database. Analyse the data and the questions that follow.",
+    "parts": [
+      {
+        "id": "a",
+        "text": "Calculate the average calving interval for cow 1."
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain how the calving interval for cow 1 is reduced between lactation 3 and 4."
+      },
+      {
+        "id": "c",
+        "text": "State with reason if cow 1 or 2 should be culled. Cow: Reason:"
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "both (a) and (b) with either (c) or (d)",
+    "parts": [
+      {
+        "id": "(a)(i)",
+        "text": "(i) Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land. Describe with the aid of a labelled diagram how she carried out this investigation.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "(a)(ii)",
+        "text": "(ii) Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below.\nRagwort Meadow Thistle Nettle Primrose\nA B C D",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(a)(iii)",
+        "text": "(iii) Gill identified significant numbers of negative grassland indicators in her investigation. Briefly explain what advice Gill would give the farmer in order to create a positive grassland for plant biodiversity.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "(b)(i)",
+        "text": "(i) Describe with the aid of a labelled diagram how a peat soil is formed.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "(b)(ii)",
+        "text": "(ii) State two locations in Ireland where you would find a peat soil.\n1.\n2.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "16",
+    "context": "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves.",
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Outline a hypothesis for this investigation."
+      },
+      {
+        "id": "b",
+        "text": "(ii) State with reason if this investigation is a fair test."
+      },
+      {
+        "id": "c",
+        "text": "(iii) State the independent, dependent and control variables in this investigation."
+      },
+      {
+        "id": "d",
+        "text": "(iv) Outline two possible sources of error in this investigation."
+      }
+    ]
+  }
+]
