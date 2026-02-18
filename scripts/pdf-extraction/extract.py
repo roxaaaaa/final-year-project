@@ -10,8 +10,8 @@ project_dir = os.path.dirname(os.path.dirname(script_dir))
 ordinary_pdf_path = os.path.join(project_dir, "data", "ordinary")
 higher_pdf_path = os.path.join(project_dir, "data", "higher")
 
-SKIP_WORDS = ["image", "picture", "pictures","diagram", " graph ","photograph",  "figure", "illustration",
-                     "place a tick", "correct box", "breed of cattle shown", "breed shown"] 
+SKIP_WORDS = ["image", "picture","diagram", " graph ","photograph",  "figure", "illustration",
+                     "a tick", "correct box", "breed of cattle shown", "breed shown", "True", "False"] 
 
 SOFT_SKIP= ["other valid responses", "Answer", "**Accept other valid answers", "Any three valid points"]
 HARD_SKIP= ["BLANK PAGE", "Question 1 carries 60 marks", "Leaving Certificate Examination", "Agricultural Science – Ordinary Level", "Agricultural Science – Higher Level", "ORDINARY LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "HIGHER LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "Page", "section","ordinary", "higher", "level"]
@@ -191,21 +191,20 @@ def write_questions_to_json(questions: List[Dict], out_path: str):
     
 if __name__ == "__main__":
     # Using the defined paths
-    pdf_file1 = "paper_2024.pdf"
-    pdf_path1 = os.path.join(higher_pdf_path, pdf_file1)
+    pdf_file1 = "paper_2023.pdf"
+    pdf_path1 = os.path.join(ordinary_pdf_path, pdf_file1)
     questions = extract_text_from_pdf(pdf_path1, is_solution=False)
     
-    output_path = os.path.join(script_dir, "questions_2024_higher.json")
+    output_path = os.path.join(script_dir, "questions_2023_ordinary.json")
     write_questions_to_json(questions, output_path)
     print(f"Extracted {len(questions)} questions to {output_path}")
 
-    pdf_file = "2024.pdf"
-    pdf_path = os.path.join(higher_pdf_path, pdf_file)
+    pdf_file = "2023.pdf"
+    pdf_path = os.path.join(ordinary_pdf_path, pdf_file)
     solutions = extract_text_from_pdf(pdf_path, is_solution=True)
-    for sol in solutions:
-        print(f"solution {sol['question_number']}: {sol['solution'][:100]}...")  # Print first 100 chars of each solution for verification
 
-    output_path_solutions = os.path.join(script_dir, "solutions_2024_higher.json")
+
+    output_path_solutions = os.path.join(script_dir, "solutions_2023_ordinary.json")
     write_questions_to_json(solutions, output_path_solutions)
     print(f"Extracted {len(solutions)} solutions to {output_path_solutions}")
 
