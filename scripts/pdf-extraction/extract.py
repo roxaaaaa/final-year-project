@@ -7,11 +7,11 @@ from typing import List, Dict, Tuple
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_dir = os.path.dirname(os.path.dirname(script_dir))
 
-ordinary_pdf_path = os.path.join(project_dir, "data", "ordinary")
-higher_pdf_path = os.path.join(project_dir, "data", "higher")
+ordinary_pdf_path = os.path.join(project_dir, "data", "initial","ordinary")
+higher_pdf_path = os.path.join(project_dir, "data", "initial","higher")
 
 SKIP_WORDS = ["image", "picture","diagram", " graph ","photograph",  "figure", "illustration",
-                     "a tick", "correct box", "breed of cattle shown", "breed shown", "True", "False"] 
+                     "a tick", "correct box", "table", "True", "False", "shown below"] 
 
 SOFT_SKIP= ["other valid responses", "Answer", "**Accept other valid answers", "Any three valid points"]
 HARD_SKIP= ["BLANK PAGE", "Question 1 carries 60 marks", "Leaving Certificate Examination", "Agricultural Science – Ordinary Level", "Agricultural Science – Higher Level", "ORDINARY LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "HIGHER LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "Page", "section","ordinary", "higher", "level"]
@@ -50,7 +50,7 @@ def get_page_range(pdf_path):
         if end_page != -1 and end_page <= start_page:
             end_page = -1
         
-        print(f"[DEBUG get_page_range] Total PDF pages: {len(pdf.pages)}, start: {start_page}, end: {end_page}")
+        # print(f"[DEBUG get_page_range] Total PDF pages: {len(pdf.pages)}, start: {start_page}, end: {end_page}")
     return start_page, end_page
 
 def _should_skip_question(text: str) -> bool:
@@ -102,8 +102,8 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
     if end_page == -1:
         end_page = None
     
-    print(f"[DEBUG] PDF path: {pdf_path}")
-    print(f"[DEBUG] Page range: {start_page}:{end_page}")
+    # print(f"[DEBUG] PDF path: {pdf_path}")
+    # print(f"[DEBUG] Page range: {start_page}:{end_page}")
 
     with pdfplumber.open(pdf_path) as pdf:
         pages = pdf.pages[start_page:end_page]
@@ -138,7 +138,7 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
         print(f"[DEBUG] No 'Question' or 'Q' pattern found - fallback split into {len(blocks)} blocks")
     
     # Show first 500 chars of cleaned text for debugging
-    print(f"[DEBUG] First 500 chars of cleaned_text:\n{cleaned_text[:500]}\n")
+    # print(f"[DEBUG] First 500 chars of cleaned_text:\n{cleaned_text[:500]}\n")
     questions: List[Dict] = []
 
     seen_qnums = set()
@@ -157,10 +157,8 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
             continue
 
         q_num = int(q_match.group(1) or q_match.group(2))
-        print(f"[DEBUG] Found Question {q_num}")
-
-        # Avoid adding duplicate question numbers
-        # or repeated pages cause the same question 
+        # print(f"[DEBUG] Found Question {q_num}")
+ 
         # if q_num in seen_qnums:
         #     print(f"[DEBUG] Question {q_num} already seen - skipping")
         #     continue
@@ -180,7 +178,7 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
                 "question_number": q_num,
                 "solution": block.strip()
             })
-            print(f"[DEBUG] Added Question {q_num} as 'solution'")
+            # print(f"[DEBUG] Added Question {q_num} as 'solution'")
 
     return questions
 
@@ -191,22 +189,22 @@ def write_questions_to_json(questions: List[Dict], out_path: str):
     
 if __name__ == "__main__":
     # Using the defined paths
-    pdf_file1 = "paper_2023.pdf"
-    pdf_path1 = os.path.join(ordinary_pdf_path, pdf_file1)
+    pdf_file1 = "paper_2015.pdf"
+    pdf_path1 = os.path.join(higher_pdf_path, pdf_file1)
     questions = extract_text_from_pdf(pdf_path1, is_solution=False)
     
-    output_path = os.path.join(script_dir, "questions_2023_ordinary.json")
+    output_path = os.path.join(project_dir, "data", "unstructured", "questions_2015_higher.json")
     write_questions_to_json(questions, output_path)
     print(f"Extracted {len(questions)} questions to {output_path}")
 
-    pdf_file = "2023.pdf"
-    pdf_path = os.path.join(ordinary_pdf_path, pdf_file)
-    solutions = extract_text_from_pdf(pdf_path, is_solution=True)
+    # pdf_file = "2024.pdf"
+    # pdf_path = os.path.join(ordinary_pdf_path, pdf_file)
+    # solutions = extract_text_from_pdf(pdf_path, is_solution=True)
 
 
-    output_path_solutions = os.path.join(script_dir, "solutions_2023_ordinary.json")
-    write_questions_to_json(solutions, output_path_solutions)
-    print(f"Extracted {len(solutions)} solutions to {output_path_solutions}")
+    # output_path_solutions = os.path.join(project_dir, "data", "unstructured","solutions_2024_ordinary.json")
+    # write_questions_to_json(solutions, output_path_solutions)
+    # print(f"Extracted {len(solutions)} solutions to {output_path_solutions}")
 
  
 # def extract_topic(text):
@@ -231,8 +229,6 @@ if __name__ == "__main__":
 #         "secondary": ["plant growth", "harvest", "planting"]
 #     },
 #     "Scientific Practices":{},
-#     "Environment & Sustainability":{},
-#     "Genetics":{}
-    
+#     "General": {}
 # }    
 
