@@ -127,59 +127,66 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
             # remove duplicates while preserving order
             cleaned_lines = list(dict.fromkeys(cleaned_lines))
             if cleaned_lines:
-                cleaned_text += '\n'.join(cleaned_lines) + "\n"
+                cleaned_text += ' '.join(cleaned_lines) + " "
 
-    if re.search(r'Question\s+\d+|Q\s?\d+', cleaned_text, re.IGNORECASE):
-        blocks = re.split(r'(?=(?:Question\s+\d+|Q\s?\d+))', cleaned_text, flags=re.IGNORECASE | re.MULTILINE)
-        print(f"[DEBUG] Found 'Question' or 'Q' pattern - splitting into {len(blocks)} blocks")
+    regex_pattern = r'(?=(?:Question\s+\d+|Q\s?\d+))'
+    if re.search(regex_pattern, cleaned_text, re.IGNORECASE):
+        blocks = re.split(r'(?=(?:Question\s+\d+|Q\s?\d+))', cleaned_text, flags=re.IGNORECASE)
     else:
-        # split on numbered lines only as a fallback
-        blocks = re.split(r'(?=(?:\n\s*\d+\s*\.))', cleaned_text, flags=re.MULTILINE)
-        print(f"[DEBUG] No 'Question' or 'Q' pattern found - fallback split into {len(blocks)} blocks")
-    
+        # Fallback: Split on "1. ", "2. ", etc., but only if it's the start of a section
+        blocks = re.split(r'(?=\b\d+\s*\.\s+)', cleaned_text)
     # Show first 500 chars of cleaned text for debugging
     # print(f"[DEBUG] First 500 chars of cleaned_text:\n{cleaned_text[:500]}\n")
     questions: List[Dict] = []
 
-    seen_qnums = set()
+    last_q_num = -1  # Track the last successfully added question number
+
     for block in blocks:
-        if not block.strip():
+        block_stripped = block.strip()
+        if not block_stripped:
             continue
 
-        # Try to match "Question N", "Q N", "Q1", or "N." format
-        q_match = re.search(r'Question\s+(\d+)|Q\s?(\d+)', block, re.IGNORECASE)
+        # 1. Extract the number using your regex patterns
+        q_match = re.search(r'Question\s+(\d+)|Q\s?(\d+)', block_stripped, re.IGNORECASE)
         if not q_match:
-            # Try matching just the number (e.g., "2." at start of line)
-            q_match = re.search(r'^\s*(\d+)\s*\.', block, re.MULTILINE)
+            q_match = re.search(r'^\s*(\d+)\s*\.', block_stripped, re.MULTILINE)
+
+        if not q_match:
+            # If no number found, append to previous question if it exists
+            if questions:
+                key = "solution" if is_solution else "text"
+                questions[-1][key] += " " + block_stripped
+            continue
+
+        # 2. Parse the found number
+        try:
+            current_q_num = int(q_match.group(1) or q_match.group(2) or q_match.group(0).strip().replace('.', ''))
+        except (ValueError, AttributeError):
+            continue
+
+        if current_q_num > 20:
+            continue
+        # 3. SEQUENCE CHECK: If the new number is not greater than the last, 
+        # it is likely a sub-item (e.g., Q1 -> Q2 -> 1.1).
+        if current_q_num <= last_q_num:
+            if questions:
+                key = "solution" if is_solution else "text"
+                questions[-1][key] += " " + block_stripped
+                print(f"[DEBUG] Sub-item detected (Q{current_q_num} <= Q{last_q_num}). Appending to Q{last_q_num}.")
+            continue
+
+        # 4. Filter and Add new question
+        if not is_solution and _should_skip_question(block_stripped):
+            continue
+
+        key = "solution" if is_solution else "text"
+        questions.append({
+            "question_number": current_q_num,
+            key: block_stripped
+        })
         
-        if not q_match:
-            print(f"[DEBUG] Block not matched (no question number found)")
-            continue
-
-        q_num = int(q_match.group(1) or q_match.group(2))
-        # print(f"[DEBUG] Found Question {q_num}")
- 
-        # if q_num in seen_qnums:
-        #     print(f"[DEBUG] Question {q_num} already seen - skipping")
-        #     continue
-        # seen_qnums.add(q_num)
-
-        if not is_solution and _should_skip_question(block):
-            # print(f"[DEBUG] Question {q_num} skipped by filter")
-            continue
-        if is_solution==False:
-            questions.append({
-                "question_number": q_num,
-                "text": block.strip()
-            })
-            print(f"[DEBUG] Added Question {q_num} as 'text'")
-        else:
-            questions.append({
-                "question_number": q_num,
-                "solution": block.strip()
-            })
-            # print(f"[DEBUG] Added Question {q_num} as 'solution'")
-
+        last_q_num = current_q_num # Update the sequence tracker
+        print(f"[DEBUG] Added Question {current_q_num}")
     return questions
 
 
