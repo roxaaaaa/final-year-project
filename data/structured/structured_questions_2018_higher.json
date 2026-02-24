@@ -1,0 +1,347 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Explain the term livestock unit.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(ii) Give the livestock unit value for: 1. A mature dairy cow",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Draw a labelled diagram of the soil profile of a named soil type. (ii) Outline the factors responsible for creating any two of the soil horizons shown.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(i) Explain the term soil texture. (ii) Name any two soil texture types and compare them under the following headings: 1. Fertility 2. Temperature",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term soil texture.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name any two soil texture types and compare them under the following headings: 1. Fertility 2. Temperature",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "Fertility",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "Temperature",
+                "solution": [],
+                "skip": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Moisture stress:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Permanent wilting point:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Ease of tilling.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to show the activity of earthworms in the soil.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare mountain/hill sheep production with lowland sheep production.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe the management practices used by sheep farmers at lambing time.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Many Irish sheep farmers now take part in the Sheep Welfare Scheme. Three of the features of this scheme are - Lameness control - Flystrike control - Scanning of in-lamb ewes. For each of the above explain (i) How it is carried out (ii) The benefit to overall production in the flock.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "How it is carried out:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "The benefit to overall production in the flock:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Describe any two commonly used methods of reseeding grassland.\n(ii) Explain the term establishment in the context of newly‐sown grass.\n(iii) Describe two practices that contribute to successful establishment.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe any two commonly used methods of reseeding grassland.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the term establishment in the context of newly‐sown grass.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe two practices that contribute to successful establishment.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Compare features of perennial ryegrass and Italian ryegrass that contribute to their productivity.\n(ii) Explain the term hybrid grasses and suggest why they might be used.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Compare features of perennial ryegrass and Italian ryegrass that contribute to their productivity.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the term hybrid grasses and suggest why they might be used.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain how improved grassland management may prevent this happening.\n(ii) Name two such parasites.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain how improved grassland management may prevent this happening.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name two such parasites.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain each of the following agriculturally relevant concepts in genetics and give an appropriate example in each case. (i) Polyploidy (ii) Freemartin condition (iii) Micropropagation.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Polyploidy:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Freemartin condition:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Micropropagation:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Drosophila melanogaster is a species of fruit fly commonly used in genetic research. The normal body colour of such flies is grey (GG). A recessive ebony body (gg) is also possible. The flies’ antennae can be normal (NN), or twisted (nn), which is a recessive condition. Outline the details of the cross between two flies, heterozygous for both conditions.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain what is meant by embryo transfer in farm animals. (ii) Give three benefits of embryo transfer.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain what is meant by embryo transfer in farm animals:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give three benefits of embryo transfer:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Describe the main processes at work during the conversion of grass to silage. (ii) Relate three practical steps in the making of good quality silage to the processes above.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Three of the major elements needed for good plant growth are nitrogen (N), phosphorus (P), and potassium (K). (i) In the case of each element describe 1. Its function in the plant 2. A deficiency symptom. (ii) Describe a laboratory experiment to show the effect of the deficiency of a particular element in a plant.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Zero grazing and strip grazing (ii) Contact fungicides and systemic fungicides (iii) First early potatoes and maincrop potatoes (iv) Abiotic factors and edaphic factors.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Use of a trailing shoe in slurry spreading.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Trees in a forest plantation are thinned at various time intervals.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Algal bloom in waterways following rainfall in summer.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Use of a farrowing crate in pig production.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Growth of rushes in grassland over gley soils.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

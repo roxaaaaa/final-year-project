@@ -1,0 +1,498 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Clover is a member of which plant phylum?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(ii) Mention three features of plants belonging to this phylum.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain the term biological oxygen demand (BOD).",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(ii) Outline three farming practices that would help maintain a low BOD.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Draw a labelled diagram of the fungus Rhizopus (bread mould).",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "f",
+        "text": "(i) What are notifiable diseases?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "g",
+        "text": "(ii) Give three examples of such diseases.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "(i) Why is scutch grass (Agropyrens repens) such a difficult weed to eradicate in a cereal crop?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "State the location and function of the following structures in mammals: (i) Villi. (ii) Nephrons. (iii) Cervix.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "j",
+        "text": "(i) Give three reasons why a high humus content is more beneficial than a high clay content, in a soil.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "k",
+        "text": "(i) What are catch crops?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "l",
+        "text": "(ii) Give three advantages of their use on a mixed farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "m",
+        "text": "(i) Explain why respiration is important in the germination of seeds.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "n",
+        "text": "(i) Name two bacterial diseases of pigs.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "o",
+        "text": "(ii) Give one symptom of each disease.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare a podzol soil with a brown earth soil under the following headings: (i) Drainage. (ii) Fertility. (iii) pH.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Drainage:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Fertility:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "pH:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Identify and explain any four factors that affect the development of a soil structure.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "An experiment to determine soil texture by sieving was carried out, and the results were as follows: Sand: 60% Silt: 25% Clay: 15%. (i) Describe how this experiment was carried out. (ii) To which type of farm enterprise is this soil best suited? (iii) Suggest three reasons for your choice.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how this experiment was carried out.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "To which type of farm enterprise is this soil best suited?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest three reasons for your choice.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe the management practices necessary to maximise the growth of housed weanlings during their first winter.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe a suitable grazing system which might be used in a beef enterprise to achieve optimum production.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Beef is classified using the EU beef carcase classification system. (i) Outline the main features of this system. (ii) Using this system, indicate a suitable score for a highly productive Continental beef animal and a British crossbred beef animal. (iii) Describe a suitable strategy which could be used to improve the classification of Irish beef cattle in the future.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline the main features of this system.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Using this system, indicate a suitable score for a highly productive Continental beef animal and a British crossbred beef animal.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe a suitable strategy which could be used to improve the classification of Irish beef cattle in the future.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To show the effect of magnesium deficiency on the growth of a plant.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "To estimate the yield of a named root crop.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "To measure the energy value of an animal foodstuff.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "To determine the effect of shading on the botanical composition of a pasture.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Weeds, pests and diseases in crops may be controlled by direct and indirect methods.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by indirect control?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe three methods of indirect control commonly used in Irish agriculture.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Explain four characteristics that would determine the suitability of a soil for root crops.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) Give four possible causes of lodging in cereal crops. (ii) Describe two sources of damage to potato tubers during storage.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give four possible causes of lodging in cereal crops.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe two sources of damage to potato tubers during storage.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain each of the following terms: (i) F1 hybrids. (ii) Continuous variation. (iii) Back cross. (iv) Incomplete dominance.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "F1 hybrids:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Continuous variation:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Back cross:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Incomplete dominance:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow. (i) Give the genotype of the bull used in this cross. (ii) List the possible genotypes resulting from this cross. (iii) What is the probability that a calf from this cross would be white and horned? (iv) What is the probability that a calf from this cross would be horned? Explain your .",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give the genotype of the bull used in this cross.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List the possible genotypes resulting from this cross.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "What is the probability that a calf from this cross would be white and horned?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "What is the probability that a calf from this cross would be horned? Explain your answer.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "The Economic Breeding Index (EBI) is widely used in dairying to identify genetically superior animals to improve dairy production in Ireland. (i) List any two sub-indices of the EBI. (ii) Outline the factors that determine each sub-index listed.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "List any two sub-indices of the EBI.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline the factors that determine each sub-index listed.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The leatherjacket and the wireworm are the larval stages of two important crop pests.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name the adult stages of 1. the leatherjacket, 2. the wireworm.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the damage caused by each of these pests.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name the phylum to which they belong.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe three structural features of members of this phylum.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Distinguish fully between complete and incomplete metamorphosis.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The correct amount of nitrogen fertiliser is of great benefit to crop growth, but excessive nitrogen can have negative effects. Discuss this statement.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Crossbreeding and crossing-over.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Active transport and active immunity.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Transpiration and translocation.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Nitrification and denitrification.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The reduced incidence of liver fluke (Fasciola hepatica) infestation in cattle grazed on well-drained pasture.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "The movement of water from the soil through a plant and into the atmosphere.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "The use of cross-breed sows in pig production.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "The use of acid as an additive in silage making.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

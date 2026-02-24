@@ -1,0 +1,529 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "What is meant by the term noxious weed?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "Give two examples of noxious weeds.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "What is meant by the term incomplete metamorphosis?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "Give one example of incomplete metamorphosis.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Outline three reasons for the practice of thinning forestry trees.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Draw a labelled diagram to show the arrangement of the vascular tissues in a dicotyledonous (dicot) root.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "e",
+        "text": "State the location in the mammalian body of each of the following parts:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Humerus",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Pituitary gland",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Bowman’s capsule",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Cervix",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "f",
+        "text": "Explain each of the following terms:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Dagging",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Tagging",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "g",
+        "text": "Describe how the structure of the grass flower is suited to wind pollination.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "State the length of gestation, in days, for each of the following farm animals:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Cow",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Sheep",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Pig",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "i",
+        "text": "Classify each of the following into a principal rock type:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Slate",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Granite",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Limestone",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "j",
+        "text": "Explain the reason for rolling barley grains before feeding to cattle.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Cementation and separation are two processes that affect the development of a soil structure.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by each of the terms cementation and separation?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline any two factors that contribute to cementation.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline any two factors that contribute to separation.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Cation exchange capacity (CEC) is an important chemical property of soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term cation exchange capacity?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Cation exchange capacity is lower in sandy soils than in clay soils. Give two reasons for this.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe a method by which cation exchange capacity may be increased in a soil.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to test for the presence of a named soil mineral.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare two named sheep production enterprises that are commonly practised in Ireland.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Preparation at breeding time is an important aspect of good flock management. Discuss any four aspects of flock preparation prior to mating.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Control of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To extract different pigments from a sample of grass.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "To show the action of a named animal enzyme.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "To compare capillarity in soil samples.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "To estimate the yield per hectare of a named root crop.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The dry period is of great importance to the overall performance of the dairy cow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline two reasons for the importance of the dry period.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe two features of the management of the dairy cow during the dry period.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe any two methods of heat detection.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give two advantages of the use of AI in the dairy herd.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "The hygiene quality and the composition of milk may affect the price per litre paid to the farmer. Describe any two tests carried out on milk to determine hygiene quality or composition. For each test described, state clearly if hygiene quality or composition is being determined.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "Direct sowing is the traditional method of sowing grass seed in Ireland.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "In relation to direct sowing of grass: (i) Describe the stages involved in seed bed preparation. (ii) Describe how the seed is sown. (iii) Explain the benefit of this cultivation method in a loam soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the stages involved in seed bed preparation.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe how the seed is sown.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain the benefit of this cultivation method in a loam soil.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Paddock grazing may be described as being of great benefit to agriculture but of less benefit to the environment. (i) Give two benefits of paddock grazing in livestock production. (ii) Explain two ways in which paddock grazing may be harmful to the environment.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give two benefits of paddock grazing in livestock production.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain two ways in which paddock grazing may be harmful to the environment.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Compare the contrasting methods of grass conservation in hay making and in silage making.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Mitosis and meiosis are forms of cell division that occur in all agriculturally important organisms. Describe, with the aid of labelled diagrams, the stages of mitosis.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Meiosis occurs during the production of male and female gametes.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the significance of meiosis in gamete formation.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline the process of crossing-over which occurs during meiosis and explain its significance.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "In the bean plant, hairless leaf (H) is dominant over hairy leaf (h), and straight petiole (S) is dominant over spiral petiole (s). A bean plant, heterozygous for both conditions, was self‐fertilised and the seeds were collected and germinated and grown to maturity.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline the details of this cross.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State what proportions of the offspring plants you would expect to see with: 1. Hairless leaf 2. Straight petiole 3. Spiral petiole 4. Hairless leaf together with spiral petiole.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions. (i) Use a labelled diagram to illustrate the carbon cycle. (ii) With reference to the carbon cycle, suggest two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics. (i) Name two common bacterial diseases of farm animals, which are treated with antibiotics. (ii) Outline how antibiotic resistance develops in bacteria. (iii) Suggest a method of disease control other than using antibiotics.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two common bacterial diseases of farm animals, which are treated with antibiotics.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline how antibiotic resistance develops in bacteria.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest a method of disease control other than using antibiotics.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Ruminant and monogastric digestive systems (ii) Transpiration and translocation (iii) Saturated flow and unsaturated flow in soils (iv) Hypogeal germination and epigeal germination.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Sprouting or ‘chitting’ of early potatoes.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "The presence of grit in the digestive tract of fowl.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "A high incidence of leatherjackets in cereal crops, following grass.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Deep ploughing of a podzol soil.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "The increased nitrogen content of slurry produced by winter‐finishing cattle.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify the items of farm machinery or equipment shown in A, B and C.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Briefly describe how the piece of equipment B in part (i) above is used on a sheep farm.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: \n• lameness control \n• mineral supplementation of ewe’s post mating \n• meal feeding of lamb’s post weaning \n• scanning of in-lamb ewes\nFor any two of the above listed target features / activities:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how to action (carry out) these target features / activities.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the benefit of each target feature / activities to overall production of the flock.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures.\nRyan and Fiona have the following sheep on their farm.\nStock type Numbers on farm Rams 4 Breeding ewes 132 Hoggets 42 Lambs 200\n(i) Calculate the financial value of the scheme to Ryan and Fiona. Calculation:\n(ii) The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: \n• mineral supplementation of lambs pre-weaning \n• flystrike control \n• genotyping of ram\nBriefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Read the article and the questions that follow. Agroforestry is the integration of trees with either crops or livestock on the same land. It aims to achieve additional benefits in comparison to keeping agriculture and trees separate. Across the world, agroforestry encompasses a wide variety of practices ranging from simple shelterbelts of trees around fields to a close integration of food crops and trees. (Adapted from Teagasc, 2020)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain agroforestry.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Outline possible benefits of agroforestry for Irish agriculture.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Briefly describe how the dock beetle is an environmentally friendly way of controlling dock leaves on a farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Dock beetles are an example of a biological control. Based on your own knowledge of agriculture, provide another example of a biological control and state its target.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Biological control Target",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare the different soil mineral particles and their properties under the headings that follow. The first one has been done as an example. Gravel and sand particles Silt and clay particles Particle size Large particles Small particles Drainage Fertility Ion exchange",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Soil structure describes the arrangement of soil particles within a soil. These particles form clusters known as aggregates or peds in the soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below. Moderate quality Poor quality Good quality A B C",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land. Describe with the aid of a labelled diagram how she carried out this investigation. Labelled diagram: (ii) Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below. Ragwort Meadow Thistle Nettle Primrose A B C D Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Biodiversity indicators Description Grassland which is not managed intensively Positive grassland indicators and contains plants such as Primrose and Meadow Thistle. Grassland is managed intensively and is used to Negative grassland indicators rapidly assess if land is in ‘poor’ condition. It contains plants such as Ragwort and Nettles. (iii) Gill identified significant numbers of negative grassland indicators in her investigation. Briefly explain what advice Gill would give the farmer in order to create a positive grassland for plant biodiversity.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "(i) Describe with the aid of a labelled diagram how a peat soil is formed. Labelled diagram: (ii) State two locations in Ireland where you would find a peat soil. 1. 2.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "You have been asked to address a group of farmers. Outline the advice you would give them about the importance of preserving our peat bogs.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Outline measures farmers can take to combat biodiversity loss on their farms.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

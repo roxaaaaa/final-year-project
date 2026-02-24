@@ -1,0 +1,299 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Identify each of the following breeds of animals.\nA B C\nA:\nB:\nC:\n(ii) Breed C is a dual-purpose breed. Explain the underlined term.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Identify each of the following breeds of animals.\nA B C\nA:\nB:\nC:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Breed C is a dual-purpose breed. Explain the underlined term.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Identify each of the following breeds of animals.\nD E F\nD:\nE:\nF:\n(ii) Read the article and the questions which follow. Fleckvieh Cattle This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020) Using evidence from the article, suggest which Irish cattle industry this breed is most suited. Industry: Evidence:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Identify each of the following breeds of animals.\nD E F\nD:\nE:\nF:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Read the article and the questions which follow. Fleckvieh Cattle This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020) Using evidence from the article, suggest which Irish cattle industry this breed is most suited. Industry: Evidence:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "Calcium is an important element required by both plants and animals.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State one source of calcium for either plants or animals. Plant or animal:",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Outline one process by which calcium becomes available to plants.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Explain one symptom of a named calcium deficiency in cows. Name: Symptom:",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "Performance testing is carried out on bulls by the Irish Cattle Breeding Federation (ICBF) in Tully, Co. Kildare.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Clipped: ",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Dosed: ",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Treated for lice: ",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Outline the importance of performance testing to the beef or dairy industry in Ireland.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Briefly describe how to collect soil samples for soil testing.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Soil testing is recommended to be carried out every 3 – 5 years and between the months of October and February. Briefly describe a reason for these recommendations.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "With record high fertiliser prices, outline how soil testing can improve the economic sustainability of the farm.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(a) Read the article and the questions which follow. The Farmdroid has landed in Ireland The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Explain the underlined term.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Explain how the Farmdroid can benefit the environment and the farmer.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Apart from GPS, outline one piece of technology that you have studied that would benefit both the farmer and the environment. Or",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(b) Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Briefly describe the benefits of pregnancy scanning in animals.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Jack was scanning beef heifers and scanned a heifer carrying twins. Describe the management implications for this heifer under the headings which follow.\n\nFeeding in late gestation:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Calving:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Achieving a target of 0.95 will require excellent cow and calf management. Outline ways Tim can achieve this target.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain ways Tim can achieve the 6-week calving rate target of 80%.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "14",
+    "context": "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He sows a variety of crops and plants his winter cereals using direct drilling.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term and outline one advantage of this method of planting. Direct drilling: Advantage:",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. Applying your knowledge of crop production, the questions which follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Briefly describe why he chose to plant a different variety of oilseed rape in each field.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the underlined term.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline the advantages of sowing clover with the oilseed rape.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Berseem clover is an annual plant. Explain the underlined term.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Give another example of an annual plant that you have studied.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Read the following extract and the questions which follow. An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can (Adapted from Farmers Journal, 2022) The questions which follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how to carry out a plant count in a 2 hectare field.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Plants counts are easiest to carry out when plants are at the one to two leaf stage. When plants start to tiller out, it becomes very difficult to count them. Explain why it becomes difficult to count the plants at this stage.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Teagasc recommends a seeding rate of 350 seeds/m2 to establish 300 plants/m2. expected establishment rate.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]
