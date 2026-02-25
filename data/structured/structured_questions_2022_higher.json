@@ -1,0 +1,341 @@
+[
+  {
+    "question_num": "2",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify any four of the following breeds of animals.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "A:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "B:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "C:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "D:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. Describe characteristics he would be looking for when selecting the animal.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Characteristics one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Characteristic two:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Characteristic three:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Characteristic four:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Eanna wanted to sow barley on his farm and decided to investigate the effect of soil temperature on the germination of the crop. Describe how he would carry out this investigation.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State with reason if the results obtained by Eanna will be qualitative or quantitative.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Suggest what information Eanna learns about the effect of temperature on the germination of seeds from this investigation which will inform his decision making on growing crops on his farm.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "Read the article and the questions which follow. Avian flu detected in turkey flock in Co. Monaghan Avian influenza (H5N1) has been detected in a turkey flock in County Monaghan, the Department of Agriculture, Food and the Marine has confirmed. Restriction zones are being set up around the area. This highly pathogenic bird flu has already been confirmed in wild birds across the country. (Adapted from RTE.ie, 2021)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Avian influenza is a notifiable disease. List two other notifiable diseases on farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "2.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Using your knowledge of biosecurity measures describe how poultry farms could protect their flocks from avian influenza.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Since 1994, it has been compulsory for each European Union (EU) member state to have agri‐environment schemes. Outline three reasons why hedgerow conservation is promoted in agri‐environmental schemes.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Sustainable farming practices can benefit from conservation grazing. Explain the purpose of conservation grazing.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Outline one reason why it is important to preserve rare animal breeds on farms.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain one way for each part (i) and (ii) below farmers can:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Reduce the use of (i) pesticides on their farm",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Reduce use of (ii) antibiotics for farm animals",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In Ireland 2% of the farming area is devoted to organic production. Briefly explain two benefits of converting to organic farming to a group of farmers.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Draw a labelled diagram of a calf’s stomach in its first week of life. (ii) Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Read the article on the SEASOLUTIONS Project and the questions which follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Outline two roles of micro‐organisms in the ruminant stomach. 1. 2.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline two advantages of grass measuring. 1. 2.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Grass is measured in kg DM/ha (kilograms dry matter per hectare). Every 1cm has approximately 250kg DM/ha for cattle farms. A residual post grazing height of 4cm is used when estimating grass cover. Calculate the kg DM/ha with a sward height of 10cm. Calculation: kg DM/ha = (iii) A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward. A: B: C:",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "Stage:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "Description:",
+                "solution": [],
+                "skip": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(b) Gerry wants to reseed his grassland pastures.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline three advantages of reseeding grassland pastures. 1. 2. 3.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "In order to reseed his grassland, Gerry ordered two batches of seeds, certified and uncertified. On arrival both batch were unlabelled. He carried out a research trial to distinguish between the two batches of seeds. Describe using a labelled diagram, how he Labelled diagram:",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "Gerry was able to compare the plant uniformity of both batches of seed (certified and uncertified). Describe the characteristics Gerry would have observed to determine which batch was certified and which was uncertified.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Gerry decided to use certified seed when reseeding his pasture. Outline the effects his decision would have on the environmental sustainability of his farm.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

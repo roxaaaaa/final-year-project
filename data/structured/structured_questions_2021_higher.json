@@ -1,0 +1,415 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify each of the following plants.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "A:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "B:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "C:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Using a named example, other than the plants shown at part (a) above, distinguish between annual and biennial lifecycles.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "In relation to a catch crop or energy crop you have studied the following questions.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe two ways in which the production of your chosen crop contributes to sustainability.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Way one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Way two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the damage caused by a named pest to your chosen crop.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe the first two growth cycle stages of your chosen crop.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "All agriculture depends on biodiversity. Explain biodiversity.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State one reason why biodiversity is important on Irish farms.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Outline three ways in which farmers can increase biodiversity on their farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. ",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "2. ",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "3. ",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Briefly explain the term conformation.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Calculate the total amount John obtained for tag number 215038714153, including any bonuses.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Which heifers were worth more money to John, the Aberdeen Angus or the Limousine heifers?",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain genomic selection.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Outline two advantages of using genomically selected animals in a named animal enterprise.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Advantage one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Advantage two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe how farmers have made genetic improvements in their animal enterprise based on physical traits of their animals.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Discuss one way in which farmers can reduce the need for antibiotic use on their farms.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "The Murphy family operate one of Ireland’s sheep dairy farms in Co. Galway. They produce artisan products for a niche market. Their produce is available in approximately 50 shops and in some of Ireland’s top restaurants.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Distinguish between artisan produce and a niche market.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Suggest two reasons why sheep dairy farming is suited to Ireland.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Reason one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Reason two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Compare the composition of sheep’s milk shown in the pie chart to your knowledge of Sheep Milk Composition cow’s milk in relation to the water content.",
+        "solution": [],
+        "skip": true
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Distinguish between the duration of oestrus and the oestrous cycle in cattle. (ii) Identify the part of the female reproductive system where ovulation occurs. (iii) Describe two advantages of artificial insemination (AI) in cattle or sheep or pigs.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii)",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Outline two differences between the monogastric and ruminant digestive systems. (ii) Briefly describe a named disorder of the ruminant digestive system under the following headings. Named disorder: Symptoms: Treatment: Prevention:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "Named disorder:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "Symptoms:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iii",
+                "text": "Treatment:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iv",
+                "text": "Prevention:",
+                "solution": [],
+                "skip": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "The manager of a 250 sow integrated pig unit was alerted that some of his young bonhams (piglets) were ill. On inspection of the bonhams, he noticed that they were breathing quickly, weak, had a scour and their skin was pale.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify the disease that the bonhams are suffering from based on all of the symptoms described above.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State the cause of the identified disease.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Suggest how these bonhams could be treated for this disease.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Describe two biosecurity practices carried out on Irish pig farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Biosecurity practice one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Biosecurity practice two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Read the article about multi‐species swards and the questions which follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Identify one plant named in the article that can fix atmospheric nitrogen.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline two management practices farmers could employ to overcome the challenges of growing multi‐species swards.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name one grazing system that could be applied to a multi‐species sward and outline two advantages of the named grazing system in managing the sward.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "You are asked to address a group of farmers who are thinking about sowing a multi‐species sward on their farm. Providing evidence from the article and with your own knowledge, construct an argument convincing them why it would be good to sow a multi‐species sward on their farm. Your plan should include at least four specific benefits.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Describe an investigation a student could carryout to determine the botanical composition of the multi‐species sward described in the article.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain the role of each of the following in the nitrogen cycle. Nitrobacter: Nitrosomonas: Denitrification:",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Evaluate the impact of three different crop management practices on all animals living in the farms ecosystem.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

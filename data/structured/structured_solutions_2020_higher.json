@@ -1,0 +1,504 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "What is meant by the term noxious weed?",
+        "solution": [
+          "A plant that is considered harmful because it causes economic loss, ecological damage or health problems"
+        ],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "Give two examples of noxious weeds.",
+        "solution": [
+          "Japanese Knotweed",
+          "Ragwort"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "Cementation and separation are two processes that affect the development of a soil structure. Cation exchange capacity (CEC) is an important chemical property of soil. Describe an experiment to test for the presence of a named soil mineral.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain cementation and separation, and outline any two factors that contribute to each process.",
+        "solution": [
+          "Cementation is the process by which soil particles are held together by substances such as clay minerals or organic matter. Separation refers to the breaking apart of soil into its individual particles due to various factors like water movement, freezing and thawing, or root action.",
+          "Factors contributing to cementation include: 1) The presence of clay minerals that form stable bonds between soil particles; 2) Organic matter that decomposes and forms a matrix around soil particles. Factors contributing to separation include: 1) Water movement which can break apart soil structure; 2) Freezing and thawing cycles which cause expansion and contraction, breaking the soil structure; 3) Root action which physically disrupts the soil structure."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain cementation.",
+            "solution": [
+              "Cementation is the process by which soil particles are held together by substances such as clay minerals or organic matter."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline any two factors that contribute to cementation.",
+            "solution": [
+              "Factors contributing to cementation include: 1) The presence of clay minerals that form stable bonds between soil particles; 2) Organic matter that decomposes and forms a matrix around soil particles."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain separation.",
+            "solution": [
+              "Separation refers to the breaking apart of soil into its individual particles due to various factors like water movement, freezing and thawing, or root action."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Outline any two factors that contribute to separation.",
+            "solution": [
+              "Factors contributing to separation include: 1) Water movement which can break apart soil structure; 2) Freezing and thawing cycles which cause expansion and contraction, breaking the soil structure; 3) Root action which physically disrupts the soil structure."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Explain cation exchange capacity (CEC), and give two reasons why CEC is lower in sandy soils than in clay soils. Describe a method by which CEC may be increased in a soil.",
+        "solution": [
+          "Cation exchange capacity (CEC) refers to the ability of a soil to hold charged particles, specifically cations such as calcium, magnesium, and hydrogen. CEC is typically higher in clay soils because clay particles have more negative charges than sandy soils, providing more sites for cation attachment.",
+          "Two reasons why CEC is lower in sandy soils than in clay soils include: 1) Sandy soils have larger particle sizes with fewer negatively charged sites compared to clay soils; 2) The mineral composition of sand does not provide as many available sites for cation exchange as clay minerals do.",
+          "A method by which CEC may be increased in a soil is through the addition of organic matter, such as compost or well-rotted manure, which can introduce new negative charges into the soil structure."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain cation exchange capacity (CEC).",
+            "solution": [
+              "Cation exchange capacity (CEC) refers to the ability of a soil to hold charged particles, specifically cations such as calcium, magnesium, and hydrogen."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give two reasons why CEC is lower in sandy soils than in clay soils.",
+            "solution": [
+              "Two reasons why CEC is lower in sandy soils than in clay soils include: 1) Sandy soils have larger particle sizes with fewer negatively charged sites compared to clay soils; 2) The mineral composition of sand does not provide as many available sites for cation exchange as clay minerals do."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe a method by which CEC may be increased in a soil.",
+            "solution": [
+              "A method by which CEC may be increased in a soil is through the addition of organic matter, such as compost or well-rotted manure, which can introduce new negative charges into the soil structure."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to test for the presence of a named soil mineral.",
+        "solution": [
+          "An experiment to test for the presence of a named soil mineral can be designed by collecting soil samples, identifying the suspected mineral through visual inspection or using diagnostic tools such as X-ray diffraction (XRD), and comparing the identified mineral with known properties of the target mineral. This experiment helps in understanding the composition of the soil and its suitability for various agricultural practices."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "This question provides an opportunity to assess the understanding of sheep production enterprises, flock management practices, parasite control, and cereal crop production in Ireland.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare two named sheep production enterprises that are commonly practised in Ireland. Explain the geographical location of cereal crop production in Ireland. Discuss two features that influence the geographical location of cereal crop production in Ireland.",
+        "solution": [
+          "Compare two named sheep production enterprises that are commonly practised in Ireland.",
+          "Discuss two features that influence the geographical location of cereal crop production in Ireland."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Preparation at breeding time is an important aspect of good flock management. Discuss any four aspects of flock preparation prior to mating.",
+        "solution": [
+          "Discuss any four aspects of flock preparation prior to mating."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Control of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep.",
+        "solution": [
+          "Describe any four methods to control named parasites in sheep."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "(a) To extract different pigments from a sample of grass.\n(b) To show the action of a named animal enzyme.\n(c) To compare capillarity in soil samples.\n(d) To estimate the yield per hectare of a named root crop.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe a laboratory method to extract different pigments from a sample of grass. Explain your answer with reference to any relevant equipment and techniques used in the process.",
+        "solution": [
+          "Use a mortar and pestle to grind the grass sample into a fine powder. Transfer the powder to a beaker and add an appropriate solvent, such as ethyl acetate or dichloromethane. Shake the mixture vigorously until all pigments are extracted. Filter the solution through a cheesecloth or coffee filter to separate the pigment extract from the solid residue. Use thin-layer chromatography (TLC) to identify and purify individual pigments. Analyze the purified pigments using UV-Vis spectroscopy."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Explain a laboratory method to show the action of a named animal enzyme. Identify and describe the role of the enzyme in the reaction.",
+        "solution": [
+          "For example, if the enzyme is pectinase, describe how it breaks down pectin in fruit juice or agarose gel. Use a spectrophotometer to measure the changes in absorbance before and after adding the enzyme. Analyze the results to determine the effect of the enzyme on the reaction rate."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Describe a laboratory method to compare capillarity in soil samples. Compare and contrast the results for different types of soil.",
+        "solution": [
+          "Collect soil samples from different depths or areas of a field. Prepare each sample by sieving and air-drying it. Use a thin-walled glass tube filled with distilled water to measure the height of the meniscus at various angles (0°, 45°, 90°). Record the results for each soil type. Compare the capillary heights to determine which soil has the highest or lowest capillary action."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Explain a laboratory method to estimate the yield per hectare of a named root crop. Calculate and present your findings.",
+        "solution": [
+          "Harvest the root crop from a designated area and measure its length, width, and depth. Clean and dry the roots, then cut them into uniform pieces. Weigh a known volume of these pieces (e.g., 1 kg) to determine their weight. Multiply this weight by the total number of pieces obtained from the hectare. Divide the result by the area in hectares to calculate the yield per hectare."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The dry period is of great importance to the overall performance of the dairy cow. (i) Outline two reasons for the importance of the dry period.",
+        "solution": [
+          "The dry period allows the cow to recover from pregnancy, reducing stress on the body and preparing for the next lactation.",
+          "It helps prevent mammary infections that can occur during lactation."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe two features of the management of the dairy cow during the dry period.",
+            "solution": [
+              "Proper nutrition to support milk production in the next lactation.",
+              "Regular health checks to identify any potential issues."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(a) Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd. (i) Describe any two methods of heat detection.",
+        "solution": [
+          "Rectal palpation to feel for the presence of a live embryo.",
+          "Vaginal cytology to examine the cervical mucus."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "ii",
+            "text": "(ii) Give two advantages of the use of AI in the dairy herd.",
+            "solution": [
+              "Increased reproductive efficiency and faster genetic improvement.",
+              "Reduced labor costs compared to natural breeding."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(b) The hygiene quality and the composition of milk may affect the price per litre paid to the farmer. Describe any two tests carried out on milk to determine hygiene quality or composition.",
+        "solution": [
+          "Culture test to identify bacteria in the milk.",
+          "Phytochemical analysis to measure the fat content."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) For each test described, state clearly if hygiene quality or composition is being determined.",
+            "solution": [
+              "Culture test: Hygiene quality.",
+              "Phytochemical analysis: Composition."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass: (i) Describe the stages involved in seed bed preparation. (ii) Describe how the seed is sown. (iii) Explain the benefit of this cultivation method in a loam soil.",
+        "solution": [
+          "Seed bed preparation involves several key steps, including ploughing to loosen the soil, harrowing to break up large clumps and create a fine tilth, and raking to level the surface. Proper seedbed preparation is crucial for successful direct sowing as it ensures good seed-to-soil contact and reduces weed competition."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the stages involved in seed bed preparation.",
+            "solution": [
+              "Seed bed preparation involves several key steps, including ploughing to loosen the soil, harrowing to break up large clumps and create a fine tilth, and raking to level the surface. Proper seedbed preparation is crucial for successful direct sowing as it ensures good seed-to-soil contact and reduces weed competition."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe how the seed is sown.",
+            "solution": [
+              "In direct sowing, seeds are typically broadcasted over the prepared seedbed. This involves spreading the seeds evenly across the surface of the soil using a broadcasting machine or hand spreader. The goal is to ensure that there are enough seeds per unit area to establish a good stand."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain the benefit of this cultivation method in a loam soil.",
+            "solution": [
+              "Direct sowing is particularly beneficial in loam soils because loam provides an ideal growing environment for grass seeds. The loose, well-drained nature of loam allows for good seed-to-soil contact and root penetration, which can lead to strong, healthy plants with deep roots. This method also minimizes the need for frequent watering or fertilization."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Paddock grazing may be described as being of great benefit to agriculture but of less benefit to the environment. (i) Give two benefits of paddock grazing in livestock production. (ii) Explain two ways in which paddock grazing may be harmful to the environment.",
+        "solution": [
+          "Paddock grazing can provide several benefits to livestock production, including more efficient use of land and resources, reduced need for supplemental feeding, and improved animal health through natural exercise."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give two benefits of paddock grazing in livestock production.",
+            "solution": [
+              "Paddock grazing can provide several benefits to livestock production, including more efficient use of land and resources, reduced need for supplemental feeding, and improved animal health through natural exercise."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain two ways in which paddock grazing may be harmful to the environment.",
+            "solution": [
+              "Paddock grazing can have negative impacts on the environment, such as increased erosion due to overgrazing and soil compaction, loss of vegetation through overutilization, and potential water pollution from runoff."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Compare the contrasting methods of grass conservation in hay making and in silage making.",
+        "solution": [
+          "Hay making involves cutting and curing hay in a dry state, while silage making involves chopping and preserving grass as green feed. Hay is usually easier to store and transport, but may not provide as much nutrition for livestock. Silage can preserve more nutrients and moisture, making it a better option for winter feeding."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Mitosis and meiosis are forms of cell division that occur in all agriculturally important organisms. Describe, with the aid of labelled diagrams, the stages of mitosis.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Meiosis occurs during the production of male and female gametes. (i) Explain the significance of meiosis in gamete formation.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Meiosis occurs during the production of male and female gametes. (i) Explain the significance of meiosis in gamete formation.",
+            "solution": [
+              "Meiosis reduces the chromosome number by half, resulting in haploid gametes, which are necessary for sexual reproduction."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Meiosis occurs during the production of male and female gametes. (ii) Outline the process of crossing-over which occurs during meiosis and explain its significance.",
+            "solution": [
+              "Crossing-over involves the exchange of genetic material between homologous chromosomes, leading to genetic diversity in offspring."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "In the bean plant, hairless leaf (H) is dominant over hairy leaf (h), and straight petiole (S) is dominant over spiral petiole (s). A bean plant, heterozygous for both conditions, was self-fertilised and the seeds were collected and germinated and grown to maturity. (i) Outline the details of this cross.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "In the bean plant, hairless leaf (H) is dominant over hairy leaf (h), and straight petiole (S) is dominant over spiral petiole (s). A bean plant, heterozygous for both conditions, was self-fertilised and the seeds were collected and germinated and grown to maturity. (i) Outline the details of this cross.",
+            "solution": [
+              "The cross involves a heterozygous parent (HhSs) with itself. The offspring will have the following genotypes: HHHH, HHhh, HhHH, HhHh, hhSS, hhSs, hShS, hShh."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) State what proportions of the offspring plants you would expect to see with: 1. Hairless leaf 2. Straight petiole 3. Spiral petiole 4. Hairless leaf together with spiral petiole.",
+            "solution": [
+              "1. Hairless leaf (HH): 75% 2. Straight petiole (SS): 75% 3. Spiral petiole (ss): 25% 4. Hairless leaf together with spiral petiole (Hhss): 25%"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "This question covers various aspects of agriculture and its impact on greenhouse gas emissions, as well as the issue of antibiotic resistance in farm animals.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions. Explain two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
+        "solution": [
+          "Implementing sustainable farming practices such as crop rotation, conservation tillage, and the use of low-emission fertilizers.",
+          "Encouraging the adoption of methane-producing animals like sheep over cattle, as they produce less methane per unit of milk produced."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics. Name two common bacterial diseases of farm animals, which are treated with antibiotics.",
+        "solution": [
+          "E.coli",
+          "Salmonella"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics. Outline how antibiotic resistance develops in bacteria.",
+        "solution": [
+          "Antibiotic resistance develops when bacteria are exposed to antibiotics that are not strong enough to kill them, allowing the resistant bacteria to survive and reproduce.",
+          "Bacteria that survive exposure to antibiotics pass on their resistant traits to their offspring."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics. Suggest a method of disease control other than using antibiotics.",
+        "solution": [
+          "Vaccines",
+          "Probiotics"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Ruminant and monogastric digestive systems (ii) Transpiration and translocation (iii) Saturated flow and unsaturated flow in soils (iv) Hypogeal germination and epigeal germination.",
+        "solution": [
+          "Ruminants have a four-chambered stomach, while monogastrics have one.",
+          "Transpiration is the process by which water evaporates from plant leaves, while translocation is the movement of nutrients within plants.",
+          "Saturated flow occurs when soil pores are completely filled with water, while unsaturated flow occurs when there is air in the soil pores.",
+          "Hypogeal germination involves seeds germinating underground, while epigeal germination involves seeds germinating above ground."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "response": "I'm sorry, but I need the raw question objects and solution objects to proceed with merging them into a single JSON object that adheres to the specified schema."
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State one reason for each of the following farming practices.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Spraying a potato crop with fungicide.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Housing of beef animals in the winter.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Paring the hooves of sheep.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Agitating slurry before it is spread.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms used in genetics: (i) Gamete (ii) In‐breeding (iii) Clone.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Gamete:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "In‐breeding:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Clone:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Livestock without horns are referred to as polled animals. In sheep the gene for having no horns (P) is dominant, and the gene for having horns (p) is recessive. Copy and complete the following into your book, to give the genotype and phenotype of the lambs from the cross. Parents’ phenotypes Pure‐breeding polled ram Horned ewe Parents’ genotypes PP x pp Gametes ( ) x ( ) Genotype of offspring ( ) Phenotype of offspring _______________________",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "A ram and a ewe with the same genotype as the offspring above are bred with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes of the lambs from this cross. Parents’ genotypes ( ) x ( ) Possible gametes ( ) ( ) x ( ) ( ) Genotypes of offspring ( ) ( ) ( ) Phenotypes of offspring _________________ __________________",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Artificial insemination (AI) is carried out on some farm animals. (i) State two advantages of artificial insemination. (ii) State two disadvantages of artificial insemination.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Advantages of artificial insemination:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Disadvantages of artificial insemination:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) From the list of rock types below, name, in your book, 1. a sedimentary rock 2. a metamorphic rock 3. an igneous rock. The list: basalt, sandstone, marble, granite, limestone, slate.\n(ii) What is meant by the weathering of rock?\n(iii) Describe two ways in which rock is weathered.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii)",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe a sandy soil or a clay soil under the following headings:\n(i) How the soil feels\n(ii) Particle size\n(iii) Fertility\n(iv) Suitability for tillage.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv)",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) State two reasons why organic matter is important in a soil.\n(ii) State two ways in which organic matter may be added to soil.\n(iii) Explain why plants grown in clay soil survive better in a drought than those grown in sandy soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii)",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

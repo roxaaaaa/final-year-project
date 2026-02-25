@@ -1,0 +1,173 @@
+[
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Cows suffering from grass tetany are lacking in ……….",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Footbaths are used in the treatment of ……….",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Cows passing blood in their urine is an indicator of ……….",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Rapid breathing and coughing in calves is an indicator of ……….",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Lesions on the mouth, udder and nose of young lambs is ……….",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "16",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Organic matter content is very important in soil health.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the underlined term.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Briefly describe two ways of increasing the organic matter content of soils. (i) 2.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe the functions of soil organic matter under the headings that follow.\nFunction Description Effect on soil pH Water retention Soil compaction (iv) Briefly explain two factors that influence the amount of organic matter in a soil.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe with the aid of a labelled diagram how a student could carry out an investigation to determine the percentage organic matter in a 100g sample of soil. Labelled diagram:",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "The results of the investigation are shown in the box below.\nMass of organic matter 25g (i) Calculate the % organic matter of the soil sample tested in part (b). Calculation: (ii) Based on the results in part (i), state if the soil type is more likely to be a peat soil or brown earth soil. (iii) All organic matter contains carbon. Calculate the % soil organic carbon in the soil sample using the equation shown in the box below. % Soil Organic Carbon = % Soil Organic Matter X 0.58",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Calculate the % organic matter of the soil sample tested in part (b). Calculation:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Based on the results in part (i), state if the soil type is more likely to be a peat soil or brown earth soil.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "All organic matter contains carbon. Calculate the % soil organic carbon in the soil sample using the equation shown in the box below. % Soil Organic Carbon = % Soil Organic Matter X 0.58",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "17",
+    "context": "(a) Read the article and the questions that follow. A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as ‘the best sire they had ever used’, due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf. (Adapted from Agriland, 2023)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Sexed semen is when the X chromosome (female) and the Y chromosome (male) are separated in the sperm. Explain why this technology is an advantage on farms.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(ii) Outline one advantage of using straws from the Canadian bull that were 40 years old.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(iii) Briefly describe two advantages and two disadvantages of Artificial Insemination (AI) in cattle.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Advantages Disadvantages 1. 1. 2. 2."
+          },
+          {
+            "id": "ii",
+            "text": "Advantages Disadvantages 1. 1. 2. 2."
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "(b) (i) Based on a named food crop (other than grass) you have studied, describe its growth cycle under the headings that follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Labelled diagram: Germination Ripening"
+          },
+          {
+            "id": "ii",
+            "text": "Describe how the food crop named in part (i) above is harvested and stored. Harvested: Stored:"
+          }
+        ]
+      },
+      {
+        "id": "e",
+        "text": "(ii) Outline one safety precaution that should be taken during harvesting this crop.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "(c) Integrated pest management systems are used to farm in a more sustainable way. Analyse the diagram and the questions that follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Chemical (Pesticide) Biological Physical / Mechanical Cultural / Sanitation Prevention Using the list of words below, state to which category of pest management they belong. Machine Fans Predators Pesticides Crop rotation hygiene The first one has been done as an example."
+          }
+        ]
+      }
+    ]
+  }
+]
