@@ -4,6 +4,55 @@ import json
 import os
 
 import pdfplumber
+from concurrent.futures import ThreadPoolExecutor
+
+SOLUTION_PROMPT = """ 
+You are a precision data architect. Your task is to merge raw exam Question Text with its corresponding Marking Scheme (Solution) into a single, highly-structured JSON object.
+
+### OUTPUT JSON SCHEMA
+{
+  "question_num": "string",
+  "context": "string",
+  "skip": boolean,
+  "parts": [
+    {
+      "id": "string",
+      "text": "string",
+      "solution": ["string"],
+      "skip": boolean,
+      "subparts": [
+        {
+          "id": "string",
+          "text": "string",
+          "solution": ["string"],
+          "skip": boolean
+        }
+      ]
+    }
+  ]
+}
+
+### ALIGNMENT & CLEANING RULES
+1. **The Merge**: Match the "text" from the Question source to the "solution" from the Solution source based on the Question Number and Part ID (a, b, i, ii).
+2. **Handle "OR" Logic**: If a question offers "Option One OR Option Two" or "Part (a) OR (b)", create separate entries in the "parts" array.
+3. **Clean Solutions**: 
+   - Remove marking codes: "3+3", "4+1", "20 marks", "5 x 2m = 10m".
+   - Split multiple valid answers (separated by "/" or "OR") into separate strings within the "solution" array.
+   - Example: "Grooming / Reduce stress" becomes ["Grooming", "Reduce stress"].
+4. **Refine Text**: 
+   - Remove placeholder underscores like "________________".
+   - If the text says "Explain the underlined term", look at the solution to identify the term and include it in the text field if missing.
+5. **ID Standards**: 
+   - Question: "1", "2"
+   - Part: "a", "b"
+   - Subpart: "i", "ii"
+6. **Skip Logic**: Set "skip": true if the text mentions: "Identify", "shown", "diagram", "A, B, C, D", "label", "photograph", "table", "box".
+
+### INPUT DATA
+[PASTE YOUR RAW QUESTION OBJECTS AND SOLUTION OBJECTS HERE]
+
+Return ONLY valid JSON.
+"""
 
 QUESTION_PROMPT = """
 You are a structured data extractor for Irish Leaving Certificate Agricultural Science exam questions.
@@ -135,9 +184,6 @@ PROMPT_2025 = """You are a precision data extraction engine. Your task is to con
 
 ### INPUT DATA"""
 
-SOLUTION_PROMPT = """
-You are a structured data extractor for Irish Leaving Certificate Agricultural Science exam solutions."""
-
 def process_with_llm(input_pdf_path, output_json_path, prompt):
     with open(input_pdf_path, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
@@ -158,6 +204,7 @@ def process_with_llm(input_pdf_path, output_json_path, prompt):
         try:
             structured_q = json.loads(response['message']['content'])
             structured_data.append(structured_q)
+            print(f"Processed solution {q['question_number']} successfully.")
         except json.JSONDecodeError:
             print(f"Error parsing JSON for Question {q['question_number']}")
 
@@ -169,8 +216,12 @@ def process_with_llm(input_pdf_path, output_json_path, prompt):
 if __name__ == "__main__":
   script_dir = os.path.dirname(os.path.abspath(__file__))
   project_dir = os.path.dirname(os.path.dirname(script_dir)) 
+  range_higher = [ 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,2025]
 
-  input_json_path = os.path.join(project_dir, "data", "unstructured", "questions_2025_higher.json")
-  output_json_path = os.path.join(project_dir, "data", "structured", "structured_questions_2025_higher.json")
-  process_with_llm(input_json_path, output_json_path, QUESTION_PROMPT)
-  
+  for i in range_higher:
+    input_json_path = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json")
+    output_json_path = os.path.join(project_dir, "data", "structured", f"structured_solutions_{i}_higher.json")
+    print(f"Processing {input_json_path}")
+    process_with_llm(input_json_path, output_json_path, SOLUTION_PROMPT)
+    print(f"Processed {input_json_path} and saved structured data to {output_json_path}")
+    

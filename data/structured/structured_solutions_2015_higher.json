@@ -1,0 +1,462 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Give three reasons for the practice of thinning forest trees.",
+        "solution": [
+          "Reduce competition between trees",
+          "Promote better growth and development",
+          "Improve overall forest health"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State to which phylum each of the following belongs: (i) Earthworm. (ii) Greenbottle fly. (iii) Liver fluke. (iv) Sheep. (v) Babesia.",
+        "solution": [
+          "Annelida",
+          "Insecta",
+          "Platyhelminthes",
+          "Chordata",
+          "Protozoa"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Explain why it is necessary to have strict controls in the application of pesticides to farm crops.",
+        "solution": [
+          "To protect crops from pests and diseases",
+          "To maintain food quality and safety",
+          "To prevent environmental pollution"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Mention any three factors that contribute to the formation of a gley soil.",
+        "solution": [
+          "High water table",
+          "Long-term cultivation",
+          "Oxidation and reduction reactions"
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "List three characteristics that are typical of the family Gramineae.",
+        "solution": [
+          "Monocots",
+          "Grasses",
+          "Sheaths and blades"
+        ],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "List any two structural characteristics of each of the following: (i) a fern plant. (ii) a pine tree.",
+        "solution": [
+          "(i) Fern plants have fronds, spores, and are vascular; (ii) Pine trees have needles, cones, and are conifers",
+          "(i) Ferns have haploid and diploid stages; (ii) Pines are gymnosperms"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "Describe the conditions which contribute to the formation of a podzol soil. Explain how soil temperature is influenced by soil texture. Name one other characteristic of a soil that could affect its temperature.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "1. Describe the conditions which contribute to the formation of a podzol soil. Explain how soil temperature is influenced by soil texture. Name one other characteristic of a soil that could affect its temperature.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the conditions which contribute to the formation of a podzol soil.",
+            "solution": [
+              "Podzols are formed in cold climates, underlain by granite or basalt. They form as a result of repeated cycles of freeze-thaw and weathering of bedrock."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain how soil temperature is influenced by soil texture.",
+            "solution": [
+              "Soil texture influences soil temperature through its ability to retain heat. Fine-textured soils hold more heat than coarse-textured soils due to their smaller particle size and higher surface area."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name one other characteristic of a soil that could affect its temperature.",
+            "solution": [
+              "Soil moisture content can also influence soil temperature. Wet soils retain more heat than dry soils due to their higher water content."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Explain the difference between a cation and a colloid. (ii) Explain the terms cation exchange and cation exchange capacity (CEC). (iii) How may the CEC of a soil be increased?",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the difference between a cation and a colloid.",
+            "solution": [
+              "A cation is a positively charged ion, while a colloid is a mixture of two substances in which one substance is dispersed as fine particles throughout the other."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the terms cation exchange and cation exchange capacity (CEC).",
+            "solution": [
+              "Cation exchange refers to the movement of cations from the soil matrix onto the surfaces of soil particles. CEC is a measure of a soil's ability to hold positively charged ions."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "How may the CEC of a soil be increased?",
+            "solution": [
+              "The CEC of a soil can be increased by adding organic matter, which adsorbs cations, or by using amendments like calcium and magnesium to increase the negatively charged sites on soil particles."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to investigate cation exchange in a soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "Discuss in detail the following points in relation to a dairy enterprise: (i) Management of calving. (ii) Environmental conditions in the first three days after birth. (iii) Feeding principles in the first three days after birth. (b) Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings: (i) Management. (ii) Feeding principles required for optimum growth. (c) (i) What is the expected liveweight of dairy calves at first housing? (ii) Explain why most beef animals are slaughtered at two years of age.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Discuss in detail the following points in relation to a dairy enterprise: (i) Management of calving. (ii) Environmental conditions in the first three days after birth. (iii) Feeding principles in the first three days after birth.",
+        "solution": [
+          "Management of calving involves proper breeding, nutrition, and care during pregnancy and labor to ensure healthy births. This includes regular check-ups, providing adequate nutrition, and monitoring for any complications.",
+          "Environmental conditions in the first three days after birth are critical for a calf's survival and development. Proper warmth, hygiene, and comfort can prevent infections and improve growth rates."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Management of calving.",
+            "solution": [
+              "Proper breeding practices are crucial for dairy enterprises. Ensuring that cows receive adequate nutrition and care during pregnancy helps in producing healthy offspring."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Environmental conditions in the first three days after birth.",
+            "solution": [
+              "Calfs need proper warmth to maintain body temperature. This can be achieved through heat lamps, warm bedding, or mother-calf bonding.",
+              "Hygiene is essential to prevent infections. Regular cleaning of the calf's environment and keeping it clean helps in reducing the risk of diseases."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Feeding principles in the first three days after birth.",
+            "solution": [
+              "Calfs require colostrum within the first 24 hours to build their immune system and provide necessary nutrients."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings: (i) Management. (ii) Feeding principles required for optimum growth.",
+        "solution": [
+          "Management during this period involves proper care and attention to ensure optimal development. This includes regular check-ups, provision of clean environment, and maintaining a consistent routine."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Management.",
+            "solution": [
+              "Proper management ensures that calves receive the necessary care and attention to grow healthy. This includes providing clean environment, regular vaccinations, and maintaining a consistent routine."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Feeding principles required for optimum growth.",
+            "solution": [
+              "Calves require balanced feeding during this period to ensure proper growth. This includes providing adequate amounts of high-quality feed, water, and vitamins."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) What is the expected liveweight of dairy calves at first housing? (ii) Explain why most beef animals are slaughtered at two years of age.",
+        "solution": [
+          "The expected liveweight of dairy calves at first housing varies depending on breed and individual growth. Generally, it ranges from 100 to 200 kg.",
+          "Most beef animals are slaughtered at two years of age because this is the optimal time for their meat quality and yield. The meat produced during this period is considered tender and flavorful."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is the expected liveweight of dairy calves at first housing?",
+            "solution": [
+              "The expected liveweight of dairy calves at first housing ranges from 100 to 200 kg."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain why most beef animals are slaughtered at two years of age.",
+            "solution": [
+              "Most beef animals are slaughtered at two years of age because this is the optimal time for their meat quality and yield. The meat produced during this period is considered tender and flavorful."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "Laboratory or field method identification",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To determine the percentage mineral ash in a sample of freshly cut grass. Explain why this is a laboratory method.",
+        "solution": [
+          "This involves performing chemical analysis in a laboratory to measure the mineral content in a grass sample."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "To assess the effects of overgrazing on the botanical composition of a pasture sward. Explain why this is a field method.",
+        "solution": [
+          "This requires observing and recording data in an outdoor setting, assessing plant species and their distribution."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "To examine the effect on yield of growing different varieties of a named crop. Explain why this is a laboratory method.",
+        "solution": [
+          "This involves comparing plant yields from different crop varieties in a controlled environment."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "To show the presence of micro-organisms in an animal foodstuff. Explain why this is a laboratory method.",
+        "solution": [
+          "This requires isolating and identifying micro-organisms using specialized laboratory equipment."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term polyoestrous and provide the length of the oestrous cycle in sheep. Explain the connection between day length and the breeding season in sheep.",
+        "solution": [
+          "Polyoestrous means that a female animal has multiple estrous cycles (heat periods) in one breeding season."
+        ],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the underlined term polyoestrous and provide the length of the oestrous cycle in sheep.",
+            "solution": [
+              "Polyoestrous means that a female animal has multiple estrous cycles (heat periods) in one breeding season."
+            ],
+            "skip": true,
+            "subparts": []
+          },
+          {
+            "id": "ii",
+            "text": "Explain the connection between day length and the breeding season in sheep.",
+            "solution": [
+              "The breeding season in sheep is influenced by changes in day length. As days get longer, the hormone levels change, leading to estrous cycles."
+            ],
+            "skip": true,
+            "subparts": []
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Draw a large labelled diagram of the reproductive system of a ewe and label four parts.",
+        "solution": [],
+        "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Describe the key steps involved in ‘breeding out of season’ to produce lambs for the early spring market.",
+        "solution": [
+          "Breeding out of season involves synchronizing the estrous cycles of ewes to ensure they are ready to be bred at a specific time of year, typically for the spring market. This can be achieved through various methods such as artificial insemination (AI) and timed breeding."
+        ],
+        "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Outline four reasons for culling ewes.",
+        "solution": [
+          "Culling ewes is necessary to maintain the health and productivity of the flock. Reasons for culling include: 1) Reproductive failure; 2) Age-related decline in fertility and milk production; 3) Poor health or conformation that makes them unsuitable for breeding; 4) Disease resistance."
+        ],
+        "skip": true,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "List and explain four factors a farmer should take into consideration when deciding how much fertiliser to apply to a crop.",
+        "solution": [
+          "Soil type",
+          "pH levels",
+          "Previous cropping history",
+          "Weather conditions"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Other than fertilisers, list and explain four additional factors that would influence the yield of a crop at harvest.",
+        "solution": [
+          "Water availability",
+          "Pest infestations",
+          "Disease outbreaks",
+          "Soil moisture"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "i",
+        "text": "What is meant by the term transpiration?",
+        "solution": [
+          "The process by which water moves through a plant and evaporates from aerial parts, mainly leaves, into the atmosphere"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "ii",
+        "text": "Describe how any three environmental factors affect the rate of transpiration in a plant.",
+        "solution": [
+          "Temperature",
+          "Humidity",
+          "Wind speed"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i-1",
+            "text": "",
+            "solution": [
+              "Higher temperatures increase evaporation, thus increasing transpiration rate"
+            ],
+            "skip": false
+          },
+          {
+            "id": "i-2",
+            "text": "",
+            "solution": [
+              "Increased humidity reduces the rate of transpiration as it makes the air closer to saturation point"
+            ],
+            "skip": false
+          },
+          {
+            "id": "i-3",
+            "text": "",
+            "solution": [
+              "Higher wind speeds increase the rate of transpiration by accelerating water loss from aerial parts of plant"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "Give scientific explanations for any four of the following: (a) The formation of rancid silage. (b) Spreading slurry at least seven weeks before cutting grass for silage. (c) Retention and conservation of hedgerows on a farm. (d) The testing of milk by dairies. (e) Using a burdizzo in beef rearing enterprises.",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the formation of rancid silage.",
+        "solution": [
+          "Rancid silage is formed when microorganisms break down fats and oils in silage, leading to an unpleasant odor. This process occurs due to the presence of specific bacteria that thrive under anaerobic conditions and produce volatile fatty acids, which give the silage a foul smell."
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Spreading slurry at least seven weeks before cutting grass for silage.",
+        "solution": [
+          "Spreading slurry before cutting grass is essential to prevent soil compaction and ensure proper growth. By spreading the slurry at least seven weeks before cutting, it allows time for the nutrients to be absorbed into the soil, promoting a healthier and more productive grass stand."
+        ],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Retention and conservation of hedgerows on a farm.",
+        "solution": [
+          "Hedgerows are important for providing habitat for wildlife, improving soil structure, and reducing erosion. By retaining and conserving hedgerows on a farm, landowners can enhance biodiversity, maintain soil health, and reduce the need for synthetic inputs like pesticides and fertilizers."
+        ],
+        "skip": true
+      },
+      {
+        "id": "d",
+        "text": "The testing of milk by dairies.",
+        "solution": [
+          "Milk is tested in dairies to ensure it meets safety standards. This includes checking for bacterial contamination, fat content, and pH levels. Proper testing helps maintain the quality and health of the milk supply."
+        ],
+        "skip": true
+      }
+    ]
+  }
+]
