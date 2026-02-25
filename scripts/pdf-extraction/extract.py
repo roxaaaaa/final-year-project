@@ -218,11 +218,14 @@ def write_questions_to_json(questions: List[Dict], out_path: str):
         json.dump(questions, fh, indent=2, ensure_ascii=False)
     
 if __name__ == "__main__":
-    range_higher = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+    range_higher = [ 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
     for i in range_higher:
         json_file_solution = f"solutions_{i}_higher.json"
         pdf_path = os.path.join(higher_pdf_path, f"solutions_{i}_higher.pdf")
         filtered_solutions = filter_solutions_by_question_number(os.path.join(project_dir, "data", "unstructured", f"questions_{i}_higher.json"), os.path.join(project_dir, "data", "unstructured", json_file_solution))
+        output_path_filtered = os.path.join(project_dir, "data", "unstructured", json_file_solution)
+        write_questions_to_json(filtered_solutions, output_path_filtered)
+        logger.info(f"From {pdf_path} filtered {len(filtered_solutions)} solutions matching question numbers from questions_{i}_higher.json")
         
     #     output_path_solutions = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json")
     #     write_questions_to_json(filtered_solutions, output_path_solutions)
