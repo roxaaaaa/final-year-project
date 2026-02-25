@@ -49,19 +49,7 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Haploid",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Homozygous",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Locus",
+            "text": "Haploid (ii) Homozygous (iii) Locus.",
             "solution": [],
             "skip": false
           }
@@ -81,19 +69,15 @@
           },
           {
             "id": "ii",
-            "text": "Copy and complete the following in your book to show the cross between the Alpha and Beta varieties of barley.",
-            "solution": [
-              "Parents: Pure‐breeding Alpha X Pure‐breeding Beta\nGenotypes of parents: (AA) X (BB)\nGametes: (A) X (B)\nGenotype of offspring: (AB)\nPhenotype of hybrid offspring: _____________________"
-            ],
-            "skip": false
+            "text": "Copy and complete the following in your book to show the cross between the Alpha and Beta varieties of barley. Parents: Pure‐breeding Alpha X Pure‐breeding Beta Genotypes of parents: ( ) X ( ) Gametes: ( ) X ( ) Genotype of offspring: ( ) Phenotype of hybrid offspring: _____________________",
+            "solution": [],
+            "skip": true
           },
           {
             "id": "iii",
-            "text": "The hybrid plants were allowed to self‐pollinate and the resulting seeds were sown. Copy and complete the following in your book, using the above hybrids as parents.",
-            "solution": [
-              "Genotype of parents: (AB) X (AB)\nGametes: (A) (B) X (A) (B)\nGenotypes of offspring: (AA), (AB), (BB)\nPhenotypes of offspring: ________________ _________________ _________________"
-            ],
-            "skip": false
+            "text": "The hybrid plants were allowed to self‐pollinate and the resulting seeds were sown. Copy and complete the following in your book, using the above hybrids as parents. Genotype of parents: ( ) X ( ) Gametes: ( ) ( ) X ( ) ( ) Genotypes of offspring: ( ) ( ) ( ) Phenotypes of offspring: ________________ _________________ _________________",
+            "solution": [],
+            "skip": true
           }
         ]
       },
@@ -126,35 +110,9 @@
     "parts": [
       {
         "id": "a",
-        "text": "Explain how an iron pan is formed in a soil.",
+        "text": "(i) Explain how an iron pan is formed in a soil.\n(ii) What are the effects of an iron pan in a soil?\n(iii) Name the soil group in which an iron pan is most likely to form.\n(iv) How can an iron pan in a soil be removed?",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "b",
@@ -229,27 +187,13 @@
       },
       {
         "id": "x",
-        "text": "(ii) Name the structures labelled X.",
+        "text": "Name the structures labelled X.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Structure one:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Structure two:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
-        "id": "iii",
-        "text": "(iii) State two functions of X.",
+        "id": "xi",
+        "text": "State two functions of X.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -268,8 +212,8 @@
         ]
       },
       {
-        "id": "iv",
-        "text": "(iv) Name a plant that has a modified stem.",
+        "id": "xii",
+        "text": "Name a plant that has a modified stem.",
         "solution": [],
         "skip": false
       },
@@ -290,7 +234,51 @@
         "id": "a",
         "text": "(i) What component of milk is represented by the part labelled A? (ii) What is colostrum? (iii) Give two ways a farmer could improve the quality of the milk from his herd. (iv) Why is the milk from a cow treated for mastitis not allowed into the human food supply? (v) Give one reasons for culling cows on a dairy farm. (vi) What is meant by the term dual purpose breed? (vii) Give one example of a dual purpose breed.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) What component of milk is represented by the part labelled A?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) What is colostrum?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Give two ways a farmer could improve the quality of the milk from his herd.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Why is the milk from a cow treated for mastitis not allowed into the human food supply?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "(v) Give one reasons for culling cows on a dairy farm.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "vi",
+            "text": "(vi) What is meant by the term dual purpose breed?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "vii",
+            "text": "(vii) Give one example of a dual purpose breed.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
@@ -300,37 +288,37 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Soil type",
+            "text": "(i) Soil type",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Sowing time",
+            "text": "(ii) Sowing time",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Sowing method",
+            "text": "(iii) Sowing method",
             "solution": [],
             "skip": false
           },
           {
             "id": "iv",
-            "text": "Weed control",
+            "text": "(iv) Weed control",
             "solution": [],
             "skip": false
           },
           {
             "id": "v",
-            "text": "Disease control",
+            "text": "(v) Disease control",
             "solution": [],
             "skip": false
           },
           {
             "id": "vi",
-            "text": "Harvesting",
+            "text": "(vi) Harvesting",
             "solution": [],
             "skip": false
           }
@@ -340,7 +328,21 @@
         "id": "c",
         "text": "(i) What is meant by the term pollution? (ii) In each of the following state two ways that a farmer can reduce the risk of causing pollution: 1. When making silage 2. On a dairy farm 3. When spreading artificial fertiliser 4. When using insecticides or fungicides.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) What is meant by the term pollution?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) In each of the following state two ways that a farmer can reduce the risk of causing pollution:",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "d",
@@ -350,31 +352,31 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Housing",
+            "text": "(i) Housing",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Diet",
+            "text": "(ii) Diet",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Control of disease and parasites",
+            "text": "(iii) Control of disease and parasites",
             "solution": [],
             "skip": false
           },
           {
             "id": "iv",
-            "text": "Target weight at turnout",
+            "text": "(iv) Target weight at turnout",
             "solution": [],
             "skip": false
           },
           {
             "id": "v",
-            "text": "Compensatory growth",
+            "text": "(v) Compensatory growth",
             "solution": [],
             "skip": false
           }

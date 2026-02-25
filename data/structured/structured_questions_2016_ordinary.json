@@ -69,35 +69,9 @@
       },
       {
         "id": "c",
-        "text": "State a reason for each of the following practices when growing barley. (i) Providing “tramlines”. _____________________________________________________________________________ (ii) Using a combine drill. (iii) Rolling. (iv) Harvesting when weather is dry.",
+        "text": "State a reason for each of the following practices when growing barley. (i) Providing “tramlines”. _____________________________________________________________________________ (ii) Using a combine drill. _____________________________________________________________________________ (iii) Rolling. _____________________________________________________________________________ (iv) Harvesting when weather is dry.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "_____________________________________________________________________________",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "_____________________________________________________________________________",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "_____________________________________________________________________________",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "_____________________________________________________________________________",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },
@@ -292,77 +266,35 @@
         "id": "a",
         "text": "(i) Name two of the most common lowland breeds of sheep farmed in Ireland.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "b",
         "text": "(i) Name two breeds of pig used in pig production in Ireland.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "c",
         "text": "(i) Outline the precautions taken to reduce calf deaths at calving time on a dairy farm.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "d",
-        "text": "(i) Describe two management practices which would result in the production of clean milk in the milking parlour.",
+        "text": "(i) What happens to carbon dioxide during photosynthesis in green plants?",
         "solution": [],
         "skip": false,
         "subparts": [
           {
-            "id": "i",
-            "text": "",
+            "id": "ii",
+            "text": "Name the major pigment needed by plants for photosynthesis.",
             "solution": [],
             "skip": false
           },
           {
-            "id": "ii",
-            "text": "",
+            "id": "iii",
+            "text": "Describe, with the aid of a labelled diagram, a laboratory experiment to show that carbon dioxide is needed for photosynthesis.",
             "solution": [],
             "skip": false
           }

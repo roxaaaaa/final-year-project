@@ -218,26 +218,21 @@ def write_questions_to_json(questions: List[Dict], out_path: str):
         json.dump(questions, fh, indent=2, ensure_ascii=False)
     
 if __name__ == "__main__":
-    range_higher = [ 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
-    for i in range_higher:
-        json_file_solution = f"solutions_{i}_higher.json"
-        pdf_path = os.path.join(higher_pdf_path, f"solutions_{i}_higher.pdf")
-        filtered_solutions = filter_solutions_by_question_number(os.path.join(project_dir, "data", "unstructured", f"questions_{i}_higher.json"), os.path.join(project_dir, "data", "unstructured", json_file_solution))
-        output_path_filtered = os.path.join(project_dir, "data", "unstructured", json_file_solution)
-        write_questions_to_json(filtered_solutions, output_path_filtered)
-        logger.info(f"From {pdf_path} filtered {len(filtered_solutions)} solutions matching question numbers from questions_{i}_higher.json")
-        
-    #     output_path_solutions = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json")
-    #     write_questions_to_json(filtered_solutions, output_path_solutions)
-    #     logger.info(f"From {pdf_path} extracted {len(filtered_solutions)} filtered solutions to {output_path_solutions}")
+    pdf_path = os.path.join(higher_pdf_path, f"2025.pdf")
+    solutions = extract_text_from_pdf(pdf_path, is_solution=True)
+    write_questions_to_json(solutions, os.path.join(project_dir, "data", "unstructured", f"solutions_2025_higher.json"))
+    
+    pdf_path1 = os.path.join(higher_pdf_path, f"paper_2025.pdf")
+    questions = extract_text_from_pdf(pdf_path1, is_solution=False)
+    write_questions_to_json(questions, os.path.join(project_dir, "data", "unstructured", f"questions_2025_higher.json"))
 
-    # for i in range_higher:
-    #     pdf_path = os.path.join(higher_pdf_path, f"{i}.pdf")
-    #     solutions = extract_text_from_pdf(pdf_path, is_solution=True)
-    #     write_questions_to_json(solutions, os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json"))
-    # range_ordinary = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024]
+    # Filter solutions to only include those matching the question numbers
+    filtered_solutions = filter_solutions_by_question_number(
+        os.path.join(project_dir, "data", "unstructured", f"solutions_2025_higher.json"),
+        os.path.join(project_dir, "data", "unstructured", f"questions_2025_higher.json")
+    )
+    write_questions_to_json(filtered_solutions, os.path.join(project_dir, "data", "unstructured", f"solutions_2025_higher.json"))
 
- 
 # def extract_topic(text):
 #     text = text.lower()
 #     for topic, keywords in TOPIC_KEYWORDS.items():

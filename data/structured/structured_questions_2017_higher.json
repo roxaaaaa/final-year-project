@@ -6,147 +6,175 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Name two species that might be included in a seed mixture in a short-term ley for silage.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "a",
-        "text": "(ii) Give a reason for each choice.",
+        "text": "(i) Name two species that might be included in a seed mixture in a short‐term ley for silage.",
         "solution": [],
         "skip": false
       },
       {
         "id": "b",
+        "text": "(ii) Give a reason for each choice.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "c",
         "text": "(i) Explain the term biological control.",
         "solution": [],
         "skip": false
       },
       {
-        "id": "b",
-        "text": "(ii) Give two examples of biological control in agriculture, horticulture, or forestry.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "c",
-        "text": "(i) Give two structural differences between monocotyledonous (monocot) plants and dicotyledonous (dicot) plants.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "c",
-        "text": "(ii) Give one example of a monocot plant and one example of a dicot plant.",
-        "solution": [],
-        "skip": false
-      },
-      {
         "id": "d",
-        "text": "Classify each of the following rock types based on how they are formed:",
+        "text": "(ii) Give two examples of biological control in agriculture, horticulture, or forestry.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "(i) Marble",
+            "text": "",
             "solution": [],
-            "skip": false
+            "skip": true
           },
           {
             "id": "ii",
-            "text": "(ii) Granite",
+            "text": "",
             "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Basalt",
-            "solution": [],
-            "skip": false
+            "skip": true
           }
         ]
       },
       {
         "id": "e",
-        "text": "List three factors that determine the amount of protein required in an animal ration.",
+        "text": "(i) Give two structural differences between monocotyledonous (monocot) plants and dicotyledonous (dicot) plants.",
         "solution": [],
         "skip": false
       },
       {
         "id": "f",
-        "text": "Outline three ways in which the structure of the leaf is suited to photosynthesis.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "g",
-        "text": "Give the dental formula of each of the following animals:",
+        "text": "(ii) Give one example of a monocot plant and one example of a dicot plant.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "(i) Sheep",
+            "text": "",
             "solution": [],
-            "skip": false
+            "skip": true
           },
           {
             "id": "ii",
-            "text": "(ii) Pig",
+            "text": "",
             "solution": [],
-            "skip": false
+            "skip": true
           }
         ]
       },
       {
-        "id": "h",
-        "text": "(i) Name the nitrogen-fixing bacteria found in the root nodules of legumes such as clover.",
+        "id": "g",
+        "text": "(i) Classify each of the following rock types based on how they are formed: (i) Marble (ii) Granite (iii) Basalt.",
         "solution": [],
         "skip": false
       },
       {
         "id": "h",
-        "text": "(ii) Name two legumes other than clover.",
+        "text": "(i) List three factors that determine the amount of protein required in an animal ration.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
       },
       {
         "id": "i",
+        "text": "(ii) Outline three ways in which the structure of the leaf is suited to photosynthesis.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "j",
+        "text": "(i) Give the dental formula of each of the following animals: (i) Sheep (ii) Pig.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "k",
+        "text": "(ii) Name the nitrogen‐fixing bacteria found in the root nodules of legumes such as clover.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "l",
+        "text": "(iii) Name two legumes other than clover.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "m",
         "text": "(i) Explain the term body condition score (BCS).",
         "solution": [],
         "skip": false
       },
       {
-        "id": "i",
+        "id": "n",
         "text": "(ii) Give the correct BCS for a dairy cow - Before calving - At mating time.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "j",
-        "text": "Describe one function of each of the following mammalian reproductive hormones:",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "(i) FSH",
+            "text": "",
             "solution": [],
-            "skip": false
+            "skip": true
           },
           {
             "id": "ii",
-            "text": "(ii) Progesterone",
+            "text": "",
             "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Testosterone",
-            "solution": [],
-            "skip": false
+            "skip": true
           }
         ]
+      },
+      {
+        "id": "o",
+        "text": "(i) Describe one function of each of the following mammalian reproductive hormones: (i) FSH (ii) Progesterone (iii) Testosterone.",
+        "solution": [],
+        "skip": false
       }
     ]
   },
@@ -452,7 +480,27 @@
         "id": "b",
         "text": "Explain the following concepts in genetics and give an appropriate example in each case. (i) Incomplete dominance (ii) Alleles (iii) Continuous variation.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Incomplete dominance.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Alleles.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Continuous variation.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",

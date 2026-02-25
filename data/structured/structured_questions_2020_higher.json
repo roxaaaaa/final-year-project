@@ -30,43 +30,43 @@
       },
       {
         "id": "e",
-        "text": "Outline three reasons for the practice of thinning forestry trees.",
+        "text": "(i) Outline three reasons for the practice of thinning forestry trees.",
         "solution": [],
         "skip": false
       },
       {
         "id": "f",
-        "text": "Draw a labelled diagram to show the arrangement of the vascular tissues in a dicotyledonous (dicot) root.",
+        "text": "(i) Draw a labelled diagram to show the arrangement of the vascular tissues in a dicotyledonous (dicot) root.",
         "solution": [],
         "skip": true
       },
       {
         "id": "g",
-        "text": "State the location in the mammalian body of each of the following parts: (i) Humerus (ii) Pituitary gland (iii) Bowman’s capsule (iv) Cervix.",
+        "text": "(ii) State the location in the mammalian body of each of the following parts: \n(i) Humerus\n(ii) Pituitary gland\n(iii) Bowman’s capsule\n(iv) Cervix.",
         "solution": [],
         "skip": false
       },
       {
         "id": "h",
-        "text": "Explain each of the following terms: (i) Dagging (ii) Tagging.",
+        "text": "(i) Explain each of the following terms:\n(i) Dagging\n(ii) Tagging.",
         "solution": [],
         "skip": false
       },
       {
         "id": "i",
-        "text": "Describe how the structure of the grass flower is suited to wind pollination.",
+        "text": "(ii) Describe how the structure of the grass flower is suited to wind pollination.",
         "solution": [],
         "skip": false
       },
       {
         "id": "j",
-        "text": "State the length of gestation, in days, for each of the following farm animals: (i) Cow (ii) Sheep (iii) Pig.",
+        "text": "(i) State the length of gestation, in days, for each of the following farm animals:\n(i) Cow\n(ii) Sheep\n(iii) Pig.",
         "solution": [],
         "skip": false
       },
       {
         "id": "k",
-        "text": "(i) Classify each of the following into a principal rock type: (i) Slate (ii) Granite (iii) Limestone.",
+        "text": "(i) Classify each of the following into a principal rock type:\n(i) Slate\n(ii) Granite\n(iii) Limestone.",
         "solution": [],
         "skip": false
       },
@@ -156,67 +156,15 @@
       },
       {
         "id": "b",
-        "text": "Discussion of any four aspects of flock preparation prior to mating.",
+        "text": "Preparation at breeding time is an important aspect of good flock management. Discuss any four aspects of flock preparation prior to mating.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Aspect one:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Aspect two:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Aspect three:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "Aspect four:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "c",
-        "text": "Description of any four methods to control named parasites in sheep.",
+        "text": "Control of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Method one:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Method two:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Method three:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "Method four:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },
@@ -258,7 +206,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "The dry period is of great importance to the overall performance of the dairy cow. (i) Outline two reasons for the importance of the dry period. (ii) Describe two features of the management of the dairy cow during the dry period.",
+        "text": "The dry period is of great importance to the overall performance of the dairy cow.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -278,7 +226,7 @@
       },
       {
         "id": "b",
-        "text": "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd. (i) Describe any two methods of heat detection. (ii) Give two advantages of the use of AI in the dairy herd.",
+        "text": "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -304,15 +252,9 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Describe any two tests carried out on milk to determine hygiene quality.",
+            "text": "",
             "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Describe any two tests carried out on milk to determine composition.",
-            "solution": [],
-            "skip": false
+            "skip": true
           }
         ]
       }
@@ -320,29 +262,23 @@
   },
   {
     "question_num": "6",
-    "context": "",
+    "context": "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass:",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass: (i) Describe the stages involved in seed bed preparation. (ii) Describe how the seed is sown. (iii) Explain the benefit of this cultivation method in a loam soil.",
+        "text": "Describe the stages involved in seed bed preparation.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Describe the stages involved in seed bed preparation.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
             "text": "Describe how the seed is sown.",
             "solution": [],
             "skip": false
           },
           {
-            "id": "iii",
+            "id": "ii",
             "text": "Explain the benefit of this cultivation method in a loam soil.",
             "solution": [],
             "skip": false
@@ -351,18 +287,12 @@
       },
       {
         "id": "b",
-        "text": "Paddock grazing may be described as being of great benefit to agriculture but of less benefit to the environment. (i) Give two benefits of paddock grazing in livestock production. (ii) Explain two ways in which paddock grazing may be harmful to the environment.",
+        "text": "Paddock grazing may be described as being of great benefit to agriculture but of less benefit to the environment. Describe two benefits of paddock grazing in livestock production.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Give two benefits of paddock grazing in livestock production.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
             "text": "Explain two ways in which paddock grazing may be harmful to the environment.",
             "solution": [],
             "skip": false
@@ -402,7 +332,7 @@
           },
           {
             "id": "ii",
-            "text": "Outline the process of crossing-over which occurs during meiosis and explain its significance.",
+            "text": "Outline the process of crossing‐over which occurs during meiosis and explain its significance.",
             "solution": [],
             "skip": false
           }
@@ -437,19 +367,31 @@
     "parts": [
       {
         "id": "a",
-        "text": "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions.",
+        "text": "any two of the parts (a), (b), (c).",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "(i) Use a labelled diagram to illustrate the carbon cycle.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "(ii) With reference to the carbon cycle, suggest two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Use a labelled diagram to illustrate the carbon cycle.",
+            "text": "",
             "solution": [],
             "skip": true
           },
           {
             "id": "ii",
-            "text": "With reference to the carbon cycle, suggest two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
+            "text": "",
             "solution": [],
             "skip": false
           }
@@ -457,35 +399,61 @@
       },
       {
         "id": "b",
-        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics.",
+        "text": "(iii) Suggest a method of disease control other than using antibiotics.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "(i) Name two common bacterial diseases of farm animals, which are treated with antibiotics.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Name two common bacterial diseases of farm animals, which are treated with antibiotics.",
+            "text": "",
             "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Outline how antibiotic resistance develops in bacteria.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Suggest a method of disease control other than using antibiotics.",
-            "solution": [],
-            "skip": false
+            "skip": true
           }
         ]
       },
       {
         "id": "c",
-        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Ruminant and monogastric digestive systems (ii) Transpiration and translocation (iii) Saturated flow and unsaturated flow in soils (iv) Hypogeal germination and epigeal germination.",
+        "text": "(ii) Outline how antibiotic resistance develops in bacteria.",
         "solution": [],
-        "skip": false
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "(iii) Suggest a method of disease control other than using antibiotics.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "(iv) Distinguish clearly between the members of any three of the following pairs of terms: (i) Ruminant and monogastric digestive systems (ii) Transpiration and translocation (iii) Saturated flow and unsaturated flow in soils (iv) Hypogeal germination and epigeal germination.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
       }
     ]
   },

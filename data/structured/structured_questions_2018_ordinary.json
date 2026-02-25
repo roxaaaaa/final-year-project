@@ -159,59 +159,45 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Name two varieties of maincrop potatoes.\n(ii) Describe the growing of potatoes under the following headings: 1. Soil preparation\n2. Fertiliser use\n3. Weed control\n4. Potato blight control.",
+        "text": "(i) Name two varieties of maincrop potatoes.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe the growing of potatoes under the following headings: 1. Soil preparation 2. Fertiliser use 3. Weed control 4. Potato blight control.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Name two varieties of maincrop potatoes.",
+            "text": "Soil preparation:",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Describe the growing of potatoes under the following headings:\n1. Soil preparation\n2. Fertiliser use\n3. Weed control\n4. Potato blight control.",
+            "text": "Fertiliser use:",
             "solution": [],
-            "skip": false,
-            "subparts": [
-              {
-                "id": "i",
-                "text": "Soil preparation:",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "ii",
-                "text": "Fertiliser use:",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "iii",
-                "text": "Weed control:",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "iv",
-                "text": "Potato blight control:",
-                "solution": [],
-                "skip": false
-              }
-            ]
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Weed control:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Potato blight control:",
+            "solution": [],
+            "skip": false
           }
         ]
       },
       {
-        "id": "b",
-        "text": "State three reasons why farmers would use certified seed potatoes.",
-        "solution": [],
-        "skip": false
-      },
-      {
         "id": "c",
-        "text": "Describe an experiment to estimate the yield of a potato crop prior to harvesting.",
+        "text": "State three reasons why farmers would use certified seed potatoes.",
         "solution": [],
         "skip": false
       }
@@ -220,59 +206,19 @@
   {
     "question_num": "12",
     "context": "",
-    "skip": false,
+    "skip": true,
     "parts": [
       {
         "id": "a",
         "text": "(i) Draw a labelled diagram of a paddock grazing system. (ii) State one advantage of a paddock grazing system. (iii) State one disadvantage of a paddock grazing system.",
         "solution": [],
-        "skip": true,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": true
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": true
       },
       {
         "id": "b",
         "text": "Describe three steps involved in making good quality hay, and give the reason for each step.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "c",
@@ -284,27 +230,7 @@
         "id": "d",
         "text": "List three simple tests a farmer can carry out to determine the quality of silage, and state the purpose of each test.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },
@@ -315,7 +241,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Name two lowland sheep breeds. (ii) Explain each of the following terms and state why each procedure is carried out on sheep farms.",
+        "text": "(i) Name two lowland sheep breeds.\n(ii) Explain each of the following terms and state why each procedure is carried out on sheep farms. 1. Flushing 2. Scanning 3. Steaming up 4. Vaccination 5. Creep feeding 6. Shearing.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -329,13 +255,51 @@
             "id": "ii",
             "text": "(ii) Explain each of the following terms and state why each procedure is carried out on sheep farms. 1. Flushing 2. Scanning 3. Steaming up 4. Vaccination 5. Creep feeding 6. Shearing.",
             "solution": [],
-            "skip": false
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "1. Flushing:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "2. Scanning:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iii",
+                "text": "3. Steaming up:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iv",
+                "text": "4. Vaccination:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "v",
+                "text": "5. Creep feeding:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "vi",
+                "text": "6. Shearing:",
+                "solution": [],
+                "skip": false
+              }
+            ]
           }
         ]
       },
       {
         "id": "b",
-        "text": "(i) Name the gas collected in the test tube. (ii) Name two factors necessary for photosynthesis. (iii) How does photosynthesis help to reduce the problem of climate change? (iv) Starch is stored in leaves as a result of photosynthesis. Describe how to test a leaf for the presence of starch.",
+        "text": "(i) Name the gas collected in the test tube.\n(ii) Name two factors necessary for photosynthesis.\n(iii) How does photosynthesis help to reduce the problem of climate change?\n(iv) Starch is stored in leaves as a result of photosynthesis. Describe how to test a leaf for the presence of starch.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -367,7 +331,7 @@
       },
       {
         "id": "c",
-        "text": "(i) Care at birth (ii) Housing (iii) Disease prevention (iv) Introducing hay into their diet (v) Use of milk replacer.",
+        "text": "(i) Care at birth\n(ii) Housing\n(iii) Disease prevention\n(iv) Introducing hay into their diet\n(v) Use of milk replacer.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -397,7 +361,7 @@
           },
           {
             "id": "v",
-            "text": "(v) Use of milk replacer.",
+            "text": "(v) Use of milk replacer",
             "solution": [],
             "skip": false
           }
@@ -405,7 +369,7 @@
       },
       {
         "id": "d",
-        "text": "(i) Draw a labelled diagram of a molar tooth. (ii) State the function of the incisors and of the molars in a farm animal. (iii) Name two other types of tooth found in farm animals. (iv) Give the dental formula for a pig or a sheep.",
+        "text": "(i) Draw a labelled diagram of a molar tooth.\n(ii) State the function of the incisors and of the molars in a farm animal.\n(iii) Name two other types of tooth found in farm animals.\n(iv) Give the dental formula for a pig or a sheep.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -413,7 +377,7 @@
             "id": "i",
             "text": "(i) Draw a labelled diagram of a molar tooth.",
             "solution": [],
-            "skip": false
+            "skip": true
           },
           {
             "id": "ii",

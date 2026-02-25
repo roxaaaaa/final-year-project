@@ -40,7 +40,7 @@
   },
   {
     "question_num": "5",
-    "context": "",
+    "context": "In relation to a catch crop or energy crop you have studied the following questions.",
     "skip": false,
     "parts": [
       {
@@ -51,13 +51,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "",
+            "text": "Way one:",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "",
+            "text": "Way two:",
             "solution": [],
             "skip": false
           }
@@ -97,24 +97,28 @@
       {
         "id": "c",
         "text": "Outline three ways in which farmers can increase biodiversity on their farm.",
-        "solution": [
+        "solution": [],
+        "skip": false,
+        "subparts": [
           {
             "id": "i",
-            "text": "1.",
-            "solution": []
+            "text": "1. ",
+            "solution": [],
+            "skip": false
           },
           {
             "id": "ii",
-            "text": "2.",
-            "solution": []
+            "text": "2. ",
+            "solution": [],
+            "skip": false
           },
           {
             "id": "iii",
-            "text": "3.",
-            "solution": []
+            "text": "3. ",
+            "solution": [],
+            "skip": false
           }
-        ],
-        "skip": false
+        ]
       }
     ]
   },
@@ -131,13 +135,13 @@
       },
       {
         "id": "b",
-        "text": "Calculate the total amount John obtained for tag number 215038714153.",
+        "text": "Calculate the total amount John obtained for tag number 215038714153, including any bonuses.",
         "solution": [],
         "skip": false
       },
       {
         "id": "c",
-        "text": "Calculate which heifers were worth more money to John, the Aberdeen Angus or the Limousine heifers.",
+        "text": "Which heifers were worth more money to John, the Aberdeen Angus or the Limousine heifers?",
         "solution": [],
         "skip": false
       }
@@ -162,13 +166,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "",
+            "text": "Advantage one:",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "",
+            "text": "Advantage two:",
             "solution": [],
             "skip": false
           }
@@ -182,7 +186,7 @@
       },
       {
         "id": "d",
-        "text": "Antibiotic resistance is a consequence of evolution via natural selection. Farmers have a major role to play in reducing the rise in antimicrobial resistance. Discuss one way in which farmers can reduce the need for antibiotic use on their farms.",
+        "text": "Discuss one way in which farmers can reduce the need for antibiotic use on their farms.",
         "solution": [],
         "skip": false
       }
@@ -240,19 +244,19 @@
         "subparts": [
           {
             "id": "i",
-            "text": "(i) Distinguish between the duration of oestrus and the oestrous cycle in cattle.",
+            "text": "(i)",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "(ii) Identify the part of the female reproductive system where ovulation occurs.",
+            "text": "(ii)",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "(iii) Describe two advantages of artificial insemination (AI) in cattle or sheep or pigs.",
+            "text": "(iii)",
             "solution": [],
             "skip": false
           }
@@ -260,42 +264,42 @@
       },
       {
         "id": "b",
-        "text": "(i) Outline two differences between the monogastric and ruminant digestive systems. (ii) Briefly describe a named disorder of the ruminant digestive system under the following headings: Named disorder: Symptoms: Treatment: Prevention:",
+        "text": "(i) Outline two differences between the monogastric and ruminant digestive systems. (ii) Briefly describe a named disorder of the ruminant digestive system under the following headings. Named disorder: Symptoms: Treatment: Prevention:",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "(i) Outline two differences between the monogastric and ruminant digestive systems.",
+            "text": "(i)",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "(ii) Briefly describe a named disorder of the ruminant digestive system under the following headings: Named disorder: Symptoms: Treatment: Prevention:",
+            "text": "(ii)",
             "solution": [],
             "skip": false,
             "subparts": [
               {
-                "id": "I",
+                "id": "i",
                 "text": "Named disorder:",
                 "solution": [],
                 "skip": false
               },
               {
-                "id": "II",
+                "id": "ii",
                 "text": "Symptoms:",
                 "solution": [],
                 "skip": false
               },
               {
-                "id": "III",
+                "id": "iii",
                 "text": "Treatment:",
                 "solution": [],
                 "skip": false
               },
               {
-                "id": "IV",
+                "id": "iv",
                 "text": "Prevention:",
                 "solution": [],
                 "skip": false
@@ -308,7 +312,7 @@
   },
   {
     "question_num": "12",
-    "context": "",
+    "context": "The manager of a 250 sow integrated pig unit was alerted that some of his young bonhams (piglets) were ill. On inspection of the bonhams, he noticed that they were breathing quickly, weak, had a scour and their skin was pale.",
     "skip": false,
     "parts": [
       {
@@ -337,13 +341,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "",
+            "text": "Biosecurity practice one:",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "",
+            "text": "Biosecurity practice two:",
             "solution": [],
             "skip": false
           }
@@ -353,66 +357,58 @@
   },
   {
     "question_num": "13",
-    "context": "(a) Read the article about multi‐species swards and the questions which follow.",
+    "context": "",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "You are asked to address a group of farmers who are thinking about sowing a multi‐species sward on their farm. Providing evidence from the article and with your own knowledge, construct an argument convincing them why it would be good to sow a multi‐species sward on their farm. Your plan should include at least four specific benefits.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "b",
-        "text": "Briefly explain the role of each of the following in the nitrogen cycle.",
+        "text": "Read the article about multi‐species swards and the questions which follow.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Nitrobacter:",
+            "text": "Identify one plant named in the article that can fix atmospheric nitrogen.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Nitrosomonas:",
+            "text": "Outline two management practices farmers could employ to overcome the challenges of growing multi‐species swards.",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Denitrification:",
+            "text": "Name one grazing system that could be applied to a multi‐species sward and outline two advantages of the named grazing system in managing the sward.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "You are asked to address a group of farmers who are thinking about sowing a multi‐species sward on their farm. Providing evidence from the article and with your own knowledge, construct an argument convincing them why it would be good to sow a multi‐species sward on their farm. Your plan should include at least four specific benefits.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Describe an investigation a student could carryout to determine the botanical composition of the multi‐species sward described in the article.",
             "solution": [],
             "skip": false
           }
         ]
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain the role of each of the following in the nitrogen cycle. Nitrobacter: Nitrosomonas: Denitrification:",
+        "solution": [],
+        "skip": false
       },
       {
         "id": "c",
         "text": "Evaluate the impact of three different crop management practices on all animals living in the farms ecosystem.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   }

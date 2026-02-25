@@ -6,7 +6,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "Identify the following breeds from the list",
+        "text": "Identify the following breeds from the list Breed A: Blackface mountain Breed B: Large white Breed C: Saddleback Breed D: Suffolk Breed E: Texel",
         "solution": [
           "Blackface mountain",
           "Large white",
@@ -14,11 +14,12 @@
           "Suffolk",
           "Texel"
         ],
-        "skip": true
+        "skip": false,
+        "subparts": []
       },
       {
         "id": "b",
-        "text": "Identify the following breeds of cattle shown",
+        "text": "(i) Identify the following breeds of cattle shown. Breed A: Limousine Breed B: Charolais Breed C: Hereford Breed D: Aberdeen Angus",
         "solution": [
           "Limousine",
           "Charolais",
@@ -26,14 +27,21 @@
           "Aberdeen Angus"
         ],
         "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "(ii) Beef breeds have a rectangular conformation. Explain the underlined term – The shape of the animal, making reference to structure and appearance",
+        "solution": [],
+        "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Beef breeds have a rectangular conformation. Explain the underlined term – The shape of the animal, making reference to structure and appearance",
+            "text": "The shape of the animal, making reference to structure and appearance",
             "solution": [
-              "The shape refers to the broad and short body type typical of beef breeds."
+              "Rectangular"
             ],
-            "skip": true
+            "skip": false
           }
         ]
       }
@@ -52,20 +60,26 @@
           "Ragwort",
           "Cow parsley"
         ],
-        "skip": false
-      },
-      {
-        "id": "a",
-        "text": "(ii) Outline two ways that farmers can prevent the build up of weeds on their farms Any two valid s: – Use of herbicides – Correct seedbed preparation – Crop rotation – Reseeding pastures – Having crops in fields rather than allow them to lie fallow – Use of certified seeds – **Accept other valid s 2 x 2m = 4m",
-        "solution": [
-          "Use of herbicides",
-          "Correct seedbed preparation"
-        ],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(ii) Outline two ways that farmers can prevent the build up of weeds on their farms Any two valid s:",
+            "solution": [
+              "Use of herbicides",
+              "Correct seedbed preparation",
+              "Crop rotation",
+              "Reseeding pastures",
+              "Having crops in fields rather than allow them to lie fallow",
+              "Use of certified seeds"
+            ],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
-        "text": "Describe with the aid of a labelled diagram how to determine the soil texture of a soil sample by sedimentation. Any four valid points 4 x 2m = 8m 2m for correct labelled diagram 10m in total – Add soil sample to a beaker with water in it and stir using glass rod – Add this suspension to a graduated cylinder – Place a stopper on top of graduated cylinder and shade mixture – Leave for 1-2 days and Observe the layers that form – Record volume of each layer and then calculate the percentage of sand, silt and clay present in sample – Use the soil triangle to identify the type of soil present Diagram should show set up including graduated cylinder/ stirring rod/ soil layers",
+        "text": "Describe with the aid of a labelled diagram how to determine the soil texture of a soil sample by sedimentation. Any four valid points 4 x 2m = 8m 2m for correct labelled diagram 10m in total",
         "solution": [
           "Add soil sample to a beaker with water in it and stir using glass rod",
           "Add this suspension to a graduated cylinder",
@@ -74,7 +88,8 @@
           "Record volume of each layer and then calculate the percentage of sand, silt and clay present in sample",
           "Use the soil triangle to identify the type of soil present"
         ],
-        "skip": true
+        "skip": true,
+        "subparts": []
       }
     ]
   },
@@ -87,16 +102,16 @@
         "id": "a",
         "text": "Complete the sentences below using words from the list.",
         "solution": [],
-        "skip": true
-      },
-      {
-        "id": "i",
-        "text": "(i) Afforestation",
-        "solution": [
-          "Afforestation"
-        ],
         "skip": false,
         "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Afforestation",
+            "solution": [
+              "Afforestation"
+            ],
+            "skip": false
+          },
           {
             "id": "ii",
             "text": "(ii) Eutrophication",
@@ -141,107 +156,14 @@
       {
         "id": "a",
         "text": "Explain why each of the principles are important in optimising soil health",
-        "solution": [
-          "Keep soil covered",
-          "Maintain living root year-round",
-          "Integrate livestock",
-          "Maximise crop diversity",
-          "Minimise soil disturbance"
-        ],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [
-              "Adds to soil health and fertility"
-            ],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [
-              "Adds to biodiversity in soil and on farm"
-            ],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [
-              "Introduces new micro and macro organisms to soil"
-            ],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "",
-            "solution": [
-              "Animal waste adds valuable nutrients to soil, which helps with crop growth"
-            ],
-            "skip": false
-          },
-          {
-            "id": "v",
-            "text": "",
-            "solution": [
-              "Plants and animals have a symbiotic relationship"
-            ],
-            "skip": false
-          }
-        ]
-      },
-      {
-        "id": "b",
-        "text": "",
-        "solution": [
-          "Prevents the build up of weeds and pests",
-          "Reduces soil erosion and run off",
-          "Prevents nutrients being leached from soil every year",
-          "Improved soil structure"
-        ],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [
-              "Adds to biodiversity in soil and on farm"
-            ],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "",
-            "solution": [
-              "Provides food for insects that are present in soil"
-            ],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [
-              "Less harm to earthworms which are needed for drainage and aeration in soil"
-            ],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "",
-            "solution": [
-              "Better crop growth"
-            ],
-            "skip": false
-          }
-        ]
+        "solution": [],
+        "skip": false
       }
     ]
   },
   {
     "question_num": "9",
-    "context": "The pie chart shows the share of Irish exports (€ billion) in 2023.",
+    "context": "",
     "skip": false,
     "parts": [
       {
@@ -262,7 +184,7 @@
       },
       {
         "id": "c",
-        "text": "Prepared Consumer Foods created €3.1 billion for the Irish economy in 2023. Explain why there would be such a demand for these foods. Any one valid reason (2m) – Convenience for customers/ – Good nutrition in food / – Good availability of food in supermarkets/ – Nutritional information provided on package which appeals to consumers/ **Accept other valid reasons",
+        "text": "Prepared Consumer Foods created €3.1 billion for the Irish economy in 2023. Explain why there would be such a demand for these foods Any one valid reason (2m)",
         "solution": [
           "Convenience for customers",
           "Good nutrition in food",
@@ -277,24 +199,13 @@
         "solution": [
           "Quantitative data"
         ],
-        "skip": true,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": true
-          }
-        ]
+        "skip": false
       },
       {
         "id": "e",
         "text": "Is the data presented from a reliable source? Give a reason for your Yes (1m) Any valid reason (1m) − Numerical data shown/ − Scientific terminology used / − Irish Farmers Journal are a reliable source as they employ vets and scientists",
         "solution": [
-          "Yes",
-          "Numerical data shown",
-          "Scientific terminology used",
-          "Irish Farmers Journal are a reliable source as they employ vets and scientists"
+          "Yes"
         ],
         "skip": false
       }
@@ -307,27 +218,22 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) State two consequences of sheep presenting with blowfly.",
+        "text": "Read the following passage and the questions that follow. (i) State two consequences of sheep presenting with blowfly. Any two valid s 2 x 1m = (2m) – skin irritation/ – pain/ – secondary bacterial infections on the sheep/ – increase in veterinary costs for the farmer/ – loss in animal production.",
         "solution": [
           "skin irritation",
-          "pain",
-          "secondary bacterial infections on the sheep",
-          "increase in veterinary costs for the farmer",
-          "loss in animal production"
+          "pain"
         ],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "(ii) Why do blowflies lay eggs on sheep?",
-            "solution": [
-              "fleece acts as a nice incubator for the eggs and larva (maggots) to develop"
-            ],
+            "text": "Why do blowflies lay eggs on sheep? Blowflies lay eggs on sheep as the fleece acts as a nice incubator for the eggs and larva (maggots) to develop",
+            "solution": [],
             "skip": false
           },
           {
-            "id": "iii",
-            "text": "(iii) How could a farmer prevent blowfly strike in their flock?",
+            "id": "ii",
+            "text": "How could a farmer prevent blowfly strike in their flock? Any one valid (2m) – Good hygiene/ – Use of insecticides/ – Shearing sheep/ – Dagging/ – Tail docking/",
             "solution": [
               "Good hygiene",
               "Use of insecticides",
@@ -341,28 +247,41 @@
       },
       {
         "id": "b",
-        "text": "(i) What is genetic modification?",
+        "text": "Distinguish between the underlined terms. 2m for each correct explanation (2 x 2m = 4m) Dagging: the removal of wool around the tail area to prevent the build up of faeces and infection Docking: shortening of the sheep tail to prevent infections",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "i_b",
+        "text": "(b) the following questions on animal genetics (i) What is genetic modification? (2m) Altering an organism's DNA for the purpose of improvement or to correct a defect in the organism.",
         "solution": [
-          "Altering an organism's DNA for the purpose of improvement or to correct a defect in the organism"
+          "Altering an organism's DNA for the purpose of improvement or to correct a defect in the organism."
         ],
         "skip": false,
         "subparts": [
           {
-            "id": "ii",
-            "text": "(ii) List one potential benefit and one potential risk of using genetic modification in animal production.",
+            "id": "ii_b",
+            "text": "(ii) List one potential benefit and one potential risk of using genetic modification in animal production. Benefits – any one valid (2m) – Increased disease resistance/ – Enhanced growth rates and productivity/ – New animal products created / – Increased prolificacy/ – Improved feed conversion efficiency/",
             "solution": [
               "Increased disease resistance",
-              "Enhanced growth rates and productivity"
+              "Enhanced growth rates and productivity",
+              "New animal products created",
+              "Increased prolificacy",
+              "Improved feed conversion efficiency"
             ],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Discuss the ethical issues relating to animal genetics.",
-            "solution": [
-              "Animal welfare"
-            ],
-            "skip": false
+            "skip": false,
+            "subparts": [
+              {
+                "id": "iii_b",
+                "text": "(iii) Discuss the ethical issues relating to animal genetics. Any one valid (4m) – Animal welfare/ – Animal health and spread of disease/ – New strains of disease spreading and affecting animals/",
+                "solution": [
+                  "Animal welfare",
+                  "Animal health and spread of disease",
+                  "New strains of disease spreading and affecting animals"
+                ],
+                "skip": false
+              }
+            ]
           }
         ]
       }
@@ -370,145 +289,136 @@
   },
   {
     "question_num": "11",
-    "context": "Read the following passage from the Irish Farmers Journal and the questions that follow.",
+    "context": "",
     "skip": false,
     "parts": [
       {
         "id": "c",
-        "text": "How might the decrease in strawberry production affect consumers and the market? Any one valid reason (2m) – Increase in cost due to supply issues / – Lack of availability of crop / – Lower revenue for producers/ – Less exports will be available / – accept other valid s",
+        "text": "How might the decrease in strawberry production affect consumers and the market? Any one valid reason (2m)",
         "solution": [
           "Increase in cost due to supply issues",
           "Lack of availability of crop",
           "Lower revenue for producers",
           "Less exports will be available"
         ],
-        "skip": false,
-        "subparts": []
+        "skip": false
       },
       {
         "id": "d",
-        "text": "What are some potential solutions for farmers like Jimmy facing similar weather-related challenges? – Use of greenhouses/ – Artificial light to enhance photosynthesis/ – Temperature regulation in greenhouses – thermostats/",
+        "text": "What are some potential solutions for farmers like Jimmy facing similar weather-related challenges?",
         "solution": [
           "Use of greenhouses",
           "Artificial light to enhance photosynthesis",
           "Temperature regulation in greenhouses",
           "thermostats"
         ],
-        "skip": false,
-        "subparts": []
+        "skip": false
       },
       {
         "id": "e",
-        "text": "Sandy soils are commonly found in southerly counties such as Wexford. Why are sandy soils favourable for crop production? – Large pore space so air and water can move/ – Good aeration/ – Good drainage/ – Root penetration/",
+        "text": "Sandy soils are commonly found in southerly counties such as Wexford. Why are sandy soils favourable for crop production?",
         "solution": [
           "Large pore space so air and water can move",
           "Good aeration",
           "Good drainage",
           "Root penetration"
         ],
-        "skip": false,
-        "subparts": []
+        "skip": false
       }
     ]
   },
   {
     "question_num": "18",
-    "context": "Read the following article published by Teagasc and use the information in it to the questions that follow.",
+    "context": "Read the following article published by Teagasc and use the information in it to answer the questions that follow.",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "What percentage of Ireland’s total agricultural output is made up of beef farming?",
-            "solution": [
-              "25%"
-            ],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "What is the total size of the national breeding herd in Ireland?",
-            "solution": [
-              "6.6 million animals"
-            ],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "In 2020, what percentage of Ireland’s beef production was exported?",
-            "solution": [
-              "90%"
-            ],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "What factors give Ireland a competitive advantage in beef farming?",
-            "solution": [
-              "Ability to produce large quantities of grass for animals"
-            ],
-            "skip": false
-          },
-          {
-            "id": "v",
-            "text": "What was the average suckler income in 2021 and what was a significant source of this income?",
-            "solution": [
-              "€10,927; derived from direct support payments like CAP"
-            ],
-            "skip": false
-          },
-          {
-            "id": "vi",
-            "text": "Explain the underlined terms in the extract above. 4m each (2 x 4m = 8m) Common Agricultural Policy (CAP) – The agricultural policy of the EU/ – Implements a system of subsides and financial supports for farmers – **Accept other appropriate s Sustainability – This means it will last into the future for future generations",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "vii",
-            "text": "Greenhouse gases (GHG) are referred to in the article. Give one example of a Greenhouse gas that affects the environment. Any one valid 2m – Carbon dioxide (CO ) 2 – Methane (CH ) 4 – Nitrous oxide (N O)",
-            "solution": [
-              "Carbon dioxide (CO2); Methane (CH4); Nitrous oxide (N2O)"
-            ],
-            "skip": false
-          },
-          {
-            "id": "viii",
-            "text": "Grass is one of the most popular crops on farms that animals eat and it has many benefits. Outline two of these benefits 2 x 2m = 4m – Grass-based beef production systems are more sustainable as they have a low – Lower carbon footprint. – Distinct flavour of meat. – High CLA have beneficial health effects.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "text": "What percentage of Ireland’s total agricultural output is made up of beef farming?",
+        "solution": [
+          "25%"
+        ],
+        "skip": false
       },
       {
         "id": "b",
-        "text": "",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Beef farmers must carefully select animals with desirable traits to get good produce from these animals. List 3 desirable traits that a beef farmer looks for in animals. Any three traits (3 x 2m = 6m) – Good fertility/ – High milk yields/ – Calving ease/ – Long life span / – High calf survival rates/ – Conformation/ – Good hindquarters/ – Long back/ – Wide torso/ – **Accept other appropriate s",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Good breeding strategies are also needed on beef farms to allow for offspring with desirable traits to be produced. The use of a stock bull and A.I. (artificial insemination) are two methods commonly used by beef farmers. For each method state one advantage and one disadvantage. 2m for each correct advantage and disadvantage (4 x 2m = 8m) Stock bull Advantages Disadvantages • Bull on farm so has easy access to cows • Dangerous • No extra cost to farmer for repeat • Experienced person needed inseminations • Expensive initially to purchase bull • Only one breed can be used on farm • Inbreeding may occur A.I. • Different breeds available • Experienced person needed • High EBI of animals • Heat period may have passed (AM PM rule) • Can improve the genetic performance of herd • AI may not be successful first time • Can choose one for mating with heifers (AA) • Easy calving • Reduces mortality associated with calving • Less labour needed • Cost efficient for small farms",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Outline the management of a beef calf from birth to 6 weeks under the following headings: 4m for each heading (3 x 4m = 12m) Feeding management: – Access to fresh water/ – Colostrum given at birth – up to 2L in forts 3 hours/ – Calf left with mother to get milk/ – Milk replacer may be needed if cow if not producing enough milk initially – **Accept other valid points Housing management: – Housed with mother/ – Straw bedding/ – Adequate space in pens/ – Adequate lighting in shed/ – Well ventilated to prevent infection / Health management: – Spray navel with iodine or disinfectant to prevent navel ill/ – Tagged within 20 days/ – Tested for BVD/ – Registered on AIM system / – Dehorn within 3 weeks/",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "text": "What is the total size of the national breeding herd in Ireland?",
+        "solution": [
+          "6.6 million animals"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "In 2020, what percentage of Ireland’s beef production was exported?",
+        "solution": [
+          "90%"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "What factors give Ireland a competitive advantage in beef farming?",
+        "solution": [
+          "Ability to produce large quantities of grass for animals"
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "What was the average suckler income in 2021 and what was a significant source of this income?",
+        "solution": [
+          "€10,927; derived from direct support payments like CAP"
+        ],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "Explain the underlined terms in the extract above. 4m each (2 x 4m = 8m)\nCommon Agricultural Policy (CAP) – The agricultural policy of the EU/ – Implements a system of subsides and financial supports for farmers – **Accept other appropriate s\nSustainability – This means it will last into the future for future generations",
+        "solution": [
+          "None provided in text"
+        ],
+        "skip": true
+      },
+      {
+        "id": "g",
+        "text": "Greenhouse gases (GHG) are referred to in the article. Give one example of a Greenhouse gas that affects the environment. Any one valid 2m – Carbon dioxide (CO ) 2 – Methane (CH ) 4 – Nitrous oxide (N O)",
+        "solution": [
+          "None provided in text"
+        ],
+        "skip": true
+      },
+      {
+        "id": "h",
+        "text": "Grass is one of the most popular crops on farms that animals eat and it has many benefits. Outline two of these benefits 2 x 2m = 4m – Grass-based beef production systems are more sustainable as they have a low – Lower carbon footprint. – Distinct flavour of meat. – High CLA have beneficial health effects.",
+        "solution": [
+          "None provided in text"
+        ],
+        "skip": true
+      },
+      {
+        "id": "i",
+        "text": "(b) (i) Beef farmers must carefully select animals with desirable traits to get good produce from these animals. List 3 desirable traits that a beef farmer looks for in animals. Any three traits (3 x 2m = 6m)\n– Good fertility/\n– High milk yields/\n– Calving ease/\n– Long life span /\n– High calf survival rates/\n– Conformation/\n– Good hindquarters/\n– Long back/\n– Wide torso/\n**Accept other appropriate s",
+        "solution": [
+          "None provided in text"
+        ],
+        "skip": true
+      },
+      {
+        "id": "j",
+        "text": "(ii) Good breeding strategies are also needed on beef farms to allow for offspring with desirable traits to be produced. The use of a stock bull and A.I. (artificial insemination) are two methods commonly used by beef farmers. For each method state one advantage and one disadvantage. 2m for each correct advantage and disadvantage (4 x 2m = 8m)\nStock bull\nAdvantages Disadvantages\n• Bull on farm so has easy access to cows\n• Dangerous\n• No extra cost to farmer for repeat\n• Experienced person needed inseminations\n• Expensive initially to purchase bull\n• Only one breed can be used on farm\n• Inbreeding may occur",
+        "solution": [
+          "None provided in text"
+        ],
+        "skip": true
+      },
+      {
+        "id": "k",
+        "text": "(iii) Outline the management of a beef calf from birth to 6 weeks under the following headings: 4m for each heading (3 x 4m = 12m)\nFeeding management:\n– Access to fresh water/\n– Colostrum given at birth – up to 2L in forts 3 hours/\n– Calf left with mother to get milk/\n– Milk replacer may be needed if cow if not producing enough milk initially\n– **Accept other valid points Housing management:\n– Housed with mother/\n– Straw bedding/\n– Adequate space in pens/\n– Adequate lighting in shed/\n– Well ventilated to prevent infection / Health management:\n– Spray navel with iodine or disinfectant to prevent navel ill/\n– Tagged within 20 days/\n– Tested for BVD/\n– Registered on AIM system /\n– Dehorn within 3 weeks/",
+        "solution": [
+          "None provided in text"
+        ],
+        "skip": true
       }
     ]
   }

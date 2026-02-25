@@ -2,19 +2,33 @@
   {
     "question_num": "1",
     "context": "",
-    "skip": true,
+    "skip": false,
     "parts": [
       {
         "id": "a",
         "text": "Place these in Column A to match the description of each part in Column B. The first one is completed as an example.",
         "solution": [],
-        "skip": true
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Stamens; Phloem; Petals; Xylem; Carpels; Stomata.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "A B Petals Attract bees and insects Male parts of flower Transports water through plant Openings on underside of leaf Female parts of flower Transports food through plant",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
   {
     "question_num": "7",
-    "context": "",
+    "context": "Give one scientific reason why each of the following practices is carried out on Irish farms.",
     "skip": false,
     "parts": [
       {

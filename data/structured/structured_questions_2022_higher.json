@@ -44,7 +44,25 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Named animal enterprise:",
+            "text": "Characteristics one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Characteristic two:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Characteristic three:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Characteristic four:",
             "solution": [],
             "skip": false
           }
@@ -125,7 +143,27 @@
         "id": "a",
         "text": "Since 1994, it has been compulsory for each European Union (EU) member state to have agri‐environment schemes. Outline three reasons why hedgerow conservation is promoted in agri‐environmental schemes.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
@@ -143,24 +181,24 @@
   },
   {
     "question_num": "8",
-    "context": "The European Commission has set targets for sustainable food production by 2030.",
+    "context": "",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "Explain one way for each part (i) and (ii) below farmers can: Reduce the use of (i) pesticides on their farm Reduce use of (ii) antibiotics for farm animals",
+        "text": "Explain one way for each part (i) and (ii) below farmers can:",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Reduce the use of (i) pesticides on their farm:",
+            "text": "Reduce the use of (i) pesticides on their farm",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Reduce use of (ii) antibiotics for farm animals:",
+            "text": "Reduce use of (ii) antibiotics for farm animals",
             "solution": [],
             "skip": false
           }
@@ -174,13 +212,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "1.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "2.",
+            "text": "",
             "solution": [],
             "skip": false
           }
@@ -191,36 +229,35 @@
   {
     "question_num": "9",
     "context": "",
-    "skip": false,
+    "skip": true,
     "parts": [
       {
         "id": "a",
-        "text": "(i) Draw a labelled diagram of a calf’s stomach in its first week of life.\n(ii) Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach.",
+        "text": "(i) Draw a labelled diagram of a calf’s stomach in its first week of life. (ii) Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach.",
         "solution": [],
-        "skip": true,
-        "subparts": []
+        "skip": true
       },
       {
         "id": "b",
-        "text": "(i) Outline two roles of micro‐organisms in the ruminant stomach. 1. 2.\n(ii) Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.\n(iii) Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
+        "text": "Read the article on the SEASOLUTIONS Project and the questions which follow.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Outline two roles of micro‐organisms in the ruminant stomach.",
+            "text": "(i) Outline two roles of micro‐organisms in the ruminant stomach. 1. 2.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.",
+            "text": "(ii) Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
+            "text": "(iii) Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
             "solution": [],
             "skip": false
           }
@@ -247,27 +284,29 @@
           },
           {
             "id": "ii",
-            "text": "Grass is measured in kg DM/ha (kilograms dry matter per hectare). Every 1cm has approximately 250kg DM/ha for cattle farms. A residual post grazing height of 4cm is used when estimating grass cover. Calculate the kg DM/ha with a sward height of 10cm. Calculation: kg DM/ha =",
+            "text": "Grass is measured in kg DM/ha (kilograms dry matter per hectare). Every 1cm has approximately 250kg DM/ha for cattle farms. A residual post grazing height of 4cm is used when estimating grass cover. Calculate the kg DM/ha with a sward height of 10cm. Calculation: kg DM/ha = (iii) A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward. A: B: C:",
             "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward. A: B: C:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "Identify the growth cycle stage of the plants in part (iii) and describe briefly what happens at this stage. Stage: Description:",
-            "solution": [],
-            "skip": false
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "Stage:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "Description:",
+                "solution": [],
+                "skip": false
+              }
+            ]
           }
         ]
       },
       {
         "id": "b",
-        "text": "Gerry wants to reseed his grassland pastures.",
+        "text": "(b) Gerry wants to reseed his grassland pastures.",
         "solution": [],
         "skip": false,
         "subparts": [

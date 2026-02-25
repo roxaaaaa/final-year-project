@@ -6,43 +6,15 @@
     "parts": [
       {
         "id": "a",
-        "text": "State two sources of pollution on a farm.",
+        "text": "State two sources of pollution on a farm.\nSource 1: ____________________________________________________________________\nSource 2: ____________________________________________________________________",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Source 1. _________________________________________________",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Source 2. _________________________________________________",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "b",
-        "text": "Describe the harmful effects of each of the above sources of farm pollution.",
+        "text": "Describe the harmful effects of each of the above sources of farm pollution.\nEffect of source 1:\n________________________________________________________________________________________\n________________________________________________________________________________________\nEffect of source 2:\n________________________________________________________________________________________\n________________________________________________________________________________________",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Effect of source 1. _______________________________________________ ______________________________________________________________",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Effect of source 2. _______________________________________________",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },
@@ -53,7 +25,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "State one reason for each of the following farm practices.\n(a) Vaccination of farm animals.",
+        "text": "State one reason for each of the following farm practices: (a) Vaccination of farm animals.",
         "solution": [],
         "skip": false
       },
@@ -86,7 +58,7 @@
   {
     "question_num": "8",
     "context": "",
-    "skip": false,
+    "skip": true,
     "parts": [
       {
         "id": "a",
@@ -96,13 +68,39 @@
       },
       {
         "id": "b",
-        "text": "(i) Outline four steps involved in making good quality hay and explain why any one of those steps is important. (ii) The following steps are taken when making good quality silage. State one reason for each of the steps listed below.\n1. Cutting the grass on a sunny day.\n2. Allowing the cut grass to wilt.\n3. Rolling or baling the cut grass.\n4. Covering the grass in plastic.",
+        "text": "(i) Outline four steps involved in making good quality hay and explain why any one of those steps is important. (ii) The following steps are taken when making good quality silage. State one reason for each of the steps listed below.",
         "solution": [],
-        "skip": true
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. Cutting the grass on a sunny day.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "2. Allowing the cut grass to wilt.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "3. Rolling or baling the cut grass.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "4. Covering the grass in plastic.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",
-        "text": "Describe a simple on-site test that a farmer can carry out on silage. Give a possible result of this test and say what the result means about the quality of the silage.",
+        "text": "Describe a simple on‐site test that a farmer can carry out on silage. Give a possible result of this test and say what the result means about the quality of the silage.",
         "solution": [],
         "skip": false
       }
@@ -115,57 +113,51 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Farmers use ground limestone (CaCO₃) to raise the pH of the soil. Which chemical element in ground limestone is the most important in raising the soil pH?",
+        "text": "(i) Farmers use ground limestone (CaCO3) to raise the pH of the soil. Which chemical element in ground limestone is the most important in raising the soil pH?",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(ii) State two ways in which a soil may become acidic.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(iii) Describe how you would find the pH of a soil sample.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "b",
-        "text": "(i) Name the three principal plant nutrients in 10-10-20. (ii) State the function of any one of the plant nutrients in 10-10-20.",
+        "text": "(i) State two ways in which a soil may become acidic.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(iii) Describe how you would find the pH of a soil sample.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "c",
-        "text": "(i) Farmyard manure (FYM) and slurry are two forms of farm animal waste. (ii) State two differences between the composition of FYM and the composition of slurry. (iii) Slurry has to be agitated before it can be spread. State two precautions taken by farmers when agitating slurry.",
+        "text": "(i) Describe how you would find the pH of a soil sample.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(ii) State two differences between the composition of FYM and the composition of slurry.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(iii) Slurry has to be agitated before it can be spread. State two precautions taken by farmers when agitating slurry.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(a) (ii) Name the three principal plant nutrients in 10-10-20.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "(b) State the function of any one of the plant nutrients in 10-10-20.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "(c) (i) State how each is stored on a farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "g",
+        "text": "(ii) State two differences between the composition of FYM and the composition of slurry.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "(iii) Slurry has to be agitated before it can be spread. State two precautions taken by farmers when agitating slurry.",
+        "solution": [],
+        "skip": false
       }
     ]
   },
@@ -202,15 +194,31 @@
       },
       {
         "id": "b",
-        "text": "In maize the allele for green seedlings (G) is dominant over the allele for albino seedlings (g). A maize plant, homozygous for green (GG), was crossed with a maize plant homozygous for albino (gg). Copy and complete this cross in your book. Parent phenotypes Green Albino Parent genotypes (GG) x (gg) Gametes ( ) x ( ) Genotype of offspring ( ) Phenotype of offspring ____________________________",
+        "text": "In maize the allele for green seedlings (G) is dominant over the allele for albino seedlings (g). A maize plant, homozygous for green (GG), was crossed with a maize plant homozygous for albino (gg). Copy and complete this cross in your book.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Parent phenotypes\nGreen\nAlbino\nParent genotypes (GG) x (gg)\nGametes ( ) x ( )\nGenotype of offspring ( )\nPhenotype of offspring ____________________________\n",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",
-        "text": "Two plants with the same genotype as the offspring above were crossed with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes from this cross. Plant genotypes ( ) x ( ) Possible gametes ( ) ( ) x ( ) ( ) Genotypes of offspring ( ) ( ) ( ) Phenotypes of offspring __________________ __________________",
+        "text": "Two plants with the same genotype as the offspring above were crossed with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes from this cross.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Plant genotypes ( ) x ( )\nPossible gametes ( )\n( ) x ( )\n( ) Genotypes of offspring ( )\n( ) ( )\nPhenotypes of offspring __________________ __________________\n",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "d",
@@ -253,7 +261,7 @@
       },
       {
         "id": "c",
-        "text": "Describe the management of lowland lambs under the following headings: (i) Care at birth. (ii) Changes in diet. (iii) Housing. (iv) Disease control. (v) Age at weaning.",
+        "text": "(i) Describe the management of lowland lambs under the following headings: (i) Care at birth. (ii) Changes in diet. (iii) Housing. (iv) Disease control. (v) Age at weaning.",
         "solution": [],
         "skip": false
       },

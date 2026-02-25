@@ -3,6 +3,8 @@ import re
 import json
 import os
 
+import pdfplumber
+
 QUESTION_PROMPT = """
 You are a structured data extractor for Irish Leaving Certificate Agricultural Science exam questions.
 Return ONLY valid JSON. No preamble, no explanation, no markdown fences.
@@ -91,25 +93,59 @@ A named soil horizon is shown in the diagram below.
   ]
 }
 """
+PROMPT_2025 = """You are a precision data extraction engine. Your task is to convert raw Irish Leaving Certificate Agricultural Science exam questions and solutions into a structured JSON format.
+
+### OUTPUT JSON SCHEMA
+{
+  "question_num": "string",    // Digit only: "1", "5", "7"
+  "context": "string",         // Shared introductory text or ""
+  "skip": boolean,             // true if question relies on an image/diagram/table/photo
+  "parts": [
+    {
+      "id": "string",          // Lowercase letter: "a", "b", "c"
+      "text": "string",        // The question text ONLY
+      "solution": ["string"],  // Array of valid answer points (cleaned)
+      "skip": boolean,         // true if this part refers to an image/diagram
+      "subparts": [            // ONLY if roman numerals (i, ii) are present
+        {
+          "id": "string",      // Roman numeral: "i", "ii", "iii"
+          "text": "string",
+          "solution": ["string"],
+          "skip": boolean
+        }
+      ]
+    }
+  ]
+}
+
+### EXTRACTION & CLEANING RULES
+1.  **Identify IDs**: 
+    - Questions: "Question 1" -> "1".
+    - Parts: "(a)" -> "a".
+    - Subparts: "(i)" -> "i".
+2.  **Handle "OR" Questions**: If the source says "Question 1 (a) OR (b)", treat them as distinct entries in the "parts" array (id: "a" and id: "b").
+3.  **Clean Solutions**: 
+    - Strip marking schemes like "5 x 2m = 10m" or "2 x 2m = 4m".
+    - Strip internal instructional text like "**Accept other valid s".
+    - Extract the actual answer text which usually follows a dash (–), a colon (:), or is listed in the "solution" field.
+4.  **Set "skip": true if text contains**: 
+    - "Identify", "shown", "diagram", "photograph", "image", "table", "chart", "graph", "below", "above", "fill in the blanks", "true/false".
+5.  **Context**: If a piece of text applies to both (a) and (b), put it in "context". Otherwise, keep "context" as "".
+6.  **Formatting**: Return ONLY valid JSON. No markdown code fences, no preamble.
+
+### INPUT DATA"""
 
 SOLUTION_PROMPT = """
 You are a structured data extractor for Irish Leaving Certificate Agricultural Science exam solutions."""
 
-def process_with_llm(input_pdf_path, output_json_path, is_solution=False):
+def process_with_llm(input_pdf_path, output_json_path, prompt):
     with open(input_pdf_path, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
     structured_data = []
 
     for q in raw_data:
-        if is_solution==True:
-          print(f"Structuring Solution for Question {q['question_number']}...")
-          # For solutions, we want to include the question text as context for better structuring
-          full_prompt = SOLUTION_PROMPT + q['solution']
-        else:
-          print(f"Structuring Question {q['question_number']}...")
-          # Combine prompt with the specific question text
-          full_prompt = QUESTION_PROMPT + q['text']
+        full_prompt = prompt + q['text']
         
         # Call Ollama
         response = ollama.chat(model='qwen2.5-coder', messages=[
@@ -131,15 +167,10 @@ def process_with_llm(input_pdf_path, output_json_path, is_solution=False):
     print(f"Finished. Structured data saved to {output_json_path}")
 
 if __name__ == "__main__":
-  # paths
   script_dir = os.path.dirname(os.path.abspath(__file__))
-  project_dir = os.path.dirname(os.path.dirname(script_dir))
-  # input_path = os.path.join(project_dir, "data", "unstructured", "questions_2023_higher.json")
-  # output_path = os.path.join(project_dir, "data", "structured", "structured_question_2023_higher.json")
-  range_higher = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
-    
-  for i in range_higher:
-    json_file = f"questions_{i}_higher.json"
-    json_path = os.path.join(project_dir, "data", "unstructured", json_file)
-    output_path = os.path.join(project_dir, "data", "structured", f"structured_questions_{i}_higher.json")
-    questions = process_with_llm(json_path, output_path, is_solution=False)
+  project_dir = os.path.dirname(os.path.dirname(script_dir)) 
+
+  input_json_path = os.path.join(project_dir, "data", "unstructured", "questions_2025_higher.json")
+  output_json_path = os.path.join(project_dir, "data", "structured", "structured_questions_2025_higher.json")
+  process_with_llm(input_json_path, output_json_path, QUESTION_PROMPT)
+  

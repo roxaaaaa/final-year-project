@@ -18,7 +18,7 @@
           },
           {
             "id": "ii",
-            "text": "State two advantages of crop rotation. \n1. \n2.",
+            "text": "State two advantages of crop rotation. 1. 2.",
             "solution": [],
             "skip": false
           },
@@ -32,9 +32,29 @@
       },
       {
         "id": "b",
-        "text": "(i) Define the term biological control.\n(ii) Give two examples of biological control on farms. \n1. \n2.\n(iii) Outline two advantages of using biological controls in crop production.",
+        "text": "",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Define the term biological control.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give two examples of biological control on farms. 1. 2.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline two advantages of using biological controls in crop production.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
@@ -65,93 +85,51 @@
   },
   {
     "question_num": "6",
-    "context": "Complete the sentences below in relation to sheep nutrition using words from the list.",
+    "context": "",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "Steaming up",
+        "text": "Steaming up Milk fever Twin lamb disease Flushing Maintenance diet (b) Gradual increase of concentrates prior to lambing is known as ………… (c) Ewes being fed just enough to support body processes is known as ……….. (d) Pregnancy toxaemia is also known as ………. (e) Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
         "solution": [],
         "skip": false
-      },
-      {
-        "id": "b",
-        "text": "Gradual increase of concentrates prior to lambing is known as …………",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
-      },
-      {
-        "id": "c",
-        "text": "Ewes being fed just enough to support body processes is known as ………..",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
-      },
-      {
-        "id": "d",
-        "text": "Pregnancy toxaemia is also known as ……….",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
-      },
-      {
-        "id": "e",
-        "text": "Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "",
-            "solution": [],
-            "skip": false
-          }
-        ]
       }
     ]
   },
   {
     "question_num": "9",
-    "context": "",
+    "context": "This chart shows the Commercial Public Services Services greenhouse gas emissions Manufacturing 2% 2% Combustion in 2018. 8% Analyse the chart and Residential Agriculture the question which 10% Greenhouse 34% follow. Gas Emissions 2018 F ‐gases Energy industries 17% Waste Industrial 1% processes Transport 4% 20% (Adapted from Environmental Protection Agency, 2020)",
     "skip": true,
     "parts": [
       {
         "id": "a",
         "text": "Where would you rank the greenhouse gas emissions from agriculture in 2018?",
         "solution": [],
-        "skip": true
+        "skip": false
       },
       {
         "id": "b",
         "text": "List two sources of greenhouse gases from agriculture.",
         "solution": [],
-        "skip": true
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Source one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Source two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",
-        "text": "Briefly explain two ways in which they could increase biodiversity on their farm.",
+        "text": "Seán and Lisa are beef and sheep farmers in the west of Ireland. They are concerned about the environment and the effect agriculture is having on the planet. Briefly explain two ways in which they could increase biodiversity on their farm.",
         "solution": [],
         "skip": false
       }
@@ -160,7 +138,7 @@
   {
     "question_num": "11",
     "context": "",
-    "skip": false,
+    "skip": true,
     "parts": [
       {
         "id": "a",
@@ -172,7 +150,7 @@
             "id": "i",
             "text": "Identify the structure located at B.",
             "solution": [],
-            "skip": false
+            "skip": true
           },
           {
             "id": "ii",
@@ -220,7 +198,7 @@
           },
           {
             "id": "iv",
-            "text": "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your advice.",
+            "text": "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your recommendation.",
             "solution": [],
             "skip": true
           }
@@ -241,19 +219,19 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Identify the estimated cost of liver fluke to Irish farmers annually.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Outline one environmental condition that allows liver fluke to thrive.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Suggest three ways in which farmers can control / prevent liver fluke on their farm.",
+            "text": "",
             "solution": [],
             "skip": false
           }
@@ -261,9 +239,23 @@
       },
       {
         "id": "b",
-        "text": "(i) Which county has the highest % fluke damage?",
+        "text": "(i) Which county has the highest % fluke damage?\n(ii) State one reason why the fluke damage in Cork is less than in more northern counties.",
         "solution": [],
-        "skip": true
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",
@@ -273,31 +265,31 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Explain notifiable disease.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "List two notifiable diseases found in Irish farm animals.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Outline the importance to Irish Agriculture of farmers complying with regulations in relation to notifiable diseases.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "iv",
-            "text": "State three practices farmers could employ to ensure good biosecurity on their farm.",
+            "text": "",
             "solution": [],
             "skip": false
           },
           {
             "id": "v",
-            "text": "Discuss three management practices farmers should consider when housing farm animals to ensure high standards of animal welfare.",
+            "text": "",
             "solution": [],
             "skip": false
           }
@@ -312,65 +304,67 @@
     "parts": [
       {
         "id": "a",
-        "text": "Name two dairy breeds that a farmer would choose to produce good quality milk for the dairy industry.",
+        "text": "",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "",
+            "text": "Name two dairy breeds that a farmer would choose to produce good quality milk for the dairy industry.",
             "solution": [],
-            "skip": true
+            "skip": false
           },
           {
             "id": "ii",
-            "text": "",
+            "text": "Maintaining hygiene before, during and after milking is important for both cow health and achieving a good milk price. Outline any three ways a farmer can maintain high 3.",
             "solution": [],
-            "skip": true
-          },
-          {
-            "id": "iii",
-            "text": "",
-            "solution": [],
-            "skip": true
-          },
-          {
-            "id": "iv",
-            "text": "",
-            "solution": [],
-            "skip": true
+            "skip": false,
+            "subparts": [
+              {
+                "id": "iii",
+                "text": "Dairy farmers obtain a price for their milk based on the quality of their milk. List any two tests carried out on milk that are used in calculating the milk price paid to the farmer.",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iv",
+                "text": "Apart from hygiene practices, briefly explain two ways dairy farmers could improve the quality of the milk on their farm.",
+                "solution": [],
+                "skip": false
+              }
+            ]
           }
         ]
       },
       {
         "id": "b",
-        "text": "The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.",
+        "text": "",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "",
+            "text": "Identify one variable for this investigation.",
             "solution": [],
-            "skip": true
+            "skip": false
           },
           {
             "id": "ii",
-            "text": "",
+            "text": "Describe, using a labelled diagram, a method the farmer could use to carry out this investigation. Labelled diagram:",
             "solution": [],
             "skip": true
           },
           {
             "id": "iii",
-            "text": "",
+            "text": "State one error that could occur during this investigation and outline one way that this error could be reduced if doing this investigation again.",
             "solution": [],
-            "skip": true
+            "skip": false
           },
           {
             "id": "iv",
-            "text": "",
+            "text": "State whether the results obtained from the investigation at part (ii) above are quantitative or qualitative. Justify your . Result: Justification:",
             "solution": [],
-            "skip": true
+            "skip": false
           }
         ]
       }
