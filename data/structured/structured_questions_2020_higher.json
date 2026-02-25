@@ -6,153 +6,73 @@
     "parts": [
       {
         "id": "a",
-        "text": "What is meant by the term noxious weed?",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "i",
-        "text": "Give two examples of noxious weeds.",
+        "text": "(i) What is meant by the term noxious weed?",
         "solution": [],
         "skip": false
       },
       {
         "id": "b",
-        "text": "What is meant by the term incomplete metamorphosis?",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "i",
-        "text": "Give one example of incomplete metamorphosis.",
+        "text": "(ii) Give two examples of noxious weeds.",
         "solution": [],
         "skip": false
       },
       {
         "id": "c",
-        "text": "Outline three reasons for the practice of thinning forestry trees.",
+        "text": "(i) What is meant by the term incomplete metamorphosis?",
         "solution": [],
         "skip": false
       },
       {
         "id": "d",
+        "text": "(ii) Give one example of incomplete metamorphosis.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Outline three reasons for the practice of thinning forestry trees.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "f",
         "text": "Draw a labelled diagram to show the arrangement of the vascular tissues in a dicotyledonous (dicot) root.",
         "solution": [],
         "skip": true
       },
       {
-        "id": "e",
-        "text": "State the location in the mammalian body of each of the following parts:",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) Humerus",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) Pituitary gland",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Bowman’s capsule",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "(iv) Cervix",
-            "solution": [],
-            "skip": false
-          }
-        ]
-      },
-      {
-        "id": "f",
-        "text": "Explain each of the following terms:",
-        "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) Dagging",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) Tagging",
-            "solution": [],
-            "skip": false
-          }
-        ]
-      },
-      {
         "id": "g",
-        "text": "Describe how the structure of the grass flower is suited to wind pollination.",
+        "text": "State the location in the mammalian body of each of the following parts: (i) Humerus (ii) Pituitary gland (iii) Bowman’s capsule (iv) Cervix.",
         "solution": [],
         "skip": false
       },
       {
         "id": "h",
-        "text": "State the length of gestation, in days, for each of the following farm animals:",
+        "text": "Explain each of the following terms: (i) Dagging (ii) Tagging.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) Cow",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) Sheep",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Pig",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "i",
-        "text": "Classify each of the following into a principal rock type:",
+        "text": "Describe how the structure of the grass flower is suited to wind pollination.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) Slate",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) Granite",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Limestone",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "j",
-        "text": "Explain the reason for rolling barley grains before feeding to cattle.",
+        "text": "State the length of gestation, in days, for each of the following farm animals: (i) Cow (ii) Sheep (iii) Pig.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "k",
+        "text": "(i) Classify each of the following into a principal rock type: (i) Slate (ii) Granite (iii) Limestone.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "l",
+        "text": "(i) Explain the reason for rolling barley grains before feeding to cattle.",
         "solution": [],
         "skip": false
       }
@@ -236,15 +156,67 @@
       },
       {
         "id": "b",
-        "text": "Preparation at breeding time is an important aspect of good flock management. Discuss any four aspects of flock preparation prior to mating.",
+        "text": "Discussion of any four aspects of flock preparation prior to mating.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Aspect one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Aspect two:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Aspect three:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Aspect four:",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",
-        "text": "Control of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep.",
+        "text": "Description of any four methods to control named parasites in sheep.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Method one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Method two:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Method three:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Method four:",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
@@ -286,7 +258,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "The dry period is of great importance to the overall performance of the dairy cow.",
+        "text": "The dry period is of great importance to the overall performance of the dairy cow. (i) Outline two reasons for the importance of the dry period. (ii) Describe two features of the management of the dairy cow during the dry period.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -306,7 +278,7 @@
       },
       {
         "id": "b",
-        "text": "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd.",
+        "text": "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd. (i) Describe any two methods of heat detection. (ii) Give two advantages of the use of AI in the dairy herd.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -328,18 +300,32 @@
         "id": "c",
         "text": "The hygiene quality and the composition of milk may affect the price per litre paid to the farmer. Describe any two tests carried out on milk to determine hygiene quality or composition. For each test described, state clearly if hygiene quality or composition is being determined.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe any two tests carried out on milk to determine hygiene quality.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe any two tests carried out on milk to determine composition.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
   {
     "question_num": "6",
-    "context": "Direct sowing is the traditional method of sowing grass seed in Ireland.",
+    "context": "",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "In relation to direct sowing of grass: (i) Describe the stages involved in seed bed preparation. (ii) Describe how the seed is sown. (iii) Explain the benefit of this cultivation method in a loam soil.",
+        "text": "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass: (i) Describe the stages involved in seed bed preparation. (ii) Describe how the seed is sown. (iii) Explain the benefit of this cultivation method in a loam soil.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -451,13 +437,27 @@
     "parts": [
       {
         "id": "a",
-        "text": "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions. (i) Use a labelled diagram to illustrate the carbon cycle. (ii) With reference to the carbon cycle, suggest two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
+        "text": "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions.",
         "solution": [],
-        "skip": true
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Use a labelled diagram to illustrate the carbon cycle.",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "With reference to the carbon cycle, suggest two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
-        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics. (i) Name two common bacterial diseases of farm animals, which are treated with antibiotics. (ii) Outline how antibiotic resistance develops in bacteria. (iii) Suggest a method of disease control other than using antibiotics.",
+        "text": "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics.",
         "solution": [],
         "skip": false,
         "subparts": [

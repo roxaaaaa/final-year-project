@@ -1,0 +1,385 @@
+[
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Growing shelter belts.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Keeping milk at approximately 4 oC in a bulk tank.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Tagging young animals.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Spreading ground limestone.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Injecting bonhams (piglets) with an iron solution.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms used in genetics.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Haploid",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Homozygous",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Locus",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The pure‐breeding barley variety Alpha (AA) has a straw length of 800 mm. The pure‐breeding barley variety Beta (BB) has a straw length of 600 mm. A cross between these two varieties results in a hybrid with a straw length of 700 mm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What does this show about the genes that control straw length in this example?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Copy and complete the following in your book to show the cross between the Alpha and Beta varieties of barley.",
+            "solution": [
+              "Parents: Pure‐breeding Alpha X Pure‐breeding Beta\nGenotypes of parents: (AA) X (BB)\nGametes: (A) X (B)\nGenotype of offspring: (AB)\nPhenotype of hybrid offspring: _____________________"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "The hybrid plants were allowed to self‐pollinate and the resulting seeds were sown. Copy and complete the following in your book, using the above hybrids as parents.",
+            "solution": [
+              "Genotype of parents: (AB) X (AB)\nGametes: (A) (B) X (A) (B)\nGenotypes of offspring: (AA), (AB), (BB)\nPhenotypes of offspring: ________________ _________________ _________________"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) State one advantage of using artificial insemination (AI) on a dairy farm. (ii) State one disadvantage of using AI on a dairy farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State one advantage of using artificial insemination (AI) on a dairy farm.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one disadvantage of using AI on a dairy farm.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain how an iron pan is formed in a soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the method of taking soil samples for testing.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe a method to measure the pH of a soil sample.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "i",
+        "text": "Name the feature labelled A.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "ii",
+        "text": "State two functions of A.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Function one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Function two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "iii",
+        "text": "What is the main function of the cells labelled B?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "iv",
+        "text": "State two ways in which the structure of a leaf is suited to its main role.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Way one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Way two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "x",
+        "text": "(ii) Name the structures labelled X.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Structure one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Structure two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "iii",
+        "text": "(iii) State two functions of X.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Function one:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Function two:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "iv",
+        "text": "(iv) Name a plant that has a modified stem.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to show phototropism in seedlings.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) What component of milk is represented by the part labelled A? (ii) What is colostrum? (iii) Give two ways a farmer could improve the quality of the milk from his herd. (iv) Why is the milk from a cow treated for mastitis not allowed into the human food supply? (v) Give one reasons for culling cows on a dairy farm. (vi) What is meant by the term dual purpose breed? (vii) Give one example of a dual purpose breed.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(i) Soil type (ii) Sowing time (iii) Sowing method (iv) Weed control (v) Disease control (vi) Harvesting.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Soil type",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Sowing time",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Sowing method",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Weed control",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Disease control",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "vi",
+            "text": "Harvesting",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) What is meant by the term pollution? (ii) In each of the following state two ways that a farmer can reduce the risk of causing pollution: 1. When making silage 2. On a dairy farm 3. When spreading artificial fertiliser 4. When using insecticides or fungicides.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(i) Housing (ii) Diet (iii) Control of disease and parasites (iv) Target weight at turnout (v) Compensatory growth.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Housing",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Diet",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Control of disease and parasites",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Target weight at turnout",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Compensatory growth",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

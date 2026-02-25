@@ -1,0 +1,40 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify any two pieces of equipment labelled A, B or C required for this investigation.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State the pH of the soil filtrate.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "State a conclusion the student can make in relation to growing crops.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Draw a labelled diagram showing this activity.",
+        "solution": [],
+        "skip": true
+      }
+    ]
+  }
+]

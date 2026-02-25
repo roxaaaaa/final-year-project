@@ -1,0 +1,440 @@
+[
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "From the animals shown, name the primary host.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "From the animals shown, name the secondary (intermediate) host.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "State three practices carried out on farms to reduce the incidence of liver fluke.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Liver fluke is an endoparasite. Explain the term endoparasite.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Give an example of one other endoparasite.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Finding the pH of the soil before sowing a crop.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Adding white clover to a seed mixture for a pasture sward.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Topping pastures in summer.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Using mineral licks on a dairy farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Isolating sick animals on a farm.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Slurry and farmyard manure are two sources of nutrients for crops.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two differences between the composition of slurry and farmyard manure.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Slurry may cause water pollution. State two steps farmers may take to reduce the incidence of water pollution by slurry.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "18-6-12 is a compound fertiliser used on farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State the principal elements that 18-6-12 provides.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one advantage and one disadvantage of using artificial fertilisers.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "In the case of one named element in 18-6-12, state its role in plants.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to find the percentage (%) of water in a soil sample.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two varieties of maincrop potatoes.\n(ii) Describe the growing of potatoes under the following headings: 1. Soil preparation\n2. Fertiliser use\n3. Weed control\n4. Potato blight control.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two varieties of maincrop potatoes.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the growing of potatoes under the following headings:\n1. Soil preparation\n2. Fertiliser use\n3. Weed control\n4. Potato blight control.",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "Soil preparation:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "Fertiliser use:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iii",
+                "text": "Weed control:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iv",
+                "text": "Potato blight control:",
+                "solution": [],
+                "skip": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "State three reasons why farmers would use certified seed potatoes.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to estimate the yield of a potato crop prior to harvesting.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Draw a labelled diagram of a paddock grazing system. (ii) State one advantage of a paddock grazing system. (iii) State one disadvantage of a paddock grazing system.",
+        "solution": [],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe three steps involved in making good quality hay, and give the reason for each step.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "State how a farmer can ensure the production of good quality silage.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "List three simple tests a farmer can carry out to determine the quality of silage, and state the purpose of each test.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two lowland sheep breeds. (ii) Explain each of the following terms and state why each procedure is carried out on sheep farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Name two lowland sheep breeds.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Explain each of the following terms and state why each procedure is carried out on sheep farms. 1. Flushing 2. Scanning 3. Steaming up 4. Vaccination 5. Creep feeding 6. Shearing.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Name the gas collected in the test tube. (ii) Name two factors necessary for photosynthesis. (iii) How does photosynthesis help to reduce the problem of climate change? (iv) Starch is stored in leaves as a result of photosynthesis. Describe how to test a leaf for the presence of starch.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Name the gas collected in the test tube.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Name two factors necessary for photosynthesis.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) How does photosynthesis help to reduce the problem of climate change?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Starch is stored in leaves as a result of photosynthesis. Describe how to test a leaf for the presence of starch.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Care at birth (ii) Housing (iii) Disease prevention (iv) Introducing hay into their diet (v) Use of milk replacer.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Care at birth",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Housing",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Disease prevention",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Introducing hay into their diet",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "(v) Use of milk replacer.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "(i) Draw a labelled diagram of a molar tooth. (ii) State the function of the incisors and of the molars in a farm animal. (iii) Name two other types of tooth found in farm animals. (iv) Give the dental formula for a pig or a sheep.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Draw a labelled diagram of a molar tooth.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) State the function of the incisors and of the molars in a farm animal.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Name two other types of tooth found in farm animals.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Give the dental formula for a pig or a sheep.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

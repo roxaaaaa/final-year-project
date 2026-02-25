@@ -6,9 +6,147 @@
     "parts": [
       {
         "id": "a",
-        "text": "(a) any six of the parts (a) to (j). (i) Name two species that might be included in a seed mixture in a short‐term ley for silage. (ii) Give a reason for each choice.",
+        "text": "(i) Name two species that might be included in a seed mixture in a short-term ley for silage.",
         "solution": [],
         "skip": false
+      },
+      {
+        "id": "a",
+        "text": "(ii) Give a reason for each choice.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(i) Explain the term biological control.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(ii) Give two examples of biological control in agriculture, horticulture, or forestry.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) Give two structural differences between monocotyledonous (monocot) plants and dicotyledonous (dicot) plants.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(ii) Give one example of a monocot plant and one example of a dicot plant.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Classify each of the following rock types based on how they are formed:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Marble",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Granite",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Basalt",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "e",
+        "text": "List three factors that determine the amount of protein required in an animal ration.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "Outline three ways in which the structure of the leaf is suited to photosynthesis.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "g",
+        "text": "Give the dental formula of each of the following animals:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Sheep",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Pig",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "h",
+        "text": "(i) Name the nitrogen-fixing bacteria found in the root nodules of legumes such as clover.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "(ii) Name two legumes other than clover.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "(i) Explain the term body condition score (BCS).",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "(ii) Give the correct BCS for a dairy cow - Before calving - At mating time.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "j",
+        "text": "Describe one function of each of the following mammalian reproductive hormones:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) FSH",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Progesterone",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Testosterone",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
@@ -148,13 +286,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Describe the physiological changes that occur during the ripening process in the cereal referred to above.",
+            "text": "Physiological changes during ripening:",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Describe two tests carried out by a grain merchant on harvested grain.",
+            "text": "Two tests by a grain merchant:",
             "solution": [],
             "skip": false
           }
@@ -314,59 +452,13 @@
         "id": "b",
         "text": "Explain the following concepts in genetics and give an appropriate example in each case. (i) Incomplete dominance (ii) Alleles (iii) Continuous variation.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Incomplete dominance:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Alleles:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Continuous variation:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "c",
         "text": "In mice the allele for wild type coat colour (W) is dominant to the allele for albino coat (w). The allele for straight hair (S) is dominant to the allele for bent hair (s). Two mice, heterozygous for both these genes, were mated. Taking care to differentiate clearly between uppercase and lowercase letters, explain with the aid of a Punnett square, the probability in each case that the offspring would have the following phenotypes. (i) Albino coat (ii) Bent hair (iii) Albino coat and bent hair (iv) Wild type coat colour and bent hair.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Albino coat:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Bent hair:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Albino coat and bent hair:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "Wild type coat colour and bent hair:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },

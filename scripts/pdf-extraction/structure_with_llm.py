@@ -3,13 +3,6 @@ import re
 import json
 import os
 
-# paths
-script_dir = os.path.dirname(os.path.abspath(__file__))
-input_path = os.path.join(script_dir, "questions_2023_ordinary.json")
-output_path = os.path.join(script_dir, "structured_question_2023_ordinary.json")
-
-
-# Define the Prompt from earlier
 QUESTION_PROMPT = """
 You are a structured data extractor for Irish Leaving Certificate Agricultural Science exam questions.
 Return ONLY valid JSON. No preamble, no explanation, no markdown fences.
@@ -25,9 +18,8 @@ Return ONLY valid JSON. No preamble, no explanation, no markdown fences.
       "id": "string",            // e.g. "a", "b", "c"
       "text": "string",
       "solution": [],
-      "skip": boolean,           // true if this part requires an image/diagram to answer
-      "subparts": [              // omit if empty
-        {
+      "skip": boolean,           // true if this part requires an image/diagram/true/false to answer
+      "subparts": [              
           "id": "string",        // e.g. "i", "ii", "iii"
           "text": "string",
           "solution": [],
@@ -50,13 +42,16 @@ Return ONLY valid JSON. No preamble, no explanation, no markdown fences.
 - Three levels max: question → parts (a/b/c) → subparts (i/ii/iii)
 - Prefer flat structure; only create subparts if the source explicitly uses roman numerals
 - Do not invent levels that are not in the source text
+-- in case of (i) Explain the following terms: 
+                  1. Moisture stress 
+                  2. Permanent wilting point. Keep sub-item 1. 2. in the text of part (i) rather than creating a new subpart level 
 
 ## SKIP RULES — set skip: true when the part/question:
 
 - References a diagram, photograph, image, figure, chart, or table shown below/above/attached
 - Uses phrases like: "identify from ...", "shown below", "in the photograph", "illustrated above",
-  "refer to the diagram", "label the diagram", "in Figure X", "from the image", "as shown"
-- Cannot be meaningfully answered without seeing a visual element
+  "refer to the diagram", "label the diagram", "in Figure X", "from the image", 
+  "as shown", "true/false", "tick the correct box", "complete the table", "fill in the blanks"
 - If the whole question context requires an image, set skip: true at question level AND on each affected part
 
 ## OMISSION RULES — do not include in text:
@@ -97,17 +92,24 @@ A named soil horizon is shown in the diagram below.
 }
 """
 
-def process_with_llm():
-    with open(input_path, 'r', encoding='utf-8') as f:
+SOLUTION_PROMPT = """
+You are a structured data extractor for Irish Leaving Certificate Agricultural Science exam solutions."""
+
+def process_with_llm(input_pdf_path, output_json_path, is_solution=False):
+    with open(input_pdf_path, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
     structured_data = []
 
     for q in raw_data:
-        print(f"Structuring Question {q['question_number']}...")
-        
-        # Combine prompt with the specific question text
-        full_prompt = QUESTION_PROMPT + q['text']
+        if is_solution==True:
+          print(f"Structuring Solution for Question {q['question_number']}...")
+          # For solutions, we want to include the question text as context for better structuring
+          full_prompt = SOLUTION_PROMPT + q['solution']
+        else:
+          print(f"Structuring Question {q['question_number']}...")
+          # Combine prompt with the specific question text
+          full_prompt = QUESTION_PROMPT + q['text']
         
         # Call Ollama
         response = ollama.chat(model='qwen2.5-coder', messages=[
@@ -124,9 +126,20 @@ def process_with_llm():
             print(f"Error parsing JSON for Question {q['question_number']}")
 
     # Save final result
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(output_json_path, 'w', encoding='utf-8') as f:
         json.dump(structured_data, f, indent=2, ensure_ascii=False)
-    print(f"Finished. Structured data saved to {output_path}")
+    print(f"Finished. Structured data saved to {output_json_path}")
 
 if __name__ == "__main__":
-    process_with_llm()
+  # paths
+  script_dir = os.path.dirname(os.path.abspath(__file__))
+  project_dir = os.path.dirname(os.path.dirname(script_dir))
+  # input_path = os.path.join(project_dir, "data", "unstructured", "questions_2023_higher.json")
+  # output_path = os.path.join(project_dir, "data", "structured", "structured_question_2023_higher.json")
+  range_higher = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+    
+  for i in range_higher:
+    json_file = f"questions_{i}_higher.json"
+    json_path = os.path.join(project_dir, "data", "unstructured", json_file)
+    output_path = os.path.join(project_dir, "data", "structured", f"structured_questions_{i}_higher.json")
+    questions = process_with_llm(json_path, output_path, is_solution=False)

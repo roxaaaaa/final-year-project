@@ -1,0 +1,379 @@
+[
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Crop rotation is a common practice on Irish tillage farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the underlined term.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two advantages of crop rotation. \n1. \n2.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest two disadvantages of using chemical sprays in crop production.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Define the term biological control.\n(ii) Give two examples of biological control on farms. \n1. \n2.\n(iii) Outline two advantages of using biological controls in crop production.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State the independent variable the student controlled during the investigation.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe how they measured the infiltration rate in this investigation.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Suggest one way in which farmers could improve the infiltration rate of their soil.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "Complete the sentences below in relation to sheep nutrition using words from the list.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Steaming up",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Gradual increase of concentrates prior to lambing is known as …………",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Ewes being fed just enough to support body processes is known as ………..",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Pregnancy toxaemia is also known as ……….",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "e",
+        "text": "Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Where would you rank the greenhouse gas emissions from agriculture in 2018?",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "List two sources of greenhouse gases from agriculture.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Briefly explain two ways in which they could increase biodiversity on their farm.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The use of 3D plans are likely to become more common in the future development of new infrastructure of farms.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Identify the structure located at B.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe one environmental hazard and one potential safety hazard of structure B. Environmental: Safety hazard:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline one way in which the farmyard layout is economically sustainable.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Explain how one named piece of new technology that you have studied could enhance economy of labour on this farm.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The following is a plan view of a combined robot milking unit and cow housing for Claire and John who plan to convert their suckler farm to a dairy farm.",
+        "solution": [],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain why they have included an isolation area on the plan.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the purpose of the footbath.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline one reason why Claire and John would have opted to install a robotic milking machine rather than a traditional herringbone or rotary parlour.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your advice.",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Identify the estimated cost of liver fluke to Irish farmers annually.\n(ii) Outline one environmental condition that allows liver fluke to thrive.\n(iii) Suggest three ways in which farmers can control / prevent liver fluke on their farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Identify the estimated cost of liver fluke to Irish farmers annually.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline one environmental condition that allows liver fluke to thrive.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest three ways in which farmers can control / prevent liver fluke on their farm.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Which county has the highest % fluke damage?",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain notifiable disease.\n(ii) List two notifiable diseases found in Irish farm animals.\n(iii) Outline the importance to Irish Agriculture of farmers complying with regulations in relation to notifiable diseases.\n(iv) State three practices farmers could employ to ensure good biosecurity on their farm.\n(v) Discuss three management practices farmers should consider when housing farm animals to ensure high standards of animal welfare.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain notifiable disease.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List two notifiable diseases found in Irish farm animals.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline the importance to Irish Agriculture of farmers complying with regulations in relation to notifiable diseases.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "State three practices farmers could employ to ensure good biosecurity on their farm.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Discuss three management practices farmers should consider when housing farm animals to ensure high standards of animal welfare.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "14",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two dairy breeds that a farmer would choose to produce good quality milk for the dairy industry.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iv",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iv",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      }
+    ]
+  }
+]

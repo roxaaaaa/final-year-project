@@ -8,13 +8,141 @@
         "id": "a",
         "text": "(i) Explain the term livestock unit.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Livestock unit value for: 1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
-        "text": "(ii) Give the livestock unit value for: 1. A mature dairy cow",
+        "text": "(ii) Give the livestock unit value for:",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(iii) Explain the term livestock unit.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Livestock unit value for: 1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "(iv) Give the livestock unit value for:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "e",
+        "text": "(v) Explain the term livestock unit.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Livestock unit value for: 1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "f",
+        "text": "(vi) Give the livestock unit value for:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "g",
+        "text": "(vii) Explain the term livestock unit.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Livestock unit value for: 1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "h",
+        "text": "(viii) Give the livestock unit value for:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "i",
+        "text": "(ix) Explain the term livestock unit.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Livestock unit value for: 1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "j",
+        "text": "(x) Give the livestock unit value for:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "1. A mature dairy cow",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
@@ -25,9 +153,9 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Draw a labelled diagram of the soil profile of a named soil type. (ii) Outline the factors responsible for creating any two of the soil horizons shown.",
+        "text": "(i) Draw a labelled diagram of the soil profile of a named soil type.",
         "solution": [],
-        "skip": false
+        "skip": true
       },
       {
         "id": "b",
@@ -72,23 +200,9 @@
     "parts": [
       {
         "id": "a",
-        "text": "Explain the following terms:",
+        "text": "Explain the following terms: \n1. Moisture stress\n2. Permanent wilting point.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Moisture stress:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Permanent wilting point:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },
@@ -232,27 +346,7 @@
         "id": "a",
         "text": "Explain each of the following agriculturally relevant concepts in genetics and give an appropriate example in each case. (i) Polyploidy (ii) Freemartin condition (iii) Micropropagation.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Polyploidy:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Freemartin condition:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Micropropagation:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "b",
@@ -268,13 +362,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Explain what is meant by embryo transfer in farm animals:",
+            "text": "Explain what is meant by embryo transfer in farm animals.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Give three benefits of embryo transfer:",
+            "text": "Give three benefits of embryo transfer.",
             "solution": [],
             "skip": false
           }
@@ -291,13 +385,41 @@
         "id": "a",
         "text": "(i) Describe the main processes at work during the conversion of grass to silage. (ii) Relate three practical steps in the making of good quality silage to the processes above.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Describe the main processes at work during the conversion of grass to silage.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Relate three practical steps in the making of good quality silage to the processes above.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
         "text": "Three of the major elements needed for good plant growth are nitrogen (N), phosphorus (P), and potassium (K). (i) In the case of each element describe 1. Its function in the plant 2. A deficiency symptom. (ii) Describe a laboratory experiment to show the effect of the deficiency of a particular element in a plant.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) In the case of each element describe 1. Its function in the plant 2. A deficiency symptom.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Describe a laboratory experiment to show the effect of the deficiency of a particular element in a plant.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "c",

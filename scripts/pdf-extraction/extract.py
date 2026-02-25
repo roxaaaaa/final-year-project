@@ -2,7 +2,20 @@ import pdfplumber
 import re
 import os
 import json
+import logging
 from typing import List, Dict, Tuple
+
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+logging.basicConfig(
+    level=logging.INFO, 
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("pdf_processing.log"), 
+        logging.StreamHandler()                    # prints to console
+    ]
+)
+logger = logging.getLogger(__name__)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_dir = os.path.dirname(os.path.dirname(script_dir))
@@ -11,11 +24,10 @@ ordinary_pdf_path = os.path.join(project_dir, "data", "initial","ordinary")
 higher_pdf_path = os.path.join(project_dir, "data", "initial","higher")
 
 SKIP_WORDS = ["image", "picture","diagram", " graph ","photograph",  "figure", "illustration",
-                     "a tick", "correct box", "table", "True", "False", "shown below"] 
+                     "a tick", "correct box", "table", "true", "false", "shown below"] 
 
 SOFT_SKIP= ["other valid responses", "Answer", "**Accept other valid answers", "Any three valid points"]
 HARD_SKIP= ["BLANK PAGE", "Question 1 carries 60 marks", "Leaving Certificate Examination", "Agricultural Science – Ordinary Level", "Agricultural Science – Higher Level", "ORDINARY LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "HIGHER LEVEL AGRICULTURAL SCIENCE  |  Pre-Leaving Certificate, 2025", "Page", "section","ordinary", "higher", "level"]
-# json file structure : paper_id level of question (ordinary, higher), question number, context, *topic, id item(a,b,c or ai, aii, biii), text, solution, marks.
 
 def get_page_range(pdf_path):
     with pdfplumber.open(pdf_path) as pdf:
@@ -28,7 +40,7 @@ def get_page_range(pdf_path):
     # Default to last page
 
     with pdfplumber.open(pdf_path) as pdf:
-        # Find start - "Question 1" or just "1." pattern for offical papers and Q1 or Q 1 for the solutions
+        # Find start "Question 1" or just "1." pattern for offical papers and Q1 or Q 1 for the solutions
         for i, page in enumerate(pdf.pages):
             text = page.extract_text()
             if text and (re.search(r"question\s+1", text, re.IGNORECASE) or 
@@ -73,7 +85,7 @@ def _should_skip_question(text: str) -> bool:
         if others:
             q_match = re.search(r'Question\s+(\d+)|\b(\d+)\s*\.|Q\s?\d+', text, re.IGNORECASE)
             q_num = q_match.group(1) or q_match.group(2) if q_match else "?"
-            print(f"[SKIPPED] Question {q_num}: 'labelled diagram' present but also matched {others}")
+            logger.info(f"[SKIPPED] Question {q_num}: 'labelled diagram' present but also matched {others}")
             return True
         # Only 'diagram' present and phrase 'labelled diagram' detected - keep
         return False
@@ -82,7 +94,7 @@ def _should_skip_question(text: str) -> bool:
     if present_keywords:
         q_match = re.search(r'Question\s+(\d+)|\b(\d+)\s*\.|Q\s?\d+', text, re.IGNORECASE)
         q_num = q_match.group(1) or q_match.group(2) if q_match else "?"
-        print(f"[SKIPPED] Question {q_num}: matched keyword(s) {present_keywords}")
+        logger.info(f"[SKIPPED] Question {q_num}: matched keyword(s) {present_keywords}")
         return True
 
     return False
@@ -135,8 +147,7 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
     else:
         # Fallback: Split on "1. ", "2. ", etc., but only if it's the start of a section
         blocks = re.split(r'(?=\b\d+\s*\.\s+)', cleaned_text)
-    # Show first 500 chars of cleaned text for debugging
-    # print(f"[DEBUG] First 500 chars of cleaned_text:\n{cleaned_text[:500]}\n")
+
     questions: List[Dict] = []
 
     last_q_num = -1  # Track the last successfully added question number
@@ -146,7 +157,7 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
         if not block_stripped:
             continue
 
-        # 1. Extract the number using your regex patterns
+        # Extract the number using regex 
         q_match = re.search(r'Question\s+(\d+)|Q\s?(\d+)', block_stripped, re.IGNORECASE)
         if not q_match:
             q_match = re.search(r'^\s*(\d+)\s*\.', block_stripped, re.MULTILINE)
@@ -158,7 +169,7 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
                 questions[-1][key] += " " + block_stripped
             continue
 
-        # 2. Parse the found number
+        # Parse the found number
         try:
             current_q_num = int(q_match.group(1) or q_match.group(2) or q_match.group(0).strip().replace('.', ''))
         except (ValueError, AttributeError):
@@ -166,16 +177,14 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
 
         if current_q_num > 20:
             continue
-        # 3. SEQUENCE CHECK: If the new number is not greater than the last, 
-        # it is likely a sub-item (e.g., Q1 -> Q2 -> 1.1).
+        # SEQUENCE CHECK
         if current_q_num <= last_q_num:
             if questions:
                 key = "solution" if is_solution else "text"
                 questions[-1][key] += " " + block_stripped
-                print(f"[DEBUG] Sub-item detected (Q{current_q_num} <= Q{last_q_num}). Appending to Q{last_q_num}.")
             continue
 
-        # 4. Filter and Add new question
+        # Filter and add new question
         if not is_solution and _should_skip_question(block_stripped):
             continue
 
@@ -186,32 +195,44 @@ def extract_text_from_pdf(pdf_path: str, is_solution: bool = False) -> List[Dict
         })
         
         last_q_num = current_q_num # Update the sequence tracker
-        print(f"[DEBUG] Added Question {current_q_num}")
+        logger.info(f"Added Question {current_q_num}")
     return questions
 
+def filter_solutions_by_question_number(solution_path, question_path) -> List[Dict]:
+    """Filter solutions to only include those matching the provided question numbers."""
+    with open(question_path, 'r', encoding='utf-8') as f:
+        questions = json.load(f)
+    question_numbers = [q["question_number"] for q in questions]
+
+    with open(solution_path, 'r', encoding='utf-8') as f:
+        solutions = json.load(f)
+
+    filtered = []
+    for sol in solutions:
+        if sol["question_number"] in question_numbers:
+            filtered.append(sol)
+    return filtered
 
 def write_questions_to_json(questions: List[Dict], out_path: str):
     with open(out_path, 'w', encoding='utf-8') as fh:
         json.dump(questions, fh, indent=2, ensure_ascii=False)
     
 if __name__ == "__main__":
-    # Using the defined paths
-    pdf_file1 = "paper_2015.pdf"
-    pdf_path1 = os.path.join(higher_pdf_path, pdf_file1)
-    questions = extract_text_from_pdf(pdf_path1, is_solution=False)
-    
-    output_path = os.path.join(project_dir, "data", "unstructured", "questions_2015_higher.json")
-    write_questions_to_json(questions, output_path)
-    print(f"Extracted {len(questions)} questions to {output_path}")
+    range_higher = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+    for i in range_higher:
+        json_file_solution = f"solutions_{i}_higher.json"
+        pdf_path = os.path.join(higher_pdf_path, f"solutions_{i}_higher.pdf")
+        filtered_solutions = filter_solutions_by_question_number(os.path.join(project_dir, "data", "unstructured", f"questions_{i}_higher.json"), os.path.join(project_dir, "data", "unstructured", json_file_solution))
+        
+    #     output_path_solutions = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json")
+    #     write_questions_to_json(filtered_solutions, output_path_solutions)
+    #     logger.info(f"From {pdf_path} extracted {len(filtered_solutions)} filtered solutions to {output_path_solutions}")
 
-    # pdf_file = "2024.pdf"
-    # pdf_path = os.path.join(ordinary_pdf_path, pdf_file)
-    # solutions = extract_text_from_pdf(pdf_path, is_solution=True)
-
-
-    # output_path_solutions = os.path.join(project_dir, "data", "unstructured","solutions_2024_ordinary.json")
-    # write_questions_to_json(solutions, output_path_solutions)
-    # print(f"Extracted {len(solutions)} solutions to {output_path_solutions}")
+    # for i in range_higher:
+    #     pdf_path = os.path.join(higher_pdf_path, f"{i}.pdf")
+    #     solutions = extract_text_from_pdf(pdf_path, is_solution=True)
+    #     write_questions_to_json(solutions, os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json"))
+    # range_ordinary = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024]
 
  
 # def extract_topic(text):

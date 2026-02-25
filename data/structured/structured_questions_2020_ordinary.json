@@ -1,0 +1,268 @@
+[
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State two sources of pollution on a farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Source 1. _________________________________________________",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Source 2. _________________________________________________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the harmful effects of each of the above sources of farm pollution.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Effect of source 1. _______________________________________________ ______________________________________________________________",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Effect of source 2. _______________________________________________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State one reason for each of the following farm practices.\n(a) Vaccination of farm animals.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(b) Using footbaths on a sheep farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(c) Growing certified seed potatoes.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(d) Subsoiling a soil.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "(e) Maintaining hedgerows.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Draw a labelled diagram of a paddock grazing system. (ii) State two advantages and two disadvantages of paddock grazing.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "(i) Outline four steps involved in making good quality hay and explain why any one of those steps is important. (ii) The following steps are taken when making good quality silage. State one reason for each of the steps listed below.\n1. Cutting the grass on a sunny day.\n2. Allowing the cut grass to wilt.\n3. Rolling or baling the cut grass.\n4. Covering the grass in plastic.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Describe a simple on-site test that a farmer can carry out on silage. Give a possible result of this test and say what the result means about the quality of the silage.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Farmers use ground limestone (CaCO₃) to raise the pH of the soil. Which chemical element in ground limestone is the most important in raising the soil pH?",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(ii) State two ways in which a soil may become acidic.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(iii) Describe how you would find the pH of a soil sample.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Name the three principal plant nutrients in 10-10-20. (ii) State the function of any one of the plant nutrients in 10-10-20.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(iii) Describe how you would find the pH of a soil sample.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Farmyard manure (FYM) and slurry are two forms of farm animal waste. (ii) State two differences between the composition of FYM and the composition of slurry. (iii) Slurry has to be agitated before it can be spread. State two precautions taken by farmers when agitating slurry.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(ii) State two differences between the composition of FYM and the composition of slurry.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(iii) Slurry has to be agitated before it can be spread. State two precautions taken by farmers when agitating slurry.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "There are 60 chromosomes in the somatic cells (body cells) of cattle.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "How many chromosomes are in the gametes of cattle?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name the organ in which the female gametes are produced in cattle.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name the type of cell division that produces gametes.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In maize the allele for green seedlings (G) is dominant over the allele for albino seedlings (g). A maize plant, homozygous for green (GG), was crossed with a maize plant homozygous for albino (gg). Copy and complete this cross in your book. Parent phenotypes Green Albino Parent genotypes (GG) x (gg) Gametes ( ) x ( ) Genotype of offspring ( ) Phenotype of offspring ____________________________",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Two plants with the same genotype as the offspring above were crossed with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes from this cross. Plant genotypes ( ) x ( ) Possible gametes ( ) ( ) x ( ) ( ) Genotypes of offspring ( ) ( ) ( ) Phenotypes of offspring __________________ __________________",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Cross breeding is commonly used in agriculture.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term cross breeding?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one advantage of a cross breeding system.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two factors that can affect soil temperature. (ii) What is a loam soil? (iii) State two advantages of a loam soil. (iv) State two ways that earthworms may improve the soil. (v) What may cause a decrease in the earthworm population of a soil?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(i) Describe winter barley or spring barley under the following headings: 1. Time of sowing. 2. Time of harvesting. 3. Expected yield. (ii) Name a disease of barley. (iii) Name a pest of barley. (iv) State two factors that allow grain to be stored safely over the winter.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe the management of lowland lambs under the following headings: (i) Care at birth. (ii) Changes in diet. (iii) Housing. (iv) Disease control. (v) Age at weaning.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(i) State two functions of dietary protein in a farm animal’s body. (ii) Describe how to test a food for the presence of protein. (iii) Distinguish between bulky feeds and concentrates and give an example of each. (iv) What is meant by the term maintenance ration? (v) What is meant by the term production ration?",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

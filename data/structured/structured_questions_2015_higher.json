@@ -12,41 +12,9 @@
       },
       {
         "id": "b",
-        "text": "State to which phylum each of the following belongs:",
+        "text": "State to which phylum each of the following belongs: (i) Earthworm. (ii) Greenbottle fly. (iii) Liver fluke. (iv) Sheep. (v) Babesia.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) Earthworm.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) Greenbottle fly.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Liver fluke.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "(iv) Sheep.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "v",
-            "text": "(v) Babesia.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "c",
@@ -68,23 +36,9 @@
       },
       {
         "id": "f",
-        "text": "List any two structural characteristics of each of the following:",
+        "text": "List any two structural characteristics of each of the following: (i) a fern plant. (ii) a pine tree.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) a fern plant.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) a pine tree.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       },
       {
         "id": "g",
@@ -100,13 +54,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "(i)",
+            "text": "Explain the term interdependence as used in ecology.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "(ii)",
+            "text": "Give two examples of interdependence in agriculture.",
             "solution": [],
             "skip": false
           }
@@ -114,25 +68,25 @@
       },
       {
         "id": "i",
-        "text": "Give three functions of blood in the animal body.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "j",
-        "text": "(i) Explain what is meant by the aspect of a field. (ii) Outline how aspect affects crop growth.",
+        "text": "(i) Give three functions of blood in the animal body. (ii) Explain what is meant by the aspect of a field. (iii) Outline how aspect affects crop growth.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "(i)",
+            "text": "Give three functions of blood in the animal body.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "(ii)",
+            "text": "Explain what is meant by the aspect of a field.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline how aspect affects crop growth.",
             "solution": [],
             "skip": false
           }
@@ -179,7 +133,7 @@
         "subparts": [
           {
             "id": "i",
-            "text": "(i) 1. Explain the difference between a cation and a colloid. 2. Explain the terms cation exchange and cation exchange capacity (CEC).",
+            "text": "(1) Explain the difference between a cation and a colloid. (2) Explain the terms cation exchange and cation exchange capacity (CEC).",
             "solution": [],
             "skip": false,
             "subparts": [
@@ -199,7 +153,7 @@
           },
           {
             "id": "ii",
-            "text": "(ii) How may the CEC of a soil be increased?",
+            "text": "How may the CEC of a soil be increased?",
             "solution": [],
             "skip": false
           }
@@ -220,7 +174,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "Discuss in detail the following points in relation to a dairy enterprise: (i) Management of calving. (ii) Environmental conditions in the first three days after birth. (iii) Feeding principles in the first three days after birth.",
+        "text": "Discuss in detail the following points in relation to a dairy enterprise:",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -246,7 +200,7 @@
       },
       {
         "id": "b",
-        "text": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings: (i) Management. (ii) Feeding principles required for optimum growth.",
+        "text": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings:",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -272,13 +226,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "(i) What is the expected liveweight of dairy calves at first housing?",
+            "text": "(i)",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "(ii) Explain why most beef animals are slaughtered at two years of age.",
+            "text": "(ii)",
             "solution": [],
             "skip": false
           }
@@ -432,19 +386,19 @@
             "subparts": [
               {
                 "id": "i",
-                "text": "1. Sex linkage.",
+                "text": "Sex linkage.",
                 "solution": [],
                 "skip": false
               },
               {
                 "id": "ii",
-                "text": "2. Clone.",
+                "text": "Clone.",
                 "solution": [],
                 "skip": false
               },
               {
                 "id": "iii",
-                "text": "3. Polyploid.",
+                "text": "Polyploid.",
                 "solution": [],
                 "skip": false
               }
@@ -460,19 +414,19 @@
         "subparts": [
           {
             "id": "i",
-            "text": "(i) State the genotypes of the bull and cow using the above notation.",
+            "text": "State the genotypes of the bull and cow using the above notation.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "(ii) State the four possible calf phenotypes.",
+            "text": "State the four possible calf phenotypes.",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "(iii) Which of the possible phenotypes indicate that independent assortment has taken place?",
+            "text": "Which of the possible phenotypes indicate that independent assortment has taken place?",
             "solution": [],
             "skip": false
           }
@@ -480,35 +434,21 @@
       },
       {
         "id": "c",
-        "text": "Discuss the advantages of using sexed semen rather than conventional semen to those dairy farmers planning to increase milk production. 1. What is meant by the term livestock units? 2. Give two examples to show your understanding of the term livestock units.",
+        "text": "The abolition of milk quotas will give many dairy farmers scope to increase milk production for the first time in more than thirty years. Discuss the advantages of using sexed semen rather than conventional semen to those dairy farmers planning to increase milk production.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Discuss the advantages of using sexed semen rather than conventional semen to those dairy farmers planning to increase milk production.",
+            "text": "What is meant by the term livestock units?",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "1. What is meant by the term livestock units? 2. Give two examples to show your understanding of the term livestock units.",
+            "text": "Give two examples to show your understanding of the term livestock units.",
             "solution": [],
-            "skip": false,
-            "subparts": [
-              {
-                "id": "i",
-                "text": "1. What is meant by the term livestock units?",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "ii",
-                "text": "2. Give two examples to show your understanding of the term livestock units.",
-                "solution": [],
-                "skip": false
-              }
-            ]
+            "skip": false
           }
         ]
       },
@@ -516,7 +456,27 @@
         "id": "d",
         "text": "Distinguish between the members of any three of the following pairs of terms: (i) Top dressing and topping. (ii) Hepatic vein and hepatic portal vein. (iii) Raised bog and blanket bog. (iv) Tilling and tillering.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Distinguish between top dressing and topping.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Distinguish between hepatic vein and hepatic portal vein.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Distinguish between raised bog and blanket bog.",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },

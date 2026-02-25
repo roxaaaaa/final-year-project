@@ -6,19 +6,13 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Identify each of the following breeds of animals. A B C A: B: C:",
+        "text": "(i) Identify each of the following breeds of animals.\nA B C\nA:\nB:\nC:",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "Breed C is a dual-purpose breed. Explain the underlined term.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Todd wanted to purchase a purebred bull. Explain the importance of using a purebred sire in a beef herd.",
+            "text": "(ii) Breed C is a dual-purpose breed. Explain the underlined term.",
             "solution": [],
             "skip": false
           }
@@ -26,13 +20,13 @@
       },
       {
         "id": "b",
-        "text": "(i) Identify each of the following breeds of animals. D E F D: E: F:",
+        "text": "(i) Identify each of the following breeds of animals.\nD E F\nD:\nE:\nF:",
         "solution": [],
         "skip": false,
         "subparts": [
           {
-            "id": "i",
-            "text": "Using evidence from the article, suggest which Irish cattle industry this breed is most suited. Industry: Evidence:",
+            "id": "ii",
+            "text": "(ii) Read the article and the questions which follow. Fleckvieh Cattle This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020) Using evidence from the article, suggest which Irish cattle industry this breed is most suited. Industry: Evidence:",
             "solution": [],
             "skip": false
           }
@@ -42,12 +36,12 @@
   },
   {
     "question_num": "3",
-    "context": "",
+    "context": "Calcium is an important element required by both plants and animals.",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "State one source of calcium for either plants or animals.",
+        "text": "State one source of calcium for either plants or animals. Plant or animal:",
         "solution": [],
         "skip": false
       },
@@ -72,9 +66,29 @@
     "parts": [
       {
         "id": "a",
-        "text": "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below. Clipped Worm dosed Treated for lice Sorted into pens based on breed and weight",
+        "text": "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Clipped:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Dosed:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Treated for lice:",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
@@ -86,7 +100,7 @@
   },
   {
     "question_num": "5",
-    "context": "Soil testing is essential to determine the nutrient requirement of the soil.",
+    "context": "",
     "skip": false,
     "parts": [
       {
@@ -116,7 +130,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "Read the article and the questions which follow.",
+        "text": "Read the article and the questions which follow. The Farmdroid has landed in Ireland The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding. The core principle of the machine is that it relies on GPS location data to go about its daily tasks. The tasks of sowing and mechanical weed control in crops are guided by precision GPS. Using this GPS, the Farmdroid can sow the seeds far enough apart to note and record where each individual seed has been planted in a field. The company claims that accuracy is to within 8mm, allowing even pre-emergence hoeing of the soil both between the rows and in between the plants themselves in most crops. (Adapted from Agriland, 2022)",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -142,7 +156,7 @@
       },
       {
         "id": "b",
-        "text": "Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
+        "text": "Scanning female animals to determine if they are pregnant is an important job that is carried out on farms. (i) Briefly describe the benefits of pregnancy scanning in animals. (ii) Jack was scanning beef heifers and scanned a heifer carrying twins. Describe the management implications for this heifer under the headings which follow. Feeding in late gestation: Calving:",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -154,7 +168,7 @@
           },
           {
             "id": "ii",
-            "text": "Jack was scanning beef heifers and scanned a heifer carrying twins. Describe the management implications for this heifer under the headings which follow.",
+            "text": "Jack was scanning beef heifers and scanned a heifer carrying twins. Describe the management implications for this heifer under the headings which follow. Feeding in late gestation: Calving:",
             "solution": [],
             "skip": false,
             "subparts": [
@@ -202,13 +216,13 @@
     "parts": [
       {
         "id": "a",
-        "text": "Explain the underlined term and outline one advantage of this method of planting. Direct drilling: Advantage:",
+        "text": "Explain the underlined term and outline one advantage of this method of planting.\nDirect drilling: Advantage:",
         "solution": [],
         "skip": false
       },
       {
         "id": "b",
-        "text": "He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. Applying your knowledge of crop production, the questions which follow.",
+        "text": "He planted three fields of winter oilseed rape in mid- August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. Applying your knowledge of crop production, the questions which follow.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -264,7 +278,7 @@
           },
           {
             "id": "iii",
-            "text": "Plants counts are easiest to carry out when plants are at the one to two leaf stage. When plants start to tiller out, it becomes very difficult to count them. Explain why it becomes difficult to count the plants at this stage.",
+            "text": "Plant counts are easiest to carry out when plants are at the one to two leaf stage. When plants start to tiller out, it becomes very difficult to count them. Explain why it becomes difficult to count the plants at this stage.",
             "solution": [],
             "skip": false
           },

@@ -1,0 +1,215 @@
+[
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State one reason for each of the following farming practices.\n(a) Spraying a potato crop with fungicide.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(b) Housing of beef animals in the winter.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(c) Paring the hooves of sheep.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(d) Agitating slurry before it is spread.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "(e) Planting shelter belts on a farm.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms used in genetics: (i) Gamete (ii) In-breeding (iii) Clone.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Gamete:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "In-breeding:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Clone:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Livestock without horns are referred to as polled animals. In sheep the gene for having no horns (P) is dominant, and the gene for having horns (p) is recessive. Copy and complete the following into your book, to give the genotype and phenotype of the lambs from the cross.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Parents’ phenotypes: Pure-breeding polled ram\nHorned ewe",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Parents’ genotypes: PP x pp",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Gametes: (P) x (p)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Genotype of offspring: (PP or Pp)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Phenotype of offspring: _______________________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "A ram and a ewe with the same genotype as the offspring above are bred with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes of the lambs from this cross.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Parents’ genotypes: (PP or Pp) x (PP or Pp)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Possible gametes: (P or p) (P or p)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Genotypes of offspring: (PP, Pp, or pp)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Phenotypes of offspring: ______________________________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Artificial insemination (AI) is carried out on some farm animals. (i) State two advantages of artificial insemination. (ii) State two disadvantages of artificial insemination.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) State two advantages of artificial insemination.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) State two disadvantages of artificial insemination.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) From the list of rock types below, name, in your book, 1. a sedimentary rock 2. a metamorphic rock 3. an igneous rock. The list: basalt, sandstone, marble, granite, limestone, slate.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "What is meant by the weathering of rock?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe two ways in which rock is weathered.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) How the soil feels (ii) Particle size (iii) Fertility (iv) Suitability for tillage.",
+        "solution": [],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe a sandy soil or a clay soil under the following headings:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) State two reasons why organic matter is important in a soil. (ii) State two ways in which organic matter may be added to soil. (iii) Explain why plants grown in clay soil survive better in a drought than those grown in sandy soil.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

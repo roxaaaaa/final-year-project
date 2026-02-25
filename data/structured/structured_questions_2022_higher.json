@@ -40,7 +40,15 @@
         "id": "b",
         "text": "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. Describe characteristics he would be looking for when selecting the animal.",
         "solution": [],
-        "skip": true
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Named animal enterprise:",
+            "solution": [],
+            "skip": false
+          }
+        ]
       }
     ]
   },
@@ -71,7 +79,7 @@
   },
   {
     "question_num": "4",
-    "context": "",
+    "context": "Read the article and the questions which follow. Avian flu detected in turkey flock in Co. Monaghan Avian influenza (H5N1) has been detected in a turkey flock in County Monaghan, the Department of Agriculture, Food and the Marine has confirmed. Restriction zones are being set up around the area. This highly pathogenic bird flu has already been confirmed in wild birds across the country. (Adapted from RTE.ie, 2021)",
     "skip": false,
     "parts": [
       {
@@ -135,24 +143,24 @@
   },
   {
     "question_num": "8",
-    "context": "The European Commission has set targets for sustainable food production by 2030. 2030 Targets for Sustainable Food Production Pesticides Nutrient Losses Antimicrobials Organic Farming Reduce the overall use Reduce nutrient losses by Reduce use of antibiotics Increase the percentage and risk of chemical and 50% for farm animals of organically farmed hazardous pesticides land in the EU (Adapted from European Commission, 2020)",
+    "context": "The European Commission has set targets for sustainable food production by 2030.",
     "skip": false,
     "parts": [
       {
         "id": "a",
-        "text": "Explain one way for each part (i) and (ii) below farmers can:\nReduce the use of (i) pesticides on their farm\nReduce use of (ii) antibiotics for farm animals",
+        "text": "Explain one way for each part (i) and (ii) below farmers can: Reduce the use of (i) pesticides on their farm Reduce use of (ii) antibiotics for farm animals",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "One way for farmers to reduce the use of pesticides on their farm:",
+            "text": "Reduce the use of (i) pesticides on their farm:",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "One way for farmers to reduce the use of antibiotics for farm animals:",
+            "text": "Reduce use of (ii) antibiotics for farm animals:",
             "solution": [],
             "skip": false
           }
@@ -166,13 +174,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Benefit one:",
+            "text": "1.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Benefit two:",
+            "text": "2.",
             "solution": [],
             "skip": false
           }
@@ -189,13 +197,14 @@
         "id": "a",
         "text": "(i) Draw a labelled diagram of a calf’s stomach in its first week of life.\n(ii) Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach.",
         "solution": [],
-        "skip": false
+        "skip": true,
+        "subparts": []
       },
       {
         "id": "b",
-        "text": "Read the article on the SEASOLUTIONS Project and the questions which follow.\nSEASOLUTIONS PROJECT Reducing methane emissions from ruminants is one of the biggest challenges to face the agricultural sector in the last decade. The SEASOLUTIONS Project is committed to making a positive impact on methane emissions in agriculture. By using seaweeds and seaweed derived ingredients to positively affect the rumen and rumen microbiota to reduce methane emissions and improve ruminant health. By adding seaweed components to the feed of sheep and cattle indoors on high grain based diets, Irish researchers have reduced methane production by 20%. A critical aspect of this project is to test such seaweed supplements within the context of a pasture‐based production system. (Adapted from SEASOLUTIONS.ie and Teagasc, 2021)\n(i) Outline two roles of micro‐organisms in the ruminant stomach.\n(ii) Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.\n(iii) Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
+        "text": "(i) Outline two roles of micro‐organisms in the ruminant stomach. 1. 2.\n(ii) Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.\n(iii) Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
         "solution": [],
-        "skip": true,
+        "skip": false,
         "subparts": [
           {
             "id": "i",

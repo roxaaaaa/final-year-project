@@ -70,13 +70,13 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Describe the test used to show the presence of the mineral.",
+            "text": "(i) Describe the test used to show the presence of the mineral.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Describe the colour change that indicates a positive result for the presence of the mineral.",
+            "text": "(ii) Describe the colour change that indicates a positive result for the presence of the mineral.",
             "solution": [],
             "skip": false
           }
@@ -144,38 +144,38 @@
   },
   {
     "question_num": "2",
-    "context": "Summer 2018 saw drought conditions across many parts of Ireland, which greatly affected both crop and grass growth.",
+    "context": "(a) Summer 2018 saw drought conditions across many parts of Ireland, which greatly affected both crop and grass growth.",
     "skip": false,
     "parts": [
       {
-        "id": "a",
-        "text": "(i) Explain the following terms: 1. Moisture stress 2. Permanent wilting point.\n(ii) Available water capacity is an important term in the context of soils. 1. What is meant by the term available water capacity? 2. Which soil type has the highest available water capacity? Give two reasons for your answer.",
+        "id": "i",
+        "text": "Explain the following terms: 1. Moisture stress 2. Permanent wilting point.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Explain the following terms: 1. Moisture stress 2. Permanent wilting point."
-          },
-          {
-            "id": "ii",
-            "text": "Available water capacity is an important term in the context of soils. 1. What is meant by the term available water capacity? 2. Which soil type has the highest available water capacity? Give two reasons for your answer."
-          }
-        ]
+        "skip": false
+      },
+      {
+        "id": "ii",
+        "text": "Available water capacity is an important term in the context of soils. 1. What is meant by the term available water capacity? 2. Which soil type has the highest available water capacity? Give two reasons for your answer.",
+        "solution": [],
+        "skip": false
       },
       {
         "id": "b",
-        "text": "(i) List any four causes of increasing soil acidity over time.\n(ii) Explain in detail how any one of the above causes increases soil acidity.",
+        "text": "Agricultural land usually becomes more acidic over time.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "List any four causes of increasing soil acidity over time."
+            "text": "List any four causes of increasing soil acidity over time.",
+            "solution": [],
+            "skip": false
           },
           {
             "id": "ii",
-            "text": "Explain in detail how any one of the above causes increases soil acidity."
+            "text": "Explain in detail how any one of the above causes increases soil acidity.",
+            "solution": [],
+            "skip": false
           }
         ]
       },
@@ -208,33 +208,7 @@
             "id": "ii",
             "text": "Outline four ways in which the structure of the leaf is suited to photosynthesis.",
             "solution": [],
-            "skip": false,
-            "subparts": [
-              {
-                "id": "i",
-                "text": "Way one:",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "ii",
-                "text": "Way two:",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "iii",
-                "text": "Way three:",
-                "solution": [],
-                "skip": false
-              },
-              {
-                "id": "iv",
-                "text": "Way four:",
-                "solution": [],
-                "skip": false
-              }
-            ]
+            "skip": false
           }
         ]
       },
@@ -248,33 +222,7 @@
         "id": "c",
         "text": "Micro‐organisms can have both positive and negative effects in agriculture. Describe two positive effects and two negative effects of micro‐organisms in agriculture, other than in relation to post‐harvest silage production.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "Positive effect one:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "Positive effect two:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "Negative effect one:",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "Negative effect two:",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },
@@ -413,25 +361,25 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Composition.",
+            "text": "Composition",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Organic matter content.",
+            "text": "Organic matter content",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "Storage.",
+            "text": "Storage",
             "solution": [],
             "skip": false
           },
           {
             "id": "iv",
-            "text": "Method of application.",
+            "text": "Method of application",
             "solution": [],
             "skip": false
           }
@@ -473,17 +421,43 @@
         "id": "a",
         "text": "Describe, with the aid of a labelled diagram, the life cycle of the liver fluke (Fasciola hepatica).",
         "solution": [],
-        "skip": false
+        "skip": true
       },
       {
         "id": "b",
-        "text": "Differentiate between dicot stems and stem.",
+        "text": "Compare and contrast dicot stems with monocot stems.",
         "solution": [],
         "skip": false
       },
       {
         "id": "c",
-        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Omasum and abomasum (ii) Ureter and urethra (iii) Split dressing and top dressing (iv) Maintenance ration and production ration.",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms:",
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Omasum and abomasum",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Ureter and urethra",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Split dressing and top dressing",
+            "solution": [],
+            "skip": false
+          }
+        ],
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Explain the differences between maintenance ration and production ration.",
         "solution": [],
         "skip": false
       }

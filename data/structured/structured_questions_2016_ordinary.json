@@ -1,0 +1,373 @@
+[
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Choosing Holstein-Friesian cows for a dairy farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Carrying out a soil test before sowing a crop.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Growing a catch crop on a farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Spreading slurry at certain times of the year only.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Practising crop rotation.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Give two uses for barley.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "_____________________________________________________________________________",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "_____________________________________________________________________________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "State two features of a barley crop when it is ready for harvesting.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "State a reason for each of the following practices when growing barley. (i) Providing “tramlines”. _____________________________________________________________________________ (ii) Using a combine drill. (iii) Rolling. (iv) Harvesting when weather is dry.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "_____________________________________________________________________________",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "_____________________________________________________________________________",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "_____________________________________________________________________________",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "_____________________________________________________________________________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Explain how potato blight reduces the yield of maincrop potatoes. (ii) Describe two symptoms of potato blight. (iii) Outline two methods of preventing potato blight.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain how potato blight reduces the yield of maincrop potatoes.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe two symptoms of potato blight.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline two methods of preventing potato blight.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the cultivation of potatoes under the following headings: (i) Soil suitability. (ii) Method of sowing. (iii) Weed control. (iv) Harvesting.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Soil suitability.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Method of sowing.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Weed control.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Harvesting.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to find the percentage (%) water in a sample of potatoes.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Where in a cell are chromosomes found? (ii) State a function of chromosomes. (iii) There are 54 chromosomes in a body cell of a sheep. How many chromosomes are there in a gamete of a sheep?",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Where in a cell are chromosomes found?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State a function of chromosomes.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "There are 54 chromosomes in a body cell of a sheep. How many chromosomes are there in a gamete of a sheep?",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In Aberdeen Angus cattle, the allele for the polled (hornless) condition (P) is dominant to the allele for having horns (p). A pure breeding polled bull and a cow with horns are crossed. What will be the genotype and phenotype of their calf? Copy the following into your book and complete the spaces (genotype in brackets, phenotype on line). Genotypes of parents (PP) × (pp) (i) Gametes ( ) × ( ) (ii) Genotype of calf ( ) (iii) Phenotype of calf _______________",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Gametes ( ) × ( )",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Genotype of calf ( )",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Phenotype of calf _______________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "A heifer resulting from the cross in part (b) is crossed with a bull that is heterozygous for horns. What are the possible genotypes and phenotypes of their calves? Copy the following into your book and complete the spaces (genotypes in brackets, phenotypes on lines). (i) Genotypes of parents ( ) × ( ) (ii) Possible gametes ( ) ( ) × ( ) ( ) (iii) Possible genotypes of calves ( ) ( ) ( ) (iv) Possible phenotypes of calves ___________ ____________",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Genotypes of parents ( ) × ( )",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Possible gametes ( ) ( ) × ( ) ( )",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Possible genotypes of calves ( ) ( ) ( )",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Possible phenotypes of calves ___________ ____________",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "(i) What is cross-breeding? (ii) State, using examples, the advantages of cross-breeding in sheep production.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) What is cross-breeding?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) State, using examples, the advantages of cross-breeding in sheep production.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two of the most common lowland breeds of sheep farmed in Ireland.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Name two breeds of pig used in pig production in Ireland.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Outline the precautions taken to reduce calf deaths at calving time on a dairy farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "(i) Describe two management practices which would result in the production of clean milk in the milking parlour.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

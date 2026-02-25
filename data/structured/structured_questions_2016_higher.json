@@ -30,7 +30,7 @@
       },
       {
         "id": "e",
-        "text": "Draw a labelled diagram of the fungus Rhizopus (bread mould).",
+        "text": "(i) Draw a labelled diagram of the fungus Rhizopus (bread mould).",
         "solution": [],
         "skip": true
       },
@@ -54,7 +54,7 @@
       },
       {
         "id": "i",
-        "text": "State the location and function of the following structures in mammals: (i) Villi. (ii) Nephrons. (iii) Cervix.",
+        "text": "(ii) State the location and function of the following structures in mammals: (a) Villi. (b) Nephrons. (c) Cervix.",
         "solution": [],
         "skip": false
       },
@@ -84,13 +84,7 @@
       },
       {
         "id": "n",
-        "text": "(i) Name two bacterial diseases of pigs.",
-        "solution": [],
-        "skip": false
-      },
-      {
-        "id": "o",
-        "text": "(ii) Give one symptom of each disease.",
+        "text": "(ii) (a) Name two bacterial diseases of pigs. (b) Give one symptom of each disease.",
         "solution": [],
         "skip": false
       }
@@ -109,19 +103,19 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Drainage:",
+            "text": "Drainage.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "Fertility:",
+            "text": "Fertility.",
             "solution": [],
             "skip": false
           },
           {
             "id": "iii",
-            "text": "pH:",
+            "text": "pH.",
             "solution": [],
             "skip": false
           }
@@ -292,7 +286,7 @@
   },
   {
     "question_num": "7",
-    "context": "",
+    "context": "(a) Explain each of the following terms: (i) F1 hybrids. (ii) Continuous variation. (iii) Back cross. (iv) Incomplete dominance.",
     "skip": false,
     "parts": [
       {
@@ -329,7 +323,7 @@
       },
       {
         "id": "b",
-        "text": "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow. (i) Give the genotype of the bull used in this cross. (ii) List the possible genotypes resulting from this cross. (iii) What is the probability that a calf from this cross would be white and horned? (iv) What is the probability that a calf from this cross would be horned? Explain your .",
+        "text": "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow. (i) Give the genotype of the bull used in this cross. (ii) List the possible genotypes resulting from this cross. (iii) What is the probability that a calf from this cross would be white and horned? (iv) What is the probability that a calf from this cross would be horned? Explain your . (v) State Mendel’s Law of Segregation.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -347,13 +341,13 @@
           },
           {
             "id": "iii",
-            "text": "What is the probability that a calf from this cross would be white and horned?",
+            "text": "What is the probability that a calf from this cross would be white and horned? (iv) What is the probability that a calf from this cross would be horned? Explain your answer.",
             "solution": [],
             "skip": false
           },
           {
-            "id": "iv",
-            "text": "What is the probability that a calf from this cross would be horned? Explain your answer.",
+            "id": "v",
+            "text": "State Mendel’s Law of Segregation.",
             "solution": [],
             "skip": false
           }
@@ -361,7 +355,7 @@
       },
       {
         "id": "c",
-        "text": "The Economic Breeding Index (EBI) is widely used in dairying to identify genetically superior animals to improve dairy production in Ireland. (i) List any two sub-indices of the EBI. (ii) Outline the factors that determine each sub-index listed.",
+        "text": "(i) List any two sub-indices of the EBI. (ii) Outline the factors that determine each sub-index listed.",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -432,35 +426,9 @@
       },
       {
         "id": "c",
-        "text": "Distinguish clearly between the members of any three of the following pairs of terms:",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Crossbreeding and crossing-over. (ii) Active transport and active immunity. (iii) Transpiration and translocation. (iv) Nitrification and denitrification.",
         "solution": [],
-        "skip": false,
-        "subparts": [
-          {
-            "id": "i",
-            "text": "(i) Crossbreeding and crossing-over.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "ii",
-            "text": "(ii) Active transport and active immunity.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iii",
-            "text": "(iii) Transpiration and translocation.",
-            "solution": [],
-            "skip": false
-          },
-          {
-            "id": "iv",
-            "text": "(iv) Nitrification and denitrification.",
-            "solution": [],
-            "skip": false
-          }
-        ]
+        "skip": false
       }
     ]
   },

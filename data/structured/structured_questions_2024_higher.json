@@ -25,7 +25,7 @@
     "parts": [
       {
         "id": "a",
-        "text": "Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: \n• lameness control \n• mineral supplementation of ewe’s post mating \n• meal feeding of lamb’s post weaning \n• scanning of in-lamb ewes\nFor any two of the above listed target features / activities:",
+        "text": "Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are:  lameness control  mineral supplementation of ewe’s post mating  meal feeding of lamb’s post weaning  scanning of in-lamb ewes For any two of the above listed target features / activities:",
         "solution": [],
         "skip": false,
         "subparts": [
@@ -37,7 +37,7 @@
           },
           {
             "id": "ii",
-            "text": "Describe the benefit of each target feature / activities to overall production of the flock.",
+            "text": "Describe the benefit of each target feature / activity to overall production of the flock. Named target feature / Description activity 1. Action: Benefit: 2. Action: ",
             "solution": [],
             "skip": false
           }
@@ -45,19 +45,33 @@
       },
       {
         "id": "b",
-        "text": "The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures.\nRyan and Fiona have the following sheep on their farm.\nStock type Numbers on farm Rams 4 Breeding ewes 132 Hoggets 42 Lambs 200\n(i) Calculate the financial value of the scheme to Ryan and Fiona. Calculation:\n(ii) The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: \n• mineral supplementation of lambs pre-weaning \n• flystrike control \n• genotyping of ram\nBriefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+        "text": "The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm. Stock type Numbers on farm Rams 4 Breeding ewes 132 Hoggets 42 Lambs 200 (i) Calculate the financial value of the scheme to Ryan and Fiona.",
         "solution": [],
         "skip": false,
         "subparts": [
           {
             "id": "i",
-            "text": "",
+            "text": "Calculation:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are:  mineral supplementation of lambs pre-weaning  flystrike control  genotyping of ram Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Named target Explanation feature 1.",
             "solution": [],
             "skip": false
           },
           {
             "id": "ii",
-            "text": "",
+            "text": "2.",
             "solution": [],
             "skip": false
           }
@@ -86,7 +100,7 @@
   },
   {
     "question_num": "8",
-    "context": "",
+    "context": "Irish Beetles Tackle Docks in New Trial Irish-bred beetles are set to become an environmentally friendly, cost-effective weapon to kill docks. Once released on a farm, the dock beetle breeds to colonise the whole field. Dock beetles are native and natural predators of docks. They skeletonise dock leaves grassland. The population of dock beetle will initially rise to decimate the dock weed naturally. The population will reduce as its success diminishes its natural food supply in a sustainable way on an annual basis. They hibernate for the winter and reappear each spring. (Adapted from Irish Farmers Journal, 2022)",
     "skip": false,
     "parts": [
       {
@@ -109,7 +123,7 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Biological control Target",
+            "text": "Biological control Target:",
             "solution": [],
             "skip": false
           }
@@ -124,9 +138,23 @@
     "parts": [
       {
         "id": "a",
-        "text": "Compare the different soil mineral particles and their properties under the headings that follow. The first one has been done as an example. Gravel and sand particles Silt and clay particles Particle size Large particles Small particles Drainage Fertility Ion exchange",
+        "text": "Compare the different soil mineral particles and their properties under the headings that follow.",
         "solution": [],
-        "skip": false
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Gravel and sand particles\nLarge particles\nDrainage\nFertility\nIon exchange",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Silt and clay particles\nSmall particles",
+            "solution": [],
+            "skip": false
+          }
+        ]
       },
       {
         "id": "b",
@@ -136,7 +164,7 @@
         "subparts": [
           {
             "id": "i",
-            "text": "Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below. Moderate quality Poor quality Good quality A B C",
+            "text": "Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below.\nModerate quality\nPoor quality\nGood quality\nA\nB\nC",
             "solution": [],
             "skip": false
           },
@@ -157,13 +185,13 @@
     "parts": [
       {
         "id": "a",
-        "text": "(i) Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land. Describe with the aid of a labelled diagram how she carried out this investigation. Labelled diagram: (ii) Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below. Ragwort Meadow Thistle Nettle Primrose A B C D Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Biodiversity indicators Description Grassland which is not managed intensively Positive grassland indicators and contains plants such as Primrose and Meadow Thistle. Grassland is managed intensively and is used to Negative grassland indicators rapidly assess if land is in ‘poor’ condition. It contains plants such as Ragwort and Nettles. (iii) Gill identified significant numbers of negative grassland indicators in her investigation. Briefly explain what advice Gill would give the farmer in order to create a positive grassland for plant biodiversity.",
+        "text": "(i) Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land. Describe with the aid of a labelled diagram how she carried out this investigation. Labelled diagram: (ii) Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below. Ragwort Meadow Thistle Nettle Primrose A B C D Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Biodiversity indicators Description Grassland which is not managed intensively Positive grassland indicators and contains plants such as Primrose and Meadow Thistle. Grassland is managed intensively and is used to Negative grassland indicators rapidly assess if land is in ‘poor’ condition. It contains plants such as Ragwort and Nettles.",
         "solution": [],
         "skip": true
       },
       {
         "id": "b",
-        "text": "(i) Describe with the aid of a labelled diagram how a peat soil is formed. Labelled diagram: (ii) State two locations in Ireland where you would find a peat soil. 1. 2.",
+        "text": "(i) Describe with the aid of a labelled diagram how a peat soil is formed. Labelled diagram: (ii) State two locations in Ireland where you would find a peat soil.",
         "solution": [],
         "skip": true
       },
