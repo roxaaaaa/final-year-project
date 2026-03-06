@@ -1,0 +1,193 @@
+[
+  {
+    "question_num": "Q3",
+    "context": "None provided",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Outline reasons why farmers install cow brushes in cattle sheds. Allow cows to groom or scratch / reduce skin irritations / reduce stress or improved animal welfare / encourage natural behaviour / cleaner cows or improved hygiene",
+        "solution": [
+          "Allow cows to groom or scratch",
+          "Reduce skin irritations",
+          "Reduce stress or improved animal welfare",
+          "Encourage natural behaviour",
+          "Cleaner cows or improved hygiene"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe the advantages of one other named piece of farm technology in relation to environmental sustainability. 3+1 Two points on any named valid piece of technology relating to environmental sustainability OR (b)(i) Briefly explain how this technology would be safer for (1) animals and (2) the environment. Animals: Less risk to animals from noxious (harmful) gases 4+1 Environment: Reduction of greenhouse gases (which contribute to air pollution) / reduced runoff due to increased nutrient absorption by plants",
+        "solution": [
+          "Two points on any named valid piece of technology relating to environmental sustainability",
+          "Briefly explain how this technology would be safer for (1) animals and (2) the environment. Animals: Less risk to animals from noxious (harmful) gases",
+          "Environment: Reduction of greenhouse gases (which contribute to air pollution) / reduced runoff due to increased nutrient absorption by plants"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Briefly explain how this technology would be safer for (1) animals and (2) the environment. Animals: Less risk to animals from noxious (harmful) gases 4+1 Environment: Reduction of greenhouse gases (which contribute to air pollution) / reduced runoff due to increased nutrient absorption by plants",
+            "solution": [
+              "Less risk to animals from noxious (harmful) gases",
+              "Reduction of greenhouse gases (which contribute to air pollution)",
+              "Reduced runoff due to increased nutrient absorption by plants"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "Q8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Outline the benefits of the nitrogen cycle to animal and/or crop production on Irish farms. Symbiotic bacteria or Rhizobium can convert N compounds into nitrates (nitrification). Legumes (clover) carry out nitrogen fixation. Nitrates are available for plant use. Provides N to build proteins in plants or animals. Healthy plant growth. Less fertiliser needed. More productive swards (so less need for concentrates). More efficient fertiliser or slurry use. Soil fertility maintenance.",
+        "solution": [
+          "Symbiotic bacteria or Rhizobium can convert N compounds into nitrates (nitrification). Legumes (clover) carry out nitrogen fixation. Nitrates are available for plant use. Provides N to build proteins in plants or animals. Healthy plant growth. Less fertiliser needed. More productive swards (so less need for concentrates). More efficient fertiliser or slurry use. Soil fertility maintenance."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify both cattle breeds in A and B. A: Aberdeen Angus B: Hereford",
+        "solution": [
+          "Aberdeen Angus",
+          "Hereford"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "State which breed A or B has a dominant polled trait as a characteristic of the breed.",
+        "solution": [
+          "Aberdeen Angus"
+        ],
+        "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Explain the underlined term in part (b) above. Does not have horns",
+        "solution": [
+          "Does not have horns"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "Q11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Outline ways farmers can ensure quality produced on their farms to ensure they meet these standards for the export markets. Be part of quality assurance scheme / maintain hygiene to reduce disease or contamination / implement biosecurity measures / use tagging or animal passports (for traceability of produce) / suitable health and welfare measures taken with housing or disease prevention / good quality feed for livestock",
+        "solution": [
+          "Participate in a quality assurance scheme",
+          "Maintain hygiene to reduce disease or contamination",
+          "Implement biosecurity measures",
+          "Use tagging or animal passports (for traceability of produce)",
+          "Implement suitable health and welfare measures with housing or disease prevention",
+          "Provide good quality feed for livestock"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain the importance of export markets to Irish agriculture. Contribute to farm income / surplus produce can be exported / 4 economic or employment benefit to country",
+        "solution": [
+          "Export markets contribute to farm income",
+          "Surplus produce can be exported",
+          "Export markets provide 4 economic benefits to the country",
+          "Export markets contribute to employment benefits"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "Outline one scientific reason for any four.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Outline one scientific reason for any four.",
+        "solution": [
+          "Progeny testing",
+          "Identify genetic merit",
+          "Assess the genetic merit",
+          "Evaluate traits or characteristics"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Having a buffer zone close to a waterway.",
+        "solution": [
+          "Reduce run off",
+          "Prevent eutrophication",
+          "Reduce sediment in rivers",
+          "Increase bank stability",
+          "Increase biodiversity"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Presence of chloroplasts in the palisade layer of a leaf.",
+        "solution": [
+          "Close to surface to maximise photosynthesis"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Culling of breeding ewes on a sheep farm.",
+        "solution": [
+          "Ewe could be lame",
+          "Ewe could be infertile",
+          "Ewe could be diseased",
+          "Prevent undesirable traits",
+          "Not suitable for breeding"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Movement of water from the soil through the plant to the atmosphere.",
+        "solution": [
+          "To transport minerals",
+          "To provide water for photosynthesis",
+          "To cool the plant"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  }
+]

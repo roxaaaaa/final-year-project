@@ -1,0 +1,373 @@
+[
+  {
+    "question_num": "1",
+    "context": "(a) (i) Name two species that might be included in a seed mixture in a short‐term ley for silage.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two species that might be included in a seed mixture in a short‐term ley for silage.",
+        "solution": [
+          "Grass",
+          "Legumes"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "Water is held in the soil in two main ways.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name both ways and explain how each works.",
+        "solution": [
+          "Adsorption",
+          "Capillary action"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Give two benefits of artificial drainage in soils.",
+        "solution": [
+          "Improves crop yield",
+          "Reduces waterlogging"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe the following aspects of potato cultivation: (i) Soil suitability (ii) Sowing (iii) Weed control (iv) Storage.",
+        "solution": [
+          "Soil should be well-drained and rich in organic matter. Choose a location with full sun exposure.\nSow potatoes at a depth of 2-3 inches in rows spaced about 18-24 inches apart. Space plants 6-8 inches apart within each row.\nRegularly remove weeds to prevent competition for nutrients and water.\nStore potatoes in a cool, dark place with good ventilation."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [
+              "Soil should be well-drained and rich in organic matter."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [
+              "Sow potatoes at a depth of 2-3 inches in rows spaced about 18-24 inches apart. Space plants 6-8 inches apart within each row."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [
+              "Regularly remove weeds to prevent competition for nutrients and water."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "",
+            "solution": [
+              "Store potatoes in a cool, dark place with good ventilation."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the cultivation of a named cereal crop under the following headings: (i) Climate (ii) Disease (iii) Harvest date (iv) Yield.",
+        "solution": [
+          "Cereal crops require specific climatic conditions for optimal growth.\nDiseases can affect the yield, so proper disease management is crucial.\nThe harvest date depends on the variety and environmental conditions.\nThe yield of a cereal crop is affected by various factors such as climate, soil quality, and cultivation practices."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [
+              "Cereal crops require specific climatic conditions for optimal growth."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [
+              "Diseases can affect the yield, so proper disease management is crucial."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "",
+            "solution": [
+              "The harvest date depends on the variety and environmental conditions."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "",
+            "solution": [
+              "The yield of a cereal crop is affected by various factors such as climate, soil quality, and cultivation practices."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Describe the physiological changes that occur during the ripening process in the cereal referred to above. (ii) Describe two tests carried out by a grain merchant on harvested grain.",
+        "solution": [
+          "During the ripening process, starches convert to sugars and proteins denature.\nTwo tests commonly performed by grain merchants include: test weight (measure of density) and moisture content."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [
+              "During the ripening process, starches convert to sugars and proteins denature."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [
+              "Two tests commonly performed by grain merchants include: test weight (measure of density) and moisture content."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To compare the digestibility of whole and rolled cereal grains.",
+        "solution": [
+          "Digestibility test",
+          "Grain samples",
+          "Enzyme activity"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "To determine the quality of silage in a pit or bale.",
+        "solution": [
+          "Silage analysis",
+          "pH level",
+          "moisture content"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "To compare capillarity in two named soil types.",
+        "solution": [
+          "Capillary tube method",
+          "Soil samples",
+          "Water absorption"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "To measure the rate of transpiration in plants.",
+        "solution": [
+          "Transpiration chamber",
+          "Plant leaves",
+          "Environmental factors"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "This question covers various aspects of farm animal testing, sheep breeds, and breeding strategies.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "List two qualitative tests and two quantitative tests normally carried out on milk. (ii) Describe how you would carry out in the laboratory any one of the quantitative tests referred to above.",
+        "solution": [
+          "Two qualitative tests for milk could include: pH test, which measures the acidity level; and fat content test, which determines the percentage of fats in milk.",
+          "Two quantitative tests for milk could be: protein content test, which measures the amount of proteins in milk; and lactose content test, which determines the percentage of sugars in milk."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "List two qualitative tests and two quantitative tests normally carried out on milk.",
+            "solution": [
+              "Two qualitative tests for milk could include: pH test, which measures the acidity level; and fat content test, which determines the percentage of fats in milk.",
+              "Two quantitative tests for milk could be: protein content test, which measures the amount of proteins in milk; and lactose content test, which determines the percentage of sugars in milk."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe how you would carry out in the laboratory any one of the quantitative tests referred to above.",
+            "solution": [
+              "To perform a protein content test on milk, first collect a sample of the milk. Then, add a reagent that reacts with proteins to change color. The intensity of the color change is directly proportional to the amount of protein in the milk."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(ii) Explain fully why crossbred ewes are frequently used in a lowland sheep enterprise.",
+        "solution": [
+          "Crossbred ewes are frequently used in a lowland sheep enterprise because they often exhibit superior reproductive performance and growth characteristics compared to pure breeds. They can combine the desirable traits from different breeds, resulting in offspring with improved meat quality, faster growth rates, and higher fertility."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two lowland sheep breeds and describe their bodily characteristics.",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Explain fully why crossbred ewes are frequently used in a lowland sheep enterprise.",
+            "solution": [
+              "Crossbred ewes are frequently used in a lowland sheep enterprise because they often exhibit superior reproductive performance and growth characteristics compared to pure breeds. They can combine the desirable traits from different breeds, resulting in offspring with improved meat quality, faster growth rates, and higher fertility."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(ii) Describe three factors affecting reproductive efficiency.",
+        "solution": [
+          "Three factors affecting reproductive efficiency include: nutrition, health status, and management practices. Adequate nutrition is crucial for optimal reproductive performance, as it provides the necessary energy and nutrients for egg production and embryo development. Health status plays a role in reproductive efficiency because diseases and parasites can reduce fertility and affect the survival of eggs and embryos. Management practices, such as breeding schedules and environmental conditions, also impact reproductive efficiency by providing the best possible conditions for reproduction."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term reproductive efficiency.",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Describe three factors affecting reproductive efficiency.",
+            "solution": [
+              "Three factors affecting reproductive efficiency include: nutrition, health status, and management practices. Adequate nutrition is crucial for optimal reproductive performance, as it provides the necessary energy and nutrients for egg production and embryo development. Health status plays a role in reproductive efficiency because diseases and parasites can reduce fertility and affect the survival of eggs and embryos. Management practices, such as breeding schedules and environmental conditions, also impact reproductive efficiency by providing the best possible conditions for reproduction."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe how the dry matter digestibility (DMD) of a grass plant alters during its various stages of growth.",
+        "solution": [
+          "During the early growth stage, the DMD of grass plants is typically low as they are still developing their root systems and structural components. As the grass matures, the DMD increases due to the development of more lignified tissues, which are more difficult for ruminants to digest. This increase in DMD continues until the late reproductive phase when it begins to decrease again as the plant enters a state of senescence."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe four measures that can be used to maintain a high grass DMD for longer during the grazing season.",
+        "solution": [
+          "Maintain frequent grazing: Frequent grazing helps prevent the grass from reaching maturity, thereby maintaining a higher DMD. Avoid late cutting: Cutting grass before it reaches full maturity will ensure a higher DMD. Overgrazing management: Prevent overgrazing to allow the grass to regrow and maintain its nutritional value. Use appropriate grazing intensity: The grazing intensity should be adjusted according to the species of grass and environmental conditions."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Explain how the ruminant stomach is suited to the digestion of plants in a grassland sward.",
+        "solution": [
+          "The ruminant stomach has several adaptations that make it well-suited for digesting plants. The rumen contains microorganisms that help break down cellulose, which is difficult for animals to digest on their own. The four-chambered structure allows for gradual digestion and the recycling of nutrients through regurgitation ( cud). The thick walls of the stomach provide resistance to wear from the abrasive nature of plant fibers."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "Give scientific explanations for any four of the following: (a) The influence of environmental temperature on weight gain in pigs. (b) The dense planting of coniferous trees in a forestry plantation. (c) The low earthworm population in intensively cultivated soils. (d) The presence of grit in the digestive tract of free‐range poultry. (e) The deep ploughing of podzolic soils.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the influence of environmental temperature on weight gain in pigs.",
+        "solution": [
+          "Pigs have a high metabolic rate and require sufficient energy to maintain body temperature. At cooler temperatures, their bodies work harder to generate heat through shivering, which consumes additional calories and may reduce overall weight gain. Conversely, at warmer temperatures, pigs can cool down more easily, leading to greater energy available for growth and weight gain."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Explain the dense planting of coniferous trees in a forestry plantation.",
+        "solution": [
+          "Coniferous trees are often densely planted because they have a high capacity for photosynthesis, which helps increase biomass and wood production. This type of planting also reduces weed growth, provides shade, and can improve soil structure over time."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Explain the low earthworm population in intensively cultivated soils.",
+        "solution": [
+          "Intensive cultivation practices such as tilling, use of pesticides, and monoculture cropping can reduce soil organic matter and alter the environment that earthworms prefer. Earthworms are decomposers that help maintain soil structure and fertility, but their populations may decline in disturbed environments."
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Explain the presence of grit in the digestive tract of free‐range poultry.",
+        "solution": [
+          "Grit is naturally ingested by birds, including poultry, to aid in digestion. It helps break down tough food particles and can also act as a buffer against stomach acid. The presence of grit in the digestive system ensures that food is efficiently broken down, aiding in nutrient absorption."
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Explain the deep ploughing of podzolic soils.",
+        "solution": [
+          "Podzolic soils are acidic and have a thin layer of mineral soil over a thick layer of organic matter. Deep ploughing can disrupt this structure, mixing organic material with mineral soil layers. This process enhances soil fertility by breaking down organic matter and creating space for water and root penetration."
+        ],
+        "skip": false
+      }
+    ]
+  }
+]

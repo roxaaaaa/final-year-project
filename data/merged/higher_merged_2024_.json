@@ -1,0 +1,164 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify the items of farm machinery or equipment shown in A, B and C.",
+        "solution": [
+          "Items of farm machinery or equipment shown in A, B and C"
+        ],
+        "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Briefly describe how the piece of equipment B in part (i) above is used on a sheep farm.",
+        "solution": [
+          "How equipment B is used on a sheep farm"
+        ],
+        "skip": true,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Many Irish sheep farmers now take part in the Sheep Improvement Scheme. Some of the target features / activities of this scheme are: \n• lameness control \n• mineral supplementation of ewe’s post mating \n• meal feeding of lamb’s post weaning \n• scanning of in-lamb ewes For any two of the above listed target features / activities: (i) Describe how to action (carry out) these target features / activities. (ii) Describe the benefit of each target features / activities to overall production of the flock. Named target feature / Description activity 1. Action: Benefit: 2. Action: ",
+        "solution": [
+          "1. Action: Lameness control may involve treating or preventing lameness in sheep, which can be achieved through various methods such as providing proper bedding, vaccinating against lameness-causing diseases, and maintaining proper foot care. Benefit: Improved animal welfare and reduced costs associated with treating lameness.\n2. Action: Mineral supplementation of ewe’s post mating may involve providing additional minerals to ewes during the post-mating period, which can be achieved through mineral blocks or supplements. Benefit: Improved fertility and milk production in ewes, leading to better overall flock production.",
+          "1. Action: Meal feeding of lamb’s post weaning may involve providing additional feed to young lambs to ensure proper growth and development, which can be achieved through supplemental feeding programs. Benefit: Improved growth and development in lambs, leading to higher survival rates and better overall flock productivity.\n2. Action: Scanning of in-lamb ewes may involve monitoring the health and development of ewes during the in-lamb period, which can be achieved through regular ultrasound examinations. Benefit: Early detection of health issues and the potential for intervention, leading to improved overall flock health and productivity."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm. Stock type Numbers on farm Rams 4 Breeding ewes 132 Hoggets 42 Lambs 200 (i) Calculate the financial value of the scheme to Ryan and Fiona. Calculation: (ii) The Sheep Improvement Scheme has been introduced to enhance animal health and welfare in the sheep sector. Some of the target features of the scheme are: \n• mineral supplementation of lambs pre-weaning \n• flystrike control \n• genotyping of ram Briefly explain how the scheme enhances animal health and welfare using any two of the target features listed above. Named target Explanation feature 1. 2.",
+        "solution": [
+          "(i) Calculation: Financial value of the scheme to Ryan and Fiona = Number of breeding ewes * Rate per ewe\n= 132 * €12\n= €1584\n(ii) The Sheep Improvement Scheme enhances animal health and welfare using two of the target features listed above. For example, mineral supplementation of lambs pre-weaning helps prevent mineral deficiencies in young lambs, which can lead to better growth and development, improved health, and increased overall flock productivity. Flystrike control helps prevent flystrike, which is a common and potentially fatal condition for sheep, leading to improved animal welfare and reduced costs associated with treatment.",
+          "(i) Calculation: Financial value of the scheme to Ryan and Fiona = Number of breeding ewes * Rate per ewe\n= 132 * €12\n= €1584\n(ii) The Sheep Improvement Scheme enhances animal health and welfare using two of the target features listed above. For example, mineral supplementation of lambs pre-weaning helps prevent mineral deficiencies in young lambs, which can lead to better growth and development, improved health, and increased overall flock productivity. Flystrike control helps prevent flystrike, which is a common and potentially fatal condition for sheep, leading to improved animal welfare and reduced costs associated with treatment."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Read the article and the questions that follow. Agroforestry is the integration of trees with either crops or livestock on the same land. It aims to achieve additional benefits in comparison to keeping agriculture and trees separate. Across the world, agroforestry encompasses a wide variety of practices ranging from simple shelterbelts of trees around fields to a close integration of food crops and trees. (Adapted from Teagasc, 2020)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain agroforestry.",
+        "solution": [
+          "The integration of trees with either crops or livestock on the same land. It aims to achieve additional benefits in comparison to keeping agriculture and trees separate."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Outline possible benefits of agroforestry for Irish agriculture.",
+        "solution": [
+          "Additional benefits in comparison to keeping agriculture and trees separate."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "Irish Beetles Tackle Docks in New Trial Irish-bred beetles are set to become an environmentally friendly, cost-effective weapon to kill docks. Once released on a farm, the dock beetle breeds to colonise the whole field. Dock beetles are native and natural predators of docks. They skeletonise dock leaves grassland. The population of dock beetle will initially rise to decimate the dock weed naturally. The population will reduce as its success diminishes its natural food supply in a sustainable way on an annual basis. They hibernate for the winter and reappear each spring. (Adapted from Irish Farmers Journal, 2022)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term.",
+        "solution": [
+          "The underlined term is dock beetle. Dock beetles are native and natural predators of docks. They skeletonise dock leaves and help control dock weed naturally."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Briefly describe how the dock beetle is an environmentally friendly way of controlling dock leaves on a farm.",
+        "solution": [
+          "Dock beetles are an environmentally friendly way of controlling dock leaves on a farm because they naturally predate docks and help reduce dock weed without the use of harmful chemicals."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Dock beetles are an example of a biological control. Based on your own knowledge of agriculture, provide another example of a biological control and state its target.",
+        "solution": [
+          "Another example of a biological control is the use of ladybugs to control aphids. Ladybugs eat aphids and help protect crops from infestation."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "This question is either (a) or (b). (a) Compare the different soil mineral particles and their properties under the headings that follow. The first one has been done as an example. Gravel and sand particles Silt and clay particles Particle size Large particles Small particles Drainage Fertility Ion exchange Or (b) Soil structure describes the arrangement of soil particles within a soil. These particles form clusters known as aggregates or peds in the soil. (i) Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below. Moderate quality Poor quality Good quality A B C (ii) Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare the different soil mineral particles and their properties under the headings that follow. The first one has been done as an example. Gravel and sand particles Silt and clay particles Particle size Large particles Small particles Drainage Fertility Ion exchange",
+        "solution": [],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Soil structure describes the arrangement of soil particles within a soil. These particles form clusters known as aggregates or peds in the soil. (i) Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below. Moderate quality Poor quality Good quality A B C (ii) Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below. Moderate quality Poor quality Good quality A B C",
+            "solution": [],
+            "skip": true,
+            "subparts": []
+          },
+          {
+            "id": "ii",
+            "text": "Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+            "solution": [],
+            "skip": true,
+            "subparts": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer’s land. Describe with the aid of a labelled diagram how she carried out this investigation. Labelled diagram: (ii) Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below. Ragwort Meadow Thistle Nettle Primrose A B C D Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Biodiversity indicators Description Grassland which is not managed intensively Positive grassland indicators and contains plants such as Primrose and Meadow Thistle. Grassland is managed intensively and is used to Negative grassland indicators rapidly assess if land is in ‘poor’ condition. It contains plants such as Ragwort and Nettles. (iii) Gill identified significant numbers of negative grassland indicators in her investigation. Briefly explain what advice Gill would give the farmer in order to create a positive grassland for plant biodiversity.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe with the aid of a labelled diagram how a peat soil is formed. Labelled diagram: (ii) State two locations in Ireland where you would find a peat soil. 1. 2.",
+        "solution": [
+          "Peat soil is formed over thousands of years through the accumulation and decay of organic matter, primarily peat moss (Sphagnum spp.). This process occurs in areas with poor drainage and low rates of decomposition, such as bogs and fens. Over time, the organic matter is compressed and mineralized, resulting in peat. Ireland has several locations with peat soils, including the Burren, Claremore Mountains, and parts of the Western Lakes.",
+          "Ireland has several locations with peat soils, including the Burren, Claremore Mountains, and parts of the Western Lakes."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  }
+]

@@ -1,10 +1,12 @@
+import concurrent
 import ollama
 import re
 import json
 import os
 
 import pdfplumber
-from concurrent.futures import ThreadPoolExecutor
+import concurrent.futures
+import threading
 
 SOLUTION_PROMPT = """ 
 You are a precision data architect. Your task is to merge raw exam Question Text with its corresponding Marking Scheme (Solution) into a single, highly-structured JSON object.
@@ -183,31 +185,42 @@ PROMPT_2025 = """You are a precision data extraction engine. Your task is to con
 6.  **Formatting**: Return ONLY valid JSON. No markdown code fences, no preamble.
 
 ### INPUT DATA"""
+def process_single_question(question_data, prompt):
+    full_prompt = prompt + question_data['text']
+    
+    # Call Ollama
+    response = ollama.chat(model='qwen2.5-coder', messages=[
+        {
+            'role': 'user',
+            'content': full_prompt,
+        },
+    ], format='json') # Enforce JSON output
 
+    try:
+        structured_q = json.loads(response['message']['content'])
+        print(f"Processed Question {question_data['question_number']} successfully.")
+        return structured_q
+    except json.JSONDecodeError:
+        print(f"Error parsing JSON for Question {question_data['question_number']}")
+        return None
+    
 def process_with_llm(input_pdf_path, output_json_path, prompt):
     with open(input_pdf_path, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
     structured_data = []
-
-    for q in raw_data:
-        full_prompt = prompt + q['text']
-        
-        # Call Ollama
-        response = ollama.chat(model='qwen2.5-coder', messages=[
-            {
-                'role': 'user',
-                'content': full_prompt,
-            },
-        ], format='json') # Enforce JSON output
-
-        try:
-            structured_q = json.loads(response['message']['content'])
-            structured_data.append(structured_q)
-            print(f"Processed solution {q['question_number']} successfully.")
-        except json.JSONDecodeError:
-            print(f"Error parsing JSON for Question {q['question_number']}")
-
+    # Process each question in parallel
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+      futures = [executor.submit(process_single_question, question_data, prompt) for question_data in raw_data]
+      for future in concurrent.futures.as_completed(futures):
+          try:
+             result = future.result()
+             if result is not None:
+              structured_data.append(result)
+          except Exception as e:
+              print(f"Error processing future: {e}")
+    # Sort the list based on the question_num key
+    structured_data.sort(key=lambda x: int(x.get('question_num', 0)))
     # Save final result
     with open(output_json_path, 'w', encoding='utf-8') as f:
         json.dump(structured_data, f, indent=2, ensure_ascii=False)
@@ -216,12 +229,9 @@ def process_with_llm(input_pdf_path, output_json_path, prompt):
 if __name__ == "__main__":
   script_dir = os.path.dirname(os.path.abspath(__file__))
   project_dir = os.path.dirname(os.path.dirname(script_dir)) 
-  range_higher = [ 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,2025]
-
+  range_higher = [2025]
   for i in range_higher:
     input_json_path = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json")
     output_json_path = os.path.join(project_dir, "data", "structured", f"structured_solutions_{i}_higher.json")
-    print(f"Processing {input_json_path}")
     process_with_llm(input_json_path, output_json_path, SOLUTION_PROMPT)
-    print(f"Processed {input_json_path} and saved structured data to {output_json_path}")
-    
+
