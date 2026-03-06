@@ -1,0 +1,382 @@
+[
+  {
+    "question_num": "7",
+    "context": "Give one scientific reason for each of the following practices carried out on Irish farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Growing shelter belts.",
+        "solution": [
+          "Reduces wind chill and protects crops and animals from extreme weather conditions."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Keeping milk at approximately 4 oC in a bulk tank.",
+        "solution": [
+          "Prevents bacterial growth and extends the shelf life of milk."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Tagging young animals.",
+        "solution": [
+          "Allows for better identification and tracking of animals, which can be important for management and breeding programs."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Spreading ground limestone.",
+        "solution": [
+          "Neutralizes acidic soils, improves nutrient availability, and enhances soil structure."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Injecting bonhams (piglets) with an iron solution.",
+        "solution": [
+          "Prevents anemia and ensures proper growth and development."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms used in genetics. (i) Haploid (ii) Homozygous (iii) Locus.",
+        "solution": [
+          "Haploid refers to an organism with one set of chromosomes. Homozygous means that an organism has two identical alleles for a particular gene. Locus refers to the specific location of a gene on a chromosome."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "The pure‐breeding barley variety Alpha (AA) has a straw length of 800 mm. The pure‐breeding barley variety Beta (BB) has a straw length of 600 mm. A cross between these two varieties results in a hybrid with a straw length of 700 mm. (i) What does this show about the genes that control straw length in this example? (ii) Copy and complete the following in your book to show the cross between the Alpha and Beta varieties of barley. Parents: Pure‐breeding Alpha X Pure‐breeding Beta Genotypes of parents: ( ) X ( ) Gametes: ( ) X ( ) Genotype of offspring: ( ) Phenotype of hybrid offspring: _____________________ (iii) The hybrid plants were allowed to self‐pollinate and the resulting seeds were sown. Copy and complete the following in your book, using the above hybrids as parents. Genotype of parents: ( ) X ( ) Gametes: ( ) ( ) X ( ) ( ) Genotypes of offspring: ( ) ( ) ( ) Phenotypes of offspring: ________________ _________________ _________________",
+        "solution": [
+          "This shows that the straw length in the hybrid is an example of incomplete dominance, where the intermediate phenotype (700 mm) is observed.",
+          "Parents: Pure‐breeding Alpha (AA) X Pure‐breeding Beta (BB) Genotypes of parents: AA X BB Gametes: A X B Genotype of offspring: Aa Phenotype of hybrid offspring: 700 mm straw length",
+          "Genotype of parents: Aa X Aa Gametes: A, a X A, a Genotypes of offspring: AA, Aa, Aa, aa Phenotypes of offspring: 800 mm straw length, 700 mm straw length, 700 mm straw length, 600 mm straw length"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "(i) State one advantage of using artificial insemination (AI) on a dairy farm. (ii) State one disadvantage of using AI on a dairy farm.",
+        "solution": [
+          "One advantage of using artificial insemination (AI) on a dairy farm is that it can increase the number of offspring produced by a single cow, leading to higher milk production.",
+          "One disadvantage of using AI on a dairy farm is that it can increase the risk of infection and disease, as the equipment and procedures used for AI can introduce pathogens into the reproductive tract of the cow."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain how an iron pan is formed in a soil.",
+        "solution": [
+          "An iron pan forms in a soil through the process of iron corrosion or rust formation. When iron is exposed to moisture and oxygen in the soil, it undergoes a chemical reaction known as oxidation, resulting in the formation of iron oxide, commonly known as rust. This rust can accumulate in the soil and form an iron pan over time."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain how an iron pan is formed in a soil.",
+            "solution": [
+              "An iron pan forms in a soil through the process of iron corrosion or rust formation. When iron is exposed to moisture and oxygen in the soil, it undergoes a chemical reaction known as oxidation, resulting in the formation of iron oxide, commonly known as rust. This rust can accumulate in the soil and form an iron pan over time."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "What are the effects of an iron pan in a soil?",
+            "solution": [
+              "An iron pan in a soil can have various effects. It can contribute to soil structure and aggregation, which can improve the soil's aeration and water-holding capacity. However, excessive iron pan formation can also lead to reduced soil fertility due to the presence of iron oxides, which can immobilize certain nutrients. Additionally, iron pans can affect soil microbial activity and nutrient availability."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name the soil group in which an iron pan is most likely to form.",
+            "solution": [
+              "An iron pan is most likely to form in soils that are rich in iron and have good moisture retention, such as clay soils. These soils create an environment conducive to the formation of iron oxides, leading to the development of iron pans."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "How can an iron pan in a soil be removed?",
+            "solution": [
+              "An iron pan in a soil can be removed through various methods. One effective approach is to use a soil chisel or a soil aeration tool to break up the iron pan and incorporate it into the soil. Another method is to apply a rust remover or a chemical treatment to dissolve the iron oxides and break down the iron pan. Physical removal can also be achieved by excavating and replacing the affected soil."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the method of taking soil samples for testing.",
+        "solution": [
+          "To take soil samples for testing, follow these steps: 1. Identify the location: Choose a representative area in the field, avoiding areas with visible contamination. 2. Collect soil: Use a soil auger or a trowel to collect soil from several depths, ensuring a representative sample. 3. Mix thoroughly: Combine the collected soil samples to form a homogeneous mixture. 4. Label the sample: Clearly label the container with the date, location, and any relevant information. 5. Store properly: Keep the sample cool, dry, and away from direct sunlight to maintain its integrity."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Describe a method to measure the pH of a soil sample.",
+        "solution": [
+          "To measure the pH of a soil sample, follow these steps: 1. Prepare the sample: Sieve the soil sample to remove any large particles and mix it thoroughly. 2. Dissolve the sample: Add a known volume of distilled water to the soil sample and mix well. 3. Prepare the test solution: Use a pH meter to measure the pH of the test solution. 4. Record the results: Note the pH value and record it along with other relevant information."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "any two parts of (a), (b), (c), (d). (30 marks, 30 marks)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The pie-chart shows the approximate composition of cows’ milk. Composition of milk Minerals 0.8% Protein 3.2% Butterfat 3.8% Lactose 4.6% A 87.5%",
+        "solution": [
+          "The component of milk represented by the part labelled A is A 87.5%"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What component of milk is represented by the part labelled A?",
+            "solution": [
+              "The component of milk represented by the part labelled A is A 87.5%"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "What is colostrum?",
+            "solution": [
+              "Colostrum is the first milk produced by a cow after giving birth and is rich in antibodies and nutrients to protect the newborn calf."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Give two ways a farmer could improve the quality of the milk from his herd.",
+            "solution": [
+              "1. Providing a balanced diet with adequate nutrients",
+              "2. Ensuring good hygiene and clean living conditions for the cows"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Why is the milk from a cow treated for mastitis not allowed into the human food supply?",
+            "solution": [
+              "Mastitis is an infection in the udder that can lead to harmful bacteria entering the milk, making it unsafe for human consumption."
+            ],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Give one reasons for culling cows on a dairy farm.",
+            "solution": [
+              "Culling cows that are not producing enough milk or are suffering from health issues."
+            ],
+            "skip": false
+          },
+          {
+            "id": "vi",
+            "text": "What is meant by the term dual purpose breed?",
+            "solution": [
+              "A dual purpose breed is a type of animal that is bred to perform multiple functions, such as providing both milk and meat."
+            ],
+            "skip": false
+          },
+          {
+            "id": "vii",
+            "text": "Give one example of a dual purpose breed.",
+            "solution": [
+              "The Jersey cow is an example of a dual purpose breed."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the cultivation of barley under the following headings. (i) Soil type (ii) Sowing time (iii) Sowing method (iv) Weed control (v) Disease control (vi) Harvesting.",
+        "solution": [
+          "(i) Soil type: Barley grows well in loamy and well-drained soils.",
+          "(ii) Sowing time: Barley is typically sown in early spring.",
+          "(iii) Sowing method: Barley is usually sown by drilling into the soil.",
+          "(iv) Weed control: Regular mowing and hand weeding are used to control weeds.",
+          "(v) Disease control: Use of resistant varieties and fungicides can help control diseases.",
+          "(vi) Harvesting: Barley is typically harvested when the grains are dry and the heads are fully ripened."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Soil type",
+            "solution": [
+              "Barley grows well in loamy and well-drained soils."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Sowing time",
+            "solution": [
+              "Barley is typically sown in early spring."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Sowing method",
+            "solution": [
+              "Barley is usually sown by drilling into the soil."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Weed control",
+            "solution": [
+              "Regular mowing and hand weeding are used to control weeds."
+            ],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Disease control",
+            "solution": [
+              "Use of resistant varieties and fungicides can help control diseases."
+            ],
+            "skip": false
+          },
+          {
+            "id": "vi",
+            "text": "Harvesting",
+            "solution": [
+              "Barley is typically harvested when the grains are dry and the heads are fully ripened."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Farmers have to be aware of the possibility of causing pollution while working on the farm. (i) What is meant by the term pollution? (ii) In each of the following state two ways that a farmer can reduce the risk of causing pollution: 1. When making silage 2. On a dairy farm 3. When spreading artificial fertiliser 4. When using insecticides or fungicides.",
+        "solution": [
+          "(i) Pollution is the introduction of substances into the environment that can harm living organisms or the environment itself.",
+          "(ii) 1. When making silage: a. Avoiding excessive use of fertilizers and pesticides b. Covering silage piles to prevent dust and runoff",
+          "2. On a dairy farm: a. Properly disposing of waste b. Keeping the farm clean and tidy",
+          "3. When spreading artificial fertiliser: a. Using the correct amount and method b. Avoiding application near water sources",
+          "4. When using insecticides or fungicides: a. Using alternative methods like biological control b. Properly disposing of unused pesticides"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term pollution?",
+            "solution": [
+              "Pollution is the introduction of substances into the environment that can harm living organisms or the environment itself."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "In each of the following state two ways that a farmer can reduce the risk of causing pollution: 1. When making silage 2. On a dairy farm 3. When spreading artificial fertiliser 4. When using insecticides or fungicides.",
+            "solution": [
+              "1. When making silage: a. Avoiding excessive use of fertilizers and pesticides b. Covering silage piles to prevent dust and runoff",
+              "2. On a dairy farm: a. Properly disposing of waste b. Keeping the farm clean and tidy",
+              "3. When spreading artificial fertiliser: a. Using the correct amount and method b. Avoiding application near water sources",
+              "4. When using insecticides or fungicides: a. Using alternative methods like biological control b. Properly disposing of unused pesticides"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Comment on each of the following in relation to weanlings, from first winter housing until they are put out on grass the following spring. (i) Housing (ii) Diet (iii) Control of disease and parasites (iv) Target weight at turnout (v) Compensatory growth.",
+        "solution": [
+          "(i) Housing: Weanlings should be housed in a clean and comfortable environment with enough space to move around.",
+          "(ii) Diet: A balanced diet that is high in protein and energy is important for growth and development.",
+          "(iii) Control of disease and parasites: Regular health check-ups and proper hygiene are essential.",
+          "(iv) Target weight at turnout: Weanlings should be around 30-40 kg before turnout.",
+          "(v) Compensatory growth: Weanlings that are undernourished may have compensatory growth when conditions improve."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Housing",
+            "solution": [
+              "Weanlings should be housed in a clean and comfortable environment with enough space to move around."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Diet",
+            "solution": [
+              "A balanced diet that is high in protein and energy is important for growth and development."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Control of disease and parasites",
+            "solution": [
+              "Regular health check-ups and proper hygiene are essential."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Target weight at turnout",
+            "solution": [
+              "Weanlings should be around 30-40 kg before turnout."
+            ],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Compensatory growth",
+            "solution": [
+              "Weanlings that are undernourished may have compensatory growth when conditions improve."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

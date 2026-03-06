@@ -1,0 +1,217 @@
+[
+  {
+    "question_num": "6",
+    "context": "State one reason for each of the following farming practices.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Spraying a potato crop with fungicide.",
+        "solution": [
+          "Preventing fungal diseases"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Housing of beef animals in the winter.",
+        "solution": [
+          "Providing shelter from cold weather"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Paring the hooves of sheep.",
+        "solution": [
+          "Preventing foot problems"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Agitating slurry before it is spread.",
+        "solution": [
+          "Aerating the slurry to improve nutrient distribution"
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Planting shelter belts on a farm.",
+        "solution": [
+          "Providing windbreaks to protect crops"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "Genetics and Livestock",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms used in genetics: (i) Gamete (ii) In‐breeding (iii) Clone.",
+        "solution": [
+          "Gametes are reproductive cells produced by the division of a germ cell. In-breeding is the mating of closely related individuals. Cloning is the process of creating a genetically identical organism from a single cell."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term 'Gamete'.",
+            "solution": [
+              "Gametes are reproductive cells produced by the division of a germ cell."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the term 'In‐breeding'.",
+            "solution": [
+              "In-breeding is the mating of closely related individuals."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain the term 'Clone'.",
+            "solution": [
+              "Cloning is the process of creating a genetically identical organism from a single cell."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Livestock without horns are referred to as polled animals. In sheep the gene for having no horns (P) is dominant, and the gene for having horns (p) is recessive. Copy and complete the following into your book, to give the genotype and phenotype of the lambs from the cross. Parents’ phenotypes Pure‐breeding polled ram Horned ewe Parents’ genotypes PP x pp Gametes ( ) x ( ) Genotype of offspring ( ) Phenotype of offspring _______________________",
+        "solution": [
+          "Parents’ genotypes PP x pp Gametes P x p Genotype of offspring Pp Phenotype of offspring Polled (no horns)"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "A ram and a ewe with the same genotype as the offspring above are bred with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes of the lambs from this cross. Parents’ genotypes ( ) x ( ) Possible gametes ( ) ( ) x ( ) ( ) Genotypes of offspring ( ) ( ) ( ) Phenotypes of offspring _________________ __________________",
+        "solution": [
+          "Parents’ genotypes Pp x Pp Possible gametes P ( ) p ( ) x ( ) ( ) Genotypes of offspring PP Pp pp Phenotypes of offspring Polled (no horns) Polled (no horns) Polled (no horns)"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Artificial insemination (AI) is carried out on some farm animals. (i) State two advantages of artificial insemination. (ii) State two disadvantages of artificial insemination.",
+        "solution": [
+          "Advantages of artificial insemination include improved genetic diversity, reduced risk of disease transmission, and increased efficiency. Disadvantages include high costs, potential side effects in the animal, and the need for specialized equipment."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two advantages of artificial insemination.",
+            "solution": [
+              "Improved genetic diversity",
+              "Reduced risk of disease transmission"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two disadvantages of artificial insemination.",
+            "solution": [
+              "High costs",
+              "Potential side effects in the animal"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "From the list of rock types below, name, in your book, 1. a sedimentary rock 2. a metamorphic rock 3. an igneous rock. The list: basalt, sandstone, marble, granite, limestone, slate. What is meant by the weathering of rock? Describe two ways in which rock is weathered. Describe a sandy soil or a clay soil under the following headings: (i) How the soil feels (ii) Particle size (iii) Fertility (iv) Suitability for tillage. State two reasons why organic matter is important in a soil. State two ways in which organic matter may be added to soil. Explain why plants grown in clay soil survive better in a drought than those grown in sandy soil.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe a sandy soil or a clay soil under the following headings: (i) How the soil feels (ii) Particle size (iii) Fertility (iv) Suitability for tillage.",
+        "solution": [
+          "Sandy soil feels loose and gritty. It has large particles, which means it has poor fertility and is not suitable for tillage."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "How the soil feels",
+            "solution": [
+              "Sandy soil feels loose and gritty."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Particle size",
+            "solution": [
+              "Large particles."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Fertility",
+            "solution": [
+              "Poor fertility."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Suitability for tillage",
+            "solution": [
+              "Not suitable for tillage."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "State two reasons why organic matter is important in a soil. State two ways in which organic matter may be added to soil. Explain why plants grown in clay soil survive better in a drought than those grown in sandy soil.",
+        "solution": [
+          "Organic matter is important in soil because it helps improve soil structure, provides nutrients for plants, and helps retain moisture. Organic matter can be added to soil through composting or using organic fertilizers. Plants grown in clay soil survive better in a drought than those grown in sandy soil because clay soil has a higher water-holding capacity."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two reasons why organic matter is important in a soil.",
+            "solution": [
+              "Improves soil structure, provides nutrients for plants, and helps retain moisture."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two ways in which organic matter may be added to soil.",
+            "solution": [
+              "Composting, using organic fertilizers."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain why plants grown in clay soil survive better in a drought than those grown in sandy soil.",
+            "solution": [
+              "Clay soil has a higher water-holding capacity."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

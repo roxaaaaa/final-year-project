@@ -1,0 +1,515 @@
+[
+  {
+    "question_num": "1",
+    "context": "A list of common animal breeds is given below. Place these in Column A to match a description of each breed in Column B. The first one is completed as an example. List: Charolais Landrace Scottish blackface Friesian Hereford Texel A B Charolais Continental beef breed Lowland sheep breed Pig breed Dual-purpose breed Mountain sheep breed British beef breed (20 marks)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Charolais",
+        "solution": [
+          "Continental beef breed"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Landrace",
+        "solution": [
+          "Lowland sheep breed"
+        ],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "Scottish blackface",
+        "solution": [
+          "Lowland sheep breed"
+        ],
+        "skip": false
+      },
+      {
+        "id": "ii",
+        "text": "Friesian",
+        "solution": [
+          "Dual-purpose breed"
+        ],
+        "skip": false
+      },
+      {
+        "id": "iii",
+        "text": "Hereford",
+        "solution": [
+          "British beef breed"
+        ],
+        "skip": false
+      },
+      {
+        "id": "iv",
+        "text": "Texel",
+        "solution": [
+          "Mountain sheep breed"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "Give a brief account of each of the following common animal diseases.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe Red water fever in detail. (Type of animal affected, Symptom)",
+        "solution": [
+          "Red water fever is a bacterial disease affecting fish. Symptoms include red blood in the water and rapid death of fish."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain Orf.",
+        "solution": [
+          "Orf is a viral disease in sheep and goats that causes a skin lesion and swollen lymph nodes."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "List the type of animal affected by Anaemia.",
+        "solution": [
+          "Anaemia affects all types of animals, but it is more common in cattle and horses."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Explain the cause and symptom of Viral pneumonia.",
+        "solution": [
+          "Viral pneumonia is caused by viruses and affects the respiratory system, leading to coughing, sneezing, and difficulty breathing."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "What causes Grass tetany and list its symptoms.",
+        "solution": [
+          "Grass tetany is caused by an imbalance of magnesium in the body and can cause muscle tremors, weakness, and paralysis."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Give a scientific reason in each case why the following practices are carried out on Irish farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Selective herbicide is sprayed on cereal crops.",
+        "solution": [
+          "To control weeds and maintain crop yields by selectively killing unwanted plants."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Beet tops are left to wilt before feeding to animals.",
+        "solution": [
+          "To reduce the risk of prussic acid poisoning in animals."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Tail paint is applied to cows.",
+        "solution": [
+          "To identify individual cows for management and record-keeping."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Lime is regularly spread on soil.",
+        "solution": [
+          "To adjust soil pH and improve fertility."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Farm hedges are trimmed only after the first of September.",
+        "solution": [
+          "To prevent the growth of invasive species and maintain biodiversity."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "List four steps the farmer can take to help successful calving.",
+        "solution": [
+          "Monitor the calving process.",
+          "Ensure a clean and comfortable calving environment.",
+          "Provide appropriate assistance if necessary.",
+          "Keep the cow calm and relaxed."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Give two differences between colostrum and milk.",
+        "solution": [
+          "Colostrum is high in immunoglobulins and antibodies, while milk is not.",
+          "Colostrum is produced immediately after calving, while milk production starts later."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "(i) Good hygiene is essential for calf health. Describe three ways in which the farmer ensures good hygiene in calf-rearing.",
+        "solution": [
+          "Wash hands and equipment regularly.",
+          "Maintain a clean and dry environment.",
+          "Sanitize feeding equipment."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "(i) What is the main function of the rumen?",
+        "solution": [
+          "The main function of the rumen is to break down food and produce nutrients that the calf can absorb."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "(ii) How can the rumen be helped to develop in the young calf?",
+        "solution": [
+          "Feed the calf frequently with a high-protein diet.",
+          "Provide proper care and nutrition.",
+          "Ensure the calf is not stressed."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "(iii) Name the three other chambers in the stomach.",
+        "solution": [
+          "Rumen",
+          "Omasum",
+          "Abomasum"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two species of grass commonly sown on Irish farms.",
+        "solution": [
+          "Grass",
+          "Clover"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two species of grass commonly sown on Irish farms. (i)",
+            "solution": [
+              "Grass",
+              "Clover"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name two species of grass commonly sown on Irish farms. (ii)",
+            "solution": [
+              "Grass",
+              "Clover"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Paddock grazing is widely used on dairy farms. Give two advantages of paddock grazing.",
+        "solution": [
+          "Allows for better grass growth",
+          "Reduces the need for transportation of animals"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Paddock grazing is widely used on dairy farms. (i) Draw a labelled diagram to show a paddock grazing system.",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Paddock grazing is widely used on dairy farms. (ii) Give two advantages of paddock grazing.",
+            "solution": [
+              "Allows for better grass growth",
+              "Reduces the need for transportation of animals"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Give two benefits of mixed grazing of cattle and sheep.",
+        "solution": [
+          "Better grass growth",
+          "Reduces the need for transportation of animals"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Calcium ammonium nitrate (CAN) is the most widely used fertiliser on Irish farms. (i) What is the main plant nutrient found in CAN?",
+        "solution": [
+          "Nitrogen"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Calcium ammonium nitrate (CAN) is the most widely used fertiliser on Irish farms. (i) What is the main plant nutrient found in CAN?",
+            "solution": [
+              "Nitrogen"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Calcium ammonium nitrate (CAN) is the most widely used fertiliser on Irish farms. (ii) Describe an experiment to show the effect of CAN on grass growth.",
+            "solution": [
+              "Experiment to show the effect of CAN on grass growth"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "any two of the parts (a), (b), (c), (d). (30, 30)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Silage making involves the activity of anaerobic bacteria. (i) Explain the term anaerobic. (ii) Name two species of bacteria that may be involved in silage making. (iii) Describe two ways of ensuring anaerobic conditions in the silage pit. (iv) Describe an experiment to show the presence of bacteria in a sample of silage.",
+        "solution": [
+          "Anaerobic refers to the absence of oxygen. Bacteria such as Lactobacillus and Enterobacter may be involved in silage making. Ensuring anaerobic conditions in the silage pit can be done through proper sealing and using airtight containers. An experiment to show the presence of bacteria in a sample of silage could involve culturing the sample and observing bacterial growth."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term anaerobic.",
+            "solution": [
+              "Anaerobic refers to the absence of oxygen."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name two species of bacteria that may be involved in silage making.",
+            "solution": [
+              "Lactobacillus, Enterobacter"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe two ways of ensuring anaerobic conditions in the silage pit.",
+            "solution": [
+              "Proper sealing, using airtight containers."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to show the presence of bacteria in a sample of silage.",
+            "solution": [
+              "Culturing the sample and observing bacterial growth."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "A number of factors are needed for seeds to germinate. (i) Explain the term germination. (ii) List three factors needed for germination to take place. (iii) Give two reasons why maize is commonly sown under plastic. (iv) Describe an experiment to investigate the percentage (%) germination in a sample of seeds.",
+        "solution": [
+          "Germination is the process by which a seed develops into a plant. Factors needed for germination include water, oxygen, temperature, and light. Maize is commonly sown under plastic to retain moisture and regulate temperature. An experiment to investigate the percentage (%) germination in a sample of seeds could involve counting the number of germinated seeds and calculating the percentage.",
+          "Water, oxygen, temperature, light",
+          "Retaining moisture, regulating temperature",
+          "Counting the number of germinated seeds and calculating the percentage"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term germination.",
+            "solution": [
+              "Germination is the process by which a seed develops into a plant."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List three factors needed for germination to take place.",
+            "solution": [
+              "Water, oxygen, temperature, light"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Give two reasons why maize is commonly sown under plastic.",
+            "solution": [
+              "Retaining moisture, regulating temperature"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to investigate the percentage (%) germination in a sample of seeds.",
+            "solution": [
+              "Counting the number of germinated seeds and calculating the percentage"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Earthworms are very important in the soil. (i) Name the phylum to which earthworms belong. (ii) List three ways in which earthworms benefit the soil. (iii) Outline two ways by which the farmer can increase earthworm numbers in the soil. (iv) Describe an experiment to show the activity of earthworms in the soil.",
+        "solution": [
+          "Earthworms belong to the phylum Annelida. Earthworms benefit the soil by improving soil structure, increasing soil aeration, and breaking down organic matter. The farmer can increase earthworm numbers in the soil by maintaining a healthy, moist environment and avoiding the use of harmful chemicals. An experiment to show the activity of earthworms in the soil could involve placing a marker at the beginning and end of a soil sample and observing the number of earthworms that pass through.",
+          "Annelida",
+          "Improving soil structure, increasing soil aeration, breaking down organic matter",
+          "Maintaining a healthy, moist environment, avoiding the use of harmful chemicals",
+          "Placing a marker at the beginning and end of a soil sample and observing the number of earthworms that pass through"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name the phylum to which earthworms belong.",
+            "solution": [
+              "Annelida"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List three ways in which earthworms benefit the soil.",
+            "solution": [
+              "Improving soil structure, increasing soil aeration, breaking down organic matter"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline two ways by which the farmer can increase earthworm numbers in the soil.",
+            "solution": [
+              "Maintaining a healthy, moist environment, avoiding the use of harmful chemicals"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to show the activity of earthworms in the soil.",
+            "solution": [
+              "Placing a marker at the beginning and end of a soil sample and observing the number of earthworms that pass through"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Concentrates are commonly fed to farm animals. (i) Name two food nutrients found in concentrates. (ii) Describe the function of each of the nutrients referred to in (i). (iii) Explain the term dry matter (DM) in relation to animal feed. (iv) Describe an experiment to measure the dry matter content of a named animal feed.",
+        "solution": [
+          "Food nutrients found in concentrates include protein, energy, and vitamins. Protein is essential for growth and repair, energy is used for metabolism, and vitamins support various physiological processes. Dry matter (DM) in animal feed refers to the non-water content of the feed. An experiment to measure the dry matter content of a named animal feed could involve drying a sample of the feed and measuring its weight.",
+          "Protein, energy, vitamins",
+          "Essential for growth and repair, used for metabolism, support various physiological processes",
+          "Non-water content of the feed",
+          "Drying a sample of the feed and measuring its weight"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two food nutrients found in concentrates.",
+            "solution": [
+              "Protein, energy, vitamins"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the function of each of the nutrients referred to in (i).",
+            "solution": [
+              "Protein is essential for growth and repair, energy is used for metabolism, vitamins support various physiological processes"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain the term dry matter (DM) in relation to animal feed.",
+            "solution": [
+              "Dry matter (DM) in animal feed refers to the non-water content of the feed."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to measure the dry matter content of a named animal feed.",
+            "solution": [
+              "Drying a sample of the feed and measuring its weight."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

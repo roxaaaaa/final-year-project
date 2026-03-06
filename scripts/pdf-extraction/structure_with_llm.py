@@ -229,9 +229,9 @@ def process_with_llm(input_pdf_path, output_json_path, prompt):
 if __name__ == "__main__":
   script_dir = os.path.dirname(os.path.abspath(__file__))
   project_dir = os.path.dirname(os.path.dirname(script_dir)) 
-  range_higher = [2025]
+  range_higher = [ 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024]
   for i in range_higher:
-    input_json_path = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_higher.json")
-    output_json_path = os.path.join(project_dir, "data", "structured", f"structured_solutions_{i}_higher.json")
+    input_json_path = os.path.join(project_dir, "data", "unstructured", f"solutions_{i}_ordinary.json")
+    output_json_path = os.path.join(project_dir, "data", "structured", f"structured_solutions_{i}_ordinary.json")
     process_with_llm(input_json_path, output_json_path, SOLUTION_PROMPT)
 

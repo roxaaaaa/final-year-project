@@ -40,12 +40,12 @@ def merge_files(questions_file, solutions_file, output_file):
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_dir = os.path.dirname(os.path.dirname(script_dir)) 
-    range_higher = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+    range_ordinary = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024]
 
-    for i in range_higher:
-        questions_file = os.path.join(project_dir, "data", "structured", f"structured_questions_{i}_higher.json")
-        solutions_file = os.path.join(project_dir, "data", "structured", f"structured_solutions_{i}_higher.json")
-        output_file = os.path.join(project_dir, "data", "merged", f"higher_merged_{i}_.json")
+    for i in range_ordinary:
+        questions_file = os.path.join(project_dir, "data", "structured", f"structured_questions_{i}_ordinary.json")
+        solutions_file = os.path.join(project_dir, "data", "structured", f"structured_solutions_{i}_ordinary.json")
+        output_file = os.path.join(project_dir, "data", "merged", f"ordinary_merged_{i}_.json")
         merge_files(questions_file, solutions_file, output_file)
         print(f"Merged {questions_file} and {solutions_file} into {output_file}")
     
