@@ -1,0 +1,362 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Place these in Column A to match a description of each breed in Column B. The first one is completed as an example.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Red water fever\nType of animal affected ________________________________________\nSymptom _______________________________________________________________________________________",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Orf",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Anaemia\nType of animal affected _______________________________________",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Viral pneumonia",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Grass tetany",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Give a scientific reason in each case why the following practices are carried out on Irish farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Selective herbicide is sprayed on cereal crops.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Beet tops are left to wilt before feeding to animals.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Tail paint is applied to cows.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Lime is regularly spread on soil.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Farm hedges are trimmed only after the first of September.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "List four steps the farmer can take to help successful calving.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Give two differences between colostrum and milk.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe three ways in which the farmer ensures good hygiene in calf-rearing.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name two common diseases of calves.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is the main function of the rumen?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "How can the rumen be helped to develop in the young calf?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name the three other chambers in the stomach.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two species of grass commonly sown on Irish farms.\n(ii) Clover is used in grass seed mixtures. Give two benefits of clover.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two species of grass commonly sown on Irish farms.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Clover is used in grass seed mixtures. Give two benefits of clover.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Draw a labelled diagram to show a paddock grazing system.\n(ii) Give two advantages of paddock grazing.",
+        "solution": [],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Draw a labelled diagram to show a paddock grazing system.",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Give two advantages of paddock grazing.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Give two benefits of mixed grazing of cattle and sheep.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(i) What is the main plant nutrient found in CAN?\n(ii) Describe an experiment to show the effect of CAN on grass growth.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is the main plant nutrient found in CAN?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe an experiment to show the effect of CAN on grass growth.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Silage making involves the activity of anaerobic bacteria.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term anaerobic.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name two species of bacteria that may be involved in silage making.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe two ways of ensuring anaerobic conditions in the silage pit.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to show the presence of bacteria in a sample of silage.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "A number of factors are needed for seeds to germinate.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term germination.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List three factors needed for germination to take place.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Give two reasons why maize is commonly sown under plastic.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to investigate the percentage (%) germination in a sample of seeds.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Earthworms are very important in the soil.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name the phylum to which earthworms belong.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List three ways in which earthworms benefit the soil.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline two ways by which the farmer can increase earthworm numbers in the soil.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to show the activity of earthworms in the soil.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Concentrates are commonly fed to farm animals.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two food nutrients found in concentrates.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the function of each of the nutrients referred to in (i).",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain the term dry matter (DM) in relation to animal feed.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe an experiment to measure the dry matter content of a named animal feed.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,347 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Clover is a member of which plant phylum?",
+        "solution": [
+          "Mosses"
+        ],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "Explain the term biological oxygen demand (BOD). List three farming practices that would help maintain a low BOD.",
+        "solution": [
+          "BOD is the amount of oxygen consumed by microorganisms in breaking down organic matter in water. It helps measure water pollution levels.",
+          "Farming practices: 1) Proper waste management, 2) Using nutrient-rich soil, 3) Regular irrigation"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "Compare a podzol soil with a brown earth soil under the following headings: (i) Drainage. (ii) Fertility. (iii) pH.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify and explain any four factors that affect the development of a soil structure.",
+        "solution": [
+          "Factors affecting soil structure include: root growth, organic matter, temperature, and water content."
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "An experiment to determine soil texture by sieving was carried out, and the results were as follows: Sand: 60% Silt: 25% Clay: 15%",
+        "solution": [
+          "(i) Describe how this experiment was carried out.",
+          "(ii) To which type of farm enterprise is this soil best suited?",
+          "(iii) Suggest three reasons for your choice."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how this experiment was carried out.",
+            "solution": [
+              "The experiment involved passing a sample of soil through different size sieves to determine the proportion of sand, silt, and clay particles."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "To which type of farm enterprise is this soil best suited?",
+            "solution": [
+              "This soil is best suited for agriculture due to its sandy texture, which allows good drainage and aeration."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest three reasons for your choice.",
+            "solution": [
+              "1. Good drainage improves root growth and plant health.",
+              "2. Sandy soil provides better aeration, crucial for root respiration.",
+              "3. Suitable for cultivation of crops that require well-drained soils."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe the management practices necessary to maximise the growth of housed weanlings during their first winter.",
+        "solution": [
+          "Management practices necessary to maximise the growth of housed weanlings during their first winter."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe a suitable grazing system which might be used in a beef enterprise to achieve optimum production.",
+        "solution": [
+          "A suitable grazing system which might be used in a beef enterprise to achieve optimum production."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Beef is classified using the EU beef carcase classification system. Outline the main features of this system.",
+        "solution": [
+          "Outline the main features of this system."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Indicate a suitable score for a highly productive Continental beef animal and a British crossbred beef animal using this system.",
+            "solution": [
+              "Indicate a suitable score for a highly productive Continental beef animal and a British crossbred beef animal."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe a suitable strategy which could be used to improve the classification of Irish beef cattle in the future.",
+            "solution": [
+              "Describe a suitable strategy which could be used to improve the classification of Irish beef cattle in the future."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "None provided",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To show the effect of magnesium deficiency on the growth of a plant.",
+        "solution": [
+          "Magnesium deficiency affects the growth of plants by impairing photosynthesis. Magnesium is essential for the production of chlorophyll, which is necessary for capturing light energy and converting it into chemical energy through the process of photosynthesis."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "To estimate the yield of a named root crop.",
+        "solution": [
+          "Yield estimation for a root crop involves several factors such as soil type, water availability, fertilization rates, and agricultural techniques. Accurate yield estimation is crucial for farmers to plan harvesting times and ensure economic viability."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "To measure the energy value of an animal foodstuff.",
+        "solution": [
+          "The energy value of an animal foodstuff can be measured through calorimetry. This method involves burning a sample of the foodstuff under controlled conditions and measuring the heat released to determine its caloric content."
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "To determine the effect of shading on the botanical composition of a pasture.",
+        "solution": [
+          "The effect of shading on the botanical composition of a pasture can be determined by comparing the species diversity and abundance in shaded versus non-shaded areas. Shading can influence plant growth, competition for resources, and ultimately change the community structure."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Weeds, pests and diseases in crops may be controlled by direct and indirect methods. (i) What is meant by indirect control? (ii) Describe three methods of indirect control commonly used in Irish agriculture.",
+        "solution": [
+          "Indirect control refers to the methods that do not involve direct application of pesticides or chemicals. These include crop rotation, mechanical cultivation, and physical barriers.",
+          "Three methods of indirect control commonly used in Irish agriculture are: 1. Crop rotation - This helps prevent the build-up of pests and diseases in a particular field by alternating crops. 2. Mechanical cultivation - This can help remove weeds and break up pest habitats. 3. Physical barriers - These include fences, screens, and traps that can exclude pests."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Explain four characteristics that would determine the suitability of a soil for root crops.",
+        "solution": [
+          "Four characteristics that would determine the suitability of a soil for root crops are: 1. Good drainage - root crops do not like waterlogged soils. 2. Rich in organic matter - this can improve soil structure and fertility. 3. Well-aerated - root crops need oxygen to grow healthy roots. 4. pH between 6.0 and 7.5 - this is generally considered optimal for most root crops."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "(i) Give four possible causes of lodging in cereal crops. (ii) Describe two sources of damage to potato tubers during storage.",
+        "solution": [
+          "(i) Four possible causes of lodging in cereal crops are: 1. Over-fertilization - this can lead to excessive growth and make the plants more susceptible to wind or rain. 2. Excessive rainfall - heavy rains can cause the plants to fall over. 3. Poor variety selection - certain varieties may be more prone to lodging than others. 4. Insect damage - pests such as grasshoppers and cutworms can damage the plants.",
+          "(ii) Two sources of damage to potato tubers during storage are: 1. Rot - this is caused by fungi or bacteria that break down the tubers. 2. Sprouting - this occurs when potatoes start growing before they have been harvested. This reduces their shelf life and quality."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain each of the following terms: (i) F1 hybrids. (ii) Continuous variation. (iii) Back cross. (iv) Incomplete dominance.",
+        "solution": [
+          "F1 hybrids refer to offspring produced by crossing two parents that are homozygous for different alleles of a gene.",
+          "Continuous variation refers to traits that can vary along a continuum, rather than being limited to specific discrete values.",
+          "A back cross involves breeding an F1 hybrid with one of its parental strains to recover the original parental genotypes and phenotypes.",
+          "Incomplete dominance occurs when heterozygous individuals have a phenotype intermediate between those of the two homozygous parents."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow. (i) Give the genotype of the bull used in this cross. (ii) List the possible genotypes resulting from this cross. (iii) What is the probability that a calf from this cross would be white and horned? (iv) What is the probability that a calf from this cross would be horned? Explain your answer. (v) State Mendel’s Law of Segregation.",
+        "solution": [
+          "The genotype of the bull used in this cross could be BbPp.",
+          "The possible genotypes resulting from this cross are: BBPP, Bbpp, bBPP, and bbpp.",
+          "There is a 25% chance that a calf from this cross would be white and horned (bbpp).",
+          "There is a 75% chance that a calf from this cross would be horned (BBPp, Bbpp, bBPP).",
+          "Mendel’s Law of Segregation states that each parent contributes one allele for each gene to the gametes. The alleles then segregate during meiosis so that each gamete receives only one allele."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "The Economic Breeding Index (EBI) is widely used in dairying to identify genetically superior animals to improve dairy production in Ireland. (i) List any two sub-indices of the EBI. (ii) Outline the factors that determine each sub-index listed.",
+        "solution": [
+          "Sub-indices of the EBI include: Milk Production and Reproductive Efficiency.",
+          "Milk Production is influenced by factors such as breed, nutrition, health status, age, and environment.",
+          "Reproductive Efficiency is determined by factors like calving interval, fertility rate, and survival rate."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The leatherjacket and the wireworm are the larval stages of two important crop pests. Identify the adult stages of 1. the leatherjacket, 2. the wireworm.",
+        "solution": [
+          "The adult stage of a leatherjacket is the grub.",
+          "The adult stage of a wireworm is the adult beetle."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe the damage caused by each of these pests.",
+        "solution": [
+          "Leatherjacket: Causes damage to roots and can lead to plant wilting.",
+          "Wireworm: Can cause significant damage to seeds, seedlings, and roots."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Name the phylum to which they belong.",
+        "solution": [
+          "Arthropoda"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Describe three structural features of members of this phylum.",
+        "solution": [
+          "Segmentation",
+          "Jointed appendages",
+          "Exoskeleton"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Distinguish fully between complete and incomplete metamorphosis.",
+        "solution": [
+          "Complete metamorphosis involves four stages (egg, larva, pupa, adult). Incomplete metamorphosis involves only three stages (egg, nymph, adult)."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain why the reduced incidence of liver fluke (Fasciola hepatica) infestation in cattle grazed on well-drained pasture is observed.",
+        "solution": [
+          "Cattle grazing on well-drained pasture reduce the risk of liver fluke infection because they avoid areas where the parasite eggs are concentrated, such as wetlands and muddy fields. The reduced exposure to these areas decreases the chances of ingesting fluke eggs."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe the process by which water moves from the soil through a plant into the atmosphere.",
+        "solution": [
+          "Water moves from the soil through a plant and into the atmosphere through a process called transpiration. The roots absorb water from the soil, which is then transported up through the stem to the leaves. Here, it evaporates through small pores in the leaves (stomata), contributing to the cycle of evapotranspiration and helping plants cool themselves."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Explain how cross-breed sows are used in pig production.",
+        "solution": [
+          "Cross-breeding sows is a common practice in pig production to improve the genetic diversity of the herd, resulting in offspring with better health, higher productivity, and faster growth rates. Cross-bred sows carry a combination of desirable traits from different breeds, which helps in selecting for traits such as increased litter size, better disease resistance, and improved meat quality."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Explain how acid is used as an additive in silage making.",
+        "solution": [
+          "Acid is commonly added to silage (cured green feed for animals) to preserve it and prevent spoilage. The acidic environment created by adding acids, such as lactic acid or acetic acid, lowers the pH level of the silage, which inhibits the growth of bacteria that can cause fermentation and decomposition. This preservation method helps in maintaining the nutritional value and freshness of the feed for longer periods."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  }
+]

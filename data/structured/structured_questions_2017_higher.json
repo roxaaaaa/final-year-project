@@ -1,0 +1,550 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two species that might be included in a seed mixture in a short‐term ley for silage.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(ii) Give a reason for each choice.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain the term biological control.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(ii) Give two examples of biological control in agriculture, horticulture, or forestry.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "e",
+        "text": "(i) Give two structural differences between monocotyledonous (monocot) plants and dicotyledonous (dicot) plants.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "(ii) Give one example of a monocot plant and one example of a dicot plant.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "g",
+        "text": "(i) Classify each of the following rock types based on how they are formed: (i) Marble (ii) Granite (iii) Basalt.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "(i) List three factors that determine the amount of protein required in an animal ration.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "i",
+        "text": "(ii) Outline three ways in which the structure of the leaf is suited to photosynthesis.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "j",
+        "text": "(i) Give the dental formula of each of the following animals: (i) Sheep (ii) Pig.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "k",
+        "text": "(ii) Name the nitrogen‐fixing bacteria found in the root nodules of legumes such as clover.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "l",
+        "text": "(iii) Name two legumes other than clover.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "m",
+        "text": "(i) Explain the term body condition score (BCS).",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "n",
+        "text": "(ii) Give the correct BCS for a dairy cow - Before calving - At mating time.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "o",
+        "text": "(i) Describe one function of each of the following mammalian reproductive hormones: (i) FSH (ii) Progesterone (iii) Testosterone.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Water is held in the soil in two main ways.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name both ways and explain how each works.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give two benefits of artificial drainage in soils.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Give three ways in which soil acidity increases over time. (ii) Explain the mechanism at work in each case. (iii) Describe two effects of increased soil acidity on crops.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give three ways in which soil acidity increases over time.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the mechanism at work in each case.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Describe two effects of increased soil acidity on crops.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to show cation exchange in a soil sample.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe the following aspects of potato cultivation: (i) Soil suitability (ii) Sowing (iii) Weed control (iv) Storage.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Soil suitability:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Sowing:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Weed control:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Storage:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the cultivation of a named cereal crop under the following headings: (i) Climate (ii) Disease (iii) Harvest date (iv) Yield.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Climate:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Disease:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Harvest date:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Yield:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Describe the physiological changes that occur during the ripening process in the cereal referred to above. (ii) Describe two tests carried out by a grain merchant on harvested grain.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Physiological changes during ripening:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Two tests by a grain merchant:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To compare the digestibility of whole and rolled cereal grains.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "To determine the quality of silage in a pit or bale.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "To compare capillarity in two named soil types.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "To measure the rate of transpiration in plants.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) List two qualitative tests and two quantitative tests normally carried out on milk. (ii) Describe how you would carry out in the laboratory any one of the quantitative tests referred to above.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "List two qualitative tests and two quantitative tests normally carried out on milk.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe how you would carry out in the laboratory any one of the quantitative tests referred to above.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Name two lowland sheep breeds and describe their bodily characteristics. (ii) Explain fully why crossbred ewes are frequently used in a lowland sheep enterprise.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two lowland sheep breeds and describe their bodily characteristics.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain fully why crossbred ewes are frequently used in a lowland sheep enterprise.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain the term reproductive efficiency. (ii) Describe three factors affecting reproductive efficiency.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the term reproductive efficiency.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe three factors affecting reproductive efficiency.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe how the dry matter digestibility (DMD) of a grass plant alters during its various stages of growth.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe four measures that can be used to maintain a high grass DMD for longer during the grazing season.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Explain how the ruminant stomach is suited to the digestion of plants in a grassland sward.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Many Irish suckler beef producers are currently taking part in the Beef Data and Genomics Programme which aims to improve profitability in the suckler sector. Elements of this programme include performance testing and progeny testing.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the terms performance testing and progeny testing.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List three characteristics which are important in the selection of replacement heifers for a suckler enterprise.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Explain the following concepts in genetics and give an appropriate example in each case. (i) Incomplete dominance (ii) Alleles (iii) Continuous variation.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Incomplete dominance.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Alleles.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Continuous variation.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "In mice the allele for wild type coat colour (W) is dominant to the allele for albino coat (w). The allele for straight hair (S) is dominant to the allele for bent hair (s). Two mice, heterozygous for both these genes, were mated. Taking care to differentiate clearly between uppercase and lowercase letters, explain with the aid of a Punnett square, the probability in each case that the offspring would have the following phenotypes. (i) Albino coat (ii) Bent hair (iii) Albino coat and bent hair (iv) Wild type coat colour and bent hair.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The influence of environmental temperature on weight gain in pigs.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "The dense planting of coniferous trees in a forestry plantation.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "The low earthworm population in intensively cultivated soils.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "The presence of grit in the digestive tract of free‐range poultry.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "The deep ploughing of podzolic soils.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

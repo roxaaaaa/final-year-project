@@ -1,0 +1,323 @@
+[
+  {
+    "question_num": "3",
+    "context": "The three animals shown are involved in the life cycle of the liver fluke.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "From the animals shown, name the primary host.",
+        "solution": [
+          "The primary host is the intermediate host in the life cycle of the liver fluke."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "From the animals shown, name the secondary (intermediate) host.",
+        "solution": [
+          "The secondary (intermediate) host is the primary host in the life cycle of the liver fluke."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "State three practices carried out on farms to reduce the incidence of liver fluke.",
+        "solution": [
+          "Practice 1: Use resistant breeds of livestock.",
+          "Practice 2: Proper pasture management.",
+          "Practice 3: Regular deworming."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Liver fluke is an endoparasite. Explain the term endoparasite.",
+        "solution": [
+          "An endoparasite is an organism that lives inside the host body and feeds on its tissues or fluids."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Give an example of one other endoparasite.",
+        "solution": [
+          "An example of another endoparasite is the tapeworm."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Give one scientific reason for each of the following practices carried out on Irish farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Finding the pH of the soil before sowing a crop.",
+        "solution": [
+          "To determine the suitability of the soil for the crop being planted."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Adding white clover to a seed mixture for a pasture sward.",
+        "solution": [
+          "To improve soil fertility and provide additional protein for the animals."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Topping pastures in summer.",
+        "solution": [
+          "To encourage new growth and improve pasture quality."
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Using mineral licks on a dairy farm.",
+        "solution": [
+          "To provide essential minerals and vitamins to the animals."
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Isolating sick animals on a farm.",
+        "solution": [
+          "To prevent the spread of disease among healthy animals."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "Slurry and farmyard manure are two sources of nutrients for crops. (i) State two differences between the composition of slurry and farmyard manure. (ii) Slurry may cause water pollution. State two steps farmers may take to reduce the incidence of water pollution by slurry. (b) 18‐6‐12 is a compound fertiliser used on farms. (i) State the principal elements that 18‐6‐12 provides. (ii) State one advantage and one disadvantage of using artificial fertilisers. (iii) In the case of one named element in 18‐6‐12, state its role in plants. (c) Describe an experiment to find the percentage (%) of water in a soil sample.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Slurry and farmyard manure are two sources of nutrients for crops. (i) State two differences between the composition of slurry and farmyard manure. (ii) Slurry may cause water pollution. State two steps farmers may take to reduce the incidence of water pollution by slurry.",
+        "solution": [
+          "Slurry: Rich in organic matter, can lead to excessive nutrient runoff. Farmyard manure: More inorganic, less likely to cause runoff.",
+          "1. Apply slurry at appropriate times 2. Use buffer strips"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two differences between the composition of slurry and farmyard manure.",
+            "solution": [
+              "Slurry: Rich in organic matter, can lead to excessive nutrient runoff. Farmyard manure: More inorganic, less likely to cause runoff."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Slurry may cause water pollution. State two steps farmers may take to reduce the incidence of water pollution by slurry.",
+            "solution": [
+              "1. Apply slurry at appropriate times 2. Use buffer strips"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "18‐6‐12 is a compound fertiliser used on farms. (i) State the principal elements that 18‐6‐12 provides. (ii) State one advantage and one disadvantage of using artificial fertilisers. (iii) In the case of one named element in 18‐6‐12, state its role in plants.",
+        "solution": [
+          "N-P-K",
+          "Advantage: Efficiency, Disadvantage: Soil depletion",
+          "N: Essential for growth"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State the principal elements that 18‐6‐12 provides.",
+            "solution": [
+              "N-P-K"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one advantage and one disadvantage of using artificial fertilisers.",
+            "solution": [
+              "Advantage: Efficiency, Disadvantage: Soil depletion"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "In the case of one named element in 18‐6‐12, state its role in plants.",
+            "solution": [
+              "N: Essential for growth"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to find the percentage (%) of water in a soil sample.",
+        "solution": [
+          "Collect soil sample, dry it, weigh it, add water, weigh again, calculate percentage"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe an experiment to find the percentage (%) of water in a soil sample.",
+            "solution": [
+              "Collect soil sample, dry it, weigh it, add water, weigh again, calculate percentage"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two varieties of maincrop potatoes.",
+        "solution": [
+          "Irish Lumper",
+          "Charlotte"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe the growing of potatoes under the following headings: 1. Soil preparation 2. Fertiliser use 3. Weed control 4. Potato blight control.",
+        "solution": [
+          "Soil preparation: Potatoes require well-drained, fertile soil rich in organic matter. Soil should be tilled and loosened to a depth of at least 30cm. Organic matter can be added in the form of well-rotted manure or compost to improve soil structure and fertility.",
+          "Fertiliser use: Potatoes require a balanced blend of nitrogen, phosphorus, and potassium. A typical fertiliser application rate is 120-150kg/ha of a balanced NPK fertiliser. Fertiliser should be applied in the form of a top-dress or incorporated into the soil at the time of planting.",
+          "Weed control: Weeds can reduce the yield of potatoes and should be controlled using mechanical, chemical, or cultural methods. Mechanical methods include hoeing or using a cultivate. Chemical methods include the use of herbicides such as Glyphosate. Cultural methods include crop rotation and mulching.",
+          "Potato blight control: Potato blight is a fungal disease that can cause significant yield losses. Control measures include using disease-free seed potatoes, crop rotation, and the use of fungicides such as Chlorothalonil."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "State three reasons why farmers would use certified seed potatoes.",
+        "solution": [
+          "Certified seed potatoes are free from disease and pests, reducing the risk of crop failure.",
+          "Certified seed potatoes are more uniform in size and quality, improving yield and marketability.",
+          "Certified seed potatoes are grown under controlled conditions, reducing the risk of contamination with other varieties."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "Draw a labelled diagram of a paddock grazing system. State one advantage and one disadvantage of a paddock grazing system. Describe three steps involved in making good quality hay and give the reason for each step. State how a farmer can ensure the production of good quality silage. List three simple tests a farmer can carry out to determine the quality of silage, and state the purpose of each test.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Draw a labelled diagram of a paddock grazing system.",
+        "solution": [
+          "A labelled diagram of a paddock grazing system should include the following components: the paddock area, the feeding area, the shelter, the water source, and the fencing. The diagram should also indicate the flow of animals and the arrangement of the areas for optimal grazing and feeding."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State one advantage of a paddock grazing system.",
+            "solution": [
+              "One advantage of a paddock grazing system is that it allows for better animal welfare by providing a larger area for grazing and movement. This can help reduce stress and improve overall health."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one disadvantage of a paddock grazing system.",
+            "solution": [
+              "One disadvantage of a paddock grazing system is that it can be more labor-intensive compared to other grazing systems. Farmers need to regularly move animals between paddocks and ensure that the feeding areas are adequately stocked."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe three steps involved in making good quality hay, and give the reason for each step.",
+        "solution": [
+          "Step 1: Cut the grass when it is between 5-10 cm tall. This is because it allows for more forage to be produced and helps prevent the grass from becoming too mature and fibrous.",
+          "Step 2: Mow the hay when it is dry. Moisture can cause the hay to mold and lose its nutritional value.",
+          "Step 3: Bale the hay promptly. This helps to prevent the hay from getting wet and losing its quality."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "State how a farmer can ensure the production of good quality silage.",
+        "solution": [
+          "A farmer can ensure the production of good quality silage by choosing the right type of forage, harvesting the forage at the right time, and proper storage. The forage should be harvested when it is at the proper maturity level, and the storage should be airtight to prevent oxygen from entering and causing the forage to spoil."
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "List three simple tests a farmer can carry out to determine the quality of silage, and state the purpose of each test.",
+        "solution": [
+          "Test 1: pH Test. The pH of silage should be between 4.5 and 5.5. A lower pH indicates that the silage is fermenting properly and contains more organic acids.",
+          "Test 2: Acetone Test. The acetone test is used to determine the level of moisture in silage. The silage should be free of water and have a clean, sweet smell.",
+          "Test 3: Fiber Analysis. Fiber analysis is used to determine the balance of fiber and nutrients in silage. The ideal fiber balance for silage is 30-35% neutral detergent fiber (NDF) and 30-40% acid detergent fiber (ADF)."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "any two of the parts (a), (b), (c), (d). (30 marks, 30 marks)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The diagram shows an investigation into photosynthesis. (i) Name the gas collected in the test tube. (ii) Name two factors necessary for photosynthesis. (iii) How does photosynthesis help to reduce the problem of climate change? (iv) Starch is stored in leaves as a result of photosynthesis. Describe how to test a leaf for the presence of starch.",
+        "solution": [
+          "Carbon dioxide",
+          "Light and water",
+          "Photosynthesis absorbs carbon dioxide from the atmosphere, converting it into oxygen and releasing it back into the atmosphere. This process helps to reduce the problem of climate change by absorbing carbon dioxide, one of the greenhouse gases that contributes to global warming.",
+          "Starch can be tested using a simple iodine test. Starch will react with iodine to form a blue-black precipitate. To perform the test, dip a small piece of the leaf into a solution of iodine. If the leaf contains starch, the iodine will react with it, resulting in a blue-black color."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Explain the underlined term. (i) Flushing 2. Scanning 3. Steaming up 4. Vaccination 5. Creep feeding 6. Shearing.",
+        "solution": [
+          "Flushing: Flushing is the process of moving air through a barn or stable to improve ventilation and reduce the risk of respiratory problems in livestock. By ensuring adequate airflow, flushing helps to prevent the buildup of harmful gases and moisture, which can lead to respiratory issues.",
+          "Scanning: Scanning is the process of visually inspecting livestock to identify any health problems or injuries. It involves visually examining the animals to check for any signs of illness, lameness, or other issues. Scanning is an important part of livestock management as it helps to identify and address health problems before they become more serious.",
+          "Steaming up: Steaming up is the process of using hot water to clean and disinfect a barn or stable. By using hot water to steam out the barn, farmers can help to eliminate harmful bacteria, fungi, and other pathogens that can cause illness in livestock. Steaming up is an important part of livestock management as it helps to maintain the health and well-being of the animals.",
+          "Vaccination: Vaccination is the process of administering vaccines to livestock to help prevent them from contracting certain diseases. By vaccinating livestock, farmers can help to protect them from diseases that can be transmitted through contact with other animals, the environment, or other sources. Vaccination is an important part of livestock management as it helps to ensure the health and well-being of the animals.",
+          "Creep feeding: Creep feeding is the process of providing young livestock with a high-protein feed that is separate from the main feed for adult animals. By providing young livestock with a high-protein feed, farmers can help to ensure their proper growth and development. Creep feeding is an important part of livestock management as it helps to promote healthy growth and development in young livestock.",
+          "Shearing: Shearing is the process of removing a sheep's wool. By shearing sheep, farmers can help to ensure that the animals are comfortable and free from discomfort. Shearing is an important part of livestock management as it helps to maintain the health and well-being of the animals."
+        ],
+        "skip": false
+      }
+    ]
+  }
+]

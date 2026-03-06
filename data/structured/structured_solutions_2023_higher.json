@@ -1,0 +1,342 @@
+[
+  {
+    "question_num": "3",
+    "context": "Calcium is an important element required by both plants and animals.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State one source of calcium for either plants or animals. Plant or animal:",
+        "solution": [
+          "dirt",
+          "dirt"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Outline one process by which calcium becomes available to plants.",
+        "solution": [
+          "Calcium becomes available to plants through the process of absorption from the soil. Roots absorb calcium ions from the soil and transport them to the plant's tissues.",
+          "Calcium becomes available to plants through the process of absorption from the soil. Roots absorb calcium ions from the soil and transport them to the plant's tissues."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Explain one symptom of a named calcium deficiency in cows. Name: Symptom:",
+        "solution": [
+          "A named calcium deficiency in cows can result in a condition known as 'lameness.' Symptoms of lameness in cows include difficulty walking, stiffness, and a reluctance to move, which can lead to reduced milk production and decreased overall health.",
+          "A named calcium deficiency in cows can result in a condition known as 'lameness.' Symptoms of lameness in cows include difficulty walking, stiffness, and a reluctance to move, which can lead to reduced milk production and decreased overall health."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(a) (i) Identify each of the following breeds of animals. A B C",
+        "solution": [
+          "Identify each of the following breeds of animals. A B C"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "a.i",
+            "text": "(ii) Breed C is a dual-purpose breed. Explain the underlined term.",
+            "solution": [
+              "Dual-purpose breed"
+            ],
+            "skip": false
+          },
+          {
+            "id": "a.ii",
+            "text": "(iii) Todd wanted to purchase a purebred bull. Explain the importance of using a purebred sire in a beef herd.",
+            "solution": [
+              "Importance of using a purebred sire in a beef herd"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(b) (i) Identify each of the following breeds of animals. D E F",
+        "solution": [
+          "Identify each of the following breeds of animals. D E F"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "b.i",
+            "text": "(ii) Read the article and the questions which follow. Fleckvieh Cattle This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020) Using evidence from the article, suggest which Irish cattle industry this breed is most suited. Industry: Evidence:",
+            "solution": [
+              "Ireland",
+              "Fleckvieh Cattle is most suited to the Irish dairy industry due to its exceptional fertility, longevity, calving ease, low somatic cell count, strong feet, and good health traits. It is known for milking roughly 6,000kg in their first lactation and over 7,000kg in their later lactations, with an estimated milk fat of 4.2% and protein of 3.7%. It is highly suited to the Irish dairy industry."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "Performance testing is carried out on bulls by the Irish Cattle Breeding Federation (ICBF) in Tully, Co. Kildare. (a) When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below. Clipped Worm dosed Treated for lice Sorted into pens based on breed and weight (b) Outline the importance of performance testing to the beef or dairy industry in Ireland. Beef or dairy industry:",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "When bulls arrive at the test centre, they enter a pre-isolation area where they are clipped, dosed, treated for lice, and sorted into pens based on breed and weight. Suggest one reason for any three treatments listed below. Clipped Worm dosed Treated for lice Sorted into pens based on breed and weight",
+        "solution": [
+          "To minimize the risk of disease transmission",
+          "To ensure consistent breeding outcomes",
+          "To improve overall health and productivity"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Outline the importance of performance testing to the beef or dairy industry in Ireland.",
+        "solution": [
+          "Improves breeding decisions",
+          "Enhances herd health",
+          "Increases efficiency and productivity",
+          "Supports genetic improvement",
+          "Regulatory compliance"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "Soil testing is essential to determine the nutrient requirement of the soil.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Briefly describe how to collect soil samples for soil testing.",
+        "solution": [
+          "Collect soil samples from different parts of the field.",
+          "Ensure the samples are well mixed.",
+          "Use a clean, labeled container for each sample.",
+          "Store the samples in a cool, dry place until testing."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Soil testing is recommended to be carried out every 3 – 5 years and between the months of October and February. Briefly describe a reason for these recommendations.",
+        "solution": [
+          "Soil properties can change over time due to weathering, biological activity, and other factors.",
+          "Testing every 3-5 years ensures that the nutrient requirements of the soil are up-to-date.",
+          "The recommended months (October and February) are when the soil is at its most stable for testing."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "With record high fertiliser prices, outline how soil testing can improve the economic sustainability of the farm.",
+        "solution": [
+          "By identifying the exact nutrient requirements of the soil, farmers can apply the right amount of fertilizer, avoiding waste and excessive cost.",
+          "Soil testing helps in making informed decisions about fertilization, reducing the need for costly experiments.",
+          "Accurate soil testing results in better crop yields, leading to higher economic returns."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "(a) Read the article and the questions which follow. The Farmdroid has landed in Ireland The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding. The core principle of the machine is that it relies on GPS location data to go about its daily tasks. The tasks of sowing and mechanical weed control in crops are guided by precision GPS. Using this GPS, the Farmdroid can sow the seeds far enough apart to note and record where each individual seed has been planted in a field. The company claims that accuracy is to within 8mm, allowing even pre-emergence hoeing of the soil both between the rows and in between the plants themselves in most crops. (Adapted from Agriland, 2022)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Explain the underlined term.",
+        "solution": [
+          "The underlined term is not provided in the question. The solution should explain the term that is underlined in the context."
+        ],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(ii) Explain how the Farmdroid can benefit the environment and the farmer.",
+            "solution": [
+              "The Farmdroid can benefit the environment by reducing the need for herbicides and pesticides, as it can control weeds more accurately. It can also benefit the farmer by increasing efficiency and accuracy in sowing, reducing labor costs, and improving crop yields."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(iii) Apart from GPS, outline one piece of technology that you have studied that would benefit both the farmer and the environment. Or",
+            "solution": [
+              "One piece of technology that would benefit both the farmer and the environment is precision agriculture tools that use data analytics to optimize crop management. These tools can help farmers make more informed decisions about fertilization, irrigation, and harvesting, reducing waste and improving yields."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Briefly describe the benefits of pregnancy scanning in animals.",
+        "solution": [
+          "The benefits of pregnancy scanning in animals include early detection of pregnancy, accurate assessment of litter size, and identification of potential health issues. It also helps farmers make informed decisions about breeding and management practices."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(ii) Jack was scanning beef heifers and scanned a heifer carrying twins. Describe the management implications for this heifer under the headings which follow.",
+            "solution": [
+              "Feeding in late gestation: Provide adequate feed to support the growth of the developing fetuses. Monitor the heifer's weight and health regularly.",
+              "Calving: Prepare the heifer's environment for calving, including providing a clean, comfortable birthing area. Have a calving plan in place and be ready to assist if necessary."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. He carried out research and found the key performance indicators (KPI) for a spring calving herd. (Adapted from Teagasc, 2022) Key Performance Indicators (KPI) National Average National Target Calves / cow / year 0.86 0.95 Calving interval (days) 396 365 6-week calving rate (%) 55 80",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Achieving a target of 0.95 will require excellent cow and calf management. Outline ways Tim can achieve this target.",
+        "solution": [
+          "Ensure the herd is well-maintained and healthy",
+          "Improve nutrition to support optimal reproductive performance",
+          "Provide adequate rest and shelter to prevent stress",
+          "Monitor and manage cow health closely",
+          "Provide breeding management services to ensure timely conception"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain ways Tim can achieve the 6-week calving rate target of 80%.",
+        "solution": [
+          "Implement a breeding program to ensure timely conception",
+          "Monitor and manage cow health closely",
+          "Provide adequate rest and shelter to prevent stress",
+          "Improve nutrition to support optimal reproductive performance",
+          "Ensure the herd is well-maintained and healthy"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "14",
+    "context": "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He sows a variety of crops and plants his winter cereals using direct drilling.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term and outline one advantage of this method of planting. Direct drilling:",
+        "solution": [
+          "Direct drilling is a method of sowing crops where the soil is not turned over before planting. One advantage of this method of planting is that it reduces soil disturbance, which helps to maintain soil structure and improves water infiltration."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. Applying your knowledge of crop production, the questions which follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Briefly describe why he chose to plant a different variety of oilseed rape in each field.",
+            "solution": [
+              "He chose to plant a different variety of oilseed rape in each field to maximize yield and ensure genetic diversity, which helps to prevent the spread of diseases and pests."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the underlined term.",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "Outline the advantages of sowing clover with the oilseed rape.",
+            "solution": [
+              "Sowing clover with the oilseed rape provides several advantages. Firstly, it helps to fix atmospheric nitrogen, reducing the need for chemical fertilizers. Secondly, it improves soil structure and water infiltration, which can increase yields. Thirdly, it provides habitat for beneficial insects, which can help to control pests and diseases."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Berseem clover is an annual plant. Explain the underlined term.",
+            "solution": [
+              "An annual plant is a plant that completes its entire life cycle, from seed to reproduction, within one growing season. Berseem clover is a type of legume that is used as a companion crop in oilseed rape fields due to its ability to fix atmospheric nitrogen."
+            ],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Give another example of an annual plant that you have studied.",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Read the following extract and the questions which follow. An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can (Adapted from Farmers Journal, 2022) (i) Describe how to carry out a plant count in a 2 hectare field. (ii) Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field. (iii) Plants counts are easiest to carry out when plants are at the one to two leaf stage. When plants start to tiller out, it becomes very difficult to count them. Explain why it becomes difficult to count the plants at this stage. (iv) Teagasc recommends a seeding rate of 350 seeds/m2 to establish 300 plants/m2. expected establishment rate.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how to carry out a plant count in a 2 hectare field.",
+            "solution": [
+              "To carry out a plant count in a 2 hectare field, divide the field into a grid of equal-sized squares or strips. Count the number of plants in a representative sample of squares or strips, and then extrapolate this count to the entire field. The number of plants per square meter or per hectare can then be calculated."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field.",
+            "solution": [
+              "Carrying out a plant count in a newly sown or reseeded field can help to evaluate the success of the sowing operation. It can provide information on the percentage of plants that have established successfully, which can be used to assess the quality of the seed and the suitability of the sowing conditions. This information can then be used to make any necessary adjustments to improve future sowing operations."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Plants counts are easiest to carry out when plants are at the one to two leaf stage. When plants start to tiller out, it becomes very difficult to count them. Explain why it becomes difficult to count the plants at this stage.",
+            "solution": [
+              "When plants start to tiller out, it becomes difficult to count them because the plants are taller and more numerous, which can make it difficult to see and count each individual plant. This can result in an inaccurate count, which can affect the reliability of the data collected. In addition, the tilling process can also damage the roots of young plants, which can reduce the number of plants that establish successfully."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Teagasc recommends a seeding rate of 350 seeds/m2 to establish 300 plants/m2. expected establishment rate.",
+            "solution": [
+              "The expected establishment rate of 300 plants/m2 can be achieved with a seeding rate of 350 seeds/m2, as each plant requires an average of 1.25 seeds to establish successfully. This seeding rate takes into account factors such as the size and shape of the seed, the quality of the seed, and the sowing conditions. It is important to note that the actual establishment rate may vary depending on various factors such as weather conditions and soil quality."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

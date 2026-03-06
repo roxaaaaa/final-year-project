@@ -1,0 +1,477 @@
+[
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation. Suggest two disadvantages of using chemical sprays in crop production.",
+        "solution": [
+          "Crop rotation is a method of farming where a field is planted with a different crop each year. This practice helps in maintaining soil health, reducing pest and disease buildup, and improving soil structure. Advantages of crop rotation include improved soil fertility, reduced pest and disease resistance, and increased biodiversity. Disadvantages include increased labor and equipment requirements, and the need for diverse crop varieties.",
+          "Chemical sprays are used in crop production to control pests and diseases. Disadvantages include potential harm to the environment, resistance development, and economic costs."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term.",
+            "solution": [
+              "Crop rotation is a method of farming where a field is planted with a different crop each year."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two advantages of crop rotation.",
+            "solution": [
+              "Improved soil fertility",
+              "Reduced pest and disease resistance",
+              "Increased biodiversity"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest two disadvantages of using chemical sprays in crop production.",
+            "solution": [
+              "Potential harm to the environment",
+              "Resistance development",
+              "Economic costs"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Define the term biological control. (ii) Give two examples of biological control on farms. (iii) Outline two advantages of using biological controls in crop production.",
+        "solution": [
+          "Biological control is the use of living organisms to control pest populations.",
+          "Examples of biological control on farms include using beneficial insects, fungi, and bacteria to control pests.",
+          "Advantages of using biological controls include reduced chemical use, decreased environmental impact, and improved crop health."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Define the term biological control.",
+            "solution": [
+              "Biological control is the use of living organisms to control pest populations."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give two examples of biological control on farms.",
+            "solution": [
+              "Using beneficial insects",
+              "Using fungi and bacteria"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline two advantages of using biological controls in crop production.",
+            "solution": [
+              "Reduced chemical use",
+              "Decreased environmental impact",
+              "Improved crop health"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "A student carries out an investigation to compare the infiltration rate of two soils; a compacted soil and an uncompacted soil.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State the independent variable the student controlled during the investigation.",
+        "solution": [
+          "The independent variable the student controlled during the investigation is the type of soil (compacted or uncompacted)."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe how they measured the infiltration rate in this investigation.",
+        "solution": [
+          "The infiltration rate can be measured by observing the amount of water that passes through the soil over a given period of time. This can be done using a simple experiment where water is poured onto the soil and the amount that seeps through is measured over a set period. Alternatively, infiltration rate can be measured using a device such as a water infiltration meter or a soil moisture sensor."
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Suggest one way in which farmers could improve the infiltration rate of their soil.",
+        "solution": [
+          "One way in which farmers could improve the infiltration rate of their soil is to add organic matter such as compost or manure. This will help to create a more permeable soil structure, which will allow water to infiltrate more easily. Farmers could also consider using cover crops, which will help to reduce soil erosion and improve soil structure. Additionally, farmers could use drip irrigation, which will help to reduce water loss due to evaporation and run-off."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "Complete the sentences below in relation to sheep nutrition using words from the list. Steaming up Milk fever Twin lamb disease Flushing Maintenance diet (b) Gradual increase of concentrates prior to lambing is known as ………… (c) Ewes being fed just enough to support body processes is known as ……….. (d) Pregnancy toxaemia is also known as ………. (e) Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
+    "skip": false,
+    "parts": [
+      {
+        "id": "b",
+        "text": "Gradual increase of concentrates prior to lambing is known as …………",
+        "solution": [
+          "flushing"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Ewes being fed just enough to support body processes is known as ………..",
+        "solution": [
+          "maintenance diet"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Pregnancy toxaemia is also known as ……….",
+        "solution": [
+          "milk fever"
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
+        "solution": [
+          "twins lamb disease"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "This chart shows the Commercial Public Services Services greenhouse gas emissions Manufacturing 2% 2% Combustion in 2018. 8% Analyse the chart and Residential Agriculture the question which 10% Greenhouse 34% follow. Gas Emissions 2018 F ‐gases Energy industries 17% Waste Industrial 1% processes Transport 4% 20% (Adapted from Environmental Protection Agency, 2020)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Where would you rank the greenhouse gas emissions from agriculture in 2018?",
+        "solution": [
+          "20%",
+          "17%"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "List two sources of greenhouse gases from agriculture.",
+        "solution": [
+          "F-gases",
+          "Waste"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Seán and Lisa are beef and sheep farmers in the west of Ireland. They are concerned about the environment and the effect agriculture is having on the planet. Briefly explain two ways in which they could increase biodiversity on their farm.",
+        "solution": [
+          "Increase the variety of crops and livestock",
+          "Create habitats for wildlife"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "The question presents two scenarios: (a) The use of 3D plans in farm infrastructure development, and (b) A plan view of a combined robot milking unit and cow housing. Each scenario contains several parts and subparts with specific tasks and instructions.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The use of 3D plans are likely to become more common in the future development of new infrastructure of farms. Cow cubicle house Dairy cow collecting yard",
+        "solution": [
+          "Identify the structure located at B",
+          "Describe one environmental hazard and one potential safety hazard of structure B"
+        ],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Identify the structure located at B",
+            "solution": [
+              "Dairy cow collecting yard"
+            ],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Describe one environmental hazard and one potential safety hazard of structure B",
+            "solution": [
+              "Environmental hazard: Not specified",
+              "Safety hazard: Not specified"
+            ],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The following is a plan view of a combined robot milking unit and cow housing for Claire and John who plan to convert their suckler farm to a dairy farm. Isolation area Foot bath Centre feed passage",
+        "solution": [
+          "Explain why they have included an isolation area on the plan",
+          "Describe the purpose of the footbath",
+          "Outline one reason why Claire and John would have opted to install a robotic milking machine rather than a traditional herringbone or rotary parlour",
+          "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your advice"
+        ],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain why they have included an isolation area on the plan",
+            "solution": [
+              "Isolation area is essential for maintaining hygiene and preventing disease spread among the cows"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the purpose of the footbath",
+            "solution": [
+              "Footbath is used to clean the hooves of cows before entering the milking area, preventing the spread of diseases"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline one reason why Claire and John would have opted to install a robotic milking machine rather than a traditional herringbone or rotary parlour",
+            "solution": [
+              "Robotic milking machines offer increased efficiency and reduce the need for human labor, leading to cost savings"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your advice",
+            "solution": [
+              "Slatted tanks should be installed in the isolation area to ensure proper waste management and hygiene",
+              "Reason: Slatted tanks help in easy cleaning and maintenance"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "Read the following article on liver fluke and the questions which follow. Liver fluke thrive in the Irish wet climate. It is estimated to cost Irish farmers over €90 million annually. It is an issue in both cattle and sheep, but sheep are often the most badly affected. It affects all ages of sheep as it is picked up off the grass when sheep are grazing. This commonly occurs in the autumn and winter months. (Adapted from Teagasc, 2020) (Adapted from Animalhealthireland, 2020)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Read the following article on liver fluke and the questions which follow. Liver fluke thrive in the Irish wet climate. It is estimated to cost Irish farmers over €90 million annually. It is an issue in both cattle and sheep, but sheep are often the most badly affected. It affects all ages of sheep as it is picked up off the grass when sheep are grazing. This commonly occurs in the autumn and winter months. (Adapted from Teagasc, 2020)",
+        "solution": [
+          "€90 million annually"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Identify the estimated cost of liver fluke to Irish farmers annually.",
+            "solution": [
+              "€90 million annually"
+            ],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Outline one environmental condition that allows liver fluke to thrive.",
+            "solution": [
+              "Irish wet climate"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Suggest three ways in which farmers can control / prevent liver fluke on their farm. 1. 2. 3.",
+            "solution": [
+              "Implement proper grazing management",
+              "Use preventive medication",
+              "Maintain high hygiene standards"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "The following is a map showing the incidence of liver fluke damage to beef cattle livers in the third quarter of 2020 based on Beef HealthCheck slaughter data. Look at the map and the questions which follow.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Which county has the highest % fluke damage?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one reason why the fluke damage in Cork is less than in more northern counties.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain notifiable disease. (ii) List two notifiable diseases found in Irish farm animals. 1. 2. (iii) Outline the importance to Irish Agriculture of farmers complying with regulations in relation to notifiable diseases. (iv) State three practices farmers could employ to ensure good biosecurity on their farm. 1. 2. 3. (v) Discuss three management practices farmers should consider when housing farm animals to ensure high standards of animal welfare.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain notifiable disease.",
+            "solution": [
+              "A notifiable disease is a contagious or infectious disease which, by its nature or by reason of its incidence, is declared by the Minister for Health to be notifiable. This means that under the Animal Disease Act 1992, any person who knows or suspects that an animal has a notifiable disease must report it to the National Notifiable Disease Service."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "List two notifiable diseases found in Irish farm animals. 1. 2.",
+            "solution": [
+              "Bovine TB",
+              "Sheep scab"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Outline the importance to Irish Agriculture of farmers complying with regulations in relation to notifiable diseases.",
+            "solution": [
+              "Compliance with regulations in relation to notifiable diseases is crucial for protecting public health and animal welfare. It ensures that diseases that could pose a threat to human health or livestock are detected and managed effectively, preventing the spread of infection and minimizing the economic impact on farmers."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "State three practices farmers could employ to ensure good biosecurity on their farm. 1. 2. 3.",
+            "solution": [
+              "Vaccination",
+              "Sanitization of equipment and facilities",
+              "Regular animal health checks"
+            ],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Discuss three management practices farmers should consider when housing farm animals to ensure high standards of animal welfare. 1. 2. 3.",
+            "solution": [
+              "Provision of adequate space and bedding",
+              "Ensuring access to clean water and food",
+              "Regular monitoring of animal behavior and health"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "14",
+    "context": "Dairy Industry",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "1. Name two dairy breeds that a farmer would choose to produce good quality milk for the dairy industry.",
+        "solution": [
+          "Ayrshire",
+          "Holstein-Friesian"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Maintaining hygiene before, during and after milking is important for both cow health and achieving a good milk price. Outline any three ways a farmer can maintain high hygiene during milking.",
+            "solution": [
+              "Regular cleaning of milking equipment",
+              "Proper disposal of waste",
+              "Training staff in hygiene practices"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Dairy farmers obtain a price for their milk based on the quality of their milk. List any two tests carried out on milk that are used in calculating the milk price paid to the farmer.",
+            "solution": [
+              "pH test",
+              "fat content test"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Apart from hygiene practices, briefly explain two ways dairy farmers could improve the quality of the milk on their farm.",
+            "solution": [
+              "Regular veterinary check-ups",
+              "Balanced feeding program"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(b) The dairy farmer wanted to carry out an investigation to test the hygienic quality of a milk sample over time.",
+        "solution": [],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Identify one variable for this investigation.",
+            "solution": [
+              "Time"
+            ],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Describe, using a labelled diagram, a method the farmer could use to carry out this investigation. Labelled diagram:",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "State one error that could occur during this investigation and outline one way that this error could be reduced if doing this investigation again. Error: Reduce error:",
+            "solution": [
+              "Sampling error",
+              "Ensure consistent sampling method"
+            ],
+            "skip": true
+          },
+          {
+            "id": "iv",
+            "text": "State whether the results obtained from the investigation at part (ii) above are quantitative or qualitative. Justify your answer. Result: Justification:",
+            "solution": [
+              "Quantitative",
+              "Since the investigation involves measuring variables such as time and potentially measurable physical attributes of the milk"
+            ],
+            "skip": true
+          }
+        ]
+      }
+    ]
+  }
+]

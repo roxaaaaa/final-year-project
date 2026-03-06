@@ -1,0 +1,383 @@
+[
+  {
+    "question_num": "1",
+    "context": "(a) Give the target yield in tonnes per hectare of each of the following spring cereal crops: (i) Barley (ii) Wheat (iii) Oats. (b) Give three reasons for the dense planting of Irish coniferous forests. (c) (i) What is meant by the term vegetative reproduction? (ii) Give two examples of vegetative reproduction. (d) List four characteristics of a loam soil. (e) (i) What is meant by the term zoonosis? (ii) Give two examples of zoonoses with relevance to agriculture. (f) Nitrates and phosphates are important soil minerals. In the case of each: (i) Describe the test used to show the presence of the mineral. (ii) Describe the colour change that indicates a positive result for the presence of the mineral. (g) The liver is the largest internal organ in the mammalian body. State three functions of the liver. (h) (i) What is meant by the term biological control? (ii) Give an example of biological control in agriculture. (i) State the location of each of the following in the mammalian body: (i) Nephron (ii) Adrenal gland (iii) Cerebrum. (j) Why are practices such as sheep dipping and the use of pour‐on essential in flock management? (60 marks)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Give the target yield in tonnes per hectare of each of the following spring cereal crops:",
+        "solution": [
+          "Barley",
+          "Wheat",
+          "Oats"
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Give three reasons for the dense planting of Irish coniferous forests.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) What is meant by the term vegetative reproduction? (ii) Give two examples of vegetative reproduction.",
+        "solution": [
+          "Vegetative reproduction involves the growth of a new individual from any part of the body of an organism other than the seed.",
+          "Examples include budding, fragmentation, and grafting."
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "List four characteristics of a loam soil.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "(i) What is meant by the term zoonosis? (ii) Give two examples of zoonoses with relevance to agriculture.",
+        "solution": [
+          "Zoonosis is an infectious disease that can be transmitted from animals to humans.",
+          "Examples include rabies and swine flu."
+        ],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "Nitrates and phosphates are important soil minerals. In the case of each: (i) Describe the test used to show the presence of the mineral. (ii) Describe the colour change that indicates a positive result for the presence of the mineral.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "g",
+        "text": "The liver is the largest internal organ in the mammalian body. State three functions of the liver.",
+        "solution": [
+          "Metabolism",
+          "Detoxification",
+          "Storage"
+        ],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "(i) What is meant by the term biological control? (ii) Give an example of biological control in agriculture.",
+        "solution": [
+          "Biological control involves using living organisms to manage pests.",
+          "Example: introducing ladybugs to control aphids."
+        ],
+        "skip": false
+      },
+      {
+        "id": "i",
+        "text": "State the location of each of the following in the mammalian body: (i) Nephron (ii) Adrenal gland (iii) Cerebrum.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "j",
+        "text": "Why are practices such as sheep dipping and the use of pour‐on essential in flock management?",
+        "solution": [
+          "To control external parasites like ticks and fleas.",
+          "To prevent the spread of diseases among sheep."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "Summer 2018 saw drought conditions across many parts of Ireland, which greatly affected both crop and grass growth.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms: (i) Moisture stress (ii) Permanent wilting point.",
+        "solution": [
+          "Moisture stress is a condition where a plant's roots are deprived of water to the extent that they can no longer take up water. It occurs when the soil moisture content falls below the level required for the plant to function normally. Permanent wilting point refers to the minimum soil moisture content at which plants begin to wilt irreversibly, even with continuous irrigation."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term available water capacity? (ii) Which soil type has the highest available water capacity? Give two reasons for your answer.",
+            "solution": [
+              "Available water capacity refers to the amount of water a soil can hold against gravity at saturation but above field capacity. It represents the maximum amount of water that can be stored in a given volume of soil after it is saturated with water but before it begins to drain out. Clay soils have the highest available water capacity compared to sandy soils because they have smaller particles and more spaces between them, allowing for more water storage. The high water-holding capacity of clay soils is due to their ability to form stable colloidal structures that hold onto water molecules, while sandy soils have larger particle sizes and fewer spaces, resulting in lower water holding capacity."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Agricultural land usually becomes more acidic over time.",
+        "solution": [],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "List any four causes of increasing soil acidity over time. (ii) Explain in detail how any one of the above causes increases soil acidity.",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to show flocculation in a soil sample.",
+        "solution": [],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Photosynthesis takes place mainly in the leaves of green plants.",
+        "solution": [
+          "Photosynthesis takes place mainly in the leaves of green plants."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give a balanced chemical equation for photosynthesis.",
+            "solution": [
+              "6CO2 + 6H2O → C6H12O6 + 6O2"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline four ways in which the structure of the leaf is suited to photosynthesis.",
+            "solution": [
+              "Large surface area for gas exchange",
+              "Thick cuticle to reduce water loss",
+              "Stomata for gas exchange",
+              "Chlorophyll pigments for capturing light energy"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Both photosynthesis and the activity of micro‐organisms directly affect the feeding value of silage. Discuss this statement using appropriate references to silage making.",
+        "solution": [
+          "Photosynthesis converts light energy into chemical energy, providing the energy needed for microbial growth during silage fermentation.",
+          "Micro-organisms such as lactic acid bacteria contribute to the preservation and nutrient content of silage by breaking down complex organic matter and producing acids that inhibit spoilage."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Micro‐organisms can have both positive and negative effects in agriculture. Describe two positive effects and two negative effects of micro‐organisms in agriculture, other than in relation to post‐harvest silage production.",
+        "solution": [
+          "Positive effects: Soil aeration by fungal activity, nitrogen fixation by legumes, decomposition of organic matter",
+          "Negative effects: Pathogen infection leading to crop diseases, competition with crops for nutrients"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "(a) To show the effect of a mineral deficiency on crop growth.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To show the effect of a mineral deficiency on crop growth.",
+        "solution": [
+          "Growing crops in pots with different types of soil to observe their growth.",
+          "One pot with normal soil, another with soil lacking a specific mineral."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe the cultivation of potatoes under the following headings: (i) Soil preparation (ii) Planting (iii) Weed control (iv) Harvesting.",
+        "solution": [
+          "Soil preparation involves ensuring that the soil is well-drained, nutrient-rich, and free from weeds. This can be achieved through the use of compost or manure. Planting potatoes typically occurs in early spring when the weather is warm enough. The seed pieces are planted at a depth of about 3-4 inches and spaced about 12-15 inches apart. Weed control is crucial to prevent competition for nutrients and water, which can negatively impact potato yield. This can be done through the use of herbicides or manual removal of weeds. Harvesting potatoes typically occurs after several months when the plants have died back and the tubers are firm.",
+          "skip': false"
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "Soil compaction is common in Irish soils. (a) Clover is often included in seed mixtures for grazing. (i) Slurry and farmyard manure (FYM) are widely used in Irish agriculture.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term soil compaction.",
+        "solution": [
+          "Soil compaction refers to the process of reducing soil porosity, resulting in reduced aeration and water infiltration."
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Give three benefits of the inclusion of clover in a seed mixture.",
+        "solution": [
+          "Clover provides nitrogen through symbiotic nitrogen fixation, improves soil structure due to its deep roots, and reduces erosion."
+        ],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Explain why white clover is used in grazing seed mixtures and red clover is used in silage seed mixtures.",
+        "solution": [
+          "White clover provides high quality forage with a good balance of protein, fiber, and digestibility, making it suitable for grazing. Red clover is preferred for silage due to its higher protein content and better dry-matter yield."
+        ],
+        "skip": true
+      },
+      {
+        "id": "i",
+        "text": "Compare slurry and FYM under the following headings: (i) Composition, (ii) Organic matter content, (iii) Storage, (iv) Method of application.",
+        "solution": [
+          "Composition: Slurry is a liquid mixture of manure and water, while FYM is solid organic matter. \nOrganic matter content: FYM has higher organic matter content compared to slurry. \nStorage: Slurry requires proper containment due to its liquid form, whereas FYM can be stored in silos or open spaces. \nMethod of application: Slurry is typically applied through spray guns or spreaders, while FYM can be incorporated into soil using disk plows or broadcast and then turned under with a rototiller."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "The question covers various genetics topics including Mendelian inheritance, phenotypic expression, and experimental methodology.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the following terms: (i) Pedigree herd (ii) Recessive allele (iii) Natural service (iv) Independent assortment.",
+        "solution": [
+          "A pedigree herd refers to a group of animals that are closely related and have been selectively bred for specific traits. A recessive allele is an allele that does not express the dominant phenotype when present in heterozygous condition. Natural service involves breeding livestock to improve their offspring, often using males from different herds or farms. Independent assortment refers to the random distribution of chromosomes into gametes during meiosis.",
+          "A pedigree herd refers to a group of animals that are closely related and have been selectively bred for specific traits. A recessive allele is an allele that does not express the dominant phenotype when present in heterozygous condition. Natural service involves breeding livestock to improve their offspring, often using males from different herds or farms. Independent assortment refers to the random distribution of chromosomes into gametes during meiosis."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline four reasons why fruit flies (Drosophila) are used for genetics experiments.",
+            "solution": [
+              "Fruit flies have a short generation time, making it easy to observe genetic changes over several generations. They are easily manipulated genetically through the introduction of mutations or artificial chromosomes. Fruit flies have a small genome with well-understood genes, facilitating detailed genetic analysis. Their behavior and physiology can be easily observed and recorded."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "On a lowland sheep farm with 100 ewes, the farmer noted at the end of the lambing season that she had 180 lambs born, of which 92 were rams. Comment on the lambing percentage and on the almost equal number of male and female lambs.",
+            "solution": [
+              "The lambing percentage is calculated as (number of lambs born / number of ewes) * 100 = (180 / 100) * 100 = 180%. This high lambing percentage indicates that the sheep on the farm are fertile and healthy. The almost equal number of male and female lambs suggests that there may be some genetic factors or environmental influences affecting gender distribution."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In the squash plant, the allele for white fruit (W) is dominant over the allele for yellow fruit (w), and the allele for flat fruit (F) is dominant over the allele for round fruit (f). Show the genotypes and phenotypes of the cross between two plants, heterozygous for both characteristics.",
+        "solution": [
+          "The genotype of each parent plant can be represented as WwFf. The Punnett square for this cross would look like this:\n\n|       | W         | w         |\n|-------|-----------|-----------|\n| F     | WWFF      | WWff      |\n| f     | WwFf      | WwfF      |\n\nThe possible genotypes of the offspring are WWFF, WWff, WwFf, and WwfF. The phenotypes would be white and flat (WWFF), white and round (WWff), white and flat (WwFf), and white and round (WwfF)."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "(a) Describe, with the aid of a labelled diagram, the life cycle of the liver fluke (Fasciola hepatica). stem. dicot stems. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Omasum and abomasum (ii) Ureter and urethra (iii) Split dressing and top dressing (iv) Maintenance ration and production ration.",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe, with the aid of a labelled diagram, the life cycle of the liver fluke (Fasciola hepatica).",
+        "solution": [
+          "The life cycle of Fasciola hepatica involves several stages: egg, miracidium, sporocyst, rediae, cercariae, metacercariae, and adult flukes. The cercariae penetrate the intermediate host (snail) to form sporocysts, which produce rediae, which then produce cercariae. These cercariae can infect humans and other mammals when they come into contact with freshwater.",
+          "A labelled diagram would show each of these stages with arrows indicating the direction of infection and development."
+        ],
+        "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Omasum and abomasum (ii) Ureter and urethra (iii) Split dressing and top dressing (iv) Maintenance ration and production ration.",
+        "solution": [
+          "(i) Omasum is a muscular sac in the stomach that helps to digest food by churning it. Abomasum is the true stomach found in ruminants like cows, which helps to break down cellulose.",
+          "(ii) Ureter is a tube that carries urine from the kidneys to the bladder. Urethra is a tube that carries urine from the bladder out of the body.",
+          "(iii) Split dressing is applied directly to an area of the skin. Top dressing is used on crops and provides nutrients for growth.",
+          "(iv) Maintenance ration is a diet provided to keep animals in good health without promoting excessive growth. Production ration is a diet that promotes rapid weight gain, typically for fattening."
+        ],
+        "skip": true,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "Agricultural Science Monday 17 June Afternoon 2:00 – 4:30",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the change in the digestibility of grass over the growing season.",
+        "solution": [
+          "The digestibility of grass generally increases during the growing season. This is because, as plants grow, their cell walls become more lignified and cellulose content rises. As a result, the plant becomes harder to digest. Additionally, the presence of higher moisture levels in younger grass can also enhance digestibility."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "The culling of older cows from the dairy herd.",
+        "solution": [
+          "Culling older cows from a dairy herd is a common practice for several reasons. Older cows often produce less milk and may have health issues that make them less productive. Culling helps maintain a younger, more robust herd with higher milk yields. Additionally, it reduces the risk of disease transmission within the herd."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "A low rate of establishment of seedlings during a very wet spring.",
+        "solution": [
+          "A low rate of establishment of seedlings during a very wet spring can be attributed to several factors. Excessive moisture can lead to waterlogging, which affects the germination and growth of seeds. Additionally, the high humidity can promote fungal diseases that inhibit seedling growth. Waterlogged soil also makes it difficult for roots to penetrate, further hindering establishment."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "The practice of hedgerow conservation on Irish farms.",
+        "solution": [
+          "Hedgerows are important features in Irish farmland for several reasons. They provide habitat and food for wildlife, prevent soil erosion by acting as windbreaks, and help manage water flow during heavy rainfall. Hedgerows also contribute to the aesthetic appeal of the landscape and can improve biodiversity on farms."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Flushing of ewes prior to mating.",
+        "solution": [
+          "Flushing ewes prior to mating involves inducing ovulation in the female sheep. This is typically done using hormones like prostaglandins. Flushing ensures that ewes are ready to mate and increases fertility rates. It also helps synchronize estrus, making it easier for farmers to manage breeding operations."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  }
+]

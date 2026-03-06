@@ -1,0 +1,153 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify both cattle breeds in A and B.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State which breed A or B has a dominant polled trait as a characteristic of the breed.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Explain the underlined term in part (b) above.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Cow brushes on dairy farms are becoming increasingly popular.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline reasons why farmers install cow brushes in cattle sheds.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Read the article and the questions that follow. Slurry System Technology that Reduces Ammonia Emissions\nEASYFIX was awarded the first Green Impact Award for its pioneering technology designed to reduce methane and ammonia emissions from slurry storage at the 2024 National Ploughing Championship.\nThe system injects compressed oxygen into the slurry at specific points via non-return valves. The oxygen that flows through the valve creates a bubble and as it rises through the slurry it helps to break the slurry down and ensures that it remains in a liquid state. The benefit of this technology is that it is proven to reduce ammonia emissions by up to 51%. It also greatly assists in the increased availability of nutrients such as Nitrogen (N), Phosphorus (P) and Potassium (K) in the slurry. The liquid state of the slurry eliminates the need for agitation.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Briefly explain how the use of this technology could be safer for (1) animals and (2) the environment.",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "(1) Animals:",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "(2) Environment:",
+                "solution": [],
+                "skip": false
+              }
+            ]
+          },
+          {
+            "id": "ii",
+            "text": "Apart from safety, outline ways this technology could benefit farmers.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "You have been asked to address a group of farmers on the topic of the nitrogen cycle and its benefits to animal and/or crop production on Irish farms. Describe the points you would provide to the farmers.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "Cattle, sheep, pig and poultry traceability is vitally important for food safety, animal health programmes and to assure Irish access to meat, milk and egg export markets. Ireland is recognised as having one of the best livestock traceability systems in the world. Innovation in this area is ongoing, which has enabled Irish farmers to continue to access valuable markets abroad. (Adapted from Agriland, 2021)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Outline ways farmers can ensure quality produce on their farms in order to meet these standards for the export markets.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Briefly explain the importance of export markets to Irish Agriculture.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "Outline one scientific reason for any four of the following:",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Progeny testing in dairy cows.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Having a buffer zone close to a waterway.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Presence of chloroplasts in the palisade layer of a leaf.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Culling of breeding ewes on a sheep farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Movement of water from the soil through the plant to the atmosphere.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

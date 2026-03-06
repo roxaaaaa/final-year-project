@@ -1,0 +1,341 @@
+[
+  {
+    "question_num": "1",
+    "context": "A list of plant parts is given below. Place these in Column A to match the description of each part in Column B. The first one is completed as an example. List: Stamens; Phloem; Petals; Xylem; Carpels; Stomata.",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Male parts of flower",
+        "solution": [
+          "Stamens"
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Attract bees and insects",
+        "solution": [
+          "Petals"
+        ],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Transports water through plant",
+        "solution": [
+          "Xylem"
+        ],
+        "skip": true
+      },
+      {
+        "id": "d",
+        "text": "Female parts of flower",
+        "solution": [
+          "Carpels"
+        ],
+        "skip": true
+      },
+      {
+        "id": "e",
+        "text": "Openings on underside of leaf",
+        "solution": [
+          "Stomata"
+        ],
+        "skip": true
+      },
+      {
+        "id": "f",
+        "text": "Transports food through plant",
+        "solution": [
+          "Phloem"
+        ],
+        "skip": true
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Give one scientific reason why each of the following practices is carried out on Irish farms.",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Sheep are culled from the flock.",
+        "solution": [
+          "To maintain flock health",
+          "To improve breeding stock",
+          "To control the population"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Cows are ‘dried off’ two months before calving.",
+        "solution": [
+          "To reduce stress on the cow",
+          "To prevent calving complications",
+          "To ensure better milk production"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Trees in a forest plantation are thinned after about twenty years.",
+        "solution": [
+          "To improve light penetration",
+          "To increase tree growth",
+          "To prevent overcrowding"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Lime is spread on some soils.",
+        "solution": [
+          "To improve soil pH",
+          "To enhance nutrient availability",
+          "To reduce soil acidity"
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Great care is taken when agitating slurry.",
+        "solution": [
+          "To prevent the release of harmful gases",
+          "To minimize environmental impact",
+          "To ensure efficient use of nutrients"
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two grass species commonly used in silage or hay production. At what stage should the grass be cut for good quality silage? A long spell of dry weather is essential for making hay. What is the scientific reason for this? Give the name of a bacterial species needed to make good quality silage.",
+        "solution": [
+          "Grass species commonly used in silage or hay production include Timothy, Perennial Ryegrass, and Lucerne.",
+          "The grass should be cut at the early heading stage for good quality silage.",
+          "A long spell of dry weather is essential for making hay because it allows the grass to dry thoroughly, which prevents mold and ensures the hay has a longer storage life.",
+          "The bacterial species needed to make good quality silage is Lactobacillus.",
+          "Grass species commonly used in silage or hay production include Timothy, Perennial Ryegrass, and Lucerne.",
+          "The grass should be cut at the early heading stage for good quality silage.",
+          "A long spell of dry weather is essential for making hay because it allows the grass to dry thoroughly, which prevents mold and ensures the hay has a longer storage life.",
+          "The bacterial species needed to make good quality silage is Lactobacillus."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two grass species commonly used in silage or hay production.",
+            "solution": [
+              "Timothy",
+              "Perennial Ryegrass",
+              "Lucerne"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "At what stage should the grass be cut for good quality silage?",
+            "solution": [
+              "early heading stage"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "A long spell of dry weather is essential for making hay. What is the scientific reason for this?",
+            "solution": [
+              "A long spell of dry weather is essential for making hay because it allows the grass to dry thoroughly, which prevents mold and ensures the hay has a longer storage life."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Give the name of a bacterial species needed to make good quality silage.",
+            "solution": [
+              "Lactobacillus"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the steps you would carry out to make good quality hay. Give three advantages of silage production over hay production. Give three advantages of round bale silage over pit silage. Describe a laboratory or field experiment to estimate percentage (%) dry matter in a silage sample.",
+        "solution": [
+          "Steps to make good quality hay: 1. Cut the grass at the proper height. 2. Let the grass dry in the field. 3. Bales the hay. 4. Store the hay in a dry, well-ventilated area.",
+          "Advantages of silage production over hay production: 1. Silage can be made in a shorter period of time. 2. Silage has a longer storage life. 3. Silage has a higher feed value.",
+          "Advantages of round bale silage over pit silage: 1. Round bale silage is easier to store. 2. Round bale silage is easier to feed. 3. Round bale silage is less prone to spoilage.",
+          "Laboratory experiment to estimate percentage (%) dry matter in a silage sample: 1. Weigh a representative sample of silage. 2. Dry the sample in an oven at 105°C until constant weight is reached. 3. Weigh the dried sample. 4. Calculate the percentage (%) dry matter by dividing the weight of the dried sample by the weight of the original sample and multiplying by 100."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the steps you would carry out to make good quality hay.",
+            "solution": [
+              "1. Cut the grass at the proper height.",
+              "2. Let the grass dry in the field.",
+              "3. Bales the hay.",
+              "4. Store the hay in a dry, well-ventilated area."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give three advantages of silage production over hay production.",
+            "solution": [
+              "1. Silage can be made in a shorter period of time.",
+              "2. Silage has a longer storage life.",
+              "3. Silage has a higher feed value."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Give three advantages of round bale silage over pit silage.",
+            "solution": [
+              "1. Round bale silage is easier to store.",
+              "2. Round bale silage is easier to feed.",
+              "3. Round bale silage is less prone to spoilage."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Describe a laboratory or field experiment to estimate percentage (%) dry matter in a silage sample.",
+            "solution": [
+              "1. Weigh a representative sample of silage.",
+              "2. Dry the sample in an oven at 105°C until constant weight is reached.",
+              "3. Weigh the dried sample.",
+              "4. Calculate the percentage (%) dry matter by dividing the weight of the dried sample by the weight of the original sample and multiplying by 100."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe a laboratory or field experiment to estimate percentage (%) dry matter in a silage sample.",
+        "solution": [
+          "1. Weigh a representative sample of silage.",
+          "2. Dry the sample in an oven at 105°C until constant weight is reached.",
+          "3. Weigh the dried sample.",
+          "4. Calculate the percentage (%) dry matter by dividing the weight of the dried sample by the weight of the original sample and multiplying by 100."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "Beef breeds and dairy breeds are commonly found on Irish cattle farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two beef breeds and two dairy breeds. Describe three differences between the conformation of beef and dairy breeds.",
+        "solution": [
+          "Beef breeds: Angus, Hereford. Dairy breeds: Holstein, Jersey.",
+          "Differences: Beef breeds tend to have a more muscular build and are larger, while dairy breeds have a more slender and elegant build. Dairy breeds produce more milk, while beef breeds are raised for meat production. Beef breeds have a higher fat content, while dairy breeds have a higher protein content."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two beef breeds and two dairy breeds.",
+            "solution": [
+              "Beef breeds: Angus, Hereford. Dairy breeds: Holstein, Jersey."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe three differences between the conformation of beef and dairy breeds.",
+            "solution": [
+              "Differences: Beef breeds tend to have a more muscular build and are larger, while dairy breeds have a more slender and elegant build. Dairy breeds produce more milk, while beef breeds are raised for meat production. Beef breeds have a higher fat content, while dairy breeds have a higher protein content."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Condition scoring is an important skill in cattle farming. Explain what is meant by condition scoring in cattle. What condition score is recommended for cows at mating? Explain why a high condition score in cows can cause problems at calving.",
+        "solution": [
+          "Condition scoring in cattle is a method used to evaluate the body condition of an animal based on a set of standardized criteria. It helps farmers assess the animal's health, nutrition, and overall fitness. A condition score of 3 is recommended for cows at mating. A high condition score in cows can cause problems at calving because it may indicate that the cow is overweight or obese, which can lead to difficulties during labor and increase the risk of complications.",
+          "A condition score of 3 means that the animal is in good condition and is neither too thin nor too fat. It indicates that the animal is well-nourished and has a healthy body fat percentage. A cow with a condition score of 3 is likely to have a good appetite, strong muscle development, and a well-defined rump.",
+          "A high condition score in cows can cause problems at calving because it may indicate that the cow is overweight or obese. This can lead to difficulties during labor, as the cow may not be able to easily give birth. A high condition score can also increase the risk of other complications during calving, such as dystocia or the need for forceps intervention. Therefore, it is important to maintain a healthy condition score for cows to ensure a successful calving process."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Condition scoring is an important skill in cattle farming. Explain what is meant by condition scoring in cattle.",
+            "solution": [
+              "Condition scoring in cattle is a method used to evaluate the body condition of an animal based on a set of standardized criteria. It helps farmers assess the animal's health, nutrition, and overall fitness."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "What condition score is recommended for cows at mating?",
+            "solution": [
+              "A condition score of 3 is recommended for cows at mating."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain why a high condition score in cows can cause problems at calving.",
+            "solution": [
+              "A high condition score in cows can cause problems at calving because it may indicate that the cow is overweight or obese. This can lead to difficulties during labor, as the cow may not be able to easily give birth. A high condition score can also increase the risk of other complications during calving, such as dystocia or the need for forceps intervention. Therefore, it is important to maintain a healthy condition score for cows to ensure a successful calving process."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "State two precautions that should be taken when buying in replacement heifers. Describe two common practices aimed at keeping livestock diseases from entering a farm.",
+        "solution": [
+          "Precautions when buying in replacement heifers: Inspect the heifers for any visible health issues, check their vaccination history, and ensure that they are in good body condition. Practices to keep livestock diseases from entering a farm: Maintain good hygiene, keep the farm clean and well-ventilated, and avoid introducing new animals to the farm.",
+          "Precautions when buying in replacement heifers: Inspect the heifers for any visible health issues, check their vaccination history, and ensure that they are in good body condition. Practices to keep livestock diseases from entering a farm: Maintain good hygiene, keep the farm clean and well-ventilated, and avoid introducing new animals to the farm."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two precautions that should be taken when buying in replacement heifers.",
+            "solution": [
+              "Precautions when buying in replacement heifers: Inspect the heifers for any visible health issues, check their vaccination history, and ensure that they are in good body condition."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe two common practices aimed at keeping livestock diseases from entering a farm.",
+            "solution": [
+              "Practices to keep livestock diseases from entering a farm: Maintain good hygiene, keep the farm clean and well-ventilated, and avoid introducing new animals to the farm."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

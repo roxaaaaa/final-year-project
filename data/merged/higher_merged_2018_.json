@@ -1,0 +1,584 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the term livestock unit.",
+        "solution": [
+          "A livestock unit is a measure of the total productive capacity of an animal or group of animals. It is used to quantify the output of agricultural operations, particularly in dairy farming where it represents the number of cows that can be milked daily."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give the livestock unit value for: 1. A mature dairy cow.",
+            "solution": [
+              "The livestock unit value for a mature dairy cow is typically 200-300 kg of milk per lactation, which averages out to about 2-4 kg per day."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "A mature sheep.",
+    "skip": true,
+    "parts": [
+      {
+        "id": "b",
+        "text": "Draw a labelled diagram to show the main features of a wind pollinated flower.",
+        "solution": [
+          "diagram"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) State the location in the mammalian body of 1. The thyroid gland 2. The adrenal gland.\n(ii) Name one hormone secreted by each gland.",
+        "solution": [
+          "location of thyroid gland: [insert location], location of adrenal gland: [insert location]\nhormone secreted by thyroid gland: [insert hormone], hormone secreted by adrenal gland: [insert hormone]"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "(i) Explain the term food conversion ratio (FCR).\n(ii) List any two factors that affect FCR in pigs.",
+        "solution": [
+          "definition of FCR, factors affecting FCR in pigs"
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Plants are made of different cell types. Give the function of each of the following plant cell types.\n(i) Xylem\n(ii) Phloem\n(iii) Epidermis.",
+        "solution": [
+          "function of xylem, function of phloem, function of epidermis"
+        ],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "Describe the functions of the following parts of the avian digestive system.\n(i) The gizzard\n(ii) The crop.",
+        "solution": [
+          "function of gizzard, function of crop"
+        ],
+        "skip": false
+      },
+      {
+        "id": "g",
+        "text": "Give the length of the gestation period, in days, of (i) Pigs (ii) Sheep (iii) Cows.",
+        "solution": [
+          "gestation period for pigs: [insert number], gestation period for sheep: [insert number], gestation period for cows: [insert number]"
+        ],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "Draw a labelled diagram of the reproductive system of the cow.",
+        "solution": [
+          "diagram"
+        ],
+        "skip": true
+      },
+      {
+        "id": "i",
+        "text": "Wool has many qualities that make it useful as a material. List any three of these qualities.",
+        "solution": [
+          "quality 1, quality 2, quality 3"
+        ],
+        "skip": false
+      },
+      {
+        "id": "j",
+        "text": "Give three reasons why hedgerow conservation is encouraged in Irish agriculture.",
+        "solution": [
+          "reason 1, reason 2, reason 3"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "Drainage system design and functionality",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the types of drainage systems commonly used in residential areas.",
+        "solution": [
+          "Sewerage systems",
+          "Septic tanks",
+          "Rainwater harvesting systems"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Describe how a stormwater drain system works and its importance during heavy rainfall events.",
+        "solution": [
+          "Redirects water away from buildings and infrastructure to prevent flooding",
+          "Minimizes the risk of soil erosion",
+          "Improves groundwater recharge"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Option One (a)",
+        "solution": [
+          "Describe with the aid of a labelled diagram the life cycle of a named fungus that affects the potato plant."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "i",
+        "text": "Option One (a) (ii)",
+        "solution": [
+          "Describe with the aid of a labelled diagram the life cycle of a named fungus that affects the potato plant."
+        ],
+        "skip": false
+      },
+      {
+        "id": "ii",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "iii",
+        "text": "Option One (a) (iii)",
+        "solution": [
+          "Describe with the aid of a labelled diagram the life cycle of a named fungus that affects the potato plant."
+        ],
+        "skip": false
+      },
+      {
+        "id": "iv",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Option Two (b)",
+        "solution": [
+          "Describe the cultivation of a named cereal under the following headings: (i) Soil requirements (ii) Climate (iii) Harvest date (iv) Yield."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Option Two (b) (i)",
+            "solution": [
+              "Describe the cultivation of a named cereal under the following headings: (i) Soil requirements"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "Option Two (b) (ii)",
+            "solution": [
+              "Describe the cultivation of a named cereal under the following headings: (ii) Climate"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "",
+            "solution": [],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "i",
+        "text": "Option Two (b) (iii)",
+        "solution": [
+          "Describe the cultivation of a named cereal under the following headings: (iii) Harvest date"
+        ],
+        "skip": false
+      },
+      {
+        "id": "ii",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "iii",
+        "text": "Option Two (b) (iv)",
+        "solution": [
+          "Describe the cultivation of a named cereal under the following headings: (iv) Yield"
+        ],
+        "skip": false
+      },
+      {
+        "id": "iv",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Option Two (c)",
+        "solution": [
+          "Explain what is meant by indirect control of weeds in crops."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "",
+            "solution": [
+              "Give four examples of such indirect control."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "i",
+        "text": "",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "ii",
+        "text": "",
+        "solution": [
+          "Give four examples of such indirect control."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Compare mountain/hill sheep production with lowland sheep production.",
+        "solution": [],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Describe the management practices used by sheep farmers at lambing time.",
+        "solution": [],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Many Irish sheep farmers now take part in the Sheep Welfare Scheme. Three of the features of this scheme are - Lameness control - Flystrike control - Scanning of in-lamb ewes. For each of the above explain (i) How it is carried out (ii) The benefit to overall production in the flock.",
+        "solution": [
+          "(a) Lameness control involves identifying and treating lame sheep, which improves mobility and reduces the risk of secondary infections. Benefits include reduced mortality and improved feed conversion efficiency.",
+          "(b) Flystrike control aims to prevent flies from laying eggs on the skin of sheep, which can lead to severe infestations and death if left untreated. Benefits include lower morbidity rates and increased flock survival.",
+          "(c) Scanning in-lamb ewes allows farmers to identify potential issues with lambs before they are born, enabling timely interventions to improve birth outcomes. Benefits include higher survival rates of newborn lambs and reduced healthcare costs."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) How it is carried out",
+            "solution": [
+              "Lameness control involves identifying lame sheep, treating them with appropriate medications or corrective procedures, and providing supportive care.",
+              "Flystrike control includes regular inspections of the flock, applying insecticides to prevent fly access, and managing the farm environment to minimize breeding conditions for flies.",
+              "Scanning in-lamb ewes is typically done using ultrasound technology to monitor fetal development and detect any abnormalities."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) The benefit to overall production in the flock",
+            "solution": [
+              "Reduced mortality rates through effective lameness control lead to higher population sizes and improved productivity.",
+              "Lower morbidity due to flystrike control helps maintain a healthier flock, reducing the need for antibiotics and veterinary intervention.",
+              "Increased survival of newborn lambs through timely interventions during scanning leads to better flock composition and overall production."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe any two commonly used methods of reseeding grassland.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "a.i",
+        "text": "Describe any two commonly used methods of reseeding grassland. (i) Explain the term establishment in the context of newly‐sown grass.",
+        "solution": [
+          "Establishment refers to the process by which plants become rooted and grow after being sown."
+        ],
+        "skip": false
+      },
+      {
+        "id": "a.ii",
+        "text": "Describe any two commonly used methods of reseeding grassland. (ii) Describe two practices that contribute to successful establishment.",
+        "solution": [
+          "Two commonly used methods of reseeding grassland are overseeding and broadcasting.\nTwo practices that contribute to successful establishment are maintaining a consistent soil moisture level and using appropriate seed quality."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Perennial ryegrass (PRG) and Italian ryegrass (IRG) are commonly sown in Irish grassland. (i) Compare features of perennial ryegrass and Italian ryegrass that contribute to their productivity.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "b.i",
+        "text": "Perennial ryegrass (PRG) and Italian ryegrass (IRG) are commonly sown in Irish grassland. (i) Compare features of perennial ryegrass and Italian ryegrass that contribute to their productivity.",
+        "solution": [
+          "Perennial ryegrass has a deeper root system compared to Italian ryegrass, which makes it more drought-resistant.\nItalian ryegrass is known for its fast growth rate and ability to provide quick cover, making it suitable for situations where rapid establishment is required."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b.ii",
+        "text": "Perennial ryegrass (PRG) and Italian ryegrass (IRG) are commonly sown in Irish grassland. (ii) Explain the term hybrid grasses and suggest why they might be used.",
+        "solution": [
+          "Hybrid grasses are formed through cross-pollination between two different species.\nThey might be used to combine desirable traits from both parents, such as increased productivity or better adaptability."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Poor grassland management can contribute to an increase in the number of parasites that affect cattle. (i) Explain how improved grassland management may prevent this happening.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c.i",
+        "text": "Poor grassland management can contribute to an increase in the number of parasites that affect cattle. (i) Explain how improved grassland management may prevent this happening.",
+        "solution": [
+          "Improved grassland management could include practices such as rotational grazing, which helps maintain a healthy grass cover and reduces the habitat for parasites."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c.ii",
+        "text": "Poor grassland management can contribute to an increase in the number of parasites that affect cattle. (ii) Name two such parasites.",
+        "solution": [
+          "Two examples of parasites affecting cattle are ticks and lice."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "[INSERT EXPLANATION OF THE QUESTION CONTEXT]",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain each of the following agriculturally relevant concepts in genetics and give an appropriate example in each case. (i) Polyploidy (ii) Freemartin condition (iii) Micropropagation.",
+        "solution": [
+          "Agriculture often relies on genetic diversity, which can be achieved through various means. One such method is polyploidy, where a cell nucleus contains more than two complete sets of chromosomes. This can lead to plants that are resistant to diseases and pests or have enhanced growth rates. An example of polyploidy in agriculture includes the watermelon, which is a result of crossing diploid (2n) and tetraploid (4n) watermelons. Another example is the development of seedless watermelons through triploid (3n) plants.",
+          "Freemartin condition refers to a reproductive anomaly in female sheep or goats that can lead to pseudo-hermaphroditism, where a female has both male and female reproductive organs. This condition occurs due to an imbalance in sex hormones during embryonic development, resulting in the presence of a masculinized uterus or ovarian tissue instead of a uterus with normal ovulatory function.",
+          "Micropropagation is a method used to propagate plants by growing plantlets from sections of the parent plant under controlled conditions. This technique is particularly useful for propagating plants that are difficult to grow from seeds, have a low reproductive rate, or need to be protected from pests and diseases. Micropropagation can also be used to create genetically identical offspring, which is beneficial in agriculture when breeders want to maintain consistent traits within a population."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Explain what is meant by polyploidy in farm animals.",
+            "solution": [
+              "Polyploidy occurs when an organism has more than two complete sets of chromosomes. In the context of farm animals, this can lead to various advantages, such as increased disease resistance or enhanced growth rates. Polyploid species include watermelons and triploid seedless watermelons."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Give three benefits of micropropagation.",
+            "solution": [
+              "Micropropagation offers several advantages in agriculture, including the ability to produce genetically identical offspring, which can help maintain consistent traits within a population. It is also useful for propagating plants that are difficult to grow from seeds or have a low reproductive rate. Micropropagation can also be used to protect plants from pests and diseases by growing them under controlled conditions."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Drosophila melanogaster is a species of fruit fly commonly used in genetic research. The normal body colour of such flies is grey (GG). A recessive ebony body (gg) is also possible. The flies’ antennae can be normal (NN), or twisted (nn), which is a recessive condition. Outline the details of the cross between two flies, heterozygous for both conditions.",
+        "solution": [
+          "The cross between two flies, heterozygous for both body colour and antennae traits, would result in four possible genotypes: GGNn, GGnn, ggNn, and ggnn. The phenotypic ratio of the offspring would be 9 grey normal antennae : 3 grey twisted antennae : 3 ebony normal antennae : 1 ebony twisted antennae."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) Explain what is meant by embryo transfer in farm animals. (ii) Give three benefits of embryo transfer.",
+        "solution": [
+          "Embryo transfer involves the removal of an embryo from a donor animal and its implantation into another recipient animal. This technique allows for the selective breeding of animals with desired traits, such as increased milk production or disease resistance. Three benefits of embryo transfer include increased genetic diversity within a population, faster reproduction rates, and the ability to propagate endangered species.",
+          "Embryo transfer is a valuable tool in modern agricultural practices. It allows farmers to selectively breed animals with desirable traits, such as increased milk production or disease resistance. This technique can also be used to propagate endangered species, helping to preserve genetic diversity."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Explain what is meant by embryo transfer in farm animals.",
+            "solution": [
+              "Embryo transfer involves the removal of an embryo from a donor animal and its implantation into another recipient animal. This technique allows for the selective breeding of animals with desired traits, such as increased milk production or disease resistance."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Give three benefits of embryo transfer.",
+            "solution": [
+              "Embryo transfer offers several advantages in agriculture, including the ability to produce genetically identical offspring, which can help maintain consistent traits within a population. It is also useful for propagating plants that are difficult to grow from seeds or have a low reproductive rate. Micropropagation can also be used to protect plants from pests and diseases by growing them under controlled conditions."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe the main processes at work during the conversion of grass to silage.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Relate three practical steps in the making of good quality silage to the processes above.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Three of the major elements needed for good plant growth are nitrogen (N), phosphorus (P), and potassium (K). In the case of each element describe 1. Its function in the plant 2. A deficiency symptom.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Describe a laboratory experiment to show the effect of the deficiency of a particular element in a plant.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "e",
+        "text": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Zero grazing and strip grazing (ii) Contact fungicides and systemic fungicides (iii) First early potatoes and maincrop potatoes (iv) Abiotic factors and edaphic factors.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "Give scientific explanations for any four of the following: (a) Use of a trailing shoe in slurry spreading. (b) Trees in a forest plantation are thinned at various time intervals. (c) Algal bloom in waterways following rainfall in summer. (d) Use of a farrowing crate in pig production. (e) Growth of rushes in grassland over gley soils.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the use of a trailing shoe in slurry spreading.",
+        "solution": [
+          "A trailing shoe is used to ensure even application of slurry by following behind the tractor. It prevents uneven distribution and ensures that all areas receive an equal amount, reducing runoff and improving soil health."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Explain why trees in a forest plantation are thinned at various time intervals.",
+        "solution": [
+          "Thinning of trees is essential for promoting healthy growth. By removing excess trees, sunlight can reach the lower layers, allowing them to grow better. This also reduces competition for resources like water and nutrients, promotes air circulation, and reduces fire hazards."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Explain why algal blooms occur in waterways following rainfall in summer.",
+        "solution": [
+          "Algal blooms result from an excess of nutrients in the water, typically due to increased runoff during heavy rainfall. This can lead to an overgrowth of algae, which depletes oxygen levels and disrupts aquatic ecosystems."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Explain why a farrowing crate is used in pig production.",
+        "solution": [
+          "A farrowing crate provides a comfortable and secure environment for piglets to be born and nurse. It protects the pigs from predators, reduces stress, and ensures that the piglets have adequate space and access to their mother's milk."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  }
+]

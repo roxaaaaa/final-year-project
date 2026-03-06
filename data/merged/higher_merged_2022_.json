@@ -1,0 +1,304 @@
+[
+  {
+    "question_num": "4",
+    "context": "Read the article and the questions which follow. Avian flu detected in turkey flock in Co. Monaghan Avian influenza (H5N1) has been detected in a turkey flock in County Monaghan, the Department of Agriculture, Food and the Marine has confirmed. Restriction zones are being set up around the area. This highly pathogenic bird flu has already been confirmed in wild birds across the country. (Adapted from RTE.ie, 2021)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term.",
+        "solution": [
+          "Avian influenza"
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "Avian influenza is a notifiable disease. List two other notifiable diseases on farms.",
+        "solution": [
+          "Foot-and-mouth disease",
+          "Avian encephalomyelitis"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Using your knowledge of biosecurity measures describe how poultry farms could protect their flocks from avian influenza.",
+        "solution": [
+          "Implement biosecurity measures",
+          "Monitor flock health",
+          "Isolate new birds",
+          "Clean and disinfect premises",
+          "Vaccinate poultry"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "A farmer was looking to select a female replacement animal for breeding for his chosen animal enterprise. Describe characteristics he would be looking for when selecting the animal.",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify any four of the following breeds of animals: A, B, C, D, E, F",
+        "solution": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "skip": true,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "Eanna wanted to sow barley on his farm and decided to investigate the effect of soil temperature on the germination of the crop.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe how he would carry out this investigation.",
+        "solution": [
+          "Eanna should set up an experiment to investigate the effect of soil temperature on the germination of barley seeds. He should select a suitable number of seeds and place them in different pots or containers. Each pot or container should have a different temperature setting, representing the range of temperatures he wants to investigate. Eanna should ensure that other factors, such as light and water, are kept constant. He should then observe and record the number of seeds that germinate at each temperature after a certain period of time."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State with reason if the results obtained by Eanna will be qualitative or quantitative.",
+        "solution": [
+          "The results obtained by Eanna will be quantitative. This is because he will be measuring and recording numerical data, such as the number of seeds that germinate at each temperature. The results can be represented in the form of graphs or tables, which allows for easy analysis and comparison."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Suggest what information Eanna learns about the effect of temperature on the germination of seeds from this investigation which will inform his decision making on growing crops on his farm.",
+        "solution": [
+          "From this investigation, Eanna will learn about the optimal temperature range for the germination of barley seeds. This information will help him decide on the best time of year to plant his barley crop, as well as the types of soil and other environmental conditions that are most suitable for optimal germination. It will also inform his decision on which crops to grow on his farm, as different crops may have different temperature requirements for germination."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "Outline three reasons why hedgerow conservation is promoted in agri‐environmental schemes. Sustainable farming practices can benefit from conservation grazing. Explain the purpose of conservation grazing. Outline one reason why it is important to preserve rare animal breeds on farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Since 1994, it has been compulsory for each European Union (EU) member state to have agri‐environment schemes. Outline three reasons why hedgerow conservation is promoted in agri‐environmental schemes.",
+        "solution": [
+          "Hedgerows provide a habitat for wildlife, supporting biodiversity.",
+          "They help to prevent soil erosion by creating windbreaks and reducing water runoff.",
+          "Hedgerows improve soil structure and fertility by providing organic matter and nutrients."
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Sustainable farming practices can benefit from conservation grazing. Explain the purpose of conservation grazing.",
+        "solution": [
+          "Conservation grazing helps to maintain the health and diversity of grasslands.",
+          "It improves soil structure and fertility by adding organic matter and nutrients.",
+          "Conservation grazing can reduce the need for synthetic fertilizers and pesticides."
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Outline one reason why it is important to preserve rare animal breeds on farms.",
+        "solution": [
+          "Preserving rare animal breeds helps to maintain genetic diversity, which is important for the future of farming.",
+          "Rare breeds often have unique characteristics that make them well-adapted to specific environments or farming practices.",
+          "Conserving rare breeds can help to promote sustainable farming practices and support local economies."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "The European Commission has set targets for sustainable food production by 2030.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain one way for each part (i) and (ii) below farmers can: Reduce the use of (i) pesticides on their farm Reduce use of (ii) antibiotics for farm animals",
+        "solution": [
+          "One way for farmers to reduce the use of pesticides on their farm is by using integrated pest management (IPM) techniques. IPM involves a combination of biological, cultural, physical, and chemical methods to control pests. By using IPM, farmers can reduce their reliance on chemical pesticides, thereby reducing their overall use of pesticides. Another way to reduce the use of pesticides is to use less toxic pesticides. Many pesticides are available on the market that have a lower environmental impact, and farmers can choose these alternatives to reduce their overall use of pesticides.",
+          "One way for farmers to reduce the use of antibiotics for farm animals is to promote good hygiene practices. Good hygiene practices can help reduce the risk of disease and reduce the need for antibiotics. For example, farmers can ensure that their animals have clean and comfortable living conditions, and they can also implement regular health checks to detect any potential health issues early on. Another way to reduce the use of antibiotics is to use vaccines. Vaccines can help prevent diseases, thereby reducing the need for antibiotics. Farmers can choose to vaccinate their animals against diseases that are commonly treated with antibiotics."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Reduce the overall use of pesticides",
+            "solution": [
+              "One way for farmers to reduce the overall use of pesticides is by using integrated pest management (IPM) techniques. IPM involves a combination of biological, cultural, physical, and chemical methods to control pests. By using IPM, farmers can reduce their reliance on chemical pesticides, thereby reducing their overall use of pesticides. Another way to reduce the overall use of pesticides is to use less toxic pesticides. Many pesticides are available on the market that have a lower environmental impact, and farmers can choose these alternatives to reduce their overall use of pesticides."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Reduce use of antibiotics for farm animals",
+            "solution": [
+              "One way for farmers to reduce the use of antibiotics for farm animals is to promote good hygiene practices. Good hygiene practices can help reduce the risk of disease and reduce the need for antibiotics. For example, farmers can ensure that their animals have clean and comfortable living conditions, and they can also implement regular health checks to detect any potential health issues early on. Another way to reduce the use of antibiotics is to use vaccines. Vaccines can help prevent diseases, thereby reducing the need for antibiotics. Farmers can choose to vaccinate their animals against diseases that are commonly treated with antibiotics."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In Ireland 2% of the farming area is devoted to organic production. Briefly explain two benefits of converting to organic farming to a group of farmers.",
+        "solution": [
+          "One benefit of converting to organic farming is that it can improve soil health. Organic farming relies on natural methods to fertilize and maintain soil health, such as crop rotation, composting, and the use of cover crops. These methods can help improve soil structure, increase soil fertility, and reduce the need for chemical fertilizers, which can be harmful to the environment.",
+          "Another benefit of converting to organic farming is that it can improve animal welfare. Organic farming requires that animals be raised in a way that promotes their health and well-being. For example, organic animals must have access to outdoor space, clean water, and a diet that is free from synthetic hormones and antibiotics. These requirements can help improve the overall health and well-being of the animals."
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "SEASOLUTIONS PROJECT Reducing methane emissions from ruminants is one of the biggest challenges to face the agricultural sector in the last decade. The SEASOLUTIONS Project is committed to making a positive impact on methane emissions in agriculture. By using seaweeds and seaweed derived ingredients to positively affect the rumen and rumen microbiota to reduce methane emissions and improve ruminant health. By adding seaweed components to the feed of sheep and cattle indoors on high grain based diets, Irish researchers have reduced methane production by 20%. A critical aspect of this project is to test such seaweed supplements within the context of a pasture‐based production system. (Adapted from SEASOLUTIONS.ie and Teagasc, 2021)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Draw a labelled diagram of a calf’s stomach in its first week of life.",
+        "solution": [
+          "Draw a labelled diagram of a calf’s stomach in its first week of life."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach.",
+            "solution": [
+              "Describe how the calf’s stomach in part (i) above differs from an adult ruminant stomach."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Read the article on the SEASOLUTIONS Project and the questions which follow.",
+        "solution": [
+          "Read the article on the SEASOLUTIONS Project and the questions which follow."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline two roles of micro‐organisms in the ruminant stomach.",
+            "solution": [
+              "Outline two roles of micro‐organisms in the ruminant stomach."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system.",
+            "solution": [
+              "Describe why is it critical for the researchers to test the seaweed supplements stated above within the context of a pasture‐based production system."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Meat samples will also be collected as part of the trial to ensure the seaweed or seaweed extracts have no effect on meat quality. Outline why this aspect of the trial is important.",
+            "solution": [
+              "Outline why this aspect of the trial is important."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Outline two advantages of grass measuring. 1. 2.",
+        "solution": [
+          "Improves grazing management",
+          "Enhances crop rotation"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Calculate the kg DM/ha with a sward height of 10cm. Calculation: kg DM/ha = (iii) A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward. A: B: C:",
+            "solution": [
+              "Grass",
+              "Weed"
+            ],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Identify the growth cycle stage of the plants in part (iii) and describe briefly what happens at this stage. Stage: Description:",
+            "solution": [
+              "Growth Stage: Germination",
+              "Growth Stage: Vegetative"
+            ],
+            "skip": true
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Gerry wants to reseed his grassland pastures. (i) Outline three advantages of reseeding grassland pastures. 1. 2. 3.",
+        "solution": [
+          "Restores soil structure",
+          "Improves pasturage quality",
+          "Enhances biodiversity"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe using a labelled diagram, how he Labelled diagram:",
+            "solution": [
+              "Diagram should show reseeding process with labeled stages"
+            ],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Gerry was able to compare the plant uniformity of both batches of seed (certified and uncertified). Describe the characteristics Gerry would have observed to determine which batch was certified and which was uncertified.",
+            "solution": [
+              "Certified seeds: uniform, well-structured",
+              "Uncertified seeds: uneven, irregular"
+            ],
+            "skip": true
+          },
+          {
+            "id": "iii",
+            "text": "Outline the effects his decision would have on the environmental sustainability of his farm.",
+            "solution": [
+              "Improved soil health",
+              "Reduced need for pesticides",
+              "Enhanced wildlife habitat"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

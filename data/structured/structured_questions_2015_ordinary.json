@@ -1,0 +1,210 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Place these in Column A to match the description of each part in Column B. The first one is completed as an example.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Stamens; Phloem; Petals; Xylem; Carpels; Stomata.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "A B Petals Attract bees and insects Male parts of flower Transports water through plant Openings on underside of leaf Female parts of flower Transports food through plant",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Give one scientific reason why each of the following practices is carried out on Irish farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Sheep are culled from the flock.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Cows are ‘dried off’ two months before calving.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Trees in a forest plantation are thinned after about twenty years.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Lime is spread on some soils.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Great care is taken when agitating slurry.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two grass species commonly used in silage or hay production. (ii) At what stage should the grass be cut for good quality silage? (iii) A long spell of dry weather is essential for making hay. What is the scientific reason for this? (iv) Give the name of a bacterial species needed to make good quality silage.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name two grass species commonly used in silage or hay production.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "At what stage should the grass be cut for good quality silage?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "A long spell of dry weather is essential for making hay. What is the scientific reason for this?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Give the name of a bacterial species needed to make good quality silage.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Describe the steps you would carry out to make good quality hay. (ii) Give three advantages of silage production over hay production. (iii) Give three advantages of round bale silage over pit silage.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the steps you would carry out to make good quality hay.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give three advantages of silage production over hay production.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Give three advantages of round bale silage over pit silage.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe a laboratory or field experiment to estimate percentage (%) dry matter in a silage sample.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "Beef breeds and dairy breeds are commonly found on Irish cattle farms.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Name two beef breeds and two dairy breeds. (ii) Describe three differences between the conformation of beef and dairy breeds.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Name two beef breeds and two dairy breeds.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Describe three differences between the conformation of beef and dairy breeds.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) Condition scoring is an important skill in cattle farming. Explain what is meant by condition scoring in cattle. (ii) What condition score is recommended for cows at mating? (iii) Explain why a high condition score in cows can cause problems at calving.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Condition scoring is an important skill in cattle farming. Explain what is meant by condition scoring in cattle.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) What condition score is recommended for cows at mating?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Explain why a high condition score in cows can cause problems at calving.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) State two precautions that should be taken when buying in replacement heifers. (ii) Describe two common practices aimed at keeping livestock diseases from entering a farm.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) State two precautions that should be taken when buying in replacement heifers.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Describe two common practices aimed at keeping livestock diseases from entering a farm.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

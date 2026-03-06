@@ -1,0 +1,556 @@
+[
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "State two sources of pollution on a farm. Source 1. \nSource 2. \nDescribe the harmful effects of each of the above sources of farm pollution.",
+        "solution": [
+          "two sources of pollution on a farm",
+          "harmful effects of each of the above sources of farm pollution"
+        ],
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two sources of pollution on a farm.",
+            "solution": [
+              "two sources of pollution on a farm"
+            ],
+            "skip": true
+          },
+          {
+            "id": "ii",
+            "text": "Describe the harmful effects of each of the above sources of farm pollution.",
+            "solution": [
+              "harmful effects of each of the above sources of farm pollution"
+            ],
+            "skip": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "State one reason for each of the following farm practices.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Vaccination of farm animals.",
+        "solution": [
+          "To prevent diseases and ensure animal health."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Using footbaths on a sheep farm.",
+        "solution": [
+          "To prevent the spread of foot-and-mouth disease."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Growing certified seed potatoes.",
+        "solution": [
+          "To ensure the quality and disease-free nature of the potatoes."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Subsoiling a soil.",
+        "solution": [
+          "To improve soil structure and drainage."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Maintaining hedgerows.",
+        "solution": [
+          "To provide habitat for wildlife, improve soil quality, and prevent soil erosion."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "8",
+    "context": "None provided",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Draw a labelled diagram of a paddock grazing system. State two advantages and two disadvantages of paddock grazing.",
+        "solution": [
+          "A labelled diagram of a paddock grazing system should include elements such as a paddock, a fence, a water source, and a grazing area. Advantages of paddock grazing include reduced soil erosion, improved soil health, and reduced waste. Disadvantages include higher labor costs, potential for weed growth, and less flexibility in grazing patterns."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Draw a labelled diagram of a paddock grazing system.",
+            "solution": [
+              "A labelled diagram of a paddock grazing system should include elements such as a paddock, a fence, a water source, and a grazing area."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two advantages and two disadvantages of paddock grazing.",
+            "solution": [
+              "Advantages include reduced soil erosion, improved soil health, and reduced waste. Disadvantages include higher labor costs, potential for weed growth, and less flexibility in grazing patterns."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Hay and silage are made on Irish farms. (i) Outline four steps involved in making good quality hay and explain why any one of those steps is important. (ii) The following steps are taken when making good quality silage. State one reason for each of the steps listed below. 1. Cutting the grass on a sunny day. 2. Allowing the cut grass to wilt. 3. Rolling or baling the cut grass. 4. Covering the grass in plastic.",
+        "solution": [
+          "(i) Four steps involved in making good quality hay include: mowing, raking, baling, and storing. Cutting the grass on a sunny day is important because it ensures the grass is dry and prevents mold growth. (ii) 1. Cutting the grass on a sunny day is important because it ensures the grass is dry and prevents mold growth. 2. Allowing the cut grass to wilt is important because it reduces the water content and makes the grass more baleable. 3. Rolling or baling the cut grass is important because it compresses the grass and reduces the volume, making it easier to store and transport. 4. Covering the grass in plastic is important because it excludes air and moisture, preventing the growth of microorganisms and preserving the quality of the hay or silage."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline four steps involved in making good quality hay and explain why any one of those steps is important.",
+            "solution": [
+              "Four steps involved in making good quality hay include: mowing, raking, baling, and storing. Cutting the grass on a sunny day is important because it ensures the grass is dry and prevents mold growth."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "The following steps are taken when making good quality silage. State one reason for each of the steps listed below. 1. Cutting the grass on a sunny day. 2. Allowing the cut grass to wilt. 3. Rolling or baling the cut grass. 4. Covering the grass in plastic.",
+            "solution": [
+              "1. Cutting the grass on a sunny day is important because it ensures the grass is dry and prevents mold growth. 2. Allowing the cut grass to wilt is important because it reduces the water content and makes the grass more baleable. 3. Rolling or baling the cut grass is important because it compresses the grass and reduces the volume, making it easier to store and transport. 4. Covering the grass in plastic is important because it excludes air and moisture, preventing the growth of microorganisms and preserving the quality of the hay or silage."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe a simple on‐site test that a farmer can carry out on silage. Give a possible result of this test and say what the result means about the quality of the silage.",
+        "solution": [
+          "A simple on-site test that a farmer can carry out on silage is to squeeze a handful of the silage and look for moisture. If the silage is dry and crumbly, it indicates good quality. If the silage is wet or sticky, it indicates poor quality and may have been made improperly."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe a simple on-site test that a farmer can carry out on silage.",
+            "solution": [
+              "A simple on-site test that a farmer can carry out on silage is to squeeze a handful of the silage and look for moisture."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give a possible result of this test and say what the result means about the quality of the silage.",
+            "solution": [
+              "If the silage is dry and crumbly, it indicates good quality. If the silage is wet or sticky, it indicates poor quality and may have been made improperly."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "Farmers use ground limestone (CaCO ) to raise the pH of the soil. 3 Which chemical element in ground limestone is the most important in raising the soil pH? (ii) State two ways in which a soil may become acidic. (iii) Describe how you would find the pH of a soil sample. (b) 10‐10‐20 is a common compound fertiliser used on Irish farms. (i) Name the three principal plant nutrients in 10‐10‐20. (ii) State the function of any one of the plant nutrients in 10‐10‐20. (c) Farmyard manure (FYM) and slurry are two forms of farm animal waste. (i) State how each is stored on a farm. (ii) State two differences between the composition of FYM and the composition of slurry. (iii) Slurry has to be agitated before it can be spread. State two precautions taken by farmers when agitating slurry.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Which chemical element in ground limestone is the most important in raising the soil pH?",
+        "solution": [
+          "Calcium (Ca)"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State two ways in which a soil may become acidic.",
+            "solution": [
+              "Using acidic fertilizers",
+              "Exposure to acidic precipitation"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe how you would find the pH of a soil sample.",
+            "solution": [
+              "Using a pH meter",
+              "Using paper strips"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "10‐10‐20 is a common compound fertiliser used on Irish farms.",
+        "solution": [
+          "10‐10‐20"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name the three principal plant nutrients in 10‐10‐20.",
+            "solution": [
+              "Nitrogen (N)",
+              "Phosphorus (P)",
+              "Potassium (K)"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State the function of any one of the plant nutrients in 10‐10‐20.",
+            "solution": [
+              "Nitrogen (N) is essential for plant growth and development"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Farmyard manure (FYM) and slurry are two forms of farm animal waste.",
+        "solution": [
+          "Farmyard manure (FYM)",
+          "Slurry"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State how each is stored on a farm.",
+            "solution": [
+              "FYM is stored in piles or compost heaps",
+              "Slurry is stored in tanks or pits"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two differences between the composition of FYM and the composition of slurry.",
+            "solution": [
+              "FYM contains more organic matter",
+              "Slurry contains more liquid"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "None provided",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "There are 60 chromosomes in the somatic cells (body cells) of cattle.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "How many chromosomes are in the gametes of cattle?",
+            "solution": [
+              "30"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name the organ in which the female gametes are produced in cattle.",
+            "solution": [
+              "Ovary"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Name the type of cell division that produces gametes.",
+            "solution": [
+              "Meiosis"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In maize the allele for green seedlings (G) is dominant over the allele for albino seedlings (g). A maize plant, homozygous for green (GG), was crossed with a maize plant homozygous for albino (gg). Copy and complete this cross in your book. Parent phenotypes Green Albino Parent genotypes (GG) x (gg) Gametes ( ) x ( ) Genotype of offspring ( ) Phenotype of offspring ____________________________",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Parent phenotypes Green Albino Parent genotypes (GG) x (gg) Gametes ( ) x ( ) Genotype of offspring ( ) Phenotype of offspring ____________________________",
+            "solution": [
+              "GG, gg, Gg, gg, Gg, GG, gg, Gg, Gg, GG",
+              "Green, Albino, Green, Albino, Green, Green, Albino, Green, Green, Green"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Two plants with the same genotype as the offspring above were crossed with each other. Copy and complete the following into your book, to give the possible genotypes and phenotypes from this cross. Plant genotypes ( ) x ( ) Possible gametes ( ) ( ) x ( ) ( ) Genotypes of offspring ( ) ( ) ( ) Phenotypes of offspring __________________ __________________",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Plant genotypes ( ) x ( ) Possible gametes ( ) ( ) x ( ) ( ) Genotypes of offspring ( ) ( ) ( ) Phenotypes of offspring __________________ __________________",
+            "solution": [
+              "Gg, Gg, Gg, gg, Gg, Gg, Gg, Gg, Gg, Gg",
+              "Green, Green, Green, Albino, Green, Green, Green, Green, Green, Green"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Cross breeding is commonly used in agriculture.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term cross breeding?",
+            "solution": [
+              "Cross breeding is the practice of breeding two individuals or breeds to produce offspring with desirable characteristics."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State one advantage of a cross breeding system.",
+            "solution": [
+              "Increased genetic diversity can lead to more resilient and adaptable crops."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "any two of (a), (b), (c), (d). (30 marks, 30 marks)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Describe two factors that can affect soil temperature.",
+        "solution": [
+          "Insolation",
+          "Shade",
+          "Vegetation cover",
+          "Water table"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Define loam soil.",
+            "solution": [
+              "Loam soil is a type of soil with a loamy texture, which means it has a balance of sand, silt, and clay particles."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State two advantages of a loam soil.",
+            "solution": [
+              "Loam soil is highly fertile and retains water well, making it ideal for plant growth.",
+              "It provides good aeration for roots."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "State two ways that earthworms may improve the soil.",
+            "solution": [
+              "Earthworms break down organic matter, improving soil structure.",
+              "They help in aerating the soil."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "What may cause a decrease in the earthworm population of a soil?",
+            "solution": [
+              "Pesticides",
+              "High temperatures",
+              "Waterlogging",
+              "Soil compaction"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe winter barley or spring barley under the following headings: 1. Time of sowing. 2. Time of harvesting. 3. Expected yield.",
+        "solution": [
+          "Winter barley is sown in the autumn, harvested in the following summer. Spring barley is sown in the spring, harvested in the following autumn. Expected yield depends on various factors such as weather conditions and farming techniques."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Name a disease of barley.",
+            "solution": [
+              "Barley yellow stripe disease",
+              "Barley rust",
+              "Barley scab"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Name a pest of barley.",
+            "solution": [
+              "Barley leaf beetle",
+              "Barley aphid",
+              "Barley fly"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "State two factors that allow grain to be stored safely over the winter.",
+            "solution": [
+              "Proper ventilation to prevent moisture buildup",
+              "Airtight storage to prevent pests and rodents",
+              "Cool temperature to slow down the growth of microorganisms"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Describe the management of lowland lambs under the following headings: (i) Care at birth. (ii) Changes in diet. (iii) Housing. (iv) Disease control. (v) Age at weaning.",
+        "solution": [
+          "Care at birth includes cleaning and disinfecting the birth area, providing warmth, and ensuring proper nutrition.",
+          "Changes in diet should be gradual to prevent digestive issues. Lambs should be weaned at 6-8 weeks of age.",
+          "Housing should provide shelter from the elements and predators. Disease control involves regular health checks and prompt treatment of any illnesses.",
+          "Age at weaning depends on the breed and individual lamb. Generally, 6-8 weeks is a common age for weaning."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Care at birth.",
+            "solution": [
+              "Clean the area before birth, provide warmth, and ensure proper nutrition."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Changes in diet.",
+            "solution": [
+              "Gradual changes to prevent digestive issues."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Housing.",
+            "solution": [
+              "Provide shelter from elements and predators."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Disease control.",
+            "solution": [
+              "Regular health checks, prompt treatment of illnesses."
+            ],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "Age at weaning.",
+            "solution": [
+              "Generally, 6-8 weeks."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Describe the functions of dietary protein in a farm animal’s body.",
+        "solution": [
+          "Dietary protein is essential for growth and repair of tissues, production of enzymes and hormones, and maintenance of organ function."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe how to test a food for the presence of protein.",
+            "solution": [
+              "Dissolve the food in acid and then add a reagent that reacts with protein to produce a color change.",
+              "Another method is to use a protein test kit which contains reagents that react with proteins to produce a visible response."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Distinguish between bulky feeds and concentrates and give an example of each.",
+            "solution": [
+              "Bulky feeds provide fiber and energy but are low in protein. Examples include hay, straw, and roughage.",
+              "Concentrates provide concentrated energy and protein. Examples include grain, supplements, and pellets."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "What is meant by the term maintenance ration?",
+            "solution": [
+              "Maintenance ration is a diet that provides just enough energy and protein to maintain the body's functions and prevent weight loss."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "What is meant by the term production ration?",
+            "solution": [
+              "Production ration is a diet that provides sufficient energy and protein to meet the demands of growth, lactation, or other production goals."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "question_num": "1",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Give three reasons for the practice of thinning forest trees.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "State to which phylum each of the following belongs:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) Earthworm.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) Greenbottle fly.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "(iii) Liver fluke.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "(iv) Sheep.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "v",
+            "text": "(v) Babesia.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Explain why it is necessary to have strict controls in the application of pesticides to farm crops.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Mention any three factors that contribute to the formation of a gley soil.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "List three characteristics that are typical of the family Gramineae.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "f",
+        "text": "List any two structural characteristics of each of the following:",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i) a fern plant.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii) a pine tree.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "g",
+        "text": "Explain the importance of critical temperature in the context of a pig rearing enterprise.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "h",
+        "text": "(i) Explain the term interdependence as used in ecology. (ii) Give two examples of interdependence in agriculture.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "i",
+        "text": "Give three functions of blood in the animal body.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "j",
+        "text": "(i) Explain what is meant by the aspect of a field. (ii) Outline how aspect affects crop growth.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "(i)",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "(ii)",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "2",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Describe the conditions which contribute to the formation of a podzol soil. (ii) Explain how soil temperature is influenced by soil texture. (iii) Name one other characteristic of a soil that could affect its temperature.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "(i) 1. Explain the difference between a cation and a colloid. 2. Explain the terms cation exchange and cation exchange capacity (CEC). (ii) How may the CEC of a soil be increased?",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to investigate cation exchange in a soil.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Discuss in detail the following points in relation to a dairy enterprise: (i) Management of calving. (ii) Environmental conditions in the first three days after birth. (iii) Feeding principles in the first three days after birth.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Management of calving:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Environmental conditions in the first three days after birth:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Feeding principles in the first three days after birth:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings: (i) Management. (ii) Feeding principles required for optimum growth.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Management:",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Feeding principles required for optimum growth:",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) What is the expected liveweight of dairy calves at first housing? (ii) Explain why most beef animals are slaughtered at two years of age.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is the expected liveweight of dairy calves at first housing?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain why most beef animals are slaughtered at two years of age.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "4",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "To determine the percentage mineral ash in a sample of freshly cut grass.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "To assess the effects of overgrazing on the botanical composition of a pasture sward.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "To examine the effect on yield of growing different varieties of a named crop.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "5",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) Sheep are polyoestrous. What does the term polyoestrous mean? (ii) What is the length of the oestrous cycle in sheep? (iii) Explain the connection between day length and the breeding season in sheep.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Sheep are polyoestrous. What does the term polyoestrous mean?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "What is the length of the oestrous cycle in sheep?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Explain the connection between day length and the breeding season in sheep.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Draw a large labelled diagram of the reproductive system of a ewe and label four parts.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Describe the key steps involved in ‘breeding out of season’ to produce lambs for the early spring market.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Outline four reasons for culling ewes.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "6",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "List and explain four factors a farmer should take into consideration when deciding how much fertiliser to apply to a crop.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Other than fertilisers, list and explain four additional factors that would influence the yield of a crop at harvest.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "(i) What is meant by the term transpiration? (ii) Describe how any three environmental factors affect the rate of transpiration in a plant.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term transpiration?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe how any three environmental factors affect the rate of transpiration in a plant.",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "",
+                "solution": [],
+                "skip": true
+              },
+              {
+                "id": "ii",
+                "text": "",
+                "solution": [],
+                "skip": true
+              },
+              {
+                "id": "iii",
+                "text": "",
+                "solution": [],
+                "skip": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "(i) State the Law of Independent Assortment. (ii) Explain the following terms: 1. Sex linkage. 2. Clone. 3. Polyploid.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State the Law of Independent Assortment.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Explain the following terms: 1. Sex linkage. 2. Clone. 3. Polyploid.",
+            "solution": [],
+            "skip": false,
+            "subparts": [
+              {
+                "id": "i",
+                "text": "Sex linkage.",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "ii",
+                "text": "Clone.",
+                "solution": [],
+                "skip": false
+              },
+              {
+                "id": "iii",
+                "text": "Polyploid.",
+                "solution": [],
+                "skip": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "(i) State the genotypes of the bull and cow using the above notation. (ii) State the four possible calf phenotypes. (iii) Which of the possible phenotypes indicate that independent assortment has taken place?",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State the genotypes of the bull and cow using the above notation.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State the four possible calf phenotypes.",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Which of the possible phenotypes indicate that independent assortment has taken place?",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) What is meant by the term livestock units? 2. Give two examples to show your understanding of the term livestock units.",
+        "solution": [],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is meant by the term livestock units?",
+            "solution": [],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Give two examples to show your understanding of the term livestock units.",
+            "solution": [],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "9",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "The formation of rancid silage.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Spreading slurry at least seven weeks before cutting grass for silage.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Retention and conservation of hedgerows on a farm.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "The testing of milk by dairies.",
+        "solution": [],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Using a burdizzo in beef rearing enterprises.",
+        "solution": [],
+        "skip": false
+      }
+    ]
+  }
+]

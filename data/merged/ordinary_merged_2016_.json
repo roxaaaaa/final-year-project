@@ -1,0 +1,403 @@
+[
+  {
+    "question_num": "3",
+    "context": "",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Why are Holstein-Friesian cows chosen for a dairy farm?",
+        "solution": [
+          "Holstein-Friesian cows are known for their high milk yield and are well-suited for dairy farming."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "b",
+        "text": "Why is a soil test carried out before sowing a crop?",
+        "solution": [
+          "A soil test helps in understanding the nutrient content of the soil, which is essential for choosing the right crop variety and fertilizers."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "Why is a catch crop grown on a farm?",
+        "solution": [
+          "A catch crop helps in improving soil fertility, conserving soil moisture, and reducing weed growth."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "d",
+        "text": "Why is slurry spread at certain times of the year only?",
+        "solution": [
+          "Slurry should be spread during periods when the soil is most receptive to nutrients, usually after the crops are harvested, to minimize runoff and maximize nutrient uptake."
+        ],
+        "skip": false,
+        "subparts": []
+      },
+      {
+        "id": "e",
+        "text": "Why is crop rotation practiced?",
+        "solution": [
+          "Crop rotation helps in preventing soil depletion, reducing pest and disease buildup, and maintaining soil fertility."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "7",
+    "context": "Barley is a cereal crop commonly grown in Ireland. Barley crop showing “tramlines”",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Give two uses for barley.",
+        "solution": [
+          "Food",
+          "Animal feed"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "___________________________________________________________________________",
+            "solution": [
+              "Food"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "___________________________________________________________________________",
+            "solution": [
+              "Animal feed"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "State two features of a barley crop when it is ready for harvesting.",
+        "solution": [
+          "Matured",
+          "Golden in color"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "State a reason for each of the following practices when growing barley.",
+        "skip": true,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Providing “tramlines”. _____________________________________________________________________________",
+            "solution": [
+              "To help with planting and harvesting"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Using a combine drill. _____________________________________________________________________________",
+            "solution": [
+              "To plant seeds efficiently"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Rolling. _____________________________________________________________________________",
+            "solution": [
+              "To reduce soil compaction"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iv",
+            "text": "Harvesting when weather is dry. _____________________________________________________________________________",
+            "solution": [
+              "To prevent damage from rain"
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "10",
+    "context": "Potato Blight",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain how potato blight reduces the yield of maincrop potatoes.",
+        "solution": [
+          "Potato blight affects potato plants by attacking their leaves and stems, leading to their death. This reduces the number of potatoes produced per plant, thus reducing the overall yield of maincrop potatoes."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe two symptoms of potato blight.",
+            "solution": [
+              "Symptoms of potato blight include yellowing leaves, brown spots on the leaves, and a black, wet rot at the base of the stem.",
+              "These symptoms result from the blight fungi attacking the plant, causing significant damage to the leaves and roots."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Outline two methods of preventing potato blight.",
+            "solution": [
+              "1. Crop rotation: Avoid planting potatoes in the same area year after year to reduce the build-up of blight pathogens in the soil.",
+              "2. Use resistant varieties: Choose potato varieties that have been bred to be resistant to potato blight to reduce the risk of infection."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe the cultivation of potatoes under the following headings: (i) Soil suitability. (ii) Method of sowing. (iii) Weed control. (iv) Harvesting.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Describe an experiment to find the percentage (%) water in a sample of potatoes.",
+        "solution": [],
+        "skip": true
+      }
+    ]
+  },
+  {
+    "question_num": "12",
+    "context": "Chromosomes and Genetics",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Where in a cell are chromosomes found?",
+        "solution": [
+          "In the nucleus"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "State a function of chromosomes.",
+            "solution": [
+              "Chromosomes carry genetic information"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "There are 54 chromosomes in a body cell of a sheep. How many chromosomes are there in a gamete of a sheep?",
+            "solution": [
+              "27"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "In Aberdeen Angus cattle, the allele for the polled (hornless) condition (P) is dominant to the allele for having horns (p). A pure breeding polled bull and a cow with horns are crossed. What will be the genotype and phenotype of their calf? Copy the following into your book and complete the spaces (genotype in brackets, phenotype on line). Genotypes of parents (PP) × (pp) (i) Gametes ( ) × ( ) (ii) Genotype of calf ( ) (iii) Phenotype of calf _______________",
+        "solution": [
+          "(Pp)",
+          "(Pp)",
+          "Pp",
+          "polled"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Genotypes of parents (PP) × (pp) (i) Gametes ( ) × ( ) (ii) Genotype of calf ( ) (iii) Phenotype of calf _______________",
+            "solution": [
+              "(Pp)",
+              "(Pp)",
+              "Pp",
+              "polled"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "A heifer resulting from the cross in part (b) is crossed with a bull that is heterozygous for horns. What are the possible genotypes and phenotypes of their calves? Copy the following into your book and complete the spaces (genotypes in brackets, phenotypes on lines). (i) Genotypes of parents ( ) × ( ) (ii) Possible gametes ( ) ( ) × ( ) ( ) (iii) Possible genotypes of calves ( ) ( ) ( ) (iv) Possible phenotypes of calves ___________ ____________",
+            "solution": [
+              "(Pp)",
+              "(pp)",
+              "Pp",
+              "polled",
+              "pp",
+              "p",
+              "pp",
+              "polled"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "(i) What is cross-breeding? (ii) State, using examples, the advantages of cross-breeding in sheep production. (60 marks)",
+        "solution": [
+          "Cross-breeding is the breeding of two different breeds of animals or plants to combine their desirable traits. For sheep production, cross-breeding can improve traits such as wool quality, meat yield, and disease resistance."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "What is cross-breeding?",
+            "solution": [
+              "Cross-breeding is the breeding of two different breeds of animals or plants to combine their desirable traits."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State, using examples, the advantages of cross-breeding in sheep production. (60 marks)",
+            "solution": [
+              "For sheep production, cross-breeding can improve traits such as wool quality, meat yield, and disease resistance."
+            ],
+            "skip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_num": "13",
+    "context": "any two of (a), (b), (c), (d). (30 marks, 30 marks)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Name two of the most common lowland breeds of sheep farmed in Ireland.",
+        "solution": [
+          "Shropshire",
+          "Devon"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "In the case of one of these breeds state two characteristics of the breed.",
+            "solution": [
+              "Long wool",
+              "Good milking ability"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe the management of lambs from birth to weaning.",
+            "solution": [
+              "Cradling",
+              "Feeding"
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "Distinguish between flushing and steaming-up in lowland sheep production.",
+            "solution": [
+              "Flushing involves the transfer of ewes to clean pens and feeding high-energy feed before lambing to stimulate the production of colostrum; Steaming-up involves giving a mixture of hot water and vinegar to ewes to stimulate the production of colostrum."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Name two breeds of pig used in pig production in Ireland.",
+        "solution": [
+          "Landrace",
+          "Sus scrofa domesticus"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the management of a sow in the dry sow house and in the farrowing house.",
+            "solution": [
+              "Dry sow house: Clean environment, comfortable bedding, regular monitoring; Farrowing house: Clean environment, comfortable bedding, regular monitoring, appropriate lighting."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "State the cause of anaemia in bonhams (piglets) and describe how it can be prevented.",
+            "solution": [
+              "Cause: Lack of iron; Prevention: Provide iron supplements, balanced diet."
+            ],
+            "skip": false
+          },
+          {
+            "id": "iii",
+            "text": "What criteria are used when selecting a gilt for breeding?",
+            "solution": [
+              "Good conformation",
+              "Good health",
+              "Large litter size"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "c",
+        "text": "Outline the precautions taken to reduce calf deaths at calving time on a dairy farm.",
+        "solution": [
+          "Proper nutrition for the dam",
+          "Appropriate calving management",
+          "Clean calving area",
+          "Regular monitoring of the dam"
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Give two reasons why colostrum is fed to newly born calves.",
+            "solution": [
+              "Provides antibodies for immunity",
+              "Provides energy"
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Describe two management practices which would result in the production of clean milk in the milking parlour.",
+            "solution": [
+              "Regular cleaning of equipment",
+              "Sterile milking technique"
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "d",
+        "text": "Give three reasons for culling cows from the herd.",
+        "solution": [
+          "Poor health",
+          "Low milk production",
+          "Old age"
+        ],
+        "skip": false
+      }
+    ]
+  }
+]

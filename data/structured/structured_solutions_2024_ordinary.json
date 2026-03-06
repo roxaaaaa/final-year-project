@@ -1,0 +1,149 @@
+[
+  {
+    "question_num": "4",
+    "context": "Complete the sentences below in relation to animal diseases using words from the list. Pneumonia Red water fever Magnesium Orf Foot rot",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Cows suffering from grass tetany are lacking in ……….",
+        "solution": [
+          "Magnesium"
+        ],
+        "skip": false
+      },
+      {
+        "id": "b",
+        "text": "Footbaths are used in the treatment of ……….",
+        "solution": [
+          "Foot rot"
+        ],
+        "skip": false
+      },
+      {
+        "id": "c",
+        "text": "Cows passing blood in their urine is an indicator of ……….",
+        "solution": [
+          "Red water fever"
+        ],
+        "skip": false
+      },
+      {
+        "id": "d",
+        "text": "Rapid breathing and coughing in calves is an indicator of ……….",
+        "solution": [
+          "Pneumonia"
+        ],
+        "skip": false
+      },
+      {
+        "id": "e",
+        "text": "Lesions on the mouth, udder and nose of young lambs is ……….",
+        "solution": [
+          "Orf"
+        ],
+        "skip": false
+      }
+    ]
+  },
+  {
+    "question_num": "16",
+    "context": "Organic matter content is very important in soil health.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain the underlined term. Briefly describe two ways of increasing the organic matter content of soils.",
+        "solution": [
+          "Organic matter is the decomposed or partially decomposed remnants of living organisms. Two ways of increasing the organic matter content of soils include adding compost, manure, or leaf litter.",
+          "Organic matter content can be increased by adding compost, manure, or leaf litter to the soil."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Describe the functions of soil organic matter under the headings that follow. Effect on soil pH Water retention Soil compaction",
+            "solution": [
+              "Organic matter can affect soil pH by buffering the soil and helping to maintain a more stable pH environment.",
+              "Organic matter can increase water retention by creating a network of pores that hold water in the soil.",
+              "Organic matter can reduce soil compaction by breaking up soil particles and improving soil structure."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Briefly explain two factors that influence the amount of organic matter in a soil.",
+            "solution": [
+              "Factors that influence the amount of organic matter in a soil include the rate of organic matter production, the rate of decomposition, and the availability of oxygen and water.",
+              "Factors that affect the amount of organic matter in soil include the rate of organic matter production, the rate of decomposition, and the availability of oxygen and water."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Describe with the aid of a labelled diagram how a student could carry out an investigation to determine the percentage organic matter in a 100g sample of soil.",
+        "solution": [
+          "A labelled diagram would show the steps involved in determining the percentage organic matter in a soil sample. This would typically involve weighing the soil sample, determining the mass of organic matter, and calculating the percentage of organic matter."
+        ],
+        "skip": true,
+        "subparts": []
+      },
+      {
+        "id": "c",
+        "text": "The results of the investigation are shown in the box below. Mass of organic matter 25g (i) Calculate the % organic matter of the soil sample tested in part (b). Calculation: (ii) Based on the results in part (i), state if the soil type is more likely to be a peat soil or brown earth soil. (iii) All organic matter contains carbon. Calculate the % soil organic carbon in the soil sample using the equation shown in the box below. % Soil Organic Carbon = % Soil Organic Matter X 0.58",
+        "solution": [
+          "To calculate the percentage organic matter of the soil sample tested in part (b), the mass of organic matter (25g) would be divided by the total mass of the soil sample (100g) and multiplied by 100. The result would be 25%. Based on the results in part (i), if the percentage of organic matter is high, the soil type is more likely to be a peat soil. If the percentage of organic matter is low, the soil type is more likely to be a brown earth soil. To calculate the percentage soil organic carbon in the soil sample, the percentage of organic matter (25%) would be multiplied by 0.58. The result would be 14.5%."
+        ],
+        "skip": false,
+        "subparts": []
+      }
+    ]
+  },
+  {
+    "question_num": "17",
+    "context": "Read the article and the questions that follow. 40-year-old straws used to sire calves on Tipperary farm A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as ‘the best sire they had ever used’, due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf. (Adapted from Agriland, 2023)",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Explain why this technology is an advantage on farms.",
+        "solution": [
+          "It allows for precise control over the gender of the offspring, reducing the need for separate herds for males and females."
+        ],
+        "skip": false,
+        "subparts": [
+          {
+            "id": "i",
+            "text": "Outline one advantage of using straws from the Canadian bull that were 40 years old.",
+            "solution": [
+              "They are likely to have superior genetics, making them more productive and disease-resistant."
+            ],
+            "skip": false
+          },
+          {
+            "id": "ii",
+            "text": "Briefly describe two advantages and two disadvantages of Artificial Insemination (AI) in cattle.",
+            "solution": [
+              "Advantages: Cost-effective, increases conception rates, allows for crossbreeding. Disadvantages: May cause stress, can lead to infections, requires skilled operators."
+            ],
+            "skip": false
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "text": "Based on a named food crop (other than grass) you have studied, describe its growth cycle under the headings that follow.",
+        "solution": [],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "Integrated pest management systems are used to farm in a more sustainable way. Analyse the diagram and the questions that follow.",
+        "solution": [],
+        "skip": true
+      }
+    ]
+  }
+]

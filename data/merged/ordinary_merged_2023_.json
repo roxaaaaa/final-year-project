@@ -1,0 +1,48 @@
+[
+  {
+    "question_num": "1",
+    "context": "An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow.",
+    "skip": false,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Identify any two pieces of equipment labelled A, B or C required for this investigation.",
+        "solution": [
+          "pH probe",
+          "Universal Indicator"
+        ],
+        "skip": true
+      },
+      {
+        "id": "b",
+        "text": "State the pH of the soil filtrate.",
+        "solution": [
+          "The pH of the soil filtrate needs to be measured using the pH probe and Universal Indicator."
+        ],
+        "skip": true
+      },
+      {
+        "id": "c",
+        "text": "State a conclusion the student can make in relation to growing crops.",
+        "solution": [
+          "If the pH is within the optimal range for the crops, the student can proceed with planting. If not, the student may need to adjust the pH of the soil."
+        ],
+        "skip": true
+      }
+    ]
+  },
+  {
+    "question_num": "11",
+    "context": "",
+    "skip": true,
+    "parts": [
+      {
+        "id": "a",
+        "text": "Draw a labelled diagram showing this activity.",
+        "solution": [],
+        "skip": true,
+        "subparts": []
+      }
+    ]
+  }
+]
