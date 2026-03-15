@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
-  const [topic, setTopic] = useState("");
+  const [topic, setTopic] = useState("General Knowledge");
   const [level, setLevel] = useState("higher");
   const [questions, setQuestions] = useState("");
   const [loading, setLoading] = useState(false);
@@ -13,7 +13,7 @@ export default function Home() {
   const resultRef = useRef(null);
 
   const loadingMessages = [
-    "Analyzing past exam trends...",
+    "Analyzing past exam papers...",
     "Matching question difficulty...",
     "Formatting exam paper...",
   ];
@@ -198,7 +198,7 @@ export default function Home() {
                     <input
                       type="text"
                       className="relative w-full px-6 py-5 bg-slate-800/50 border-2 border-white/10 rounded-2xl focus:border-emerald-400 focus:bg-slate-800/80 text-white text-lg placeholder-slate-500 transition-all outline-none"
-                      placeholder="e.g., Grassland Management, Dairy Production..."
+                      placeholder="General Knowledge ..."
                       value={topic}
                       onChange={(e) => setTopic(e.target.value)}
                       onFocus={() => setFocusedInput(true)}

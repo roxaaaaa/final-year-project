@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss"; 
+/* Import Tailwind CSS styles new way */
 
 @keyframes fadeIn {
   from {
