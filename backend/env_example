@@ -1,0 +1,14 @@
+# Model Settings
+
+# If using local Ollama: http://localhost:11434/v1
+# If using a cloud provider: https://api.groq.com/openai/v1
+OLLAMA_BASE_URL=http://localhost:11434/v1
+MODEL_NAME=llama3.1:8b
+
+# Security
+# No need for use in local ollama, but cloud providers will need this
+AI_API_KEY="" 
+
+# Server Settings
+PORT=8000
+DEBUG=True
