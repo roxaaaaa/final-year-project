@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"; //handleing navigation
 
 export default function Home() {
   const [topic, setTopic] = useState("General Knowledge");
-  const [level, setLevel] = useState("higher");
+  const [level, setLevel] = useState("");
   const [questions, setQuestions] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
