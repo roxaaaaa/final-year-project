@@ -1,10 +1,10 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation"; //handleing navigation
+import { useRouter } from "next/navigation"; //handling navigation
 
 export default function Home() {
   const [topic, setTopic] = useState("General Knowledge");
-  const [level, setLevel] = useState("");
+  const [level, setLevel] = useState("ordinary");
   const [questions, setQuestions] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -28,6 +28,7 @@ const handlePracticeMode = () => {
     "Looking for question patterns...",
     "Matching question difficulty...",
     "Formatting exam paper...",
+    "Pls be patient..."
   ];
 
   useEffect(() => {
@@ -241,7 +242,7 @@ const handlePracticeMode = () => {
                       </div>
                     )}
                   </div>
-                  <p className="text-sm text-slate-400 mt-3">Be specific for best results</p>
+                  <p className="text-sm text-slate-400 mt-3"> You can be more specific and change it</p>
                 </div>
 
                 {error && (
@@ -348,7 +349,7 @@ const handlePracticeMode = () => {
       <footer className="relative mt-20 py-10 border-t border-white/10 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-slate-400 text-sm">
-            Designed for Leaving Certificate Agricultural Science students. Disclaimer: This tool is intended for revision purposes and is designed to supplement, not replace, official curriculum materials provided by the SEC.
+            Disclaimer: This tool is intended for revision purposes and is designed to supplement, not replace, official curriculum materials provided by the SEC.
           </p>
           <p className="text-slate-500 text-xs mt-2">
             © 2025 AgriExamAI • All rights reserved

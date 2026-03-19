@@ -48,12 +48,12 @@ app.add_middleware(
 # Pydantic model for request data
 class TopicRequest(BaseModel):
     topic_name: str
-    level: Literal["higher", "ordinary"]
+    level: Literal["higher", "ordinary"]= "ordinary"
 
 class FeedbackRequest(BaseModel):
     question: str
     answer: str
-    level: Literal["higher", "ordinary"]
+    level: Literal["higher", "ordinary"] = "ordinary"
 
 # Root endpoint - returns server status
 @app.get("/")
@@ -98,7 +98,7 @@ async def generate_feedback(content: FeedbackRequest):
     try:
         # Create config with request data
         config = AppConfig(
-            model=ModelConfig(model_name=CHAGPT_MODEL, base_url = ""),
+            model=ModelConfig(model_name=CHAGPT_MODEL, base_url =None),
             generation=None,
             data=DataConfig(
                 question=content.question,

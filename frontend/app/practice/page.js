@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function PracticePage() {
   const [questions, setQuestions] = useState([]);
-  const [examLevel, setExamLevel] = useState(""); 
+  const [examLevel, setExamLevel] = useState("ordinary"); 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [feedback, setFeedback] = useState({});
@@ -38,7 +38,7 @@ export default function PracticePage() {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8000/api/ai/generate_feedback", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ai/generate_feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // MATCHING BACKEND: { question: str, answer: str, level: str }
