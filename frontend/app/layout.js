@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       {/* Removed the head script tag entirely  to make webiste load faster*/}
       <body className="antialiased">{children}</body>
     </html>

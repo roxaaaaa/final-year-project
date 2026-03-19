@@ -1,26 +1,22 @@
-import openai
+from typing import Literal
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.requests import Request
 from pydantic import BaseModel
-from dotenv import load_dotenv
-import os
 from fastapi.middleware.cors import CORSMiddleware
-import PyPDF2
+import logging, os
+from model_service import AppConfig, GenerationConfig, ModelConfig, QuestionGenerator, DataConfig, FeedbackGenerator
 
-
-load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
-
-# Initialize OpenAI client
-open_ai_key = os.getenv("OPEN_AI_KEY")
-if not open_ai_key:
-    raise ValueError("OPEN_AI_KEY environment variable is not set. Please set it in your .env file.")
-client = openai.OpenAI(api_key=open_ai_key)
-
+load_dotenv()
+MODEL_NAME = os.getenv("MODEL_NAME", "llama3.1:8b")
+CHAGPT_MODEL = os.getenv("CHAGPT_MODEL", "gpt-5.4-nano")
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 # Create FastAPI app
 app = FastAPI()
-
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
@@ -48,82 +44,82 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # Pydantic model for request data
 class TopicRequest(BaseModel):
     topic_name: str
-    level: str
-    paper: str = None 
+    level: Literal["higher", "ordinary"]= "ordinary"
 
-# PDF processing functions
-def get_pdf_path( level, paper=None):
-    """Map subject/level to file path"""
-    base = os.path.join(os.path.dirname(__file__), "materials")
-    if level == "higher":
-        return os.path.join(base, "agriculture", "higher level", "last papers", "LC024ALP000EV.pdf")
-    else:
-        return os.path.join(base, "agriculture", "ordinary level", "last papers", "LC024GLP000EV.pdf")
-
-def extract_text_by_rules(pdf_path, start_page=0, skip_first_page=False, stop_word=None):
-    """Extract text from PDF with specific rules"""
-    with open(pdf_path, "rb") as f:
-        reader = PyPDF2.PdfReader(f)
-        text = ""
-        pages = reader.pages
-        if skip_first_page:
-            pages = pages[1:]
-        else:
-            pages = pages[start_page:]
-        for page in pages:
-            page_text = page.extract_text()
-            if stop_word and stop_word in page_text:
-                break
-            text += page_text
-        return text
+class FeedbackRequest(BaseModel):
+    question: str
+    answer: str
+    level: Literal["higher", "ordinary"] = "ordinary"
 
 # Root endpoint - returns server status
 @app.get("/")
 async def root():
     return {"status": "Server is running"}
 
-# AI questions endpoint - POST only
+
 @app.post("/api/ai/generate_questions")
 async def generate_questions(data: TopicRequest):
-    print(f"Received request: topic={data.topic_name}, level={data.level}")
+    """Generate exam questions for a given topic and level."""
+    logger.info(f"Received request: topic={data.topic_name}, level={data.level}")
     
     try:
-        # Determine the correct PDF path using the requested level and optional paper
-        pdf_path = get_pdf_path(data.level, data.paper)
-        if not pdf_path:
-            raise HTTPException(status_code=404, detail="Missing path for agriculture paper")
-        else:
-            past_exam_text = extract_text_by_rules(pdf_path, skip_first_page=True, stop_word="Do not write on this page")
-            combined_text = past_exam_text
-        
-        # Generate AI questions
-        prompt = (
-            f"You are an experienced Leaving Certificate teacher. "
-            f"Here is past exam paper for agriculture science ({data.level}):\n\n"
-            f"{combined_text}\n\n"
-            f"Write 3 structured exam-style open-ended questions about the topic: '{data.topic_name}'.\n"
-            f"Each question should have two or more parts. Format them as follows:\n\n"
-            f"1. [First question with parts]\n\n"
-            f"2. [Second question with parts]\n\n"
-            f"3. [Third question with parts]\n\n"
-            f"Make sure each question is numbered and has a blank line between questions."
+        # Create config with request data
+        config = AppConfig(
+            model=ModelConfig(model_name=MODEL_NAME, api_key="ollama"),
+            generation=GenerationConfig(),
+            data=DataConfig(topic=data.topic_name, level=data.level)
         )
         
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": prompt}]
-        )
+        generator = QuestionGenerator(config)
+        generated_questions = generator.generate_questions()
         
-        return {"questions": response.choices[0].message.content}
+        if not generated_questions:
+            raise HTTPException(status_code=404, detail="No questions were generated")
         
+        return {"questions": generated_questions, "count": len(generated_questions)}
+        
+    except ValueError as e:
+        logger.error(f"Validation error: {e}")
+        raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        print(f"Error generating questions: {e}")
+        logger.error(f"Error generating questions: {e}")
         raise HTTPException(status_code=500, detail=str(e))
-
+ 
+ 
+@app.post("/api/ai/generate_feedback")
+async def generate_feedback(content: FeedbackRequest):
+    """Generate feedback for a student answer."""
+    logger.info(f"Received feedback request for level: {content.level}")
+    
+    try:
+        # Create config with request data
+        config = AppConfig(
+            model=ModelConfig(model_name=CHAGPT_MODEL, base_url =None),
+            generation=None,
+            data=DataConfig(
+                question=content.question,
+                answer=content.answer,
+                level=content.level
+            )
+        )
+        generator = FeedbackGenerator(config)
+        feedback = generator.generate_feedback()
+        
+        return {"feedback": feedback}
+        
+    except ValueError as e:
+        logger.error(f"Validation error: {e}")
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        logger.error(f"Error generating feedback: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+ 
 # Run the app
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+  

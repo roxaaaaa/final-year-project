@@ -1,5 +1,8 @@
 .env
-
+.env.local
+__pycache__/
+.venv/
+.vscode/
 .next/
 out/
 node_modules/

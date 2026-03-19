@@ -1,9 +1,10 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation"; //handling navigation
 
 export default function Home() {
   const [topic, setTopic] = useState("General Knowledge");
-  const [level, setLevel] = useState("higher");
+  const [level, setLevel] = useState("ordinary");
   const [questions, setQuestions] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -11,12 +12,36 @@ export default function Home() {
   const [focusedInput, setFocusedInput] = useState(false);
 
   const resultRef = useRef(null);
+  const router = useRouter();
+
+const handlePracticeMode = () => {
+  localStorage.setItem("currentExam", JSON.stringify({
+    topic,
+    level,
+    questions: questions 
+  }));
+  router.push("/practice");
+};
 
   const loadingMessages = [
     "Analyzing past exam papers...",
+    "Looking for question patterns...",
     "Matching question difficulty...",
     "Formatting exam paper...",
+    "Pls be patient..."
   ];
+
+  useEffect(() => {
+    if (questions) {
+      const examPayload = {
+        topic,
+        level,
+        questions,
+        generatedAt: new Date().toISOString(),
+      };
+      localStorage.setItem("currentExam", JSON.stringify(examPayload));
+    }
+  }, [questions, topic, level]); 
 
   useEffect(() => {
     if (!loading) return;
@@ -37,7 +62,7 @@ export default function Home() {
     setQuestions("");
 
     try {
-      const response = await fetch("http://localhost:8000/api/ai/generate_questions", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ai/generate_questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -217,7 +242,7 @@ export default function Home() {
                       </div>
                     )}
                   </div>
-                  <p className="text-sm text-slate-400 mt-3">Be specific for best results</p>
+                  <p className="text-sm text-slate-400 mt-3"> You can be more specific and change it</p>
                 </div>
 
                 {error && (
@@ -265,77 +290,69 @@ export default function Home() {
 
         {/* Results Section */}
         {questions && (
-          <div ref={resultRef} className="animate-fade-in">
-            <div className="relative group mb-8">
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition duration-1000"></div>
-
-              <div className="relative bg-slate-800/50 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
-                <div className="relative bg-gradient-to-r from-emerald-500 to-teal-500 px-8 py-8">
-                  <div className="absolute inset-0 bg-black/10"></div>
-                  <div className="relative flex items-center justify-between flex-wrap gap-4">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center font-black text-white text-lg">
-                          2
-                        </div>
-                        <h3 className="text-2xl font-black text-white">Your Exam Paper</h3>
-                      </div>
-                      <p className="text-emerald-50/80 text-sm ml-13">Ready to practice or print</p>
+        <div ref={resultRef} className="animate-fade-in">
+          <div className="relative group mb-8">
+            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+            <div className="relative bg-slate-800/50 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
+              <div className="relative bg-gradient-to-r from-emerald-500 to-teal-500 px-8 py-8">
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="relative flex flex-col sm:flex-row items-center justify-between gap-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center font-black text-white text-lg">
+                      2
                     </div>
+                    <div>
+                      <h3 className="text-2xl font-black text-white">Paper Generated!</h3>
+                      <p className="text-emerald-50/80 text-sm">Choose how you want to proceed</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <button
+                      onClick={handlePracticeMode}
+                      className="flex items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-300 text-slate-900 rounded-xl font-bold transition-all shadow-lg hover:scale-105"
+                    >
+                      <span>Interactive Practice</span>
+                      <span className="text-lg">✍️</span>
+                    </button>
+                    
                     <button
                       onClick={handlePrint}
-                      className="flex items-center gap-2 px-6 py-3 bg-white hover:bg-emerald-50 text-emerald-600 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                      className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl font-bold transition-all backdrop-blur-md"
                     >
-                      <span>Print Paper</span>
+                      <span>Print PDF</span>
+                      <span className="text-lg">🖨️</span>
                     </button>
                   </div>
                 </div>
+              </div>
 
-                <div id="exam-paper" className="p-10 sm:p-16 bg-white" style={{ fontFamily: "'Times New Roman', Georgia, serif" }}>
-                  <div className="text-center border-b-4 border-slate-900 pb-8 mb-10">
-                    <h2 className="text-4xl font-bold uppercase tracking-wider text-slate-900 mb-4">
-                      Leaving Certificate Examination
-                    </h2>
-                    <h3 className="text-2xl font-bold text-slate-800 mb-3">
-                      Agricultural Science — {level.toUpperCase()} LEVEL
-                    </h3>
-                    <p className="italic text-slate-600 text-xl mb-6">Topic: {topic}</p>
-                    <div className="inline-block border-4 border-slate-900 px-8 py-3 font-bold text-lg">
-                      Total Marks: 60
+              {/* Preview of the paper remains below */}
+              <div className="max-h-[500px] overflow-y-auto bg-white">
+                  <div id="exam-paper" className="p-10 sm:p-16" style={{ fontFamily: "'Times New Roman', Georgia, serif" }}>
+                    <div className="text-center border-b-4 border-slate-900 pb-8 mb-10">
+                      <h2 className="text-4xl font-bold uppercase tracking-wider text-slate-900 mb-4">Leaving Certificate</h2>
+                      <h3 className="text-2xl font-bold text-slate-800">Agricultural Science — {level.toUpperCase()}</h3>
+                    </div>
+                    <div className="whitespace-pre-wrap leading-loose text-slate-900 text-lg">
+                      {Array.isArray(questions) ? questions.join('\n\n') : questions}
                     </div>
                   </div>
-
-                  <p className="font-bold uppercase mb-8 text-xl tracking-widest">Section A</p>
-
-                  <div className="whitespace-pre-wrap leading-loose text-slate-900 text-lg">
-                    {questions}
-                  </div>
-
-                  <div className="mt-20 pt-8 border-t-2 border-slate-200 text-center text-xs text-slate-400">
-                    Generated using AI based on past examination patterns
-                  </div>
-                </div>
               </div>
             </div>
-
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="w-full py-5 bg-slate-800/50 hover:bg-slate-800/80 backdrop-blur-sm border border-white/10 text-white rounded-2xl font-bold transition-all hover:scale-[1.02]"
-            >
-              Create Another Exam Paper
-            </button>
           </div>
-        )}
+        </div>
+      )}
       </main>
 
       {/* Footer */}
       <footer className="relative mt-20 py-10 border-t border-white/10 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-slate-400 text-sm">
-            Designed for Leaving Certificate Agricultural Science students
+            Disclaimer: This tool is intended for revision purposes and is designed to supplement, not replace, official curriculum materials provided by the SEC.
           </p>
           <p className="text-slate-500 text-xs mt-2">
-            © 2024 AgriExamAI • All rights reserved
+            © 2025 AgriExamAI • All rights reserved
           </p>
         </div>
       </footer>

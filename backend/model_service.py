@@ -1,6 +1,8 @@
+import os
 from typing import Optional, Literal, List
 
-import ollama
+from dotenv import load_dotenv
+
 import json
 from openai import Client, OpenAI
 import logging
@@ -9,55 +11,73 @@ from dataclasses import dataclass
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-MODEL_NAME = "llama3.1:8b"
+load_dotenv()
+MODEL_NAME = os.getenv("MODEL_NAME", "llama3.1:8b")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+CHAGPT_MODEL = os.getenv("CHAGPT_MODEL", "gpt-5.4-nano")
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
+if not OPENAI_API_KEY:
+    raise ValueError("KEY not found in environment variables!")
+
 HIGHER_EXAMPLE_QUESTIONS = """
-            Q: "Give three reasons for the practice of thinning forest trees.",
-            Q: "Explain why strict controls are necessary when applying pesticides to farm crops.",
-            Q: "Mention three factors that contribute to the formation of a gley soil."
+Higher level questions requires in-depth understanding, precise definitions, and detailed scientific methods for experiments, along with higher-order analysis of environmental topics. 
+            {"question": "Give three reasons for the practice of thinning forest trees."},
+            {"question": "Explain why strict controls are necessary when applying pesticides to farm crops."},
+            {"question": "Mention three factors that contribute to the formation of a gley soil."}
         """
 ORDINARY_EXAMPLE_QUESTIONS = """
-        Q: Define the term biological control.
-        Q: Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation.
-        Q: Suggest three ways in which farmers can control / prevent liver fluke on their farm."""
+Ordinary level question requires a solid understanding of fundamental agricultural practices, terminology, and key experiments
+        {"question": "Define the term biological control."}
+        {"question": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation"}.
+        Q{"question": "Suggest three ways in which farmers can control / prevent liver fluke on their farm."}"""
 
-SYSTEM_PROMPT = "You are a Leaving Cert Agricultural Science examiner. Output only the final exam question. Do not show reasoning."
-        
+SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner. You provide expert, concise, and syllabus-aligned content."""
+
+# Format instructions used in the user prompt to guide JSON output
+JSON_STRUCTURE_PROMPT = "Output ONLY a JSON object. Do not include any conversational text or reasoning."
 
 @dataclass
 class ModelConfig:
-    model_name: str = MODEL_NAME
-    base_url: str ="http://localhost:11434/v1"
+    model_name: str 
+    api_key: str = OPENAI_API_KEY
+    base_url: Optional[str] = OLLAMA_BASE_URL
 
 @dataclass
 class GenerationConfig:
     temperature: float = 0.4
-    max_tokens: int = 50
+    max_tokens: int = 250
     num_questions: int = 3
 
 @dataclass
-class QuestionTaskConfig:
-    topic: str = "general knowledge"
-    level: Literal["higher", "ordinary"] = "higher"
+class DataConfig:
+    level: Literal["higher", "ordinary"] = "ordinary"
+    topic: Optional[str] = "general knowledge"
+    question : Optional[str] = ""
+    answer: Optional[str] = ""
 
 @dataclass
 class AppConfig:
     model: ModelConfig
-    generation: GenerationConfig
-    task: QuestionTaskConfig
-
+    data: DataConfig
+    generation: Optional[GenerationConfig]
 
 class QuestionGenerator:
-    #This parameter can be either a GenerationConfig object OR None
+    #This parameter can be either a AppConfig object OR None
     def __init__(self, config: Optional[AppConfig] = None):
         """
         Initialize the QuestionGenerator with the given configuration.
-        Args:
-            config (GenerationConfig): Configuration for question generation.
         """
-        self.config = config or AppConfig(model=ModelConfig(), generation=GenerationConfig(), task=QuestionTaskConfig())
-        self.client = Client(base_url=self.config.model.base_url, api_key="ollama")  # No API key needed for local Ollama
+        if config is None:
+            self.config = config or AppConfig(
+                model=ModelConfig(model_name=MODEL_NAME, api_key=""), 
+                generation=GenerationConfig(),
+                data=DataConfig())
+        else:
+            self.config = config
+        self.client = Client(base_url=self.config.model.base_url) 
 
-    def generate_questions(self, num_questions: Optional[int] = None) -> List[str]:
+
+    def generate_questions(self) -> List[str]:
         """
         Generate agricultural science exam questions
         
@@ -67,57 +87,101 @@ class QuestionGenerator:
         Returns:
             List of generated questions
         """
-        num_questions = num_questions or self.config.generation.num_questions
+        prompt = f"""Generate exam questions 
+        on the topic of {self.config.data.topic} for level {self.config.data.level}.
+        Examples: {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
+        Return a json strucutred response {{"question": "string"}}"""
         questions = []
-    
-        for i in range(num_questions):
-            prompt = f"""Generate a {self.config.task.level} level Agricultural Science exam question on the topic of {self.config.task.topic}.
-            Example questions:
-            {HIGHER_EXAMPLE_QUESTIONS if self.config.task.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
-            Now generate a new question. Q:"""
-            
+
+        if self.config.generation is None:
+            self.config.generation = GenerationConfig()
+
+        for _ in range(self.config.generation.num_questions):
             try:
                 response = self.client.chat.completions.create(
-                    model=self.config.model.model_name,
-                    messages=[
-                        {"role": "system", "content": SYSTEM_PROMPT},
-                        {"role": "user", "content": prompt}
-                    ],
-                    max_tokens=self.config.generation.max_tokens,
-                    temperature=self.config.generation.temperature,
+                model=self.config.model.model_name,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": f"{prompt}\n\n{JSON_STRUCTURE_PROMPT}"}
+                ],
+                response_format={"type": "json_object"},
+                temperature=self.config.generation.temperature,
+                max_tokens=self.config.generation.max_tokens,
                 )
-                question = response.choices[0].message.content
-                questions.append(question)
-                logger.info(f"Generated question: {question}")
+                content = response.choices[0].message.content
+                if content:
+                    data = json.loads(content)
+                    question_text = data.get("question")
+                    if question_text: # Only append if the question actually exists
+                        questions.append(question_text)
+                        print(f"Generated question: {question_text}")
+                    else:
+                        logger.error("question does not exist")
             except Exception as e:
-                logger.error(f"Error generating question: {e}")
+                logger.error(f"AI Error: {e}")
         return questions
 
+class FeedbackGenerator:
+    def __init__(self, config: Optional[AppConfig] = None):
+        if config is None:
+            self.config = config or AppConfig(
+                model=ModelConfig(model_name=CHAGPT_MODEL, base_url = None), 
+                generation=None,
+                data=DataConfig())
+        else:
+            self.config = config
+        self.client = OpenAI(api_key=self.config.model.api_key or OPENAI_API_KEY)
+        
+
+    def generate_feedback(self) -> str:
+        """
+        Generate feedback for a specific question and answer pair.
+        """
+        user_content = f"""
+        You are tutoting a student right now. 
+        Question: {self.config.data.question}
+        Student Answer: {self.config.data.answer}
+        Level: {self.config.data.level}
+        
+        Provide feedback (as a teacheer taking to a student) on accuracy and syllabus alignment. Give feedback:
+        -If there anything incorrect in your answer if yes what
+        - How to improve 
+
+        No suggestions in the end, all text must be the same font, no emojis.
+        """
+        #- A better sample answer
+        try:
+            response = self.client.responses.create(
+                model=self.config.model.model_name,
+                input = f"""
+                You are a strict but helpful Agricultural Science teacher also you are Leaving Certificate Agricultural Science examiner. 
+                {user_content}
+                """)
+            return response.output_text
+        
+        except Exception as e:
+            logger.error(f"Feedback Generation Error: {e}")
+            return  "Error generating feedback."
+
+
 if __name__ == "__main__":
-    print("Starting question generation...")
 
-    config_higher = AppConfig(
-        model=ModelConfig(model_name=MODEL_NAME),
-        generation=GenerationConfig(),
-        task=QuestionTaskConfig(level="higher")
-    )
-    print(config_higher.task.level)
-    generator = QuestionGenerator(config_higher)
-    generated_questions = generator.generate_questions()
-    print("="*20)
-    print(f"Generated {config_higher.task.level} Questions:")
-    for q in generated_questions:
-        print(q)
+    config = AppConfig(
+        model=ModelConfig(model_name=MODEL_NAME, api_key="ollama"),
+        data=DataConfig(level="ordinary"),
+        generation=GenerationConfig()
+    ) 
+    generator = QuestionGenerator(config)
+    print(generator.generate_questions())
 
-    config_ordinary = AppConfig(
-        model=ModelConfig(model_name=MODEL_NAME),
-        generation=GenerationConfig(),
-        task=QuestionTaskConfig(level="ordinary")
-    )
-    print(config_ordinary.task.level)
-    generator = QuestionGenerator(config_ordinary)
-    generated_questions = generator.generate_questions()
-    print("="*20)
-    print(f"Generated {config_ordinary.task.level} Questions:")
-    for q in generated_questions:
-        print(q)
+    # sample_data = DataConfig(
+    #     question="Explain why strict controls are necessary when applying pesticides to farm crops.",
+    #     answer="To stop them getting into the water and killing bees."
+    # )
+    # config1 = AppConfig(
+    #     model=ModelConfig(model_name=CHAGPT_MODEL, base_url = ""),
+    #     generation=None,
+    #     data=DataConfig(question = sample_data.question,answer= sample_data.answer, level=sample_data.level)
+    # )
+    # generator = FeedbackGenerator(config1)
+    # print(generator.generate_feedback())
