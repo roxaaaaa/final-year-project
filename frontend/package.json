@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
-    "postcss": "^8.5.8"
+    "postcss": "^8.5.8",
+    "vitest": "^3.2.4"
   }
 }
