@@ -1,17 +1,58 @@
 # Model Settings
 
+
+
 # If using local Ollama: http://localhost:11434/v1
+
 # If using a cloud provider: https://api.groq.com/openai/v1
+
 OLLAMA_BASE_URL=http://localhost:11434/v1
+
+# If Ollama is unreachable, question generation falls back to OpenAI using CHATGPT_MODEL (requires OPENAI_API_KEY).
+
 MODEL_NAME=llama3.1:8b
-CHATGPT_MODEL = gpt-3.5-turbo
+
+CHATGPT_MODEL=gpt-4o-mini
+
 # Security
-# No need for use in local ollama, but cloud providers will need this
-AI_API_KEY="" 
-CHATGPT_API_KEY=""
+
+# API key for OpenAI (required if not using local Ollama)
+
+OPENAI_API_KEY=your-openai-api-key
+
+
+
+# D-ID Clips API — teacher avatar videos on the practice page (optional; feedback text still works without it)
+
+DID_API_KEY=your-d-id-api-key
+
+# Optional override; default presenter if unset:
+
+# DID_PRESENTER_ID=v2_public_Amber@0zSz8kflCN
+
+# Optional API host override:
+
+# DID_BASE_URL=https://api.d-id.com
+
+
+
+# Google OAuth Configuration
+
+GOOGLE_CLIENT_ID=your-google-oauth-client-id
+
+GOOGLE_CLIENT_SECRET=your-google-oauth-client-secret
+
+JWT_SECRET=your-jwt-secret-key
+
+SESSION_SECRET=your-session-secret-key
+
+FRONTEND_URL=http://localhost:3000
 
 
 
 # Server Settings
+
 PORT=8000
+
 DEBUG=True
+

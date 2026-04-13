@@ -1,10 +1,13 @@
 import os
-from typing import Optional, Literal, List
+import time
+import base64
+from typing import Optional, Literal, List, Any
 
+import httpx
 from dotenv import load_dotenv
-
 import json
-from openai import Client, OpenAI
+from openai import OpenAI
+import ollama
 import logging
 from dataclasses import dataclass
 
@@ -12,12 +15,48 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 load_dotenv()
+
+
+def _model_uses_max_completion_tokens(model: str) -> bool:
+    """Newer / reasoning-style chat models reject `max_tokens` and use `max_completion_tokens`."""
+    m = (model or "").lower()
+    if m.startswith(("o1", "o3", "o4")):
+        return True
+    if "gpt-5" in m:
+        return True
+    return False
+
+
+def _openai_chat_completion(client: OpenAI, *, model: str, messages: list, temperature: Optional[float], max_output_tokens: int):
+    """
+    Route `max_tokens` vs `max_completion_tokens` by model. Reasoning models also need a
+    large enough completion budget or `message.content` can be empty (tokens used internally).
+    """
+    kw: dict = {"model": model, "messages": messages}
+    if temperature is not None:
+        kw["temperature"] = temperature
+    if _model_uses_max_completion_tokens(model):
+        return client.chat.completions.create(**kw, max_completion_tokens=max_output_tokens)
+    try:
+        return client.chat.completions.create(**kw, max_tokens=max_output_tokens)
+    except Exception as e:
+        err = str(e).lower()
+        if "max_completion_tokens" in err and "max_tokens" in err:
+            return client.chat.completions.create(**kw, max_completion_tokens=max_output_tokens)
+        raise
+
+# Environment Configuration
 MODEL_NAME = os.getenv("MODEL_NAME", "llama3.1:8b")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-CHAGPT_MODEL = os.getenv("CHAGPT_MODEL", "gpt-5.4-nano")
+CHATGPT_MODEL = os.getenv("CHATGPT_MODEL", "gpt-4o-mini")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
+
+DID_API_KEY = os.getenv("DID_API_KEY") or None
+DID_BASE_URL = os.getenv("DID_BASE_URL", "https://api.d-id.com").rstrip("/")
+DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")
+
 if not OPENAI_API_KEY:
-    raise ValueError("KEY not found in environment variables!")
+    raise ValueError("OPENAI_API_KEY not found in environment variables!")
 
 HIGHER_EXAMPLE_QUESTIONS = """
 Higher level questions requires in-depth understanding, precise definitions, and detailed scientific methods for experiments, along with higher-order analysis of environmental topics. 
@@ -25,15 +64,15 @@ Higher level questions requires in-depth understanding, precise definitions, and
             {"question": "Explain why strict controls are necessary when applying pesticides to farm crops."},
             {"question": "Mention three factors that contribute to the formation of a gley soil."}
         """
+
 ORDINARY_EXAMPLE_QUESTIONS = """
 Ordinary level question requires a solid understanding of fundamental agricultural practices, terminology, and key experiments
         {"question": "Define the term biological control."}
         {"question": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation"}.
-        Q{"question": "Suggest three ways in which farmers can control / prevent liver fluke on their farm."}"""
+        {"question": "Suggest three ways in which farmers can control / prevent liver fluke on their farm."}"""
 
 SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner. You provide expert, concise, and syllabus-aligned content."""
 
-# Format instructions used in the user prompt to guide JSON output
 JSON_STRUCTURE_PROMPT = "Output ONLY a JSON object. Do not include any conversational text or reasoning."
 
 @dataclass
@@ -52,7 +91,7 @@ class GenerationConfig:
 class DataConfig:
     level: Literal["higher", "ordinary"] = "ordinary"
     topic: Optional[str] = "general knowledge"
-    question : Optional[str] = ""
+    question: Optional[str] = ""
     answer: Optional[str] = ""
 
 @dataclass
@@ -61,36 +100,139 @@ class AppConfig:
     data: DataConfig
     generation: Optional[GenerationConfig]
 
+def _did_auth_headers(api_key: str) -> dict:
+    """D-ID Basic auth: base64(api_key:)."""
+    token = base64.b64encode(f"{api_key}:".encode()).decode()
+    return {
+        "Authorization": f"Basic {token}",
+        "Content-Type": "application/json",
+    }
+
+
+class VideoGenerator:
+    """
+    Handles video generation using D-ID's Clips API.
+    Documentation: https://docs.d-id.com/docs/v3-pro-avatar-quickstart.md
+    """
+
+    def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None):
+        key = api_key or DID_API_KEY
+        if not key:
+            raise ValueError("DID_API_KEY not found in environment variables!")
+        self.api_key = key
+        self.base_url = (base_url or DID_BASE_URL).rstrip("/")
+        self.headers = _did_auth_headers(self.api_key)
+
+    def create_video(self, script: str, presenter_id: str = DID_PRESENTER_ID) -> str:
+        payload = {
+            "presenter_id": presenter_id,
+            "script": {"type": "text", "input": script},
+        }
+        with httpx.Client(timeout=60.0) as client:
+            r = client.post(
+                f"{self.base_url}/clips",
+                headers=self.headers,
+                json=payload,
+            )
+        if r.status_code not in (200, 201):
+            logger.error("D-ID Video Creation Error (%s): %s", r.status_code, r.text)
+            raise RuntimeError(f"Failed to create video: {r.text}")
+        data = r.json()
+        clip_id = data.get("id")
+        logger.info("Video created with ID: %s", clip_id)
+        return clip_id
+
+    def get_video_status(self, clip_id: str) -> dict[str, Any]:
+        with httpx.Client(timeout=30.0) as client:
+            r = client.get(f"{self.base_url}/clips/{clip_id}", headers=self.headers)
+        if r.status_code not in (200, 201):
+            logger.error("D-ID Status Check Error (%s): %s", r.status_code, r.text)
+            raise RuntimeError(f"Failed to get status: {r.text}")
+        return r.json()
+
+    def wait_for_video(self, clip_id: str, max_wait: int = 60, poll_interval: int = 2) -> Optional[str]:
+        start = time.time()
+        while time.time() - start < max_wait:
+            try:
+                status = self.get_video_status(clip_id)
+                st = status.get("status")
+                if st == "done":
+                    result_url = status.get("result_url")
+                    logger.info("Video ready: %s", result_url)
+                    return result_url
+                if st == "error":
+                    logger.error("Video generation failed: %s", status.get("error"))
+                    return None
+                logger.info("Video status: %s - waiting...", st)
+            except Exception as e:
+                logger.error("Error checking video status: %s", e)
+            time.sleep(poll_interval)
+        logger.warning("Video generation timeout after %ss", max_wait)
+        return None
+
+    def get_presenters(self) -> Any:
+        try:
+            with httpx.Client(timeout=30.0) as client:
+                r = client.get(f"{self.base_url}/clips/presenters", headers=self.headers)
+            if r.status_code == 200:
+                return r.json()
+            logger.error("Failed to get presenters: %s", r.text)
+            return []
+        except Exception as e:
+            logger.error("Error fetching presenters: %s", e)
+            return []
+
+
 class QuestionGenerator:
-    #This parameter can be either a AppConfig object OR None
+    """Generates exam questions using local Ollama or OpenAI."""
+    
     def __init__(self, config: Optional[AppConfig] = None):
-        """
-        Initialize the QuestionGenerator with the given configuration.
-        """
+        """Initialize the QuestionGenerator with the given configuration."""
         if config is None:
-            self.config = config or AppConfig(
+            self.config = AppConfig(
                 model=ModelConfig(model_name=MODEL_NAME, api_key=""), 
                 generation=GenerationConfig(),
-                data=DataConfig())
+                data=DataConfig()
+            )
         else:
             self.config = config
-        self.client = Client(base_url=self.config.model.base_url) 
 
+        self._openai_model_name: Optional[str] = None
+        # Use ollama client if base_url is provided (local Ollama instance)
+        if self.config.model.base_url:
+            self.use_ollama = True
+            # Extract host from base_url (e.g., http://localhost:11434/v1 -> http://localhost:11434)
+            base_url = self.config.model.base_url.replace("/v1", "")
+            self.ollama_client = ollama.Client(host=base_url)
+            self.openai_client: Optional[OpenAI] = None
+        else:
+            self.use_ollama = False
+            self.openai_client = OpenAI(api_key=OPENAI_API_KEY)
+
+    def _fallback_to_openai(self) -> None:
+        """Switch to OpenAPI after Ollama errors (e.g. daemon not running). Uses CHATGPT_MODEL, not Ollama model ids."""
+        if not OPENAI_API_KEY:
+            raise RuntimeError("Ollama failed and OPENAI_API_KEY is missing; cannot fall back.")
+        logger.warning(
+            "Ollama unavailable; falling back to OpenAI model %s",
+            CHATGPT_MODEL,
+        )
+        self.use_ollama = False
+        self._openai_model_name = CHATGPT_MODEL
+        if self.openai_client is None:
+            self.openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
     def generate_questions(self) -> List[str]:
         """
-        Generate agricultural science exam questions
+        Generate agricultural science exam questions.
         
-        Args:
-            num_questions: Number of questions to generate
-            
         Returns:
             List of generated questions
         """
         prompt = f"""Generate exam questions 
         on the topic of {self.config.data.topic} for level {self.config.data.level}.
         Examples: {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
-        Return a json strucutred response {{"question": "string"}}"""
+        Return a json structured response {{"question": "string"}}"""
         questions = []
 
         if self.config.generation is None:
@@ -98,90 +240,170 @@ class QuestionGenerator:
 
         for _ in range(self.config.generation.num_questions):
             try:
-                response = self.client.chat.completions.create(
-                model=self.config.model.model_name,
-                messages=[
+                messages = [
                     {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": f"{prompt}\n\n{JSON_STRUCTURE_PROMPT}"}
-                ],
-                response_format={"type": "json_object"},
-                temperature=self.config.generation.temperature,
-                max_tokens=self.config.generation.max_tokens,
-                )
-                content = response.choices[0].message.content
+                    {"role": "user", "content": f"{prompt}\n\n{JSON_STRUCTURE_PROMPT}"},
+                ]
+                content = ""
+                if self.use_ollama:
+                    try:
+                        response = self.ollama_client.chat(
+                            model=self.config.model.model_name,
+                            messages=messages,
+                            stream=False,
+                        )
+                        content = response.get("message", {}).get("content", "") or ""
+                    except Exception as ollama_err:
+                        logger.warning(
+                            "Ollama request failed (%s); falling back to OpenAI.",
+                            ollama_err,
+                        )
+                        self._fallback_to_openai()
+
+                if not self.use_ollama:
+                    assert self.openai_client is not None
+                    openai_model = self._openai_model_name or self.config.model.model_name
+                    response = _openai_chat_completion(
+                        self.openai_client,
+                        model=openai_model,
+                        messages=messages,
+                        temperature=self.config.generation.temperature,
+                        max_output_tokens=self.config.generation.max_tokens,
+                    )
+                    content = (response.choices[0].message.content or "") if response.choices else ""
+
                 if content:
                     data = json.loads(content)
                     question_text = data.get("question")
-                    if question_text: # Only append if the question actually exists
+                    if question_text:
                         questions.append(question_text)
-                        print(f"Generated question: {question_text}")
+                        # Question generated successfully
                     else:
-                        logger.error("question does not exist")
+                        logger.error("Question does not exist in response")
             except Exception as e:
                 logger.error(f"AI Error: {e}")
+        
         return questions
 
+
 class FeedbackGenerator:
-    def __init__(self, config: Optional[AppConfig] = None):
+    """Generates feedback using ChatGPT; optional D-ID Clips avatar video."""
+    
+    def __init__(self, config: Optional[AppConfig] = None, use_video: bool = True):
+        """
+        Initialize the FeedbackGenerator.
+        
+        Args:
+            config: AppConfig object with model and data settings
+            use_video: Whether to generate D-ID avatar videos (default: True)
+        """
         if config is None:
-            self.config = config or AppConfig(
-                model=ModelConfig(model_name=CHAGPT_MODEL, base_url = None), 
+            self.config = AppConfig(
+                model=ModelConfig(model_name=CHATGPT_MODEL, base_url=None), 
                 generation=None,
-                data=DataConfig())
+                data=DataConfig()
+            )
         else:
             self.config = config
-        self.client = OpenAI(api_key=self.config.model.api_key or OPENAI_API_KEY)
-        
+
+        key = self.config.model.api_key or OPENAI_API_KEY
+        if not key or key == "ollama":
+            key = OPENAI_API_KEY
+        self.client = OpenAI(api_key=key)
+        self.use_video = use_video
+        if use_video and DID_API_KEY:
+            self.video_generator = VideoGenerator()
+        else:
+            self.video_generator = None
 
     def generate_feedback(self) -> str:
         """
-        Generate feedback for a specific question and answer pair.
+        Generate teacher feedback for a student answer.
+        
+        Returns:
+            Feedback text from the teacher
         """
         user_content = f"""
-        You are tutoting a student right now. 
+        You are tutoring a student right now. 
         Question: {self.config.data.question}
         Student Answer: {self.config.data.answer}
         Level: {self.config.data.level}
         
-        Provide feedback (as a teacheer taking to a student) on accuracy and syllabus alignment. Give feedback:
-        -If there anything incorrect in your answer if yes what
+        Provide feedback (as a teacher talking to a student) on accuracy and syllabus alignment. Give feedback:
+        - If there is anything incorrect in the answer, if yes what
         - How to improve 
 
-        No suggestions in the end, all text must be the same font, no emojis.
+        Keep it concise (2-3 sentences max). No suggestions at the end, all text must be the same font, no emojis.
         """
-        #- A better sample answer
-        try:
-            response = self.client.responses.create(
-                model=self.config.model.model_name,
-                input = f"""
-                You are a strict but helpful Agricultural Science teacher also you are Leaving Certificate Agricultural Science examiner. 
-                {user_content}
-                """)
-            return response.output_text
         
+        try:
+            # Short answer in prompt, but reasoning models can spend most of the budget before `content` appears.
+            response = _openai_chat_completion(
+                self.client,
+                model=self.config.model.model_name,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are a strict but helpful Agricultural Science teacher and Leaving Certificate examiner."
+                    },
+                    {"role": "user", "content": user_content}
+                ],
+                temperature=0.7,
+                max_output_tokens=1200,
+            )
+
+            choice = response.choices[0]
+            feedback_text = (choice.message.content or "").strip()
+            if not feedback_text:
+                fr = getattr(choice, "finish_reason", None)
+                logger.warning(
+                    "Empty feedback completion (model=%s finish_reason=%s)",
+                    self.config.model.model_name,
+                    fr,
+                )
+                return "Error generating feedback. Please try again."
+
+            print(f"Generated feedback: {feedback_text}")
+            return feedback_text
+
         except Exception as e:
             logger.error(f"Feedback Generation Error: {e}")
-            return  "Error generating feedback."
+            return "Error generating feedback. Please try again."
+
+    def generate_feedback_with_video(self) -> dict:
+        """
+        Generate feedback and create a D-ID avatar video of the feedback.
+        
+        Returns:
+            dict with keys:
+                - feedback_text: The generated feedback
+                - video_url: URL to the D-ID avatar video (or None if failed)
+                - clip_id: D-ID clip ID for reference
+        """
+        # First generate the feedback text
+        feedback_text = self.generate_feedback()
+        
+        result: dict = {
+            "feedback_text": feedback_text,
+            "video_url": None,
+            "clip_id": None,
+        }
+
+        if not self.use_video or not self.video_generator:
+            logger.info("Video generation skipped (disabled or no DID_API_KEY)")
+            return result
+
+        try:
+            logger.info("Creating D-ID avatar video...")
+            clip_id = self.video_generator.create_video(feedback_text)
+            result["clip_id"] = clip_id
+            logger.info("Waiting for video %s to render...", clip_id)
+            video_url = self.video_generator.wait_for_video(clip_id, max_wait=60)
+            result["video_url"] = video_url
+        except Exception as e:
+            logger.error("D-ID video generation failed: %s", e)
+
+        return result
 
 
-if __name__ == "__main__":
 
-    config = AppConfig(
-        model=ModelConfig(model_name=MODEL_NAME, api_key="ollama"),
-        data=DataConfig(level="ordinary"),
-        generation=GenerationConfig()
-    ) 
-    generator = QuestionGenerator(config)
-    print(generator.generate_questions())
-
-    # sample_data = DataConfig(
-    #     question="Explain why strict controls are necessary when applying pesticides to farm crops.",
-    #     answer="To stop them getting into the water and killing bees."
-    # )
-    # config1 = AppConfig(
-    #     model=ModelConfig(model_name=CHAGPT_MODEL, base_url = ""),
-    #     generation=None,
-    #     data=DataConfig(question = sample_data.question,answer= sample_data.answer, level=sample_data.level)
-    # )
-    # generator = FeedbackGenerator(config1)
-    # print(generator.generate_feedback())
