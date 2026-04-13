@@ -1,8 +1,19 @@
 "use client";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function AuthCallback() {
+function AuthCallbackLoading() {
+  return (
+    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+        <p className="text-white text-lg font-medium">Authenticating...</p>
+      </div>
+    </div>
+  );
+}
+
+function AuthCallbackContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -17,14 +28,13 @@ export default function AuthCallback() {
 
     localStorage.setItem("token", token);
 
-    // Check if user needs to select persona
     fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/api/user/me`, {
       headers: {
-        "Authorization": `Bearer ${token}`
-      }
+        Authorization: `Bearer ${token}`,
+      },
     })
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         if (!data.persona) {
           router.push("/persona");
         } else {
@@ -37,12 +47,13 @@ export default function AuthCallback() {
       });
   }, [router, token, redirectTo]);
 
+  return <AuthCallbackLoading />;
+}
+
+export default function AuthCallback() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
-        <p className="text-white text-lg font-medium">Authenticating...</p>
-      </div>
-    </div>
+    <Suspense fallback={<AuthCallbackLoading />}>
+      <AuthCallbackContent />
+    </Suspense>
   );
 }
