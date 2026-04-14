@@ -21,6 +21,7 @@ from model_service import (
     FeedbackGenerator,
     VideoGenerator,
     DID_API_KEY,
+    DID_CLIPS_ENABLED,
 )
 
 load_dotenv()
@@ -149,6 +150,7 @@ async def root():
         "status": "Server is running",
         "service": "Agricultural Science Exam Assistant",
         "d_id_configured": bool(DID_API_KEY),
+        "d_id_clips_enabled": DID_CLIPS_ENABLED,
         "google_oauth_configured": bool(GOOGLE_CLIENT_ID),
         "env": os.getenv("ENV", "development")
     }
@@ -162,6 +164,7 @@ async def health():
         "ollama_available": bool(OLLAMA_BASE_URL),
         "openai_available": bool(os.getenv("OPENAI_API_KEY")),
         "d_id_configured": bool(DID_API_KEY),
+        "d_id_clips_enabled": DID_CLIPS_ENABLED,
     }
 
 
@@ -429,7 +432,7 @@ async def generate_feedback(
             )
         )
 
-        want_video = data.use_video and bool(DID_API_KEY)
+        want_video = data.use_video and bool(DID_API_KEY) and DID_CLIPS_ENABLED
         clip_id: Optional[str] = None
 
         # Do not hold a pooled DB connection across OpenAI + D-ID (can exceed Neon/PgBouncer idle limits).
@@ -441,12 +444,14 @@ async def generate_feedback(
             feedback_result = bundle["feedback_text"]
             video_url = bundle.get("video_url")
             clip_id = bundle.get("clip_id")
-            video_status = "completed" if video_url else "failed"
+            video_status = bundle.get("video_status") or ("completed" if video_url else "failed")
         else:
             generator = FeedbackGenerator(config, use_video=False)
             feedback_result = await asyncio.to_thread(generator.generate_feedback)
             video_url = None
             if data.use_video and not DID_API_KEY:
+                video_status = "skipped"
+            elif data.use_video and DID_API_KEY and not DID_CLIPS_ENABLED:
                 video_status = "skipped"
             else:
                 video_status = "not_used"
@@ -576,7 +581,7 @@ async def generate_feedback_ai(content: FeedbackRequest):
             )
         )
         
-        use_video = content.use_video and bool(DID_API_KEY)
+        use_video = content.use_video and bool(DID_API_KEY) and DID_CLIPS_ENABLED
         if use_video:
             generator = FeedbackGenerator(config, use_video=True)
             result = generator.generate_feedback_with_video()
@@ -584,6 +589,7 @@ async def generate_feedback_ai(content: FeedbackRequest):
                 "feedback": result["feedback_text"],
                 "video_url": result.get("video_url"),
                 "clip_id": result.get("clip_id"),
+                "video_status": result.get("video_status"),
                 "has_video": bool(result.get("video_url")),
             }
 

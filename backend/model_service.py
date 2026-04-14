@@ -64,6 +64,22 @@ OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
 DID_API_KEY = os.getenv("DID_API_KEY") or None
 DID_BASE_URL = os.getenv("DID_BASE_URL", "https://api.d-id.com").rstrip("/")
 DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")
+# Set to false on hosts where the D-ID key has no Clips write access (403 clips:write).
+DID_CLIPS_ENABLED = os.getenv("DID_CLIPS_ENABLED", "true").strip().lower() in ("1", "true", "yes")
+
+# After a 403 clips:write on this worker, skip further Clips POSTs until restart.
+_DID_CLIPS_PERMISSION_DENIED = False
+
+
+class DIDClipsPermissionDenied(RuntimeError):
+    """Raised when the D-ID API key cannot create Clips (e.g. missing clips:write)."""
+
+
+def _did_clips_permission_denied(status_code: int, body: str) -> bool:
+    if status_code != 403:
+        return False
+    b = (body or "").lower()
+    return "permission" in b or "clips:write" in b
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found in environment variables!")
@@ -81,10 +97,17 @@ Ordinary level question requires a solid understanding of fundamental agricultur
         {"question": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation"}.
         {"question": "Suggest three ways in which farmers can control / prevent liver fluke on their farm."}"""
 
-SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner. You provide expert, concise, and syllabus-aligned content."""
+SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner.
+
+When generating exam questions you output only the question as it would appear on the paper: a single stem (the wording students see). Do not add marking guidance, rubrics, or hints about what the answer must contain.
+
+Forbidden in the question text: phrases like "In your answer", "Your answer should", "define X and state Y", bullet or numbered lists of tasks, or step-by-step instructions (e.g. demanding controls, measurements, or experimental write-ups inside the question). Do not pack multiple disconnected tasks into one question.
+
+Allowed: short context if needed, then one clear command (e.g. Explain / Describe / Outline / Account for / Suggest) matching real exam style and the requested level."""
 
 JSON_STRUCTURE_PROMPT = (
     'Output ONLY a single JSON object with this exact shape: {"question": "<exam question text>"}. '
+    "The value must be the question stem only (no preamble). "
     "Escape double quotes inside the question as \\\". No markdown fences, no commentary."
 )
 
@@ -209,6 +232,15 @@ class VideoGenerator:
                 json=payload,
             )
         if r.status_code not in (200, 201):
+            global _DID_CLIPS_PERMISSION_DENIED
+            if _did_clips_permission_denied(r.status_code, r.text):
+                _DID_CLIPS_PERMISSION_DENIED = True
+                logger.warning(
+                    "D-ID returned 403: this API key cannot use Clips (clips:write). "
+                    "Set DID_CLIPS_ENABLED=false to avoid retries, or use a D-ID plan with Clips access. Body: %s",
+                    r.text,
+                )
+                raise DIDClipsPermissionDenied(r.text)
             logger.error("D-ID Video Creation Error (%s): %s", r.status_code, r.text)
             raise RuntimeError(f"Failed to create video: {r.text}")
         data = r.json()
@@ -303,9 +335,12 @@ class QuestionGenerator:
         Returns:
             List of generated questions
         """
-        prompt = f"""Generate exam questions 
+        prompt = f"""Generate one exam question
         on the topic of {self.config.data.topic} for level {self.config.data.level}.
-        Examples: {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
+        Tone and length: match a real Leaving Cert short-answer stem — usually one or two sentences, no checklist of sub-parts.
+
+        Style examples (format only; do not copy wording): {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
+
         Return a json structured response {{"question": "string"}}"""
         questions = []
 
@@ -404,7 +439,7 @@ class FeedbackGenerator:
             key = OPENAI_API_KEY
         self.client = OpenAI(api_key=key)
         self.use_video = use_video
-        if use_video and DID_API_KEY:
+        if use_video and DID_API_KEY and DID_CLIPS_ENABLED and not _DID_CLIPS_PERMISSION_DENIED:
             self.video_generator = VideoGenerator()
         else:
             self.video_generator = None
@@ -416,18 +451,15 @@ class FeedbackGenerator:
         Returns:
             Feedback text from the teacher
         """
-        user_content = f"""
-        You are tutoring a student right now. 
-        Question: {self.config.data.question}
-        Student Answer: {self.config.data.answer}
-        Level: {self.config.data.level}
-        
-        Provide feedback (as a teacher talking to a student) on accuracy and syllabus alignment. Give feedback:
-        - If there is anything incorrect in the answer, if yes what
-        - How to improve 
+        user_content = f"""Question:
+{self.config.data.question}
 
-        Keep it concise (2-3 sentences max). No suggestions at the end, all text must be the same font, no emojis.
-        """
+Student answer:
+{self.config.data.answer}
+
+Level: {self.config.data.level}
+
+Reply as a teacher in at most three short sentences. Comment only on what the student actually wrote: whether it addresses the question, the main gap or mistake if any, and one concrete way to improve. Do not give a full model answer, marking scheme, or bullet list. Do not restate the question as a checklist of tasks (no "you must define… / outline an experiment…"). If the answer is off-topic, nonsense, or empty, say that briefly and ask them to answer the question in their own words — do not teach the entire topic."""
         
         try:
             # Short answer in prompt, but reasoning models can spend most of the budget before `content` appears.
@@ -437,12 +469,16 @@ class FeedbackGenerator:
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a strict but helpful Agricultural Science teacher and Leaving Certificate examiner."
+                        "content": (
+                            "You are a strict but helpful Leaving Certificate Agricultural Science teacher. "
+                            "You write at most three short sentences of feedback. No bullet points or numbered lists. "
+                            "Never output an implied marking scheme or full sample answer."
+                        ),
                     },
                     {"role": "user", "content": user_content}
                 ],
                 temperature=0.7,
-                max_output_tokens=1200,
+                max_output_tokens=400,
             )
 
             choice = response.choices[0]
@@ -456,7 +492,7 @@ class FeedbackGenerator:
                 )
                 return "Error generating feedback. Please try again."
 
-            print(f"Generated feedback: {feedback_text}")
+            logger.info("Generated feedback: %s", feedback_text[:200] + ("…" if len(feedback_text) > 200 else ""))
             return feedback_text
 
         except Exception as e:
@@ -480,10 +516,18 @@ class FeedbackGenerator:
             "feedback_text": feedback_text,
             "video_url": None,
             "clip_id": None,
+            "video_status": "not_used",
         }
 
         if not self.use_video or not self.video_generator:
-            logger.info("Video generation skipped (disabled or no DID_API_KEY)")
+            if self.use_video and not DID_CLIPS_ENABLED:
+                result["video_status"] = "skipped"
+                logger.info("D-ID Clips disabled via DID_CLIPS_ENABLED=false")
+            elif self.use_video and _DID_CLIPS_PERMISSION_DENIED:
+                result["video_status"] = "skipped"
+                logger.info("D-ID Clips skipped (no clips:write permission on this key)")
+            else:
+                logger.info("Video generation skipped (disabled or no DID_API_KEY)")
             return result
 
         try:
@@ -493,8 +537,12 @@ class FeedbackGenerator:
             logger.info("Waiting for video %s to render...", clip_id)
             video_url = self.video_generator.wait_for_video(clip_id, max_wait=60)
             result["video_url"] = video_url
+            result["video_status"] = "completed" if video_url else "failed"
+        except DIDClipsPermissionDenied:
+            result["video_status"] = "skipped"
         except Exception as e:
             logger.error("D-ID video generation failed: %s", e)
+            result["video_status"] = "failed"
 
         return result
 
