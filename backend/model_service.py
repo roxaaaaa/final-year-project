@@ -1,4 +1,6 @@
 import os
+import base64
+from pathlib import Path
 from typing import Optional, Literal, List
 import time
 import requests
@@ -24,6 +26,40 @@ OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
 DID_API_KEY = os.getenv("DID_API_KEY")
 DID_BASE_URL = "https://api.d-id.com"
 DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")  # Default: Amber
+DID_CLIPS_ENABLED = os.getenv("DID_CLIPS_ENABLED", "true").strip().lower() in ("1", "true", "yes")
+_DID_CLIPS_PERMISSION_DENIED = False
+
+
+class DIDClipsPermissionDenied(Exception):
+    """D-ID account/key cannot create Clips (HTTP 403 clips:write)."""
+
+
+def _did_clips_permission_denied(status_code: int, body: str) -> bool:
+    if status_code != 403:
+        return False
+    b = (body or "").lower()
+    return "permission" in b or "clips:write" in b
+
+
+# #region agent log
+def _agent_ndjson(hypothesis_id: str, location: str, message: str, data: dict) -> None:
+    try:
+        log_path = Path(__file__).resolve().parent.parent / "debug-08d5b9.log"
+        payload = {
+            "sessionId": "08d5b9",
+            "hypothesisId": hypothesis_id,
+            "location": location,
+            "message": message,
+            "data": data,
+            "timestamp": int(time.time() * 1000),
+        }
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(payload, default=str) + "\n")
+    except Exception:
+        pass
+
+
+# #endregion
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found in environment variables!")
@@ -76,16 +112,18 @@ class VideoGenerator:
     Documentation: https://docs.d-id.com/docs/v3-pro-avatar-quickstart.md
     """
     
-    def __init__(self, api_key: str = DID_API_KEY, base_url: str = DID_BASE_URL):
+    def __init__(self, api_key: Optional[str] = None, base_url: str = DID_BASE_URL):
         """Initialize D-ID client with API credentials."""
-        if not api_key:
+        key = api_key or DID_API_KEY
+        if not key:
             raise ValueError("DID_API_KEY not found in environment variables!")
         
-        self.api_key = api_key
+        self.api_key = key
         self.base_url = base_url
+        token = base64.b64encode(f"{key}:".encode()).decode()
         self.headers = {
-            "Authorization": f"Basic {api_key}",
-            "Content-Type": "application/json"
+            "Authorization": f"Basic {token}",
+            "Content-Type": "application/json",
         }
     
     def create_video(self, script: str, presenter_id: str = DID_PRESENTER_ID) -> str:
@@ -111,10 +149,35 @@ class VideoGenerator:
             response = requests.post(
                 f"{self.base_url}/clips",
                 headers=self.headers,
-                json=payload
+                json=payload,
+                timeout=60,
             )
-            
-            if response.status_code != 201:
+            global _DID_CLIPS_PERMISSION_DENIED
+            _agent_ndjson(
+                "H2",
+                "model_service:VideoGenerator.create_video",
+                "clips_POST_response",
+                {
+                    "status_code": response.status_code,
+                    "body_prefix": (response.text or "")[:200],
+                    "permission_denied_flag_before": _DID_CLIPS_PERMISSION_DENIED,
+                },
+            )
+            if response.status_code not in (200, 201):
+                if _did_clips_permission_denied(response.status_code, response.text):
+                    _DID_CLIPS_PERMISSION_DENIED = True
+                    _agent_ndjson(
+                        "H1",
+                        "model_service:VideoGenerator.create_video",
+                        "clips_write_403_set_skip",
+                        {"_DID_CLIPS_PERMISSION_DENIED": True},
+                    )
+                    logger.warning(
+                        "D-ID returned 403: this API key cannot use Clips (clips:write). "
+                        "Set DID_CLIPS_ENABLED=false to avoid retries, or use a D-ID plan with Clips access. Body: %s",
+                        (response.text or "")[:500],
+                    )
+                    raise DIDClipsPermissionDenied(response.text)
                 logger.error(f"D-ID Video Creation Error: {response.text}")
                 raise Exception(f"Failed to create video: {response.text}")
             
@@ -122,7 +185,9 @@ class VideoGenerator:
             clip_id = data.get("id")
             logger.info(f"Video created with ID: {clip_id}")
             return clip_id
-            
+
+        except DIDClipsPermissionDenied:
+            raise
         except Exception as e:
             logger.error(f"D-ID Video Creation Error: {e}")
             raise
@@ -274,7 +339,7 @@ class FeedbackGenerator:
     
     def __init__(self, config: Optional[AppConfig] = None, use_video: bool = True):
         """
-        Initialize the FeedbackGenerator.
+        Initialize the FeedbackGenerator.3+
         
         Args:
             config: AppConfig object with model and data settings
@@ -291,9 +356,22 @@ class FeedbackGenerator:
         
         self.client = OpenAI(api_key=self.config.model.api_key or OPENAI_API_KEY)
         self.use_video = use_video
-        
-        if use_video:
+        if use_video and DID_API_KEY and DID_CLIPS_ENABLED and not _DID_CLIPS_PERMISSION_DENIED:
             self.video_generator = VideoGenerator()
+        else:
+            self.video_generator = None
+        _agent_ndjson(
+            "H4",
+            "model_service:FeedbackGenerator.__init__",
+            "init_state",
+            {
+                "use_video": use_video,
+                "has_did_key": bool(DID_API_KEY),
+                "DID_CLIPS_ENABLED": DID_CLIPS_ENABLED,
+                "permission_denied_flag": _DID_CLIPS_PERMISSION_DENIED,
+                "has_video_generator": self.video_generator is not None,
+            },
+        )
 
     def generate_feedback(self) -> str:
         """
@@ -329,7 +407,7 @@ class FeedbackGenerator:
                 max_tokens=60
             )
             
-            feedback_text = response.choices[0].message.content
+            feedback_text = response.choices[0].message.content or ""
             print(f"Generated feedback: {feedback_text}")
             return feedback_text
             
@@ -353,13 +431,44 @@ class FeedbackGenerator:
         result = {
             "feedback_text": feedback_text,
             "video_url": None,
-            "clip_id": None
+            "clip_id": None,
+            "video_status": "not_used",
         }
-        
+        _agent_ndjson(
+            "H3",
+            "model_service:FeedbackGenerator.generate_feedback_with_video",
+            "after_feedback_text",
+            {
+                "use_video": self.use_video,
+                "has_did_key": bool(DID_API_KEY),
+                "DID_CLIPS_ENABLED": DID_CLIPS_ENABLED,
+                "permission_denied_flag": _DID_CLIPS_PERMISSION_DENIED,
+                "has_video_generator": self.video_generator is not None,
+            },
+        )
+
         if not self.use_video or not DID_API_KEY:
             logger.info("Video generation skipped (disabled or no API key)")
             return result
-        
+        if not DID_CLIPS_ENABLED:
+            result["video_status"] = "skipped"
+            _agent_ndjson("H3", "model_service:generate_feedback_with_video", "skip_clips_env_disabled", {})
+            logger.info("D-ID Clips skipped (DID_CLIPS_ENABLED=false)")
+            return result
+        if _DID_CLIPS_PERMISSION_DENIED or self.video_generator is None:
+            result["video_status"] = "skipped"
+            _agent_ndjson(
+                "H1",
+                "model_service:generate_feedback_with_video",
+                "skip_clips_no_generator_or_prior_403",
+                {
+                    "permission_denied_flag": _DID_CLIPS_PERMISSION_DENIED,
+                    "video_generator_is_none": self.video_generator is None,
+                },
+            )
+            logger.info("D-ID Clips skipped (no generator or prior clips:write denial)")
+            return result
+
         try:
             # Create D-ID video with the feedback text
             logger.info("Creating D-ID avatar video...")
@@ -370,14 +479,20 @@ class FeedbackGenerator:
             logger.info(f"Waiting for video {clip_id} to render...")
             video_url = self.video_generator.wait_for_video(clip_id, max_wait=60)
             result["video_url"] = video_url
+            result["video_status"] = "completed" if video_url else "failed"
             
             if video_url:
                 logger.info(f"Video ready: {video_url}")
             else:
                 logger.warning("Video creation timed out or failed")
             
+        except DIDClipsPermissionDenied:
+            result["video_status"] = "skipped"
+            _agent_ndjson("H1", "model_service:generate_feedback_with_video", "caught_DIDClipsPermissionDenied", {})
+            logger.info("Returning feedback text without video (Clips permission denied)")
         except Exception as e:
             logger.error(f"Video generation error: {e}")
+            result["video_status"] = "failed"
             logger.info("Returning feedback text without video")
         
         return result

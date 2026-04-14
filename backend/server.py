@@ -9,8 +9,14 @@ from fastapi.middleware.cors import CORSMiddleware
 import logging
 import os
 from model_service import (
-    AppConfig, GenerationConfig, ModelConfig, QuestionGenerator, 
-    DataConfig, FeedbackGenerator, VideoGenerator
+    AppConfig,
+    GenerationConfig,
+    ModelConfig,
+    QuestionGenerator,
+    DataConfig,
+    FeedbackGenerator,
+    VideoGenerator,
+    DID_CLIPS_ENABLED,
 )
 
 load_dotenv()
@@ -89,7 +95,8 @@ async def root():
     return {
         "status": "Server is running",
         "service": "Agricultural Science Exam Assistant",
-        "d_id_configured": bool(DID_API_KEY)
+        "d_id_configured": bool(DID_API_KEY),
+        "d_id_clips_enabled": DID_CLIPS_ENABLED,
     }
 
 
@@ -100,7 +107,8 @@ async def health():
         "status": "healthy",
         "ollama_available": bool(OLLAMA_BASE_URL),
         "openai_available": bool(CHAGPT_MODEL),
-        "d_id_available": bool(DID_API_KEY)
+        "d_id_available": bool(DID_API_KEY),
+        "d_id_clips_enabled": DID_CLIPS_ENABLED,
     }
 
 
@@ -169,8 +177,8 @@ async def generate_feedback(content: FeedbackRequest):
             )
         )
         
-        # Check if video is requested and D-ID is configured
-        use_video = content.use_video and bool(DID_API_KEY)
+        # Check if video is requested and D-ID Clips are allowed for this deployment
+        use_video = content.use_video and bool(DID_API_KEY) and DID_CLIPS_ENABLED
         
         if use_video:
             generator = FeedbackGenerator(config, use_video=True)
