@@ -50,6 +50,14 @@ def _cors_allow_origins() -> list[str]:
     return list(origins)
 
 
+def _session_cookie_https_only() -> bool:
+    """Secure session cookies on HTTPS hosts. Render sets RENDER=true; override with SESSION_COOKIE_SECURE=0."""
+    explicit = os.getenv("SESSION_COOKIE_SECURE")
+    if explicit is not None:
+        return explicit.lower() in ("1", "true", "yes")
+    return os.getenv("RENDER", "").lower() == "true"
+
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -92,7 +100,7 @@ app.add_middleware(
     SessionMiddleware,
     secret_key=os.getenv("SESSION_SECRET", "another-super-secret-key"),
     same_site="lax",
-    https_only=False,
+    https_only=_session_cookie_https_only(),
 )
 
 from routers.auth import router as auth_router
@@ -235,6 +243,8 @@ async def generate_questions(
     except ValueError as e:
         logger.error(f"Validation error: {e}")
         raise HTTPException(status_code=400, detail=str(e))
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error generating questions: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -625,5 +635,9 @@ async def get_presenters():
 # Run the app
 
 if __name__ == "__main__":
+    import os
+
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+    port = int(os.environ.get("PORT", "8000"))
+    uvicorn.run(app, host="0.0.0.0", port=port)

@@ -27,7 +27,15 @@ def _model_uses_max_completion_tokens(model: str) -> bool:
     return False
 
 
-def _openai_chat_completion(client: OpenAI, *, model: str, messages: list, temperature: Optional[float], max_output_tokens: int):
+def _openai_chat_completion(
+    client: OpenAI,
+    *,
+    model: str,
+    messages: list,
+    temperature: Optional[float],
+    max_output_tokens: int,
+    response_format: Optional[dict] = None,
+):
     """
     Route `max_tokens` vs `max_completion_tokens` by model. Reasoning models also need a
     large enough completion budget or `message.content` can be empty (tokens used internally).
@@ -35,6 +43,8 @@ def _openai_chat_completion(client: OpenAI, *, model: str, messages: list, tempe
     kw: dict = {"model": model, "messages": messages}
     if temperature is not None:
         kw["temperature"] = temperature
+    if response_format is not None:
+        kw["response_format"] = response_format
     if _model_uses_max_completion_tokens(model):
         return client.chat.completions.create(**kw, max_completion_tokens=max_output_tokens)
     try:
@@ -73,7 +83,70 @@ Ordinary level question requires a solid understanding of fundamental agricultur
 
 SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner. You provide expert, concise, and syllabus-aligned content."""
 
-JSON_STRUCTURE_PROMPT = "Output ONLY a JSON object. Do not include any conversational text or reasoning."
+JSON_STRUCTURE_PROMPT = (
+    'Output ONLY a single JSON object with this exact shape: {"question": "<exam question text>"}. '
+    "Escape double quotes inside the question as \\\". No markdown fences, no commentary."
+)
+
+
+def _strip_markdown_json_fence(text: str) -> str:
+    t = text.strip()
+    if not t.startswith("```"):
+        return t
+    lines = t.split("\n")
+    if lines and lines[0].startswith("```"):
+        lines = lines[1:]
+    while lines and lines[-1].strip().startswith("```"):
+        lines.pop()
+    return "\n".join(lines).strip()
+
+
+def _extract_balanced_json_object(text: str) -> Optional[str]:
+    """Return the first top-level {...} span, respecting string literals."""
+    start = text.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    in_string = False
+    escape = False
+    for i in range(start, len(text)):
+        ch = text[i]
+        if in_string:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+        else:
+            if ch == '"':
+                in_string = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return text[start : i + 1]
+    return None
+
+
+def _parse_question_json_from_content(raw: str) -> Optional[str]:
+    """Parse model output into a single question string."""
+    if not raw or not raw.strip():
+        return None
+    stripped = _strip_markdown_json_fence(raw)
+    blob = _extract_balanced_json_object(stripped)
+    if blob is None:
+        blob = stripped
+    try:
+        data = json.loads(blob)
+    except json.JSONDecodeError:
+        return None
+    q = data.get("question")
+    if isinstance(q, str) and q.strip():
+        return q.strip()
+    return None
+
 
 @dataclass
 class ModelConfig:
@@ -84,7 +157,8 @@ class ModelConfig:
 @dataclass
 class GenerationConfig:
     temperature: float = 0.4
-    max_tokens: int = 250
+    # Reasoning-style models can consume most of a small budget before visible JSON; keep this comfortably high.
+    max_tokens: int = 1200
     num_questions: int = 3
 
 @dataclass
@@ -263,23 +337,42 @@ class QuestionGenerator:
                 if not self.use_ollama:
                     assert self.openai_client is not None
                     openai_model = self._openai_model_name or self.config.model.model_name
-                    response = _openai_chat_completion(
-                        self.openai_client,
-                        model=openai_model,
-                        messages=messages,
-                        temperature=self.config.generation.temperature,
-                        max_output_tokens=self.config.generation.max_tokens,
-                    )
+                    json_mode: Optional[dict] = {"type": "json_object"}
+                    try:
+                        response = _openai_chat_completion(
+                            self.openai_client,
+                            model=openai_model,
+                            messages=messages,
+                            temperature=self.config.generation.temperature,
+                            max_output_tokens=self.config.generation.max_tokens,
+                            response_format=json_mode,
+                        )
+                    except Exception as api_err:
+                        err_s = str(api_err).lower()
+                        if "response_format" in err_s or "json_object" in err_s:
+                            logger.warning(
+                                "JSON response_format not supported for %s (%s); retrying without it.",
+                                openai_model,
+                                api_err,
+                            )
+                            response = _openai_chat_completion(
+                                self.openai_client,
+                                model=openai_model,
+                                messages=messages,
+                                temperature=self.config.generation.temperature,
+                                max_output_tokens=self.config.generation.max_tokens,
+                                response_format=None,
+                            )
+                        else:
+                            raise
                     content = (response.choices[0].message.content or "") if response.choices else ""
 
                 if content:
-                    data = json.loads(content)
-                    question_text = data.get("question")
+                    question_text = _parse_question_json_from_content(content)
                     if question_text:
                         questions.append(question_text)
-                        # Question generated successfully
                     else:
-                        logger.error("Question does not exist in response")
+                        logger.error("Could not parse question JSON from model output (first 200 chars): %r", content[:200])
             except Exception as e:
                 logger.error(f"AI Error: {e}")
         
