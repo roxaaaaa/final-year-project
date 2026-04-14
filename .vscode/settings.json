@@ -6,5 +6,9 @@
   "python.analysis.typeCheckingMode": "basic",
   "pyre.sourceDirectory": "${workspaceFolder}/backend",
   "python.venvPath": "${workspaceFolder}",
-  "python.venv": ".venv"
+  "python.venv": ".venv",
+  "cursorpyright.analysis.extraPaths": [
+    "${workspaceFolder}/backend"
+  ],
+  "cursorpyright.analysis.typeCheckingMode": "basic"
 }
