@@ -37,6 +37,9 @@ DID_API_KEY=your-d-id-api-key
 
 
 # Google OAuth Configuration
+# Cloud Console → Credentials → Web client:
+#   Authorized redirect URIs: https://<your-render-host>/auth/google/callback
+#   Authorized JavaScript origins: https://<your-vercel-host> (and http://localhost:3000 for local UI)
 
 GOOGLE_CLIENT_ID=your-google-oauth-client-id
 
@@ -46,9 +49,18 @@ JWT_SECRET=your-jwt-secret-key
 
 SESSION_SECRET=your-session-secret-key
 
+# Browser origin for CORS and post-Google-OAuth redirect (no trailing slash).
+# Local:
 FRONTEND_URL=http://localhost:3000
+# Production (Render backend + Vercel UI example): set only in Render env, not committed.
+# FRONTEND_URL=https://your-app.vercel.app
 
+# Neon / Postgres async URL (required on Render). Use postgresql+asyncpg:// not postgresql://
+# Pooler host: database.py disables asyncpg statement cache for PgBouncer compatibility.
+# DATABASE_URL=postgresql+asyncpg://USER:PASSWORD@ep-xxx-pooler.region.aws.neon.tech/neondb?sslmode=require
 
+# Optional: force Secure session cookies when not on Render (default: Secure if RENDER=true)
+# SESSION_COOKIE_SECURE=1
 
 # Server Settings
 
