@@ -1,9 +1,4 @@
 import os
-<<<<<<< HEAD
-import base64
-from typing import Optional, Literal, List
-=======
->>>>>>> 913fca97753399378db81e27fa8f383546712f52
 import time
 import base64
 from typing import Optional, Literal, List, Any
@@ -66,31 +61,18 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 CHATGPT_MODEL = os.getenv("CHATGPT_MODEL", "gpt-4o-mini")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
 
-<<<<<<< HEAD
 # D-ID Configuration
-DID_API_KEY = os.getenv("DID_API_KEY")
-DID_BASE_URL = "https://api.d-id.com"
-DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")  # Default: Amber
-DID_CLIPS_ENABLED = os.getenv("DID_CLIPS_ENABLED", "true").strip().lower() in ("1", "true", "yes")
-_DID_CLIPS_PERMISSION_DENIED = False
-
-
-class DIDClipsPermissionDenied(Exception):
-    """D-ID account/key cannot create Clips (HTTP 403 clips:write)."""
-=======
 DID_API_KEY = os.getenv("DID_API_KEY") or None
 DID_BASE_URL = os.getenv("DID_BASE_URL", "https://api.d-id.com").rstrip("/")
 DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")
 # Set to false on hosts where the D-ID key has no Clips write access (403 clips:write).
 DID_CLIPS_ENABLED = os.getenv("DID_CLIPS_ENABLED", "true").strip().lower() in ("1", "true", "yes")
-
 # After a 403 clips:write on this worker, skip further Clips POSTs until restart.
 _DID_CLIPS_PERMISSION_DENIED = False
 
 
 class DIDClipsPermissionDenied(RuntimeError):
     """Raised when the D-ID API key cannot create Clips (e.g. missing clips:write)."""
->>>>>>> 913fca97753399378db81e27fa8f383546712f52
 
 
 def _did_clips_permission_denied(status_code: int, body: str) -> bool:
@@ -98,15 +80,12 @@ def _did_clips_permission_denied(status_code: int, body: str) -> bool:
         return False
     b = (body or "").lower()
     return "permission" in b or "clips:write" in b
-<<<<<<< HEAD
 
 
 def did_clips_write_permission_denied() -> bool:
     """True after D-ID returned 403 clips:write in this process (read each call; do not cache the bool)."""
     return _DID_CLIPS_PERMISSION_DENIED
 
-=======
->>>>>>> 913fca97753399378db81e27fa8f383546712f52
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found in environment variables!")
