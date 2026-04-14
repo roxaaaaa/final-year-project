@@ -1,5 +1,10 @@
 {
-    "python.analysis.extraPaths": [
-        "./scripts/pdf-extraction"
-    ]
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/backend"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "pyre.sourceDirectory": "${workspaceFolder}/backend",
+  "python.venvPath": "${workspaceFolder}",
+  "python.venv": ".venv"
 }

@@ -1,3 +1,5 @@
-# The URL of the FastAPI backend
-# Use http://127.0.0.1:8000 for local development
+# The URL of the FastAPI backend (no trailing slash).
+# Local:
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+# Production (Vercel → Render example): set in Vercel Project Settings → Environment Variables, then redeploy.
+# NEXT_PUBLIC_API_URL=https://your-service.onrender.com

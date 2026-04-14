@@ -7,9 +7,13 @@ __pycache__/
 out/
 node_modules/
 
-# Local SQLite databases (environment-specific)
-backend/agriexam.db
-backend/pytest_agriexam.db
+# Local artifacts
+*.log
+*.db
+backend/pytest_agriexam.db*
 
-# Agent/debug session logs
-debug-*.log
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml

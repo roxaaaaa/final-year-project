@@ -1,12 +1,18 @@
 import os
+<<<<<<< HEAD
 import base64
 from typing import Optional, Literal, List
+=======
+>>>>>>> 913fca97753399378db81e27fa8f383546712f52
 import time
-import requests
+import base64
+from typing import Optional, Literal, List, Any
 
+import httpx
 from dotenv import load_dotenv
 import json
-from openai import Client, OpenAI
+from openai import OpenAI
+import ollama
 import logging
 from dataclasses import dataclass
 
@@ -15,12 +21,52 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 
+
+def _model_uses_max_completion_tokens(model: str) -> bool:
+    """Newer / reasoning-style chat models reject `max_tokens` and use `max_completion_tokens`."""
+    m = (model or "").lower()
+    if m.startswith(("o1", "o3", "o4")):
+        return True
+    if "gpt-5" in m:
+        return True
+    return False
+
+
+def _openai_chat_completion(
+    client: OpenAI,
+    *,
+    model: str,
+    messages: list,
+    temperature: Optional[float],
+    max_output_tokens: int,
+    response_format: Optional[dict] = None,
+):
+    """
+    Route `max_tokens` vs `max_completion_tokens` by model. Reasoning models also need a
+    large enough completion budget or `message.content` can be empty (tokens used internally).
+    """
+    kw: dict = {"model": model, "messages": messages}
+    if temperature is not None:
+        kw["temperature"] = temperature
+    if response_format is not None:
+        kw["response_format"] = response_format
+    if _model_uses_max_completion_tokens(model):
+        return client.chat.completions.create(**kw, max_completion_tokens=max_output_tokens)
+    try:
+        return client.chat.completions.create(**kw, max_tokens=max_output_tokens)
+    except Exception as e:
+        err = str(e).lower()
+        if "max_completion_tokens" in err and "max_tokens" in err:
+            return client.chat.completions.create(**kw, max_completion_tokens=max_output_tokens)
+        raise
+
 # Environment Configuration
 MODEL_NAME = os.getenv("MODEL_NAME", "llama3.1:8b")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-CHAGPT_MODEL = os.getenv("CHAGPT_MODEL", "gpt-4o-mini")
+CHATGPT_MODEL = os.getenv("CHATGPT_MODEL", "gpt-4o-mini")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
 
+<<<<<<< HEAD
 # D-ID Configuration
 DID_API_KEY = os.getenv("DID_API_KEY")
 DID_BASE_URL = "https://api.d-id.com"
@@ -31,6 +77,20 @@ _DID_CLIPS_PERMISSION_DENIED = False
 
 class DIDClipsPermissionDenied(Exception):
     """D-ID account/key cannot create Clips (HTTP 403 clips:write)."""
+=======
+DID_API_KEY = os.getenv("DID_API_KEY") or None
+DID_BASE_URL = os.getenv("DID_BASE_URL", "https://api.d-id.com").rstrip("/")
+DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")
+# Set to false on hosts where the D-ID key has no Clips write access (403 clips:write).
+DID_CLIPS_ENABLED = os.getenv("DID_CLIPS_ENABLED", "true").strip().lower() in ("1", "true", "yes")
+
+# After a 403 clips:write on this worker, skip further Clips POSTs until restart.
+_DID_CLIPS_PERMISSION_DENIED = False
+
+
+class DIDClipsPermissionDenied(RuntimeError):
+    """Raised when the D-ID API key cannot create Clips (e.g. missing clips:write)."""
+>>>>>>> 913fca97753399378db81e27fa8f383546712f52
 
 
 def _did_clips_permission_denied(status_code: int, body: str) -> bool:
@@ -38,12 +98,15 @@ def _did_clips_permission_denied(status_code: int, body: str) -> bool:
         return False
     b = (body or "").lower()
     return "permission" in b or "clips:write" in b
+<<<<<<< HEAD
 
 
 def did_clips_write_permission_denied() -> bool:
     """True after D-ID returned 403 clips:write in this process (read each call; do not cache the bool)."""
     return _DID_CLIPS_PERMISSION_DENIED
 
+=======
+>>>>>>> 913fca97753399378db81e27fa8f383546712f52
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found in environment variables!")
@@ -61,9 +124,79 @@ Ordinary level question requires a solid understanding of fundamental agricultur
         {"question": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation"}.
         {"question": "Suggest three ways in which farmers can control / prevent liver fluke on their farm."}"""
 
-SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner. You provide expert, concise, and syllabus-aligned content."""
+SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner.
 
-JSON_STRUCTURE_PROMPT = "Output ONLY a JSON object. Do not include any conversational text or reasoning."
+When generating exam questions you output only the question as it would appear on the paper: a single stem (the wording students see). Do not add marking guidance, rubrics, or hints about what the answer must contain.
+
+Forbidden in the question text: phrases like "In your answer", "Your answer should", "define X and state Y", bullet or numbered lists of tasks, or step-by-step instructions (e.g. demanding controls, measurements, or experimental write-ups inside the question). Do not pack multiple disconnected tasks into one question.
+
+Allowed: short context if needed, then one clear command (e.g. Explain / Describe / Outline / Account for / Suggest) matching real exam style and the requested level."""
+
+JSON_STRUCTURE_PROMPT = (
+    'Output ONLY a single JSON object with this exact shape: {"question": "<exam question text>"}. '
+    "The value must be the question stem only (no preamble). "
+    "Escape double quotes inside the question as \\\". No markdown fences, no commentary."
+)
+
+
+def _strip_markdown_json_fence(text: str) -> str:
+    t = text.strip()
+    if not t.startswith("```"):
+        return t
+    lines = t.split("\n")
+    if lines and lines[0].startswith("```"):
+        lines = lines[1:]
+    while lines and lines[-1].strip().startswith("```"):
+        lines.pop()
+    return "\n".join(lines).strip()
+
+
+def _extract_balanced_json_object(text: str) -> Optional[str]:
+    """Return the first top-level {...} span, respecting string literals."""
+    start = text.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    in_string = False
+    escape = False
+    for i in range(start, len(text)):
+        ch = text[i]
+        if in_string:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+        else:
+            if ch == '"':
+                in_string = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return text[start : i + 1]
+    return None
+
+
+def _parse_question_json_from_content(raw: str) -> Optional[str]:
+    """Parse model output into a single question string."""
+    if not raw or not raw.strip():
+        return None
+    stripped = _strip_markdown_json_fence(raw)
+    blob = _extract_balanced_json_object(stripped)
+    if blob is None:
+        blob = stripped
+    try:
+        data = json.loads(blob)
+    except json.JSONDecodeError:
+        return None
+    q = data.get("question")
+    if isinstance(q, str) and q.strip():
+        return q.strip()
+    return None
+
 
 @dataclass
 class ModelConfig:
@@ -74,7 +207,8 @@ class ModelConfig:
 @dataclass
 class GenerationConfig:
     temperature: float = 0.4
-    max_tokens: int = 250
+    # Reasoning-style models can consume most of a small budget before visible JSON; keep this comfortably high.
+    max_tokens: int = 1200
     num_questions: int = 3
 
 @dataclass
@@ -90,156 +224,95 @@ class AppConfig:
     data: DataConfig
     generation: Optional[GenerationConfig]
 
+def _did_auth_headers(api_key: str) -> dict:
+    """D-ID Basic auth: base64(api_key:)."""
+    token = base64.b64encode(f"{api_key}:".encode()).decode()
+    return {
+        "Authorization": f"Basic {token}",
+        "Content-Type": "application/json",
+    }
+
+
 class VideoGenerator:
     """
     Handles video generation using D-ID's Clips API.
     Documentation: https://docs.d-id.com/docs/v3-pro-avatar-quickstart.md
     """
-    
-    def __init__(self, api_key: Optional[str] = None, base_url: str = DID_BASE_URL):
-        """Initialize D-ID client with API credentials."""
+
+    def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None):
         key = api_key or DID_API_KEY
         if not key:
             raise ValueError("DID_API_KEY not found in environment variables!")
-        
         self.api_key = key
-        self.base_url = base_url
-        # base64(user:password); env is often already "user:secret" — avoid an extra trailing ":".
-        credential = key if ":" in key else f"{key}:"
-        token = base64.b64encode(credential.encode()).decode()
-        self.headers = {
-            "Authorization": f"Basic {token}",
-            "Content-Type": "application/json",
-        }
-    
+        self.base_url = (base_url or DID_BASE_URL).rstrip("/")
+        self.headers = _did_auth_headers(self.api_key)
+
     def create_video(self, script: str, presenter_id: str = DID_PRESENTER_ID) -> str:
-        """
-        Create a video with D-ID avatar speaking the feedback.
-        
-        Args:
-            script: The text the avatar should speak
-            presenter_id: ID of the avatar presenter (default: Amber)
-        
-        Returns:
-            clip_id: The ID of the created video clip
-        """
-        try:
-            payload = {
-                "presenter_id": presenter_id,
-                "script": {
-                    "type": "text",
-                    "input": script
-                }
-            }
-            
-            response = requests.post(
+        payload = {
+            "presenter_id": presenter_id,
+            "script": {"type": "text", "input": script},
+        }
+        with httpx.Client(timeout=60.0) as client:
+            r = client.post(
                 f"{self.base_url}/clips",
                 headers=self.headers,
                 json=payload,
-                timeout=60,
             )
+        if r.status_code not in (200, 201):
             global _DID_CLIPS_PERMISSION_DENIED
-            if response.status_code not in (200, 201):
-                if _did_clips_permission_denied(response.status_code, response.text):
-                    _DID_CLIPS_PERMISSION_DENIED = True
-                    logger.warning(
-                        "D-ID returned 403: this API key cannot use Clips (clips:write). "
-                        "Set DID_CLIPS_ENABLED=false to avoid retries, or use a D-ID plan with Clips access. Body: %s",
-                        (response.text or "")[:500],
-                    )
-                    raise DIDClipsPermissionDenied(response.text)
-                logger.error(f"D-ID Video Creation Error: {response.text}")
-                raise Exception(f"Failed to create video: {response.text}")
-            
-            data = response.json()
-            clip_id = data.get("id")
-            logger.info(f"Video created with ID: {clip_id}")
-            return clip_id
+            if _did_clips_permission_denied(r.status_code, r.text):
+                _DID_CLIPS_PERMISSION_DENIED = True
+                logger.warning(
+                    "D-ID returned 403: this API key cannot use Clips (clips:write). "
+                    "Set DID_CLIPS_ENABLED=false to avoid retries, or use a D-ID plan with Clips access. Body: %s",
+                    r.text,
+                )
+                raise DIDClipsPermissionDenied(r.text)
+            logger.error("D-ID Video Creation Error (%s): %s", r.status_code, r.text)
+            raise RuntimeError(f"Failed to create video: {r.text}")
+        data = r.json()
+        clip_id = data.get("id")
+        logger.info("Video created with ID: %s", clip_id)
+        return clip_id
 
-        except DIDClipsPermissionDenied:
-            raise
-        except Exception as e:
-            logger.error(f"D-ID Video Creation Error: {e}")
-            raise
-    
-    def get_video_status(self, clip_id: str) -> dict:
-        """
-        Check the status of a video clip.
-        
-        Args:
-            clip_id: The ID of the video clip
-        
-        Returns:
-            dict: Status information including result_url when ready
-        """
-        try:
-            response = requests.get(
-                f"{self.base_url}/clips/{clip_id}",
-                headers=self.headers
-            )
-            
-            if response.status_code != 200:
-                logger.error(f"D-ID Status Check Error: {response.text}")
-                raise Exception(f"Failed to get status: {response.text}")
-            
-            return response.json()
-            
-        except Exception as e:
-            logger.error(f"D-ID Status Check Error: {e}")
-            raise
-    
+    def get_video_status(self, clip_id: str) -> dict[str, Any]:
+        with httpx.Client(timeout=30.0) as client:
+            r = client.get(f"{self.base_url}/clips/{clip_id}", headers=self.headers)
+        if r.status_code not in (200, 201):
+            logger.error("D-ID Status Check Error (%s): %s", r.status_code, r.text)
+            raise RuntimeError(f"Failed to get status: {r.text}")
+        return r.json()
+
     def wait_for_video(self, clip_id: str, max_wait: int = 60, poll_interval: int = 2) -> Optional[str]:
-        """
-        Poll the API until video is ready and return the result URL.
-        
-        Args:
-            clip_id: The ID of the video clip
-            max_wait: Maximum seconds to wait
-            poll_interval: Seconds between polls
-        
-        Returns:
-            result_url: URL to the completed video, or None if timeout
-        """
-        start_time = time.time()
-        
-        while time.time() - start_time < max_wait:
+        start = time.time()
+        while time.time() - start < max_wait:
             try:
                 status = self.get_video_status(clip_id)
-                
-                if status.get("status") == "done":
+                st = status.get("status")
+                if st == "done":
                     result_url = status.get("result_url")
-                    logger.info(f"Video ready: {result_url}")
+                    logger.info("Video ready: %s", result_url)
                     return result_url
-                elif status.get("status") == "error":
-                    logger.error(f"Video generation failed: {status.get('error')}")
+                if st == "error":
+                    logger.error("Video generation failed: %s", status.get("error"))
                     return None
-                
-                logger.info(f"Video status: {status.get('status')} - waiting...")
-                time.sleep(poll_interval)
-                
+                logger.info("Video status: %s - waiting...", st)
             except Exception as e:
-                logger.error(f"Error checking video status: {e}")
-                time.sleep(poll_interval)
-        
-        logger.warning(f"Video generation timeout after {max_wait}s")
+                logger.error("Error checking video status: %s", e)
+            time.sleep(poll_interval)
+        logger.warning("Video generation timeout after %ss", max_wait)
         return None
-    
-    def get_presenters(self) -> List[dict]:
-        """Get list of available presenters."""
+
+    def get_presenters(self) -> Any:
         try:
-            response = requests.get(
-                f"{self.base_url}/clips/presenters",
-                headers=self.headers
-            )
-            
-            if response.status_code == 200:
-                return response.json()
-            else:
-                logger.error(f"Failed to get presenters: {response.text}")
-                return []
-                
+            with httpx.Client(timeout=30.0) as client:
+                r = client.get(f"{self.base_url}/clips/presenters", headers=self.headers)
+            if r.status_code == 200:
+                return r.json()
+            logger.error("Failed to get presenters: %s", r.text)
+            return []
         except Exception as e:
-            logger.error(f"Error fetching presenters: {e}")
+            logger.error("Error fetching presenters: %s", e)
             return []
 
 
@@ -256,8 +329,31 @@ class QuestionGenerator:
             )
         else:
             self.config = config
-        
-        self.client = Client(base_url=self.config.model.base_url)
+
+        self._openai_model_name: Optional[str] = None
+        # Use ollama client if base_url is provided (local Ollama instance)
+        if self.config.model.base_url:
+            self.use_ollama = True
+            # Extract host from base_url (e.g., http://localhost:11434/v1 -> http://localhost:11434)
+            base_url = self.config.model.base_url.replace("/v1", "")
+            self.ollama_client = ollama.Client(host=base_url)
+            self.openai_client: Optional[OpenAI] = None
+        else:
+            self.use_ollama = False
+            self.openai_client = OpenAI(api_key=OPENAI_API_KEY)
+
+    def _fallback_to_openai(self) -> None:
+        """Switch to OpenAPI after Ollama errors (e.g. daemon not running). Uses CHATGPT_MODEL, not Ollama model ids."""
+        if not OPENAI_API_KEY:
+            raise RuntimeError("Ollama failed and OPENAI_API_KEY is missing; cannot fall back.")
+        logger.warning(
+            "Ollama unavailable; falling back to OpenAI model %s",
+            CHATGPT_MODEL,
+        )
+        self.use_ollama = False
+        self._openai_model_name = CHATGPT_MODEL
+        if self.openai_client is None:
+            self.openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
     def generate_questions(self) -> List[str]:
         """
@@ -266,9 +362,12 @@ class QuestionGenerator:
         Returns:
             List of generated questions
         """
-        prompt = f"""Generate exam questions 
+        prompt = f"""Generate one exam question
         on the topic of {self.config.data.topic} for level {self.config.data.level}.
-        Examples: {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
+        Tone and length: match a real Leaving Cert short-answer stem — usually one or two sentences, no checklist of sub-parts.
+
+        Style examples (format only; do not copy wording): {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
+
         Return a json structured response {{"question": "string"}}"""
         questions = []
 
@@ -277,25 +376,65 @@ class QuestionGenerator:
 
         for _ in range(self.config.generation.num_questions):
             try:
-                response = self.client.chat.completions.create(
-                    model=self.config.model.model_name,
-                    messages=[
-                        {"role": "system", "content": SYSTEM_PROMPT},
-                        {"role": "user", "content": f"{prompt}\n\n{JSON_STRUCTURE_PROMPT}"}
-                    ],
-                    response_format={"type": "json_object"},
-                    temperature=self.config.generation.temperature,
-                    max_tokens=self.config.generation.max_tokens,
-                )
-                content = response.choices[0].message.content
+                messages = [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": f"{prompt}\n\n{JSON_STRUCTURE_PROMPT}"},
+                ]
+                content = ""
+                if self.use_ollama:
+                    try:
+                        response = self.ollama_client.chat(
+                            model=self.config.model.model_name,
+                            messages=messages,
+                            stream=False,
+                        )
+                        content = response.get("message", {}).get("content", "") or ""
+                    except Exception as ollama_err:
+                        logger.warning(
+                            "Ollama request failed (%s); falling back to OpenAI.",
+                            ollama_err,
+                        )
+                        self._fallback_to_openai()
+
+                if not self.use_ollama:
+                    assert self.openai_client is not None
+                    openai_model = self._openai_model_name or self.config.model.model_name
+                    json_mode: Optional[dict] = {"type": "json_object"}
+                    try:
+                        response = _openai_chat_completion(
+                            self.openai_client,
+                            model=openai_model,
+                            messages=messages,
+                            temperature=self.config.generation.temperature,
+                            max_output_tokens=self.config.generation.max_tokens,
+                            response_format=json_mode,
+                        )
+                    except Exception as api_err:
+                        err_s = str(api_err).lower()
+                        if "response_format" in err_s or "json_object" in err_s:
+                            logger.warning(
+                                "JSON response_format not supported for %s (%s); retrying without it.",
+                                openai_model,
+                                api_err,
+                            )
+                            response = _openai_chat_completion(
+                                self.openai_client,
+                                model=openai_model,
+                                messages=messages,
+                                temperature=self.config.generation.temperature,
+                                max_output_tokens=self.config.generation.max_tokens,
+                                response_format=None,
+                            )
+                        else:
+                            raise
+                    content = (response.choices[0].message.content or "") if response.choices else ""
+
                 if content:
-                    data = json.loads(content)
-                    question_text = data.get("question")
+                    question_text = _parse_question_json_from_content(content)
                     if question_text:
                         questions.append(question_text)
-                        print(f"Generated question: {question_text}")
                     else:
-                        logger.error("Question does not exist in response")
+                        logger.error("Could not parse question JSON from model output (first 200 chars): %r", content[:200])
             except Exception as e:
                 logger.error(f"AI Error: {e}")
         
@@ -303,9 +442,7 @@ class QuestionGenerator:
 
 
 class FeedbackGenerator:
-    """
-    Generates feedback using ChatGPT and optionally creates D-ID avatar videos.
-    """
+    """Generates feedback using ChatGPT; optional D-ID Clips avatar video."""
     
     def __init__(self, config: Optional[AppConfig] = None, use_video: bool = True):
         """
@@ -317,14 +454,17 @@ class FeedbackGenerator:
         """
         if config is None:
             self.config = AppConfig(
-                model=ModelConfig(model_name=CHAGPT_MODEL, base_url=None), 
+                model=ModelConfig(model_name=CHATGPT_MODEL, base_url=None), 
                 generation=None,
                 data=DataConfig()
             )
         else:
             self.config = config
-        
-        self.client = OpenAI(api_key=self.config.model.api_key or OPENAI_API_KEY)
+
+        key = self.config.model.api_key or OPENAI_API_KEY
+        if not key or key == "ollama":
+            key = OPENAI_API_KEY
+        self.client = OpenAI(api_key=key)
         self.use_video = use_video
         if use_video and DID_API_KEY and DID_CLIPS_ENABLED and not _DID_CLIPS_PERMISSION_DENIED:
             self.video_generator = VideoGenerator()
@@ -338,37 +478,50 @@ class FeedbackGenerator:
         Returns:
             Feedback text from the teacher
         """
-        user_content = f"""
-        You are tutoring a student right now. 
-        Question: {self.config.data.question}
-        Student Answer: {self.config.data.answer}
-        Level: {self.config.data.level}
-        
-        Provide feedback (as a teacher talking to a student) on accuracy and syllabus alignment. Give feedback:
-        - If there is anything incorrect in the answer, if yes what
-        - How to improve 
+        user_content = f"""Question:
+{self.config.data.question}
 
-        Keep it concise (2-3 sentences max). No suggestions at the end, all text must be the same font, no emojis.
-        """
+Student answer:
+{self.config.data.answer}
+
+Level: {self.config.data.level}
+
+Reply as a teacher in at most three short sentences. Comment only on what the student actually wrote: whether it addresses the question, the main gap or mistake if any, and one concrete way to improve. Do not give a full model answer, marking scheme, or bullet list. Do not restate the question as a checklist of tasks (no "you must define… / outline an experiment…"). If the answer is off-topic, nonsense, or empty, say that briefly and ask them to answer the question in their own words — do not teach the entire topic."""
         
         try:
-            response = self.client.chat.completions.create(
+            # Short answer in prompt, but reasoning models can spend most of the budget before `content` appears.
+            response = _openai_chat_completion(
+                self.client,
                 model=self.config.model.model_name,
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a strict but helpful Agricultural Science teacher and Leaving Certificate examiner."
+                        "content": (
+                            "You are a strict but helpful Leaving Certificate Agricultural Science teacher. "
+                            "You write at most three short sentences of feedback. No bullet points or numbered lists. "
+                            "Never output an implied marking scheme or full sample answer."
+                        ),
                     },
                     {"role": "user", "content": user_content}
                 ],
                 temperature=0.7,
-                max_tokens=60
+                max_output_tokens=400,
             )
-            
-            feedback_text = response.choices[0].message.content or ""
-            print(f"Generated feedback: {feedback_text}")
+
+            choice = response.choices[0]
+            feedback_text = (choice.message.content or "").strip()
+            if not feedback_text:
+                fr = getattr(choice, "finish_reason", None)
+                logger.warning(
+                    "Empty feedback completion (model=%s finish_reason=%s)",
+                    self.config.model.model_name,
+                    fr,
+                )
+                return "Error generating feedback. Please try again."
+
+            logger.info("Generated feedback: %s", feedback_text[:200] + ("…" if len(feedback_text) > 200 else ""))
             return feedback_text
-            
+
         except Exception as e:
             logger.error(f"Feedback Generation Error: {e}")
             return "Error generating feedback. Please try again."
@@ -386,77 +539,39 @@ class FeedbackGenerator:
         # First generate the feedback text
         feedback_text = self.generate_feedback()
         
-        result = {
+        result: dict = {
             "feedback_text": feedback_text,
             "video_url": None,
             "clip_id": None,
             "video_status": "not_used",
         }
 
-        if not self.use_video or not DID_API_KEY:
-            result["video_status"] = "skipped"
-            logger.info("Video generation skipped (disabled or no API key)")
-            return result
-        if not DID_CLIPS_ENABLED:
-            result["video_status"] = "skipped"
-            logger.info("D-ID Clips skipped (DID_CLIPS_ENABLED=false)")
-            return result
-        if _DID_CLIPS_PERMISSION_DENIED or self.video_generator is None:
-            result["video_status"] = "skipped"
-            logger.info("D-ID Clips skipped (no generator or prior clips:write denial)")
+        if not self.use_video or not self.video_generator:
+            if self.use_video and not DID_CLIPS_ENABLED:
+                result["video_status"] = "skipped"
+                logger.info("D-ID Clips disabled via DID_CLIPS_ENABLED=false")
+            elif self.use_video and _DID_CLIPS_PERMISSION_DENIED:
+                result["video_status"] = "skipped"
+                logger.info("D-ID Clips skipped (no clips:write permission on this key)")
+            else:
+                logger.info("Video generation skipped (disabled or no DID_API_KEY)")
             return result
 
         try:
-            # Create D-ID video with the feedback text
             logger.info("Creating D-ID avatar video...")
             clip_id = self.video_generator.create_video(feedback_text)
             result["clip_id"] = clip_id
-            
-            # Wait for video to be ready
-            logger.info(f"Waiting for video {clip_id} to render...")
+            logger.info("Waiting for video %s to render...", clip_id)
             video_url = self.video_generator.wait_for_video(clip_id, max_wait=60)
             result["video_url"] = video_url
             result["video_status"] = "completed" if video_url else "failed"
-            
-            if video_url:
-                logger.info(f"Video ready: {video_url}")
-            else:
-                logger.warning("Video creation timed out or failed")
-            
         except DIDClipsPermissionDenied:
             result["video_status"] = "skipped"
-            logger.info("Returning feedback text without video (Clips permission denied)")
         except Exception as e:
-            logger.error(f"Video generation error: {e}")
+            logger.error("D-ID video generation failed: %s", e)
             result["video_status"] = "failed"
-            logger.info("Returning feedback text without video")
-        
+
         return result
 
 
-# if __name__ == "__main__":
-    # Example: Generate questions
-    # config = AppConfig(
-    #     model=ModelConfig(model_name=MODEL_NAME, api_key="ollama"),
-    #     data=DataConfig(level="ordinary", topic="soil formation"),
-    #     generation=GenerationConfig()
-    # ) 
-    # generator = QuestionGenerator(config)
-    # print("Generating questions...")
-    # print(generator.generate_questions())
 
-    # Example: Generate feedback with video
-    # sample_data = DataConfig(
-    #     question="Explain why strict controls are necessary when applying pesticides to farm crops.",
-    #     answer="To prevent them from getting into the water and killing bees."
-    # )
-    # config1 = AppConfig(
-    #     model=ModelConfig(model_name=CHAGPT_MODEL, base_url=""),
-    #     generation=None,
-    #     data=sample_data
-    # )
-    # generator = FeedbackGenerator(config1, use_video=True)
-    # print("Generating feedback with video...")
-    # result = generator.generate_feedback_with_video()
-    # print(f"Feedback: {result['feedback_text']}")
-    # print(f"Video URL: {result['video_url']}")
