@@ -1,6 +1,5 @@
 import os
 import base64
-from pathlib import Path
 from typing import Optional, Literal, List
 import time
 import requests
@@ -41,25 +40,10 @@ def _did_clips_permission_denied(status_code: int, body: str) -> bool:
     return "permission" in b or "clips:write" in b
 
 
-# #region agent log
-def _agent_ndjson(hypothesis_id: str, location: str, message: str, data: dict) -> None:
-    try:
-        log_path = Path(__file__).resolve().parent.parent / "debug-08d5b9.log"
-        payload = {
-            "sessionId": "08d5b9",
-            "hypothesisId": hypothesis_id,
-            "location": location,
-            "message": message,
-            "data": data,
-            "timestamp": int(time.time() * 1000),
-        }
-        with open(log_path, "a", encoding="utf-8") as f:
-            f.write(json.dumps(payload, default=str) + "\n")
-    except Exception:
-        pass
+def did_clips_write_permission_denied() -> bool:
+    """True after D-ID returned 403 clips:write in this process (read each call; do not cache the bool)."""
+    return _DID_CLIPS_PERMISSION_DENIED
 
-
-# #endregion
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found in environment variables!")
@@ -120,7 +104,9 @@ class VideoGenerator:
         
         self.api_key = key
         self.base_url = base_url
-        token = base64.b64encode(f"{key}:".encode()).decode()
+        # base64(user:password); env is often already "user:secret" — avoid an extra trailing ":".
+        credential = key if ":" in key else f"{key}:"
+        token = base64.b64encode(credential.encode()).decode()
         self.headers = {
             "Authorization": f"Basic {token}",
             "Content-Type": "application/json",
@@ -153,25 +139,9 @@ class VideoGenerator:
                 timeout=60,
             )
             global _DID_CLIPS_PERMISSION_DENIED
-            _agent_ndjson(
-                "H2",
-                "model_service:VideoGenerator.create_video",
-                "clips_POST_response",
-                {
-                    "status_code": response.status_code,
-                    "body_prefix": (response.text or "")[:200],
-                    "permission_denied_flag_before": _DID_CLIPS_PERMISSION_DENIED,
-                },
-            )
             if response.status_code not in (200, 201):
                 if _did_clips_permission_denied(response.status_code, response.text):
                     _DID_CLIPS_PERMISSION_DENIED = True
-                    _agent_ndjson(
-                        "H1",
-                        "model_service:VideoGenerator.create_video",
-                        "clips_write_403_set_skip",
-                        {"_DID_CLIPS_PERMISSION_DENIED": True},
-                    )
                     logger.warning(
                         "D-ID returned 403: this API key cannot use Clips (clips:write). "
                         "Set DID_CLIPS_ENABLED=false to avoid retries, or use a D-ID plan with Clips access. Body: %s",
@@ -339,7 +309,7 @@ class FeedbackGenerator:
     
     def __init__(self, config: Optional[AppConfig] = None, use_video: bool = True):
         """
-        Initialize the FeedbackGenerator.3+
+        Initialize the FeedbackGenerator.
         
         Args:
             config: AppConfig object with model and data settings
@@ -360,18 +330,6 @@ class FeedbackGenerator:
             self.video_generator = VideoGenerator()
         else:
             self.video_generator = None
-        _agent_ndjson(
-            "H4",
-            "model_service:FeedbackGenerator.__init__",
-            "init_state",
-            {
-                "use_video": use_video,
-                "has_did_key": bool(DID_API_KEY),
-                "DID_CLIPS_ENABLED": DID_CLIPS_ENABLED,
-                "permission_denied_flag": _DID_CLIPS_PERMISSION_DENIED,
-                "has_video_generator": self.video_generator is not None,
-            },
-        )
 
     def generate_feedback(self) -> str:
         """
@@ -434,38 +392,17 @@ class FeedbackGenerator:
             "clip_id": None,
             "video_status": "not_used",
         }
-        _agent_ndjson(
-            "H3",
-            "model_service:FeedbackGenerator.generate_feedback_with_video",
-            "after_feedback_text",
-            {
-                "use_video": self.use_video,
-                "has_did_key": bool(DID_API_KEY),
-                "DID_CLIPS_ENABLED": DID_CLIPS_ENABLED,
-                "permission_denied_flag": _DID_CLIPS_PERMISSION_DENIED,
-                "has_video_generator": self.video_generator is not None,
-            },
-        )
 
         if not self.use_video or not DID_API_KEY:
+            result["video_status"] = "skipped"
             logger.info("Video generation skipped (disabled or no API key)")
             return result
         if not DID_CLIPS_ENABLED:
             result["video_status"] = "skipped"
-            _agent_ndjson("H3", "model_service:generate_feedback_with_video", "skip_clips_env_disabled", {})
             logger.info("D-ID Clips skipped (DID_CLIPS_ENABLED=false)")
             return result
         if _DID_CLIPS_PERMISSION_DENIED or self.video_generator is None:
             result["video_status"] = "skipped"
-            _agent_ndjson(
-                "H1",
-                "model_service:generate_feedback_with_video",
-                "skip_clips_no_generator_or_prior_403",
-                {
-                    "permission_denied_flag": _DID_CLIPS_PERMISSION_DENIED,
-                    "video_generator_is_none": self.video_generator is None,
-                },
-            )
             logger.info("D-ID Clips skipped (no generator or prior clips:write denial)")
             return result
 
@@ -488,7 +425,6 @@ class FeedbackGenerator:
             
         except DIDClipsPermissionDenied:
             result["video_status"] = "skipped"
-            _agent_ndjson("H1", "model_service:generate_feedback_with_video", "caught_DIDClipsPermissionDenied", {})
             logger.info("Returning feedback text without video (Clips permission denied)")
         except Exception as e:
             logger.error(f"Video generation error: {e}")

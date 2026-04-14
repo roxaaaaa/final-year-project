@@ -17,6 +17,7 @@ from model_service import (
     FeedbackGenerator,
     VideoGenerator,
     DID_CLIPS_ENABLED,
+    did_clips_write_permission_denied,
 )
 
 load_dotenv()
@@ -177,8 +178,13 @@ async def generate_feedback(content: FeedbackRequest):
             )
         )
         
-        # Check if video is requested and D-ID Clips are allowed for this deployment
-        use_video = content.use_video and bool(DID_API_KEY) and DID_CLIPS_ENABLED
+        # Check if video is requested and D-ID Clips are allowed (and not already denied in-process)
+        use_video = (
+            content.use_video
+            and bool(DID_API_KEY)
+            and DID_CLIPS_ENABLED
+            and not did_clips_write_permission_denied()
+        )
         
         if use_video:
             generator = FeedbackGenerator(config, use_video=True)

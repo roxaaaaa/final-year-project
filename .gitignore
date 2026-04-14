@@ -6,3 +6,10 @@ __pycache__/
 .next/
 out/
 node_modules/
+
+# Local SQLite databases (environment-specific)
+backend/agriexam.db
+backend/pytest_agriexam.db
+
+# Agent/debug session logs
+debug-*.log
