@@ -61,39 +61,41 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 CHATGPT_MODEL = os.getenv("CHATGPT_MODEL", "gpt-4o-mini")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
 
-# D-ID Configuration
+# D-ID Configuration (Talks API only: POST /talks)
 DID_API_KEY = os.getenv("DID_API_KEY") or None
 DID_BASE_URL = os.getenv("DID_BASE_URL", "https://api.d-id.com").rstrip("/")
-DID_PRESENTER_ID = os.getenv("DID_PRESENTER_ID", "v2_public_Amber@0zSz8kflCN")
-# Master switch for D-ID talking-head video (Talks and/or Clips depending on DID_VIDEO_MODE).
-DID_CLIPS_ENABLED = os.getenv("DID_CLIPS_ENABLED", "true").strip().lower() in ("1", "true", "yes")
-# talks = POST /talks (standard photo avatar, no clips:write). clips = POST /clips (Pro presenter).
-_did_vm = (os.getenv("DID_VIDEO_MODE") or "talks").strip().lower()
-DID_VIDEO_MODE: Literal["talks", "clips"] = "clips" if _did_vm == "clips" else "talks"
+# Master switch for D-ID avatar video. DID_CLIPS_ENABLED is still read as a legacy alias.
+_did_avatar_raw = os.getenv("DID_AVATAR_ENABLED")
+if _did_avatar_raw is None:
+    _did_avatar_raw = os.getenv("DID_CLIPS_ENABLED", "true")
+DID_AVATAR_ENABLED = _did_avatar_raw.strip().lower() in ("1", "true", "yes")
+# Frontal face photo (HTTPS .jpg/.png). Default: male portrait suitable for standard Talks avatars.
 DID_TALK_SOURCE_URL = (
     os.getenv(
         "DID_TALK_SOURCE_URL",
-        "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg",
+        "https://randomuser.me/api/portraits/men/61.jpg",
     )
-    or "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+    or "https://randomuser.me/api/portraits/men/61.jpg"
 ).strip()
+# Microsoft Azure Neural voice for Talks TTS (see GET https://api.d-id.com/voices). en-IE-ConnorNeural = male English (Ireland).
+DID_TALK_VOICE_ID = os.getenv("DID_TALK_VOICE_ID", "en-IE-ConnorNeural").strip()
 # After a 403 on D-ID avatar creation, skip further video POSTs until process restart.
 _DID_AVATAR_PERMISSION_DENIED = False
 
 
-class DIDClipsPermissionDenied(RuntimeError):
-    """Raised when the D-ID API key cannot create avatar video (Clips or Talks permission)."""
+class DIDAvatarPermissionDenied(RuntimeError):
+    """Raised when the D-ID API key cannot create a Talk (e.g. talks:write permission)."""
 
 
-def _did_avatar_permission_denied(status_code: int, body: str) -> bool:
+def _did_talk_permission_denied(status_code: int, body: str) -> bool:
     if status_code != 403:
         return False
     b = (body or "").lower()
-    return "permission" in b or "clips:write" in b or "talks:write" in b
+    return "permission" in b or "talks:write" in b
 
 
-def did_clips_write_permission_denied() -> bool:
-    """True after D-ID returned 403 for avatar video (Talks or Clips); read on each call."""
+def did_avatar_permission_denied() -> bool:
+    """True after D-ID returned 403 for Talks creation; read on each call."""
     return _DID_AVATAR_PERMISSION_DENIED
 
 
@@ -224,10 +226,7 @@ def _did_auth_headers(api_key: str) -> dict:
 
 
 class VideoGenerator:
-    """
-    D-ID talking-head video: ``talks`` (standard photo avatar, POST /talks) or
-    ``clips`` (Pro presenter, POST /clips). Controlled by ``DID_VIDEO_MODE`` (default: talks).
-    """
+    """D-ID talking-head video via POST /talks (photo avatar + TTS)."""
 
     def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None):
         key = api_key or DID_API_KEY
@@ -236,22 +235,20 @@ class VideoGenerator:
         self.api_key = key
         self.base_url = (base_url or DID_BASE_URL).rstrip("/")
         self.headers = _did_auth_headers(self.api_key)
-        self._mode: Literal["talks", "clips"] = DID_VIDEO_MODE
         self._talk_source_url = DID_TALK_SOURCE_URL
+        self._talk_voice_id = DID_TALK_VOICE_ID
 
     def _raise_or_set_denied(self, r: httpx.Response, *, api_label: str) -> None:
         global _DID_AVATAR_PERMISSION_DENIED
-        if _did_avatar_permission_denied(r.status_code, r.text):
+        if _did_talk_permission_denied(r.status_code, r.text):
             _DID_AVATAR_PERMISSION_DENIED = True
-            hint = (
-                "Set DID_VIDEO_MODE=talks in .env to use POST /talks (photo avatar; no clips:write). "
-                "Use DID_CLIPS_ENABLED=false only if you want to turn off all D-ID video."
-                if api_label == "Clips" and "clips:write" in (r.text or "").lower()
-                else "Set DID_VIDEO_MODE=talks if you only have Talks access, or DID_CLIPS_ENABLED=false "
-                "to disable all D-ID avatar video."
+            logger.warning(
+                "D-ID returned 403 for %s. Set DID_AVATAR_ENABLED=false to disable avatar video, "
+                "or fix D-ID key permissions. Body: %s",
+                api_label,
+                r.text,
             )
-            logger.warning("D-ID returned 403 for %s. %s Body: %s", api_label, hint, r.text)
-            raise DIDClipsPermissionDenied(r.text)
+            raise DIDAvatarPermissionDenied(r.text)
         logger.error("D-ID %s creation error (%s): %s", api_label, r.status_code, r.text)
         raise RuntimeError(f"Failed to create video: {r.text}")
 
@@ -259,9 +256,15 @@ class VideoGenerator:
         text = (script or "").strip()
         if len(text) < 3:
             text = "Feedback."
+        script_body: dict[str, Any] = {"type": "text", "input": text}
+        if self._talk_voice_id:
+            script_body["provider"] = {
+                "type": "microsoft",
+                "voice_id": self._talk_voice_id,
+            }
         payload: dict[str, Any] = {
             "source_url": self._talk_source_url,
-            "script": {"type": "text", "input": text},
+            "script": script_body,
         }
         with httpx.Client(timeout=60.0) as client:
             r = client.post(f"{self.base_url}/talks", headers=self.headers, json=payload)
@@ -272,29 +275,12 @@ class VideoGenerator:
         logger.info("D-ID Talk created with id: %s", talk_id)
         return talk_id
 
-    def _create_clip(self, script: str, presenter_id: str) -> str:
-        payload = {
-            "presenter_id": presenter_id,
-            "script": {"type": "text", "input": script},
-        }
-        with httpx.Client(timeout=60.0) as client:
-            r = client.post(f"{self.base_url}/clips", headers=self.headers, json=payload)
-        if r.status_code not in (200, 201):
-            self._raise_or_set_denied(r, api_label="Clips")
-        data = r.json()
-        clip_id = data.get("id")
-        logger.info("D-ID Clip created with id: %s", clip_id)
-        return clip_id
-
-    def create_video(self, script: str, presenter_id: str = DID_PRESENTER_ID) -> str:
-        if self._mode == "talks":
-            return self._create_talk(script)
-        return self._create_clip(script, presenter_id)
+    def create_talk(self, script: str) -> str:
+        """Create a D-ID Talk; returns talk job id."""
+        return self._create_talk(script)
 
     def get_video_status(self, job_id: str) -> dict[str, Any]:
-        # Talk ids from POST /talks start with "tlk_"; poll the matching API even if mode env changes.
-        use_talks = self._mode == "talks" or job_id.startswith("tlk_")
-        path = f"{self.base_url}/talks/{job_id}" if use_talks else f"{self.base_url}/clips/{job_id}"
+        path = f"{self.base_url}/talks/{job_id}"
         with httpx.Client(timeout=30.0) as client:
             r = client.get(path, headers=self.headers)
         if r.status_code not in (200, 201):
@@ -321,20 +307,6 @@ class VideoGenerator:
             time.sleep(poll_interval)
         logger.warning("Video generation timeout after %ss", max_wait)
         return None
-
-    def get_presenters(self) -> Any:
-        if self._mode == "talks":
-            return []
-        try:
-            with httpx.Client(timeout=30.0) as client:
-                r = client.get(f"{self.base_url}/clips/presenters", headers=self.headers)
-            if r.status_code == 200:
-                return r.json()
-            logger.error("Failed to get presenters: %s", r.text)
-            return []
-        except Exception as e:
-            logger.error("Error fetching presenters: %s", e)
-            return []
 
 
 class QuestionGenerator:
@@ -463,7 +435,7 @@ class QuestionGenerator:
 
 
 class FeedbackGenerator:
-    """Generates feedback using ChatGPT; optional D-ID avatar video (Talks or Clips)."""
+    """Generates feedback using ChatGPT; optional D-ID Talks avatar video."""
     
     def __init__(self, config: Optional[AppConfig] = None, use_video: bool = True):
         """
@@ -487,7 +459,7 @@ class FeedbackGenerator:
             key = OPENAI_API_KEY
         self.client = OpenAI(api_key=key)
         self.use_video = use_video
-        if use_video and DID_API_KEY and DID_CLIPS_ENABLED and not _DID_AVATAR_PERMISSION_DENIED:
+        if use_video and DID_API_KEY and DID_AVATAR_ENABLED and not _DID_AVATAR_PERMISSION_DENIED:
             self.video_generator = VideoGenerator()
         else:
             self.video_generator = None
@@ -555,7 +527,7 @@ Reply as a teacher in at most three short sentences. Comment only on what the st
             dict with keys:
                 - feedback_text: The generated feedback
                 - video_url: URL to the D-ID avatar video (or None if failed)
-                - clip_id: D-ID clip ID for reference
+                - talk_id: D-ID talk job id for status polling
         """
         # First generate the feedback text
         feedback_text = self.generate_feedback()
@@ -563,14 +535,14 @@ Reply as a teacher in at most three short sentences. Comment only on what the st
         result: dict = {
             "feedback_text": feedback_text,
             "video_url": None,
-            "clip_id": None,
+            "talk_id": None,
             "video_status": "not_used",
         }
 
         if not self.use_video or not self.video_generator:
-            if self.use_video and not DID_CLIPS_ENABLED:
+            if self.use_video and not DID_AVATAR_ENABLED:
                 result["video_status"] = "skipped"
-                logger.info("D-ID avatar video disabled (DID_CLIPS_ENABLED=false)")
+                logger.info("D-ID avatar video disabled (DID_AVATAR_ENABLED=false)")
             elif self.use_video and _DID_AVATAR_PERMISSION_DENIED:
                 result["video_status"] = "skipped"
                 logger.info("D-ID avatar video skipped (prior 403 from D-ID for this process)")
@@ -579,14 +551,14 @@ Reply as a teacher in at most three short sentences. Comment only on what the st
             return result
 
         try:
-            logger.info("Creating D-ID avatar video (%s)...", DID_VIDEO_MODE)
-            clip_id = self.video_generator.create_video(feedback_text)
-            result["clip_id"] = clip_id
-            logger.info("Waiting for video %s to render...", clip_id)
-            video_url = self.video_generator.wait_for_video(clip_id, max_wait=60)
+            logger.info("Creating D-ID Talk (avatar video)...")
+            talk_id = self.video_generator.create_talk(feedback_text)
+            result["talk_id"] = talk_id
+            logger.info("Waiting for video %s to render...", talk_id)
+            video_url = self.video_generator.wait_for_video(talk_id, max_wait=60)
             result["video_url"] = video_url
             result["video_status"] = "completed" if video_url else "failed"
-        except DIDClipsPermissionDenied:
+        except DIDAvatarPermissionDenied:
             result["video_status"] = "skipped"
         except Exception as e:
             logger.error("D-ID video generation failed: %s", e)

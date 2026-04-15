@@ -1,11 +1,3 @@
-# Model Settings
-
-
-
-# If using local Ollama: http://localhost:11434/v1
-
-# If using a cloud provider: https://api.groq.com/openai/v1
-
 OLLAMA_BASE_URL=http://localhost:11434/v1
 
 # If Ollama is unreachable, question generation falls back to OpenAI using CHATGPT_MODEL (requires OPENAI_API_KEY).
@@ -15,37 +7,21 @@ MODEL_NAME=llama3.1:8b
 CHATGPT_MODEL=gpt-4o-mini
 
 # Security
-
 # API key for OpenAI (required if not using local Ollama)
-
 OPENAI_API_KEY=your-openai-api-key
 
 
-
-# D-ID — teacher avatar videos on the practice page (optional; feedback text still works without it)
-
+# D-ID — Talks API (photo avatar + speech) on the practice page (optional; text feedback works without it)
 DID_API_KEY=your-d-id-api-key
 
-# Video on, but use Talks (photo avatar) unless your key has clips:write for Pro presenters.
-DID_CLIPS_ENABLED=true
-DID_VIDEO_MODE=talks
+# Enable D-ID avatar video (POST /talks). Legacy alias: DID_CLIPS_ENABLED
+DID_AVATAR_ENABLED=true
 
-# Alternative: DID_VIDEO_MODE=clips (requires D-ID plan with clips:write).
+# Face image URL (HTTPS, .jpg or .png). Example:
+# DID_TALK_SOURCE_URL=https://randomuser.me/api/portraits/men/61.jpg
 
-# HTTPS image URL for Talks only (jpg/png). Default is D-ID sample "Alice".
-# DID_TALK_SOURCE_URL=https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg
-
-# Turn off all D-ID video (text feedback only): DID_CLIPS_ENABLED=false
-
-# Optional override; default presenter if unset:
-
-# DID_PRESENTER_ID=v2_public_Amber@0zSz8kflCN
-
-# Optional API host override:
-
-# DID_BASE_URL=https://api.d-id.com
-
-
+# Microsoft Neural voice id for speech (e.g. en-IE-ConnorNeural for Irish English male)
+# DID_TALK_VOICE_ID=en-IE-ConnorNeural
 
 # Google OAuth Configuration
 # Cloud Console → Credentials → Web client:
@@ -53,11 +29,8 @@ DID_VIDEO_MODE=talks
 #   Authorized JavaScript origins: https://<your-vercel-host> (and http://localhost:3000 for local UI)
 
 GOOGLE_CLIENT_ID=your-google-oauth-client-id
-
 GOOGLE_CLIENT_SECRET=your-google-oauth-client-secret
-
 JWT_SECRET=your-jwt-secret-key
-
 SESSION_SECRET=your-session-secret-key
 
 # Browser origin for CORS and post-Google-OAuth redirect (no trailing slash).
@@ -70,12 +43,8 @@ FRONTEND_URL=http://localhost:3000
 # Pooler host: database.py disables asyncpg statement cache for PgBouncer compatibility.
 # DATABASE_URL=postgresql+asyncpg://USER:PASSWORD@ep-xxx-pooler.region.aws.neon.tech/neondb?sslmode=require
 
-# Optional: force Secure session cookies when not on Render (default: Secure if RENDER=true)
-# SESSION_COOKIE_SECURE=1
-
 # Server Settings
 
 PORT=8000
-
 DEBUG=True
 

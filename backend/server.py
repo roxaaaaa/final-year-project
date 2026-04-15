@@ -21,9 +21,8 @@ from model_service import (
     FeedbackGenerator,
     VideoGenerator,
     DID_API_KEY,
-    DID_CLIPS_ENABLED,
-    DID_VIDEO_MODE,
-    did_clips_write_permission_denied,
+    DID_AVATAR_ENABLED,
+    did_avatar_permission_denied,
 )
 
 load_dotenv()
@@ -126,7 +125,7 @@ class FeedbackRequest(BaseModel):
     question: str
     answer: str
     level: Literal["higher", "ordinary"] = "ordinary"
-    use_video: bool = True  # When true and DID_API_KEY is set, generate a D-ID clip (MP4 URL).
+    use_video: bool = True  # When true and DID_API_KEY is set, generate a D-ID Talk (MP4 URL).
 
 class PracticeAttemptRequest(BaseModel):
     """Request model for saving practice attempt."""
@@ -152,8 +151,7 @@ async def root():
         "status": "Server is running",
         "service": "Agricultural Science Exam Assistant",
         "d_id_configured": bool(DID_API_KEY),
-        "d_id_clips_enabled": DID_CLIPS_ENABLED,
-        "d_id_video_mode": DID_VIDEO_MODE,
+        "d_id_avatar_enabled": DID_AVATAR_ENABLED,
         "google_oauth_configured": bool(GOOGLE_CLIENT_ID),
         "env": os.getenv("ENV", "development")
     }
@@ -167,8 +165,7 @@ async def health():
         "ollama_available": bool(OLLAMA_BASE_URL),
         "openai_available": bool(os.getenv("OPENAI_API_KEY")),
         "d_id_configured": bool(DID_API_KEY),
-        "d_id_clips_enabled": DID_CLIPS_ENABLED,
-        "d_id_video_mode": DID_VIDEO_MODE,
+        "d_id_avatar_enabled": DID_AVATAR_ENABLED,
     }
 
 
@@ -439,10 +436,10 @@ async def generate_feedback(
         want_video = (
             data.use_video
             and bool(DID_API_KEY)
-            and DID_CLIPS_ENABLED
-            and not did_clips_write_permission_denied()
+            and DID_AVATAR_ENABLED
+            and not did_avatar_permission_denied()
         )
-        clip_id: Optional[str] = None
+        talk_id: Optional[str] = None
 
         # Do not hold a pooled DB connection across OpenAI + D-ID (can exceed Neon/PgBouncer idle limits).
         await db.close()
@@ -452,7 +449,7 @@ async def generate_feedback(
             bundle = await asyncio.to_thread(generator.generate_feedback_with_video)
             feedback_result = bundle["feedback_text"]
             video_url = bundle.get("video_url")
-            clip_id = bundle.get("clip_id")
+            talk_id = bundle.get("talk_id")
             video_status = bundle.get("video_status") or ("completed" if video_url else "failed")
         else:
             generator = FeedbackGenerator(config, use_video=False)
@@ -460,9 +457,9 @@ async def generate_feedback(
             video_url = None
             if data.use_video and not DID_API_KEY:
                 video_status = "skipped"
-            elif data.use_video and DID_API_KEY and not DID_CLIPS_ENABLED:
+            elif data.use_video and DID_API_KEY and not DID_AVATAR_ENABLED:
                 video_status = "skipped"
-            elif data.use_video and bool(DID_API_KEY) and DID_CLIPS_ENABLED and did_clips_write_permission_denied():
+            elif data.use_video and bool(DID_API_KEY) and DID_AVATAR_ENABLED and did_avatar_permission_denied():
                 video_status = "skipped"
             else:
                 video_status = "not_used"
@@ -516,7 +513,7 @@ async def generate_feedback(
             "feedback": feedback_result,
             "video_url": video_url,
             "video_status": video_status,
-            "clip_id": clip_id,
+            "talk_id": talk_id,
         }
 
     except Exception as e:
@@ -595,8 +592,8 @@ async def generate_feedback_ai(content: FeedbackRequest):
         use_video = (
             content.use_video
             and bool(DID_API_KEY)
-            and DID_CLIPS_ENABLED
-            and not did_clips_write_permission_denied()
+            and DID_AVATAR_ENABLED
+            and not did_avatar_permission_denied()
         )
         if use_video:
             generator = FeedbackGenerator(config, use_video=True)
@@ -604,7 +601,7 @@ async def generate_feedback_ai(content: FeedbackRequest):
             return {
                 "feedback": result["feedback_text"],
                 "video_url": result.get("video_url"),
-                "clip_id": result.get("clip_id"),
+                "talk_id": result.get("talk_id"),
                 "video_status": result.get("video_status"),
                 "has_video": bool(result.get("video_url")),
             }
@@ -612,13 +609,13 @@ async def generate_feedback_ai(content: FeedbackRequest):
         generator = FeedbackGenerator(config, use_video=False)
         feedback = generator.generate_feedback()
 
-        # In this branch, video was not produced: either not requested or gated off (no key / clips off / prior 403).
+        # In this branch, video was not produced: either not requested or gated off (no key / avatar off / prior 403).
         video_status_ai = "skipped" if content.use_video else "not_used"
 
         return {
             "feedback": feedback,
             "video_url": None,
-            "clip_id": None,
+            "talk_id": None,
             "video_status": video_status_ai,
             "has_video": False,
         }
@@ -631,37 +628,16 @@ async def generate_feedback_ai(content: FeedbackRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/api/d-id/video-status/{clip_id}", tags=["D-ID"])
-async def get_video_status(clip_id: str):
-    """Proxied D-ID job status: GET /talks/{id} or /clips/{id} from DID_VIDEO_MODE (polling)."""
+@app.get("/api/d-id/video-status/{talk_id}", tags=["D-ID"])
+async def get_video_status(talk_id: str):
+    """Proxied D-ID Talk job status: GET /talks/{id} (polling)."""
     if not DID_API_KEY:
         raise HTTPException(status_code=503, detail="D-ID not configured")
     try:
         video_gen = VideoGenerator()
-        return video_gen.get_video_status(clip_id)
+        return video_gen.get_video_status(talk_id)
     except Exception as e:
         logger.error("D-ID video status error: %s", e)
-        raise HTTPException(status_code=502, detail=str(e)) from e
-
-
-@app.get("/api/d-id/presenters", tags=["D-ID"])
-async def get_presenters():
-    """Clips mode: D-ID GET /clips/presenters. Talks mode uses DID_TALK_SOURCE_URL (no presenter list)."""
-    if not DID_API_KEY:
-        return {"presenters": [], "message": "D-ID not configured", "configured": False}
-    if DID_VIDEO_MODE == "talks":
-        return {
-            "presenters": [],
-            "video_mode": "talks",
-            "message": "Talks mode: avatar image is DID_TALK_SOURCE_URL (not clip presenters).",
-            "configured": True,
-        }
-    try:
-        video_gen = VideoGenerator()
-        presenters = video_gen.get_presenters()
-        return {"presenters": presenters, "message": "ok", "configured": True, "video_mode": "clips"}
-    except Exception as e:
-        logger.error("D-ID presenters error: %s", e)
         raise HTTPException(status_code=502, detail=str(e)) from e
 
 
