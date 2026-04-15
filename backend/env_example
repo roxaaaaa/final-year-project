@@ -22,9 +22,20 @@ OPENAI_API_KEY=your-openai-api-key
 
 
 
-# D-ID Clips API — teacher avatar videos on the practice page (optional; feedback text still works without it)
+# D-ID — teacher avatar videos on the practice page (optional; feedback text still works without it)
 
 DID_API_KEY=your-d-id-api-key
+
+# Video on, but use Talks (photo avatar) unless your key has clips:write for Pro presenters.
+DID_CLIPS_ENABLED=true
+DID_VIDEO_MODE=talks
+
+# Alternative: DID_VIDEO_MODE=clips (requires D-ID plan with clips:write).
+
+# HTTPS image URL for Talks only (jpg/png). Default is D-ID sample "Alice".
+# DID_TALK_SOURCE_URL=https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg
+
+# Turn off all D-ID video (text feedback only): DID_CLIPS_ENABLED=false
 
 # Optional override; default presenter if unset:
 
