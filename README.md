@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Web-lightgrey.svg)
 
 ## 📖 Project Overview
-
+https://final-year-project-delta-coral.vercel.app/
 This project is a specialized intelligent educational application tailored specifically for the **Irish Leaving Certificate Agricultural Science** curriculum. 
 
 General-purpose AI models (like ChatGPT) are often too broad and can lack the precision or "neutrality" required for specific state examinations. **AgriGen AI** solves this by using a fine-tuned **BART-SQuAD-QA** model, trained on a custom dataset of past Irish examination papers and marking schemes. This ensures that the questions generated align perfectly with the phrasing, structure, and difficulty standards of Higher and Ordinary levels.
