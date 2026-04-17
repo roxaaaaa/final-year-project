@@ -9,7 +9,7 @@ sqlalchemy
 asyncpg
 psycopg2-binary
 alembic
-authlib==1.6.9
+authlib==1.6.11
 pyjwt==2.8.0
 httpx==0.27.0
 pytest>=8.0.0
