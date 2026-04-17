@@ -17,8 +17,9 @@ DID_API_KEY=your-d-id-api-key
 # Enable D-ID avatar video (POST /talks). Legacy alias: DID_CLIPS_ENABLED
 DID_AVATAR_ENABLED=true
 
-# Face image URL (HTTPS, .jpg or .png). Example:
-# DID_TALK_SOURCE_URL=https://randomuser.me/api/portraits/men/61.jpg
+# Face image URL (HTTPS, .jpg or .png). Default: D-ID's William_m presenter (stable CDN; fits teacher-style + male Irish voice).
+# Alternatives (if your D-ID plan can access them): .../DefaultPresenters/Noelle_f/image.png , .../Emma_f/image.png
+# DID_TALK_SOURCE_URL=https://create-images-results.d-id.com/DefaultPresenters/William_m/image.png
 
 # Microsoft Neural voice id for speech (e.g. en-IE-ConnorNeural for Irish English male)
 # DID_TALK_VOICE_ID=en-IE-ConnorNeural

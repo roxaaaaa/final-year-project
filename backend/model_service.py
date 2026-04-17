@@ -69,13 +69,13 @@ _did_avatar_raw = os.getenv("DID_AVATAR_ENABLED")
 if _did_avatar_raw is None:
     _did_avatar_raw = os.getenv("DID_CLIPS_ENABLED", "true")
 DID_AVATAR_ENABLED = _did_avatar_raw.strip().lower() in ("1", "true", "yes")
-# Frontal face photo (HTTPS .jpg/.png). Default: male portrait suitable for standard Talks avatars.
+# Frontal face photo (HTTPS .jpg/.png). Default: D-ID hosted presenter (reliable for Talks; instructor-style male).
+# Official quickstart uses Noelle_f; override with DID_TALK_SOURCE_URL if you want another D-ID presenter image.
+_DEFAULT_DID_TALK_SOURCE_URL = (
+    "https://create-images-results.d-id.com/DefaultPresenters/William_m/image.png"
+)
 DID_TALK_SOURCE_URL = (
-    os.getenv(
-        "DID_TALK_SOURCE_URL",
-        "https://randomuser.me/api/portraits/men/61.jpg",
-    )
-    or "https://randomuser.me/api/portraits/men/61.jpg"
+    os.getenv("DID_TALK_SOURCE_URL", _DEFAULT_DID_TALK_SOURCE_URL) or _DEFAULT_DID_TALK_SOURCE_URL
 ).strip()
 # Microsoft Azure Neural voice for Talks TTS (see GET https://api.d-id.com/voices). en-IE-ConnorNeural = male English (Ireland).
 DID_TALK_VOICE_ID = os.getenv("DID_TALK_VOICE_ID", "en-IE-ConnorNeural").strip()
