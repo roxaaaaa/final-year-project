@@ -175,8 +175,11 @@ from models import User, PersonaEnum, GeneratedExam, PracticeAttempt, Feedback
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy import func, delete, update
-from fastapi import Depends
+from fastapi import Depends, Query
+from fastapi.responses import Response
 import json
+
+from exam_export import build_exam_docx, build_exam_pdf, sanitize_download_filename
 
 @app.post("/api/ai/generate_questions", tags=["Questions"])
 async def generate_questions(
@@ -311,10 +314,75 @@ async def get_exam_details(
             "questions": json.loads(exam.questions),
             "created_at": exam.created_at.isoformat(),
         }
-        
+
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error retrieving exam details: {e}")
         raise HTTPException(status_code=500, detail="Failed to retrieve exam details")
+
+
+@app.get("/api/exams/{exam_id}/export", tags=["Exams"])
+async def export_exam(
+    exam_id: int,
+    export_format: str = Query(..., alias="format", description="pdf or docx"),
+    user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """
+    Download generated exam as PDF or Word. Teachers only.
+    """
+    if user.persona != PersonaEnum.teacher:
+        raise HTTPException(
+            status_code=403,
+            detail="Exam export is only available for teacher accounts.",
+        )
+
+    fmt = (export_format or "").lower()
+    if fmt not in ("pdf", "docx"):
+        raise HTTPException(
+            status_code=400,
+            detail='Invalid format; use "pdf" or "docx".',
+        )
+
+    try:
+        result = await db.execute(
+            select(GeneratedExam).where(
+                GeneratedExam.id == exam_id,
+                GeneratedExam.user_id == user.id,
+            )
+        )
+        exam = result.scalar_one_or_none()
+        if not exam:
+            raise HTTPException(status_code=404, detail="Exam not found")
+
+        raw = json.loads(exam.questions)
+        if not isinstance(raw, list) or not all(isinstance(q, str) for q in raw):
+            raise HTTPException(status_code=500, detail="Invalid exam question data")
+
+        if fmt == "docx":
+            body = build_exam_docx(exam.topic, exam.level, raw)
+            media_type = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        else:
+            body = build_exam_pdf(exam.topic, exam.level, raw)
+            media_type = "application/pdf"
+
+        filename = sanitize_download_filename(exam.topic, exam.id, fmt)
+        return Response(
+            content=body,
+            media_type=media_type,
+            headers={
+                "Content-Disposition": f'attachment; filename="{filename}"',
+            },
+        )
+    except HTTPException:
+        raise
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail="Invalid exam question data")
+    except Exception as e:
+        logger.error(f"Error exporting exam: {e}")
+        raise HTTPException(status_code=500, detail="Failed to export exam")
+
 
 @app.post("/api/practice/start", tags=["Practice"])
 async def start_practice_attempt(

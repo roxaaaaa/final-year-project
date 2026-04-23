@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
+import { downloadExamExport } from "../../../lib/downloadExamExport";
 
 export default function PracticePage() {
   const { generationId } = useParams();
@@ -14,6 +15,9 @@ export default function PracticePage() {
   const [videoStatuses, setVideoStatuses] = useState({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [persona, setPersona] = useState(null);
+  const [exportError, setExportError] = useState(null);
+  const [exporting, setExporting] = useState(false);
   const router = useRouter();
 
   const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -28,9 +32,14 @@ export default function PracticePage() {
           return;
         }
 
-        const response = await fetch(`${apiUrl}/api/exams/${generationId}`, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const [response, meResponse] = await Promise.all([
+          fetch(`${apiUrl}/api/exams/${generationId}`, {
+            headers: { Authorization: `Bearer ${token}` },
+          }),
+          fetch(`${apiUrl}/api/user/me`, {
+            headers: { Authorization: `Bearer ${token}` },
+          }),
+        ]);
 
         if (!response.ok) {
           throw new Error("Exam not found");
@@ -39,6 +48,11 @@ export default function PracticePage() {
         const data = await response.json();
         setQuestions(data.questions || []);
         setExamLevel(data.level);
+
+        if (meResponse.ok) {
+          const me = await meResponse.json();
+          setPersona(me.persona ?? null);
+        }
 
         // Load existing practice attempt and feedback
         await loadExistingData(token);
@@ -94,6 +108,22 @@ export default function PracticePage() {
   const handleUpdateAnswer = (val) => {
     setAnswers({ ...answers, [currentIndex]: val });
     setError(null);
+  };
+
+  const handleExportExam = async (format) => {
+    const token = localStorage.getItem("token");
+    setExportError(null);
+    setExporting(true);
+    try {
+      const result = await downloadExamExport(apiUrl, generationId, format, token);
+      if (!result.ok) {
+        setExportError(result.message || "Download failed.");
+      }
+    } catch (e) {
+      setExportError(e.message || "Download failed.");
+    } finally {
+      setExporting(false);
+    }
   };
 
   // Auto-save answers to API
@@ -197,6 +227,35 @@ export default function PracticePage() {
 
   return (
     <div className="flex min-h-screen flex-col items-center bg-slate-900 p-4 text-white sm:p-12">
+      {persona === "teacher" && (
+        <div className="mb-6 w-full max-w-2xl rounded-2xl border border-white/10 bg-slate-800/80 px-4 py-3">
+          <p className="mb-2 text-center text-xs font-bold uppercase tracking-wider text-emerald-400 sm:text-left">
+            Teacher — download paper
+          </p>
+          <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end">
+            <button
+              type="button"
+              onClick={() => handleExportExam("pdf")}
+              disabled={exporting}
+              className="rounded-xl bg-emerald-600 px-4 py-2 text-sm font-bold text-slate-950 hover:bg-emerald-500 disabled:opacity-50"
+            >
+              {exporting ? "…" : "Download PDF"}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleExportExam("docx")}
+              disabled={exporting}
+              className="rounded-xl border border-emerald-500/50 bg-transparent px-4 py-2 text-sm font-bold text-emerald-300 hover:bg-white/5 disabled:opacity-50"
+            >
+              {exporting ? "…" : "Download Word"}
+            </button>
+          </div>
+          {exportError ? (
+            <p className="mt-2 text-center text-sm text-amber-300 sm:text-right">{exportError}</p>
+          ) : null}
+        </div>
+      )}
+
       {/* Progress Bar */}
       <div className="mb-8 w-full max-w-2xl">
         <div className="mb-2 flex justify-between text-sm text-slate-400">

@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation"; //handling navigation
 import { serialiseAutosavedExam, serialisePracticeExam } from "../lib/examStorage";
 import { computeGenerationsFromMeResponse } from "../lib/generationLimits";
+import { downloadExamExport } from "../lib/downloadExamExport";
 
 export default function Home() {
   const [user, setUser] = useState(null);
@@ -16,6 +17,8 @@ export default function Home() {
   const [focusedInput, setFocusedInput] = useState(false);
   const [generationsRemaining, setGenerationsRemaining] = useState(null);
   const [generationsTotal, setGenerationsTotal] = useState(null);
+  const [exportError, setExportError] = useState("");
+  const [exporting, setExporting] = useState(false);
 
   const userInitial = user?.name?.charAt(0) ?? "U";
   const userName = user?.name ?? "User";
@@ -101,6 +104,7 @@ const handlePracticeMode = (practiceId = null, practiceQuestions = null) => {
 
     setLoading(true);
     setError("");
+    setExportError("");
     setQuestions("");
 
     try {
@@ -158,6 +162,28 @@ const handlePracticeMode = (practiceId = null, practiceQuestions = null) => {
     window.print();
     document.body.innerHTML = original;
     window.location.reload();
+  };
+
+  const apiBase = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
+  const handleDownloadExam = async (format) => {
+    const token = localStorage.getItem("token");
+    if (!generatedId) {
+      setExportError("No exam to download yet.");
+      return;
+    }
+    setExportError("");
+    setExporting(true);
+    try {
+      const result = await downloadExamExport(apiBase, generatedId, format, token);
+      if (!result.ok) {
+        setExportError(result.message || "Download failed.");
+      }
+    } catch (e) {
+      setExportError(e.message || "Download failed.");
+    } finally {
+      setExporting(false);
+    }
   };
 
   return (
@@ -427,16 +453,42 @@ const handlePracticeMode = (practiceId = null, practiceQuestions = null) => {
                     </div>
                   </div>
                   
-                  <div className="flex flex-col sm:flex-row items-center gap-4">
-                    {user?.persona === 'teacher' && (
-                      <button
-                        onClick={handlePrint}
-                        className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl font-bold transition-all backdrop-blur-md"
-                      >
-                        <span>Print PDF</span>
-                        <span className="text-lg">🖨️</span>
-                      </button>
-                    )}
+                  <div className="flex w-full flex-col items-center gap-2 sm:w-auto sm:items-end">
+                    <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-end">
+                      {user?.persona === "teacher" && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={() => handleDownloadExam("pdf")}
+                            disabled={exporting}
+                            className="flex items-center gap-2 px-5 py-3 bg-white/15 hover:bg-white/25 text-white border border-white/25 rounded-xl font-bold transition-all backdrop-blur-md disabled:opacity-50"
+                          >
+                            {exporting ? "…" : "Download PDF"}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleDownloadExam("docx")}
+                            disabled={exporting}
+                            className="flex items-center gap-2 px-5 py-3 bg-white/15 hover:bg-white/25 text-white border border-white/25 rounded-xl font-bold transition-all backdrop-blur-md disabled:opacity-50"
+                          >
+                            {exporting ? "…" : "Download Word"}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={handlePrint}
+                            className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl font-bold transition-all backdrop-blur-md"
+                          >
+                            <span>Print</span>
+                            <span className="text-lg" aria-hidden>
+                              🖨️
+                            </span>
+                          </button>
+                        </>
+                      )}
+                    </div>
+                    {exportError ? (
+                      <p className="max-w-md text-center text-sm text-amber-200 sm:text-right">{exportError}</p>
+                    ) : null}
                   </div>
                 </div>
               </div>
