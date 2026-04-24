@@ -86,6 +86,7 @@ class Feedback(Base):
     feedback_text: Mapped[str] = mapped_column(Text, nullable=False)
     video_url: Mapped[Optional[str]] = mapped_column(String)
     video_status: Mapped[Optional[str]] = mapped_column(String, default="pending")  # pending, processing, completed, failed
+    d_id_talk_id: Mapped[Optional[str]] = mapped_column(String, nullable=True)
     created_at: Mapped[datetime.datetime] = mapped_column(DateTime, default=lambda: datetime.datetime.now().replace(tzinfo=None))
 
     # Relationships
