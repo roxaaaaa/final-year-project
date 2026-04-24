@@ -1,3 +1,5 @@
+"""Unit tests for small model_service and auth helpers (no network)."""
+
 import base64
 
 import jwt

@@ -1,3 +1,5 @@
+"""Tests for teacher exam export (PDF/DOCX) and auth gating."""
+
 import json
 
 import pytest

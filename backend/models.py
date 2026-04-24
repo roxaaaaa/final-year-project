@@ -1,3 +1,5 @@
+"""ORM tables: users, generated exams, practice attempts, and per-question feedback."""
+
 import datetime
 from typing import Optional, List
 from sqlalchemy import String, DateTime, Enum, Integer, Text, ForeignKey
@@ -6,10 +8,13 @@ from database import Base
 import enum
 
 class PersonaEnum(str, enum.Enum):
+    """Student or teacher; used for quotas and export rules."""
     student = "student"
     teacher = "teacher"
 
+
 class User(Base):
+    """Google OAuth user row with optional persona and lifetime generation count."""
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)

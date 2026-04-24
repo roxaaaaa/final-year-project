@@ -1,3 +1,5 @@
+"""Parse Leaving Cert PDFs into cleaned question JSON (Ordinary/Higher folders under data/)."""
+
 import pdfplumber
 import re
 import os

@@ -1,3 +1,5 @@
+"""CLI: check if users.generations_number exists (quick schema sanity check)."""
+
 import asyncio
 from dotenv import load_dotenv
 load_dotenv()
@@ -6,6 +8,7 @@ from database import engine
 from sqlalchemy import text
 
 async def test_column():
+    """Query information_schema for the generations_number column."""
     async with engine.begin() as conn:
         try:
             result = await conn.execute(text("SELECT column_name FROM information_schema.columns WHERE table_name = 'users' AND column_name = 'generations_number'"))

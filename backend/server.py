@@ -1,3 +1,5 @@
+"""AgriExamAI backend: REST API for exam questions, practice, feedback, and login."""
+
 from typing import Literal, Optional, cast
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
@@ -10,8 +12,6 @@ from starlette.middleware.sessions import SessionMiddleware
 import asyncio
 import logging
 import os
-import time
-from pathlib import Path
 from model_service import (
     AppConfig,
     GenerationConfig,
@@ -26,6 +26,8 @@ from model_service import (
 )
 
 load_dotenv()
+
+from security_settings import jwt_secret, session_secret
 
 MODEL_NAME = os.getenv("MODEL_NAME", "llama3.1:8b")
 CHATGPT_MODEL = os.getenv("CHATGPT_MODEL", "gpt-4o-mini")
@@ -49,11 +51,16 @@ def _cors_allow_origins() -> list[str]:
             origins.add(base.replace("://127.0.0.1", "://localhost", 1))
     except Exception:
         pass
+    # Vercel preview URLs, alternate domains, etc. (comma-separated, no trailing slash)
+    for part in os.getenv("CORS_EXTRA_ORIGINS", "").split(","):
+        u = part.strip().rstrip("/")
+        if u:
+            origins.add(u)
     return list(origins)
 
 
 def _session_cookie_https_only() -> bool:
-    """Secure session cookies on HTTPS hosts. Render sets RENDER=true; override with SESSION_COOKIE_SECURE=0."""
+    # On HTTPS we send the session cookie only over secure connections. You can change this with env vars.
     explicit = os.getenv("SESSION_COOKIE_SECURE")
     if explicit is not None:
         return explicit.lower() in ("1", "true", "yes")
@@ -84,10 +91,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 
     logger.error(f"Validation Error - Body: {body_text}, Errors: {exc.errors()}")
 
-    return JSONResponse(
-        status_code=422,
-        content={"detail": exc.errors(), "raw_body": body_text},
-    )
+    return JSONResponse(status_code=422, content={"detail": exc.errors()})
 
 # Add CORS middleware
 app.add_middleware(
@@ -100,15 +104,26 @@ app.add_middleware(
 
 app.add_middleware(
     SessionMiddleware,
-    secret_key=os.getenv("SESSION_SECRET", "another-super-secret-key"),
+    secret_key=session_secret(),
     same_site="lax",
     https_only=_session_cookie_https_only(),
 )
 
+# Fail fast if JWT signing secret is missing (OAuth callback would otherwise return 500).
+_ = jwt_secret()
+
+# Trust X-Forwarded-Proto (etc.) from Render / reverse proxies so request.base_url uses https.
+try:
+    from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
+
+    app.add_middleware(ProxyHeadersMiddleware, trusted_hosts="*")
+except Exception as e:
+    logger.warning("ProxyHeadersMiddleware not enabled: %s", e)
+
 from routers.auth import router as auth_router
 app.include_router(auth_router)
-from routers.user import router as user_router # Keep user_router for user profile management
-app.include_router(user_router) # Include user_router
+from routers.user import router as user_router
+app.include_router(user_router)
 
 from database import init_schema_sync
 
@@ -174,7 +189,6 @@ from database import async_session, get_db
 from models import User, PersonaEnum, GeneratedExam, PracticeAttempt, Feedback
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from sqlalchemy import func, delete, update
 from fastapi import Depends, Query
 from fastapi.responses import Response
 import json
@@ -187,10 +201,7 @@ async def generate_questions(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
-    """
-    Generate exam questions for a given topic and level.
-    Rate limiting: 3 lifetime generations for students, 5 for teachers.
-    """
+    """Create questions for topic/level, save exam, enforce persona generation limits."""
     if not user.persona:
         raise HTTPException(status_code=400, detail="Persona must be selected before generating")
 
@@ -207,7 +218,7 @@ async def generate_questions(
     # Determine number of questions based on persona
     num_questions = 3 if user.persona.value == "student" else 5
 
-    logger.info(f"Generating questions: topic={data.topic_name}, level={data.level}, user={user.id}, persona={user.persona.value}, num_questions={num_questions}")
+    #logger.info(f"Generating questions: topic={data.topic_name}, level={data.level}, user={user.id}, persona={user.persona.value}, num_questions={num_questions}")
     
     try:
         config = AppConfig(
@@ -253,17 +264,15 @@ async def generate_questions(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error generating questions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Error generating questions")
+        raise HTTPException(status_code=500, detail="Failed to generate questions")
 
 @app.get("/api/user/exams", tags=["User"])
 async def get_user_exams(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
-    """
-    Get all generated exams for the current user.
-    """
+    """List this user's saved exams (metadata only, not full question text)."""
     try:
         result = await db.execute(
             select(GeneratedExam).where(GeneratedExam.user_id == user.id).order_by(GeneratedExam.created_at.desc())
@@ -292,9 +301,7 @@ async def get_exam_details(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
-    """
-    Get details of a specific exam including questions.
-    """
+    """Return one exam with parsed questions if it belongs to the current user."""
     try:
         result = await db.execute(
             select(GeneratedExam).where(
@@ -329,9 +336,7 @@ async def export_exam(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ):
-    """
-    Download generated exam as PDF or Word. Teachers only.
-    """
+    """Teacher-only: stream PDF or Word for a saved exam."""
     if user.persona != PersonaEnum.teacher:
         raise HTTPException(
             status_code=403,
@@ -391,34 +396,8 @@ async def start_practice_attempt(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
-    """
-    Start or update a practice attempt for an exam.
-    """
+    """Create or update draft answers for a user's exam."""
     try:
-        # #region agent log
-        try:
-            _p = Path(__file__).resolve().parent.parent / "debug-98c8df.log"
-            with open(_p, "a", encoding="utf-8") as _f:
-                _f.write(
-                    json.dumps(
-                        {
-                            "sessionId": "98c8df",
-                            "hypothesisId": "H4",
-                            "location": "server.py:start_practice_attempt",
-                            "message": "practice start handler entered",
-                            "data": {
-                                "origin": request.headers.get("origin"),
-                                "exam_id": data.exam_id,
-                            },
-                            "timestamp": int(time.time() * 1000),
-                            "runId": "pre-fix",
-                        }
-                    )
-                    + "\n"
-                )
-        except Exception:
-            pass
-        # #endregion
         # Check if exam exists and belongs to user
         result = await db.execute(
             select(GeneratedExam).where(
@@ -467,9 +446,7 @@ async def generate_feedback(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ):
-    """
-    Generate feedback for a specific question answer.
-    """
+    """Feedback for one question index; persists rows and optional D-ID talk id."""
     try:
         user_id = user.id
         # Get the exam to retrieve the question
@@ -564,6 +541,8 @@ async def generate_feedback(
                 existing_feedback.feedback_text = feedback_result
                 existing_feedback.video_url = video_url
                 existing_feedback.video_status = video_status
+                if talk_id:
+                    existing_feedback.d_id_talk_id = talk_id
                 db2.add(existing_feedback)
             else:
                 feedback_entry = Feedback(
@@ -572,6 +551,7 @@ async def generate_feedback(
                     feedback_text=feedback_result,
                     video_url=video_url,
                     video_status=video_status,
+                    d_id_talk_id=talk_id,
                 )
                 db2.add(feedback_entry)
 
@@ -595,9 +575,7 @@ async def get_practice_attempt(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
-    """
-    Get practice attempt data for an exam including answers and feedback.
-    """
+    """Load saved answers and feedback list for this exam (or empty defaults)."""
     try:
         # Get practice attempt
         result = await db.execute(
@@ -640,11 +618,17 @@ async def get_practice_attempt(
 
 
 @app.post("/api/ai/generate_feedback", tags=["Feedback"])
-async def generate_feedback_ai(content: FeedbackRequest):
-    """
-    Generate feedback for a student answer; optionally a D-ID avatar video when use_video and DID_API_KEY are set.
-    """
-    logger.info(f"Generating feedback: level={content.level}, use_video={content.use_video}")
+async def generate_feedback_ai(
+    content: FeedbackRequest,
+    user: User = Depends(get_current_user),
+):
+    """Stateless feedback from raw question/answer; optional D-ID bundle when configured."""
+    logger.info(
+        "Generating feedback (ai route): user_id=%s level=%s use_video=%s",
+        user.id,
+        content.level,
+        content.use_video,
+    )
     
     try:
         config = AppConfig(
@@ -688,25 +672,39 @@ async def generate_feedback_ai(content: FeedbackRequest):
             "has_video": False,
         }
 
-    except ValueError as e:
-        logger.error(f"Validation error: {e}")
-        raise HTTPException(status_code=400, detail=str(e))
-    except Exception as e:
-        logger.error(f"Error generating feedback: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+    except ValueError:
+        logger.warning("Validation error on /api/ai/generate_feedback")
+        raise HTTPException(status_code=400, detail="Invalid request")
+    except Exception:
+        logger.exception("Error generating feedback (ai route)")
+        raise HTTPException(status_code=500, detail="Failed to generate feedback")
 
 
 @app.get("/api/d-id/video-status/{talk_id}", tags=["D-ID"])
-async def get_video_status(talk_id: str):
-    """Proxied D-ID Talk job status: GET /talks/{id} (polling)."""
+async def get_video_status(
+    talk_id: str,
+    user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """Proxied D-ID Talk job status: GET /talks/{id} (polling). Caller must own the talk_id."""
     if not DID_API_KEY:
         raise HTTPException(status_code=503, detail="D-ID not configured")
+    own = await db.execute(
+        select(Feedback)
+        .join(PracticeAttempt, Feedback.practice_attempt_id == PracticeAttempt.id)
+        .where(
+            Feedback.d_id_talk_id == talk_id,
+            PracticeAttempt.user_id == user.id,
+        )
+    )
+    if own.scalar_one_or_none() is None:
+        raise HTTPException(status_code=404, detail="Video job not found")
     try:
         video_gen = VideoGenerator()
         return video_gen.get_video_status(talk_id)
-    except Exception as e:
-        logger.error("D-ID video status error: %s", e)
-        raise HTTPException(status_code=502, detail=str(e)) from e
+    except Exception:
+        logger.exception("D-ID video status error")
+        raise HTTPException(status_code=502, detail="Failed to fetch video status")
 
 
 # Run the app

@@ -1,3 +1,5 @@
+/** Small JSON helpers for practice navigation and autosave in sessionStorage. */
+
 /** Serialise the exam object stored under `currentExam` when entering practice mode. */
 export function serialisePracticeExam(topic, level, questions) {
   return JSON.stringify({ topic, level, questions });

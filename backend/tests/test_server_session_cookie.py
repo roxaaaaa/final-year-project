@@ -1,3 +1,5 @@
+"""Tests for session cookie secure flag from env."""
+
 import server as server_module
 
 

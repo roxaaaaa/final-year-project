@@ -1,3 +1,5 @@
+"""Tests for DATABASE_URL -> sync URL conversion."""
+
 import database as database_module
 
 

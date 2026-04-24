@@ -1,3 +1,5 @@
+"""Use Ollama to turn raw exam text into structured question/solution JSON."""
+
 import concurrent
 import ollama
 import re

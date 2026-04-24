@@ -1,8 +1,4 @@
-/**
- * Maps `/api/user/me` JSON to generation quota state shown on the home page.
- * @param {object|null|undefined} data
- * @returns {{ user: object|null, generationsTotal: number|null, generationsRemaining: number|null }}
- */
+/** Map `/api/user/me` to total and remaining generations (student vs teacher). */
 export function computeGenerationsFromMeResponse(data) {
   if (!data || !data.id) {
     return { user: null, generationsTotal: null, generationsRemaining: null };

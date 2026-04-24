@@ -1,3 +1,5 @@
+/** Tests for exam JSON serialise helpers. */
+
 import { describe, expect, it } from "vitest";
 import { serialiseAutosavedExam, serialisePracticeExam } from "../lib/examStorage";
 

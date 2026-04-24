@@ -1,4 +1,7 @@
 "use client";
+
+/** Pick student or teacher once after login (quota and export rules differ). */
+
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 

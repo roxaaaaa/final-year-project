@@ -1,3 +1,5 @@
+"""CLI: print rows from alembic_version (checks migration state)."""
+
 import asyncio
 from dotenv import load_dotenv
 load_dotenv()
@@ -6,6 +8,7 @@ from database import engine
 from sqlalchemy import text
 
 async def check_alembic_version():
+    """SELECT * FROM alembic_version or print the error."""
     async with engine.begin() as conn:
         try:
             result = await conn.execute(text('SELECT * FROM alembic_version'))

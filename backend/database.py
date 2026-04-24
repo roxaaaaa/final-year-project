@@ -1,3 +1,5 @@
+"""Async SQLAlchemy engine, sessions, and a small sync helper to create tables at startup."""
+
 import os
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
@@ -67,5 +69,6 @@ def init_schema_sync() -> None:
 
 
 async def get_db():
+    """FastAPI dependency: one request-scoped async session, then close."""
     async with async_session() as session:
         yield session

@@ -1,15 +1,16 @@
 "use client";
 
+/** Avatar + browser voice: auto-play new feedback text and allow replay (Web Speech API). */
+
 import { useCallback, useEffect, useState } from "react";
 import { TalkingAvatarCanvas } from "./TalkingAvatarCanvas";
 import { primeAvatarAudioFromUserGesture, useAvatarAudio } from "./useAvatarAudio";
 
 /**
- * Orchestrates modular pieces: TTS (`useAvatarAudio`) + animation (`TalkingAvatarCanvas`).
- * Starts playback when `feedbackText` changes; offers explicit replay (helps after autoplay restrictions).
+ * `useAvatarAudio` drives speech + synthetic amplitude; `TalkingAvatarCanvas` shows a simple mouth.
  */
-export function RealTimeTeacherAvatar({ feedbackText, apiUrl, getToken }) {
-  const { speak, amplitude, isSpeaking, ttsError, setTtsError } = useAvatarAudio(apiUrl, getToken);
+export function RealTimeTeacherAvatar({ feedbackText }) {
+  const { speak, amplitude, isSpeaking, ttsError, setTtsError } = useAvatarAudio();
   const [autoStarted, setAutoStarted] = useState(false);
 
   const runSpeak = useCallback(async () => {

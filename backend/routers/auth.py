@@ -1,3 +1,5 @@
+"""Google OAuth routes: redirect to Google, callback, then JWT in redirect to the frontend."""
+
 import logging
 import os
 import datetime
@@ -9,7 +11,7 @@ from sqlalchemy.future import select
 import jwt
 
 from database import get_db
-from models import User, PersonaEnum
+from models import User
 
 logger = logging.getLogger(__name__)
 
@@ -30,6 +32,7 @@ JWT_SECRET = os.getenv("JWT_SECRET", "super-secret-key-for-dev")
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 
 def create_jwt_token(user_id: str, persona: str | None) -> str:
+    """Sign a short-lived HS256 JWT for the SPA (sub = user id, optional persona)."""
     payload = {
         "sub": user_id,
         "persona": persona,
@@ -39,12 +42,14 @@ def create_jwt_token(user_id: str, persona: str | None) -> str:
 
 @router.get("/google")
 async def login_google(request: Request, redirect_to: str = "/generate"):
+    """Start Google login; remember where to send the user after callback."""
     request.session['redirect_to'] = redirect_to
     redirect_uri = str(request.url_for('auth_callback'))
     return await oauth.google.authorize_redirect(request, redirect_uri)
 
 @router.get("/google/callback")
 async def auth_callback(request: Request, db: AsyncSession = Depends(get_db)):
+    """Exchange the OAuth code, upsert user, issue JWT, redirect to FRONTEND_URL/auth/callback."""
     try:
         token = await oauth.google.authorize_access_token(request)
     except Exception as e:

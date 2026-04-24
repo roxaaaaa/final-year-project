@@ -1,3 +1,5 @@
+"""Alembic environment: wires DATABASE_URL and model metadata for upgrades/downgrades."""
+
 import asyncio
 from logging.config import fileConfig
 
@@ -27,7 +29,8 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
 from database import DATABASE_URL, Base
-import models
+
+import models 
 
 target_metadata = Base.metadata
 config.set_main_option("sqlalchemy.url", DATABASE_URL)

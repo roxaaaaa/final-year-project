@@ -1,9 +1,12 @@
+"""Merge question JSON and solution JSON into one structured file per export."""
+
 import json
 import os
 from pydoc import text
-# merge the structured question and solution files into a single file for each year and level
+
 
 def merge_files(questions_file, solutions_file, output_file):
+    """Join matching question parts with marking scheme lines; write output_file."""
     with open(questions_file, 'r', encoding='utf-8') as qf:
         questions_data = json.load(qf)
     with open(solutions_file, 'r', encoding='utf-8') as sf:

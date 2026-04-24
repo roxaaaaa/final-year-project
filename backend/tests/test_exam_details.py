@@ -1,3 +1,5 @@
+"""Tests for GET /api/exams/{id} (owner scoping and payload shape)."""
+
 import json
 
 import pytest

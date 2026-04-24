@@ -1,4 +1,7 @@
 "use client";
+
+/** OAuth return: read JWT from the URL, store it, then redirect into the app. */
+
 import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 

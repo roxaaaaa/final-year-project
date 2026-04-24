@@ -1,4 +1,7 @@
 "use client";
+
+/** Home: sign-in, topic/level, generate questions, teacher export, go to practice. */
+
 import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation"; //handling navigation
 import { serialiseAutosavedExam, serialisePracticeExam } from "../lib/examStorage";

@@ -1,3 +1,5 @@
+/** Root layout: global CSS and default page title/description. */
+
 import "./global.css";
 
 export const metadata = {

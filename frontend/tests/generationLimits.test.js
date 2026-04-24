@@ -1,3 +1,5 @@
+/** Tests for generation quota helper from `/api/user/me` shape. */
+
 import { describe, expect, it } from "vitest";
 import { computeGenerationsFromMeResponse } from "../lib/generationLimits";
 

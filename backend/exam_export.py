@@ -17,10 +17,12 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
 
 def _level_label(level: str) -> str:
+    """Title case label for the paper level."""
     return "Higher" if (level or "").lower() == "higher" else "Ordinary"
 
 
 def _escape_xml_text(s: str) -> str:
+    """Escape &, <, > for ReportLab Paragraph XML."""
     return (
         (s or "")
         .replace("&", "&amp;")
@@ -30,6 +32,7 @@ def _escape_xml_text(s: str) -> str:
 
 
 def build_exam_docx(topic: str, level: str, questions: List[str]) -> bytes:
+    """Build a simple .docx exam sheet; return raw bytes."""
     doc = Document()
     style = doc.styles["Normal"]
     style.font_name = "Times New Roman"
@@ -75,6 +78,7 @@ def _register_unicode_font() -> str:
 
 
 def build_exam_pdf(topic: str, level: str, questions: List[str]) -> bytes:
+    """Build an A4 PDF with numbered questions; return raw bytes."""
     font_name = _register_unicode_font()
     styles = getSampleStyleSheet()
     title_style = ParagraphStyle(

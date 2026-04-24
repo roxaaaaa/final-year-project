@@ -10,5 +10,7 @@
   "cursorpyright.analysis.extraPaths": [
     "${workspaceFolder}/backend"
   ],
-  "cursorpyright.analysis.typeCheckingMode": "basic"
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  "snyk.advanced.organization": "fb7b8aa7-83fc-496a-a0f2-eb04729d632f",
+  "snyk.advanced.autoSelectOrganization": true
 }

@@ -1,3 +1,5 @@
+"""JWT-protected `/api/user` routes: profile and one-time persona choice."""
+
 from fastapi import APIRouter, Depends, HTTPException, Security
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -15,6 +17,7 @@ security = HTTPBearer()
 JWT_SECRET = os.getenv("JWT_SECRET", "super-secret-key-for-dev")
 
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Security(security), db: AsyncSession = Depends(get_db)):
+    """Decode Bearer JWT and load the user row, or raise 401."""
     token = credentials.credentials
     try:
         payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
@@ -38,10 +41,13 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Security(
         raise HTTPException(status_code=401, detail="Could not validate credentials")
 
 class PersonaUpdate(BaseModel):
+    """POST /api/user/persona body: persona must be student or teacher."""
     persona: str
+
 
 @router.get("/me")
 async def get_me(user: User = Depends(get_current_user)):
+    """Return id, name, email, persona, and generations_number for the SPA."""
     return {
         "id": str(user.id),
         "name": user.name,
@@ -52,6 +58,7 @@ async def get_me(user: User = Depends(get_current_user)):
 
 @router.post("/persona")
 async def set_persona(data: PersonaUpdate, user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db)):
+    """Set persona once; used before question generation."""
     if user.persona is not None:
         raise HTTPException(status_code=400, detail="Persona already set")
         

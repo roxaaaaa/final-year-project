@@ -1,3 +1,5 @@
+/** Tailwind v4: scan app, pages, and components for class names. */
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [

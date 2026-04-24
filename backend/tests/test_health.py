@@ -1,3 +1,6 @@
+"""Smoke tests for `/` and `/health`."""
+
+
 def test_root_returns_status_json(client):
     r = client.get("/")
     assert r.status_code == 200

@@ -1,3 +1,5 @@
+"""CLI: create all ORM tables once (async engine). Run when setting up a new database."""
+
 import asyncio
 import os
 from dotenv import load_dotenv
@@ -14,6 +16,7 @@ if not DATABASE_URL:
     raise ValueError("DATABASE_URL environment variable is not set")
 
 async def create_tables():
+    """Connect with DATABASE_URL and call Base.metadata.create_all."""
     # Create async engine
     engine = create_async_engine(DATABASE_URL, echo=True)
 

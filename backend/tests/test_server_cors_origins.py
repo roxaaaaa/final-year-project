@@ -1,3 +1,5 @@
+"""Tests for CORS origin list (localhost vs 127.0.0.1)."""
+
 import server as server_module
 
 

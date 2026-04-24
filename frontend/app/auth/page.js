@@ -1,3 +1,5 @@
+/** Sign-in page: link to backend Google OAuth. */
+
 import Link from "next/link";
 
 export default function AuthPage() {

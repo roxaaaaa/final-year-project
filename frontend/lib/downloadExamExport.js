@@ -1,11 +1,4 @@
-/**
- * Download a generated exam as PDF or Word (teacher-only API).
- * @param {string} apiUrl
- * @param {number|string} examId
- * @param {"pdf"|"docx"} format
- * @param {string} token Bearer JWT
- * @returns {Promise<{ ok: true } | { ok: false, message: string }>}
- */
+/** Download exam file (PDF or DOCX); returns ok or a short error message. */
 export async function downloadExamExport(apiUrl, examId, format, token) {
   if (!token || examId == null || examId === "") {
     return { ok: false, message: "Not signed in or no exam id." };
