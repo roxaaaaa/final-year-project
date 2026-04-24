@@ -148,11 +148,16 @@ Open [http://localhost:3000](http://localhost:3000). For Ollama-backed generatio
 
 ## Tests
 
-Backend unit tests (SQLite test database is configured in `conftest.py`):
+Backend unit tests (SQLite test database is configured in `conftest.py`). Run from the repo root - `pytest.ini` sets `testpaths = backend/tests` and `pythonpath = backend`:
 
 ```bash
-cd backend
 pytest
+```
+
+On Windows, if `python`/`pytest` resolves to the Microsoft Store alias (`Python was not found; run without arguments to install from the Microsoft Store`), use the Python launcher instead:
+
+```bash
+py -3 -m pytest
 ```
 
 Frontend:
