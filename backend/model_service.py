@@ -114,10 +114,24 @@ Higher level questions require in-depth understanding, precise definitions, and 
         """
 
 ORDINARY_EXAMPLE_QUESTIONS = """
-Ordinary level questions require a solid understanding of fundamental agricultural practices, terminology, and key experiments.
+Ordinary level tests clear recall and short explanations — one main idea per stem, wording similar to past papers (not mini essays).
+Format examples only (do not copy topics or phrasing):
         {"question": "Define the term biological control."}
-        {"question": "Crop rotation is a common practice on Irish tillage farms. Explain the underlined term. State two advantages of crop rotation."}
-        {"question": "Suggest three ways in which farmers can control / prevent liver fluke on their farm."}"""
+        {"question": "State two ways in which good grassland management can benefit the dairy farmer."}
+        {"question": "What is meant by the term carrying capacity when referring to livestock?"}
+        {"question": "Give one advantage and one disadvantage of monoculture in tillage farming."}
+        {"question": "Explain how overstocking of grazing land can damage soil structure."}"""
+
+# Used when several questions are requested in parallel (same topic); reduces mode-collapse on one template (e.g. biosecurity repeated).
+ORDINARY_BATCH_ANGLE_HINTS = (
+    "Angle: soil, drainage, soil structure, pH, or plant nutrition — pick one focus that fits the topic.",
+    "Angle: crop production, rotation, cultivation, or tillage management — pick one focus that fits the topic.",
+    "Angle: grassland, grazing, silage, or fodder conservation — pick one focus that fits the topic.",
+    "Angle: animal housing, feeding, milk/meat production, or welfare — pick one focus that fits the topic.",
+    "Angle: parasites, vaccination, or herd health — pick one specific idea; avoid repeating a generic biosecurity definition stem.",
+    "Angle: breeding, genetics, anatomy, or physiology of a named farm species — pick one focus that fits the topic.",
+    "Angle: environment, forestry, pollution, or sustainable farm practice — pick one focus that fits the topic.",
+)
 
 SYSTEM_PROMPT = """You are a Leaving Cert Agricultural Science examiner.
 
@@ -125,7 +139,11 @@ When generating exam questions you output only the question as it would appear o
 
 Forbidden in the question text: phrases like "In your answer", "Your answer should", "define X and state Y", bullet or numbered lists of tasks, or step-by-step instructions (e.g. demanding controls, measurements, or experimental write-ups inside the question). Do not pack multiple disconnected tasks into one question.
 
-Allowed: short context if needed, then one clear command (e.g. Explain / Describe / Outline / Account for / Suggest) matching real exam style and the requested level."""
+Allowed: short context if needed, then one clear command (e.g. Explain / Describe / Outline / Account for / Suggest) matching real exam style and the requested level.
+
+Ordinary level: keep stems short (often one sentence). Test one concept only. Vary command words and scenarios; do not lean on the same template repeatedly (e.g. several stems that all ask to define or explain one generic farm term with only small wording changes).
+
+Factual discipline: stay within standard Leaving Cert Agricultural Science content. Do not invent statistics, legal citations, Department scheme names, or branded products as if they were exam facts. Use generic Irish farm context where helpful, without made-up place names or survey results."""
 
 JSON_STRUCTURE_PROMPT = (
     'Output ONLY a single JSON object with this exact shape: {"question": "<exam question text>"}. '
@@ -406,24 +424,36 @@ class QuestionGenerator:
         )
         return None
 
+    def _messages_for_question(self, batch_index: int, batch_total: int) -> list:
+        """System + user messages for one stem; ordinary-level parallel runs get rotated angle hints."""
+        topic = self.config.data.topic or "general knowledge"
+        level = self.config.data.level
+        examples = HIGHER_EXAMPLE_QUESTIONS if level == "higher" else ORDINARY_EXAMPLE_QUESTIONS
+        user_lines = [
+            f"Generate one exam question on the topic of {topic} for level {level}.",
+            "Tone and length: match a real Leaving Cert short-answer stem — usually one or two sentences, no checklist of sub-parts.",
+            f"Style examples (format only; do not copy wording): {examples}",
+        ]
+        if level == "ordinary" and batch_total > 1:
+            hint = ORDINARY_BATCH_ANGLE_HINTS[batch_index % len(ORDINARY_BATCH_ANGLE_HINTS)]
+            user_lines.append(
+                f"This is item {batch_index + 1} of {batch_total} generated together on the same topic. "
+                f"{hint} The stem must not duplicate the same central term or task pattern as the other items would."
+            )
+        user_lines.append(f'Return a json structured response {{"question": "string"}}')
+        user_content = "\n\n".join(user_lines) + f"\n\n{JSON_STRUCTURE_PROMPT}"
+        return [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_content},
+        ]
+
     def generate_questions(self) -> List[str]:
         """Return up to num_questions stems (JSON parsed); OpenAI calls run in parallel."""
-        prompt = f"""Generate one exam question
-        on the topic of {self.config.data.topic} for level {self.config.data.level}.
-        Tone and length: match a real Leaving Cert short-answer stem — usually one or two sentences, no checklist of sub-parts.
-
-        Style examples (format only; do not copy wording): {HIGHER_EXAMPLE_QUESTIONS if self.config.data.level == "higher" else ORDINARY_EXAMPLE_QUESTIONS}
-
-        Return a json structured response {{"question": "string"}}"""
         questions: List[str] = []
 
         if self.config.generation is None:
             self.config.generation = GenerationConfig()
 
-        messages = [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": f"{prompt}\n\n{JSON_STRUCTURE_PROMPT}"},
-        ]
         n = self.config.generation.num_questions
 
         # OpenAI-only: concurrent requests (independent stems per call).
@@ -431,8 +461,11 @@ class QuestionGenerator:
             max_workers = min(max(n, 1), 8)
             with ThreadPoolExecutor(max_workers=max_workers) as executor:
                 futures = [
-                    executor.submit(self._complete_openai_and_parse, messages)
-                    for _ in range(n)
+                    executor.submit(
+                        self._complete_openai_and_parse,
+                        self._messages_for_question(i, n),
+                    )
+                    for i in range(n)
                 ]
                 for fut in futures:
                     try:
@@ -443,7 +476,8 @@ class QuestionGenerator:
                         logger.error("AI Error: %s", e)
             return questions
 
-        for _ in range(n):
+        for i in range(n):
+            messages = self._messages_for_question(i, n)
             try:
                 content = ""
                 if self.use_ollama:
