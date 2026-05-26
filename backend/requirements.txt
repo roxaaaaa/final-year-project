@@ -8,11 +8,11 @@ sqlalchemy
 asyncpg
 psycopg2-binary
 alembic
-authlib==1.7.0
-pyjwt>=2.12.1
+authlib==1.7.2
+pyjwt>=2.13.0
 itsdangerous>=2.2.0
 httpx==0.28.1
 pytest>=9.0.3
 aiosqlite>=0.22.1
 python-docx>=1.2.0
-reportlab>=4.4.10
+reportlab>=4.5.1
