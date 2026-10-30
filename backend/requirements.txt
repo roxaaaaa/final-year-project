@@ -9,10 +9,10 @@ asyncpg
 psycopg2-binary
 alembic
 authlib==1.9.1
-pyjwt>=2.12.1
+pyjwt>=2.15.1
 itsdangerous>=2.2.0
 httpx==0.28.1
-pytest>=9.0.3
+pytest>=9.1.1
 aiosqlite>=0.22.1
 python-docx>=1.2.0
-reportlab>=4.4.10
+reportlab>=5.1.0
