@@ -7,7 +7,7 @@
 
 ## Project overview
 
-**Live app:** [final-year-project-delta-coral.vercel.app](https://final-year-project-delta-coral.vercel.app/)
+**Live app (not currently):** [final-year-project-delta-coral.vercel.app](https://final-year-project-delta-coral.vercel.app/)
 
 AgriGen AI is a web application focused on the **Irish Leaving Certificate Agricultural Science** course. It helps teachers generate exam-style material and helps students practise with immediate feedback.
 
@@ -168,6 +168,12 @@ npm test
 ```
 
 ---
+
+# User testing 
+
+The user testing showed strong results. 42 students took part in the survey. They rated satisfaction with the app at 4.21 out of 5. They rated the relevance of the questions at 4.21 out of 5. They rated the avatar feedback at 4.05 out of 5. 90% of students said they noticed no factual errors. 81% said they would recommend the tool to a friend.
+
+Two teachers also tested the system. Both said the questions matched Leaving Certificate standards well. Both said the tool could save them around 4 to 5 hours of work per week. Teacher A gave the tool 8 out of 10 for likelihood of adoption. Teacher B gave 7 out of 10.
 
 ## Dataset and methodology
 
